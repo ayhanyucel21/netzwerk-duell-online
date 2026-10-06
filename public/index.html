@@ -1,48 +1,162 @@
-<section id="lobby" class="lobby-container">
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Netzwerk-Duell Online – das interaktive LF03-Lernspiel für zwei Spieler.">
+  <title>Netzwerk-Duell Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Netzwerk-Duell Startseite">
+        <span class="brand-icon" aria-hidden="true">⚔️</span>
+        <span>
+          <strong>Netzwerk-Duell</strong>
+          <small>Online</small>
+        </span>
+      </a>
 
-    <div class="lobby-header">
-        <h1>⚔️ Netzwerk-Duell Online</h1>
+      <div id="connection" class="connection-status" role="status" aria-live="polite">
+        <span class="connection-dot" aria-hidden="true"></span>
+        Verbindung wird hergestellt…
+      </div>
+    </header>
+
+    <section id="lobby" class="lobby" aria-labelledby="lobby-title">
+      <div class="hero">
+        <div class="hero-badge">2 Spieler · Echtzeit · 100 Fragen</div>
+        <h1 id="lobby-title">Gemeinsam lernen.<br><span>Im Duell gewinnen.</span></h1>
         <p>
-            OSI • TCP/IP • DHCP • DNS • VLAN • WLAN •
-            Troubleshooting • Hardware
+          Testet euer Wissen zu OSI, TCP/IP, DHCP, DNS, VLAN, WLAN,
+          Hardware und Troubleshooting. In jeder Partie werden 15 Aufgaben
+          zufällig ausgewählt.
         </p>
-    </div>
+      </div>
 
-    <div class="lobby-grid">
-
-        <div class="lobby-card">
-            <h2>🚀 Neues Duell starten</h2>
-
+      <div class="lobby-content">
+        <section class="player-name-card" aria-labelledby="player-name-title">
+          <div class="section-icon" aria-hidden="true">👤</div>
+          <div class="field-content">
+            <label id="player-name-title" for="name">Dein Spielername</label>
+            <p>Dieser Name wird deinem Mitspieler im Duell angezeigt.</p>
             <input
-                id="name"
-                maxlength="20"
-                placeholder="Dein Spielername">
+              id="name"
+              class="text-input"
+              maxlength="20"
+              autocomplete="nickname"
+              placeholder="z. B. Ayhan"
+            >
+          </div>
+        </section>
 
-            <button id="create">
-                Raum erstellen
+        <div class="lobby-grid">
+          <section class="action-card create-card" aria-labelledby="create-title">
+            <div class="card-icon" aria-hidden="true">🚀</div>
+            <div class="card-label">Spieler 1</div>
+            <h2 id="create-title">Neuen Raum erstellen</h2>
+            <p>
+              Erstelle ein neues Duell und teile anschließend den fünfstelligen
+              Raumcode mit deinem Mitspieler.
+            </p>
+            <ol class="steps" aria-label="Ablauf zum Erstellen eines Raums">
+              <li>Spielername eingeben</li>
+              <li>Raum erstellen</li>
+              <li>Raumcode teilen</li>
+            </ol>
+            <button id="create" class="primary-button create-button" type="button">
+              <span>Raum erstellen</span>
+              <span aria-hidden="true">→</span>
             </button>
+          </section>
+
+          <div class="or-divider" aria-hidden="true"><span>oder</span></div>
+
+          <section class="action-card join-card" aria-labelledby="join-title">
+            <div class="card-icon" aria-hidden="true">🎯</div>
+            <div class="card-label">Spieler 2</div>
+            <h2 id="join-title">Raum beitreten</h2>
+            <p>
+              Gib den Raumcode ein, den du von deinem Mitspieler erhalten hast,
+              und tritt dem laufenden Duell bei.
+            </p>
+            <label class="room-code-label" for="roomInput">Raumcode</label>
+            <input
+              id="roomInput"
+              class="room-code-input"
+              maxlength="5"
+              inputmode="text"
+              autocomplete="off"
+              autocapitalize="characters"
+              spellcheck="false"
+              placeholder="ABCDE"
+              aria-describedby="room-code-help"
+            >
+            <small id="room-code-help">Der Code besteht aus fünf Zeichen.</small>
+            <button id="join" class="primary-button join-button" type="button">
+              <span>Raum beitreten</span>
+              <span aria-hidden="true">→</span>
+            </button>
+          </section>
         </div>
 
-        <div class="lobby-card">
-            <h2>🎯 Raum beitreten</h2>
+        <p id="lobbyMsg" class="lobby-message" role="alert" aria-live="assertive"></p>
+      </div>
 
-            <input
-                id="joinName"
-                maxlength="20"
-                placeholder="Dein Spielername">
+      <div class="topic-strip" aria-label="Lernthemen">
+        <span>OSI</span><span>TCP/IP</span><span>DHCP</span><span>DNS</span>
+        <span>VLAN</span><span>WLAN</span><span>Hardware</span><span>Fehlersuche</span>
+      </div>
+    </section>
 
-            <input
-                id="roomInput"
-                maxlength="5"
-                placeholder="Raumcode">
+    <section id="game" class="game hidden" aria-label="Laufendes Netzwerk-Duell">
+      <div class="roomline">
+        <span>Raumcode: <b id="roomCode"></b></span>
+        <button id="copy" class="secondary-button" type="button">Code kopieren</button>
+      </div>
 
-            <button id="join">
-                Raum beitreten
-            </button>
+      <div class="players">
+        <article id="p0" class="player-card">
+          <h3>Spieler 1</h3>
+          <strong>0</strong>
+          <small></small>
+        </article>
+        <div id="turn" class="turn-indicator">Warten…</div>
+        <article id="p1" class="player-card player-two">
+          <h3>Spieler 2</h3>
+          <strong>0</strong>
+          <small></small>
+        </article>
+      </div>
+
+      <section class="game-panel">
+        <div class="round">
+          <h2 id="roundTitle"></h2>
+          <b id="roundNo"></b>
         </div>
+        <p id="instruction"></p>
+        <div class="board">
+          <div id="targets"></div>
+          <aside class="cards-panel">
+            <h3>Karten</h3>
+            <div id="cards"></div>
+          </aside>
+        </div>
+        <div id="feedback" role="status" aria-live="polite">
+          Ziehe eine Karte auf das passende Feld.
+        </div>
+        <button id="restart" class="primary-button hidden" type="button">Neues Spiel</button>
+      </section>
+    </section>
 
-    </div>
+    <footer class="site-footer">
+      <span>LF03 · Clients in Netzwerke einbinden</span>
+      <span>Netzwerk-Duell Online</span>
+    </footer>
+  </main>
 
-    <p id="lobbyMsg"></p>
-
-</section>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
