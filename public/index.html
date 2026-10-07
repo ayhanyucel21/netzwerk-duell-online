@@ -3,9 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Netzwerk-Duell Online – das interaktive LF03-Lernspiel für zwei Spieler.">
+  <meta name="description" content="Netzwerk-Duell Online – das interaktive LF03-Lernspiel für zwei bis vier Spieler.">
   <title>Netzwerk-Duell Online</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .player-count-select{width:100%;min-height:48px;margin-top:6px;padding:0 14px;border:1px solid rgba(127,187,218,.35);border-radius:10px;color:#eef9ff;background:#071d31;font:inherit;font-weight:700}
+    .player-count-select:focus{outline:none;border-color:#35c9ff;box-shadow:0 0 0 4px rgba(53,201,255,.12)}
+    .player-count-help{display:block;margin:7px 0 16px;color:#a9c9dc;font-size:.76rem}
+    .players{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))!important;margin-top:10px!important}
+    .turn-indicator{width:max-content;max-width:100%;margin:12px auto 0}
+  </style>
 </head>
 <body>
   <main class="page-shell">
@@ -26,7 +34,7 @@
 
     <section id="lobby" class="lobby" aria-labelledby="lobby-title">
       <div class="hero">
-        <div class="hero-badge">2 Spieler · Echtzeit · 100 Fragen</div>
+        <div class="hero-badge">2–4 Spieler · Echtzeit · 115 Fragen</div>
         <h1 id="lobby-title">Gemeinsam lernen.<br><span>Im Duell gewinnen.</span></h1>
         <p>
           Testet euer Wissen zu OSI, TCP/IP, DHCP, DNS, VLAN, WLAN,
@@ -60,11 +68,13 @@
               Erstelle ein neues Duell und teile anschließend den fünfstelligen
               Raumcode mit deinem Mitspieler.
             </p>
-            <ol class="steps" aria-label="Ablauf zum Erstellen eines Raums">
-              <li>Spielername eingeben</li>
-              <li>Raum erstellen</li>
-              <li>Raumcode teilen</li>
-            </ol>
+            <label class="room-code-label" for="playerCount">Spieleranzahl</label>
+            <select id="playerCount" class="player-count-select" aria-label="Spieleranzahl auswählen">
+              <option value="2">2 Spieler</option>
+              <option value="3">3 Spieler</option>
+              <option value="4">4 Spieler</option>
+            </select>
+            <small class="player-count-help">Der Raum startet, sobald alle ausgewählten Spieler beigetreten sind.</small>
             <button id="create" class="primary-button create-button" type="button">
               <span>Raum erstellen</span>
               <span aria-hidden="true">→</span>
@@ -116,19 +126,8 @@
         <button id="copy" class="secondary-button" type="button">Code kopieren</button>
       </div>
 
-      <div class="players">
-        <article id="p0" class="player-card">
-          <h3>Spieler 1</h3>
-          <strong>0</strong>
-          <small></small>
-        </article>
-        <div id="turn" class="turn-indicator">Warten…</div>
-        <article id="p1" class="player-card player-two">
-          <h3>Spieler 2</h3>
-          <strong>0</strong>
-          <small></small>
-        </article>
-      </div>
+      <div id="turn" class="turn-indicator">Warten…</div>
+      <div id="players" class="players" aria-label="Spieler und Punktestände"></div>
 
       <section class="game-panel">
         <div class="round">

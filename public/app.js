@@ -1,9 +1,89 @@
-const socket=io();let me=null,last=null;const $=x=>document.getElementById(x);
-socket.on('connect',()=>$('connection').textContent='🟢 Online');socket.on('disconnect',()=>$('connection').textContent='🔴 Offline');socket.on('peer-left',x=>feedback(x.message,false));
-$('create').onclick=()=>socket.emit('create-room',{name:$('name').value},enter);$('join').onclick=()=>socket.emit('join-room',{name:$('name').value,roomCode:$('roomInput').value},enter);$('copy').onclick=()=>navigator.clipboard?.writeText($('roomCode').textContent);$('restart').onclick=()=>socket.emit('restart');
-function enter(r){if(!r.ok)return $('lobbyMsg').textContent=r.message;me=r.playerIndex;$('lobby').classList.add('hidden');$('game').classList.remove('hidden');$('roomCode').textContent=r.roomCode}
+const socket=io();
+let me=null,last=null;
+const $=x=>document.getElementById(x);
+
+socket.on('connect',()=>$('connection').textContent='🟢 Online');
+socket.on('disconnect',()=>$('connection').textContent='🔴 Offline');
+socket.on('peer-left',x=>feedback(x.message,false));
+
+$('create').onclick=()=>socket.emit('create-room',{
+  name:$('name').value,
+  maxPlayers:Number($('playerCount').value)
+},enter);
+$('join').onclick=()=>socket.emit('join-room',{name:$('name').value,roomCode:$('roomInput').value},enter);
+$('copy').onclick=()=>navigator.clipboard?.writeText($('roomCode').textContent);
+$('restart').onclick=()=>socket.emit('restart');
+
+function enter(r){
+  if(!r.ok)return $('lobbyMsg').textContent=r.message;
+  me=r.playerIndex;
+  $('lobby').classList.add('hidden');
+  $('game').classList.remove('hidden');
+  $('roomCode').textContent=r.roomCode;
+}
+
 socket.on('state',s=>{last=s;render(s)});
-function render(s){$('roomCode').textContent=s.roomCode;for(let i=0;i<2;i++){const el=$('p'+i),p=s.players[i];if(!p){el.querySelector('h3').textContent='Warte…';el.querySelector('strong').textContent='–';el.querySelector('small').textContent='';continue}el.querySelector('h3').textContent=p.name+(p.connected?'':' (offline)');el.querySelector('strong').textContent=p.score;el.querySelector('small').textContent=`${p.right} richtig · ${p.wrong} Fehler`;el.classList.toggle('active',s.turn===i)}if(s.players.length<2){$('turn').textContent='Warte auf Spieler 2…';return}if(s.status==='finished')return finish(s);$('restart').classList.add('hidden');$('turn').textContent=s.turn===me?'Du bist am Zug':'Gegner ist am Zug';$('roundTitle').textContent=s.challenge.title;$('roundNo').textContent=`${s.round+1}/15`;$('instruction').textContent=s.challenge.prompt;drawTargets(s);drawCards(s)}
-function drawTargets(s){$('targets').innerHTML=s.challenge.targets.map((t,i)=>{const key=s.challenge.type==='order'?String(i):t,vals=Object.values(s.filled).filter(v=>s.challenge.type==='order'?String(v.target)===key:v.target===t).map(v=>v.value);return `<div class="target ${vals.length?'filled':''}" data-target="${esc(key)}">${esc(t)}${vals.length?'<br>→ '+vals.map(esc).join(' · '):''}</div>`}).join('');document.querySelectorAll('.target').forEach(t=>{t.ondragover=e=>e.preventDefault();t.ondrop=e=>{e.preventDefault();if(last.turn!==me)return feedback('Du bist nicht am Zug.',false);const value=e.dataTransfer.getData('value');if(!value)return;socket.emit('move',{target:t.dataset.target,value},r=>feedback(r.correct?'Richtig! +10 Punkte':'Falsch. -5 Punkte',r.correct))}})}
-function drawCards(s){const mine=s.turn===me;$('cards').innerHTML=s.challenge.cards.map(c=>`<div class="card ${mine?'':'locked'}" draggable="${mine}" data-value="${esc(c)}">${esc(c)}</div>`).join('');document.querySelectorAll('.card').forEach(c=>c.ondragstart=e=>{if(!mine)return e.preventDefault();e.dataTransfer.setData('value',c.dataset.value)})}
-function feedback(t,ok){$('feedback').className=ok?'good':'bad';$('feedback').textContent=t}function finish(s){$('roundTitle').textContent=s.winner===-1?'Unentschieden':`${s.players[s.winner].name} gewinnt!`;$('roundNo').textContent='15/15';$('instruction').textContent=s.winner===-1?'Punkte und Fehlerzahl sind identisch.':'Alle 15 Runden wurden serverseitig ausgewertet.';$('targets').innerHTML='';$('cards').innerHTML='';$('turn').textContent='Spiel beendet';$('restart').classList.remove('hidden')}function esc(x){return String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+
+function render(s){
+  $('roomCode').textContent=s.roomCode;
+  drawPlayers(s);
+  const missing=Math.max(0,s.maxPlayers-s.players.length);
+  if(s.status==='lobby'){
+    $('turn').textContent=missing?`Warte auf ${missing} weitere Spieler…`:'Spiel wird gestartet…';
+    $('roundTitle').textContent='Raum ist geöffnet';
+    $('roundNo').textContent=`${s.players.length}/${s.maxPlayers} Spieler`;
+    $('instruction').textContent='Teile den Raumcode mit den Mitspielern.';
+    $('targets').innerHTML='';$('cards').innerHTML='';
+    return;
+  }
+  if(s.status==='finished')return finish(s);
+  $('restart').classList.add('hidden');
+  const active=s.players[s.turn];
+  $('turn').textContent=s.turn===me?'Du bist am Zug':`${active?.name||'Mitspieler'} ist am Zug`;
+  $('roundTitle').textContent=s.challenge.title;
+  $('roundNo').textContent=`${s.round+1}/${s.totalRounds}`;
+  $('instruction').textContent=s.challenge.prompt;
+  drawTargets(s);drawCards(s);
+}
+
+function drawPlayers(s){
+  $('players').innerHTML=s.players.map((p,i)=>`
+    <article id="p${i}" class="player-card ${s.turn===i&&s.status==='playing'?'active':''}">
+      <h3>${esc(p.name)}${i===me?' (Du)':''}${p.connected?'':' (offline)'}</h3>
+      <strong>${p.score}</strong>
+      <small>${p.right} richtig · ${p.wrong} Fehler</small>
+    </article>`).join('');
+}
+
+function drawTargets(s){
+  $('targets').innerHTML=s.challenge.targets.map((t,i)=>{
+    const key=s.challenge.type==='order'?String(i):t;
+    const vals=Object.values(s.filled).filter(v=>s.challenge.type==='order'?String(v.target)===key:v.target===t).map(v=>v.value);
+    return `<div class="target ${vals.length?'filled':''}" data-target="${esc(key)}">${esc(t)}${vals.length?'<br>→ '+vals.map(esc).join(' · '):''}</div>`
+  }).join('');
+  document.querySelectorAll('.target').forEach(t=>{
+    t.ondragover=e=>e.preventDefault();
+    t.ondrop=e=>{
+      e.preventDefault();
+      if(last.turn!==me)return feedback('Du bist nicht am Zug.',false);
+      const value=e.dataTransfer.getData('value');if(!value)return;
+      socket.emit('move',{target:t.dataset.target,value},r=>feedback(r.correct?'Richtig! +10 Punkte':'Falsch. -5 Punkte',r.correct));
+    }
+  });
+}
+
+function drawCards(s){
+  const mine=s.turn===me;
+  $('cards').innerHTML=s.challenge.cards.map(c=>`<div class="card ${mine?'':'locked'}" draggable="${mine}" data-value="${esc(c)}">${esc(c)}</div>`).join('');
+  document.querySelectorAll('.card').forEach(c=>c.ondragstart=e=>{if(!mine)return e.preventDefault();e.dataTransfer.setData('value',c.dataset.value)});
+}
+
+function feedback(t,ok){$('feedback').className=ok?'good':'bad';$('feedback').textContent=t}
+function finish(s){
+  const winners=s.winners||[];
+  $('roundTitle').textContent=winners.length>1?'Unentschieden':`${s.players[winners[0]].name} gewinnt!`;
+  $('roundNo').textContent=`${s.totalRounds}/${s.totalRounds}`;
+  $('instruction').textContent=winners.length>1?`${winners.map(i=>s.players[i].name).join(' und ')} haben gleich viele Punkte und Fehler.`:'Alle Runden wurden serverseitig ausgewertet.';
+  $('targets').innerHTML='';$('cards').innerHTML='';$('turn').textContent='Spiel beendet';$('restart').classList.remove('hidden');
+}
+function esc(x){return String(x).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
