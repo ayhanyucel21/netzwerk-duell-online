@@ -1,778 +1,148 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="LF05 Lernbereich: Softwaregrundlagen, Algorithmen, Python, Strings, Kontrollstrukturen und Schleifen.">
-  <meta name="theme-color" content="#10162d">
-  <title>LF05 Lernen – Software zur Verwaltung von Daten anpassen</title>
-
-  <style>
-    :root {
-      --bg-1: #07101f;
-      --bg-2: #15102d;
-      --panel: rgba(18, 27, 52, 0.88);
-      --panel-strong: #111d38;
-      --text: #f7fbff;
-      --muted: #b7c6d8;
-      --line: rgba(154, 205, 255, 0.18);
-      --orange: #ff9558;
-      --pink: #ff648d;
-      --violet: #a986ff;
-      --cyan: #43d9ff;
-      --green: #46dd9a;
-      --yellow: #ffd166;
-      --shadow: 0 22px 58px rgba(0, 0, 0, 0.38);
-    }
-
-    * { box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      min-height: 100vh;
-      margin: 0;
-      color: var(--text);
-      font-family: "Segoe UI", Inter, Arial, sans-serif;
-      background:
-        radial-gradient(circle at 7% 8%, rgba(255, 149, 88, 0.24), transparent 26%),
-        radial-gradient(circle at 92% 14%, rgba(169, 134, 255, 0.25), transparent 27%),
-        radial-gradient(circle at 50% 100%, rgba(67, 217, 255, 0.10), transparent 33%),
-        linear-gradient(145deg, var(--bg-2), var(--bg-1) 58%, #030814);
-      overflow-x: hidden;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      pointer-events: none;
-      opacity: 0.10;
-      background-image:
-        linear-gradient(rgba(105, 198, 255, 0.45) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(105, 198, 255, 0.45) 1px, transparent 1px);
-      background-size: 46px 46px;
-      mask-image: linear-gradient(to bottom, black, transparent 92%);
-    }
-
-    button, input { font: inherit; }
-
-    .shell {
-      width: min(1220px, calc(100% - 28px));
-      margin: 0 auto;
-      padding: 22px 0 42px;
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 18px;
-    }
-
-    .back-link,
-    .home-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      min-height: 44px;
-      padding: 10px 15px;
-      border: 1px solid var(--line);
-      border-radius: 13px;
-      color: var(--text);
-      background: rgba(8, 25, 47, 0.80);
-      text-decoration: none;
-      font-weight: 800;
-      transition: transform 160ms ease, border-color 160ms ease;
-    }
-
-    .back-link:hover,
-    .home-link:hover,
-    .back-link:focus-visible,
-    .home-link:focus-visible {
-      transform: translateY(-2px);
-      border-color: var(--cyan);
-      outline: none;
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      display: grid;
-      grid-template-columns: 1.35fr 0.65fr;
-      align-items: center;
-      min-height: 330px;
-      padding: 42px;
-      border: 1px solid var(--line);
-      border-radius: 30px;
-      background:
-        linear-gradient(135deg, rgba(100, 43, 118, 0.86), rgba(23, 79, 130, 0.83)),
-        var(--panel);
-      box-shadow: var(--shadow);
-    }
-
-    .hero::before {
-      content: "";
-      position: absolute;
-      width: 330px;
-      height: 330px;
-      right: -120px;
-      top: -170px;
-      border: 44px solid rgba(255, 255, 255, 0.07);
-      border-radius: 50%;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 13px;
-      border: 1px solid rgba(255, 255, 255, 0.22);
-      border-radius: 999px;
-      color: #fff1e8;
-      background: rgba(5, 13, 31, 0.24);
-      font-size: 0.82rem;
-      font-weight: 900;
-      letter-spacing: 0.09em;
-    }
-
-    h1 {
-      max-width: 760px;
-      margin: 17px 0 13px;
-      font-size: clamp(2.2rem, 5vw, 4.5rem);
-      line-height: 1.03;
-      letter-spacing: -0.045em;
-    }
-
-    .hero p {
-      max-width: 720px;
-      margin: 0;
-      color: #e1e8f3;
-      font-size: clamp(1rem, 1.8vw, 1.18rem);
-      line-height: 1.65;
-    }
-
-    .hero-visual {
-      position: relative;
-      z-index: 1;
-      display: grid;
-      place-items: center;
-    }
-
-    .code-window {
-      width: min(330px, 100%);
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.18);
-      border-radius: 19px;
-      background: #071426;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.36);
-      transform: rotate(2deg);
-    }
-
-    .code-head {
-      display: flex;
-      gap: 7px;
-      padding: 12px;
-      background: #0d223b;
-    }
-
-    .code-head i {
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-    }
-
-    .code-head i:nth-child(1) { background: #ff6b6b; }
-    .code-head i:nth-child(2) { background: #ffd166; }
-    .code-head i:nth-child(3) { background: #46dd9a; }
-
-    .code-window pre {
-      margin: 0;
-      padding: 22px;
-      color: #c9efff;
-      font: 0.9rem/1.7 Consolas, "Courier New", monospace;
-      white-space: pre-wrap;
-    }
-
-    .progress-panel {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 13px;
-      align-items: center;
-      margin: 22px 0 34px;
-      padding: 16px 18px;
-      border: 1px solid var(--line);
-      border-radius: 17px;
-      background: rgba(10, 27, 51, 0.80);
-    }
-
-    .progress-panel strong { color: var(--cyan); }
-
-    .progress-track {
-      height: 11px;
-      overflow: hidden;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.08);
-    }
-
-    .progress-track i {
-      display: block;
-      width: 0;
-      height: 100%;
-      border-radius: inherit;
-      background: linear-gradient(90deg, var(--pink), var(--orange), var(--yellow));
-      transition: width 260ms ease;
-    }
-
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-
-    .section-head h2 {
-      margin: 0;
-      font-size: clamp(1.55rem, 3vw, 2.15rem);
-    }
-
-    .section-head p {
-      margin: 6px 0 0;
-      color: var(--muted);
-    }
-
-    .topic-nav {
-      display: grid;
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .topic-nav a {
-      display: grid;
-      place-items: center;
-      min-height: 54px;
-      padding: 9px;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      color: var(--text);
-      background: rgba(14, 32, 58, 0.76);
-      text-decoration: none;
-      font-weight: 900;
-      transition: transform 160ms ease, background 160ms ease;
-    }
-
-    .topic-nav a:hover,
-    .topic-nav a:focus-visible {
-      transform: translateY(-3px);
-      background: rgba(109, 70, 170, 0.78);
-      outline: none;
-    }
-
-    .days {
-      display: grid;
-      gap: 18px;
-    }
-
-    .day-card {
-      --accent: var(--orange);
-      overflow: hidden;
-      border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
-      border-radius: 23px;
-      background: var(--panel);
-      box-shadow: 0 13px 34px rgba(0, 0, 0, 0.22);
-    }
-
-    .day-card:nth-child(2) { --accent: var(--violet); }
-    .day-card:nth-child(3) { --accent: var(--cyan); }
-    .day-card:nth-child(4) { --accent: var(--pink); }
-    .day-card:nth-child(5) { --accent: var(--green); }
-    .day-card:nth-child(6) { --accent: var(--yellow); }
-
-    .day-heading {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 15px;
-      align-items: center;
-      width: 100%;
-      padding: 20px;
-      border: 0;
-      color: var(--text);
-      background: transparent;
-      text-align: left;
-      cursor: pointer;
-    }
-
-    .day-heading:hover { background: rgba(255, 255, 255, 0.035); }
-
-    .day-icon {
-      width: 58px;
-      height: 58px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 18px;
-      font-size: 1.8rem;
-      background: color-mix(in srgb, var(--accent) 18%, transparent);
-    }
-
-    .day-title small {
-      display: block;
-      margin-bottom: 4px;
-      color: var(--accent);
-      font-weight: 1000;
-      letter-spacing: 0.12em;
-    }
-
-    .day-title h3 {
-      margin: 0;
-      font-size: 1.23rem;
-    }
-
-    .chevron {
-      font-size: 1.25rem;
-      transition: transform 180ms ease;
-    }
-
-    .day-card.open .chevron { transform: rotate(180deg); }
-
-    .day-content {
-      display: none;
-      padding: 0 20px 22px;
-    }
-
-    .day-card.open .day-content { display: block; }
-
-    .lesson-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .lesson {
-      padding: 16px;
-      border: 1px solid rgba(255, 255, 255, 0.09);
-      border-radius: 16px;
-      background: rgba(4, 17, 34, 0.48);
-    }
-
-    .lesson h4 {
-      margin: 0 0 9px;
-      color: #ffffff;
-      font-size: 1rem;
-    }
-
-    .lesson p,
-    .lesson li {
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
-    .lesson ul {
-      margin: 8px 0 0;
-      padding-left: 19px;
-    }
-
-    .lesson code {
-      color: #b5efff;
-      font-family: Consolas, "Courier New", monospace;
-    }
-
-    .code-example {
-      grid-column: 1 / -1;
-      position: relative;
-      margin-top: 2px;
-      overflow: hidden;
-      border-radius: 16px;
-      background: #061224;
-    }
-
-    .code-example pre {
-      margin: 0;
-      padding: 18px;
-      color: #d9f6ff;
-      font: 0.92rem/1.65 Consolas, "Courier New", monospace;
-      white-space: pre-wrap;
-    }
-
-    .copy-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      padding: 7px 10px;
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      border-radius: 10px;
-      color: white;
-      background: #173454;
-      cursor: pointer;
-    }
-
-    .day-footer {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: center;
-      margin-top: 16px;
-      padding-top: 15px;
-      border-top: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    .complete-button {
-      min-height: 42px;
-      padding: 9px 14px;
-      border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
-      border-radius: 12px;
-      color: white;
-      background: color-mix(in srgb, var(--accent) 18%, transparent);
-      cursor: pointer;
-      font-weight: 900;
-    }
-
-    .complete-button.done {
-      color: #032417;
-      background: var(--green);
-    }
-
-    .next-box {
-      margin-top: 24px;
-      padding: 24px;
-      border: 1px solid rgba(255, 209, 102, 0.27);
-      border-radius: 22px;
-      background: linear-gradient(135deg, rgba(87, 61, 5, 0.72), rgba(55, 27, 71, 0.72));
-    }
-
-    .next-box h2 { margin: 0 0 8px; }
-    .next-box p { color: var(--muted); }
-
-    .next-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .next-actions a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 44px;
-      padding: 10px 15px;
-      border-radius: 12px;
-      color: #08111d;
-      background: var(--yellow);
-      text-decoration: none;
-      font-weight: 900;
-    }
-
-    .next-actions a.secondary {
-      color: white;
-      background: rgba(255, 255, 255, 0.09);
-      border: 1px solid rgba(255, 255, 255, 0.13);
-    }
-
-    footer {
-      padding: 28px 0 5px;
-      color: #8099ad;
-      text-align: center;
-      font-size: 0.86rem;
-    }
-
-    @media (max-width: 940px) {
-      .hero { grid-template-columns: 1fr; }
-      .hero-visual { display: none; }
-      .topic-nav { grid-template-columns: repeat(3, 1fr); }
-    }
-
-    @media (max-width: 680px) {
-      .shell { width: min(100% - 18px, 1220px); padding-top: 10px; }
-      .topbar { align-items: stretch; flex-direction: column; }
-      .hero { min-height: auto; padding: 26px 21px; border-radius: 22px; }
-      .progress-panel { grid-template-columns: 1fr auto; }
-      .progress-track { grid-column: 1 / -1; order: 3; }
-      .topic-nav { grid-template-columns: repeat(2, 1fr); }
-      .lesson-grid { grid-template-columns: 1fr; }
-      .code-example { grid-column: auto; }
-      .day-heading { grid-template-columns: auto 1fr; }
-      .chevron { grid-column: 2; justify-self: end; }
-      .day-footer { align-items: stretch; flex-direction: column; }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
-    }
-  </style>
-</head>
-
-<body>
-  <main class="shell">
-    <nav class="topbar" aria-label="Seitennavigation">
-      <a class="back-link" href="../">← Zurück zu LF05</a>
-      <a class="home-link" href="/">⌂ Zur Lernplattform</a>
-    </nav>
-
-    <header class="hero">
-      <div>
-        <span class="eyebrow">📘 LF05 · LERNEN</span>
-        <h1>Python und Software verstehen</h1>
-        <p>
-          Lerne die Grundlagen von Software, Algorithmen und Python in sechs kompakten Tagesmodulen.
-          Öffne ein Thema, arbeite die Beispiele durch und markiere den Lerntag als abgeschlossen.
-        </p>
-      </div>
-
-      <div class="hero-visual" aria-hidden="true">
-        <div class="code-window">
-          <div class="code-head"><i></i><i></i><i></i></div>
-          <pre><span style="color:#ff8daf">name</span> = <span style="color:#ffd166">"Ayhan"</span>
-<span style="color:#8ee7ff">if</span> name:
-    <span style="color:#8ee7ff">print</span>(<span style="color:#ffd166">"LF05 starten!"</span>)</pre>
-        </div>
-      </div>
-    </header>
-
-    <section class="progress-panel" aria-label="Lernfortschritt">
-      <strong id="progressText">0 von 6 Tagen abgeschlossen</strong>
-      <div class="progress-track"><i id="progressBar"></i></div>
-      <span id="progressPercent">0 %</span>
-    </section>
-
-    <section aria-labelledby="module-title">
-      <div class="section-head">
-        <div>
-          <h2 id="module-title">Lernmodule Tag 1–6</h2>
-          <p>Vom Softwarebegriff bis zu Schleifen und Debugging.</p>
-        </div>
-      </div>
-
-      <nav class="topic-nav" aria-label="Direkt zu einem Lerntag">
-        <a href="#tag1">Tag 1</a>
-        <a href="#tag2">Tag 2</a>
-        <a href="#tag3">Tag 3</a>
-        <a href="#tag4">Tag 4</a>
-        <a href="#tag5">Tag 5</a>
-        <a href="#tag6">Tag 6</a>
-      </nav>
-
-      <div class="days">
-        <article class="day-card open" id="tag1" data-day="1">
-          <button class="day-heading" type="button" aria-expanded="true">
-            <span class="day-icon">🧩</span>
-            <span class="day-title"><small>TAG 1</small><h3>Softwaregrundlagen und Betriebssysteme</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>System- und Anwendungssoftware</h4><p><b>Systemsoftware</b> verwaltet Hardware und stellt grundlegende Dienste bereit. <b>Anwendungssoftware</b> unterstützt konkrete Aufgaben der Benutzerinnen und Benutzer.</p></section>
-              <section class="lesson"><h4>Standard- und Individualsoftware</h4><p>Standardsoftware wird für viele Kunden entwickelt. Individualsoftware wird für konkrete Anforderungen eines Unternehmens erstellt oder angepasst.</p></section>
-              <section class="lesson"><h4>Rolle des Betriebssystems</h4><p>Das Betriebssystem vermittelt zwischen Hardware, Programmen und Menschen. Es verwaltet Arbeitsspeicher, Prozesse, Dateien und Geräte.</p></section>
-              <section class="lesson"><h4>Eingebettete Systeme</h4><p>Eingebettete Systeme erledigen definierte Aufgaben innerhalb eines Geräts, zum Beispiel in einer Waschmaschine, einem Router oder einem Fahrzeugsteuergerät.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre># Software-Beispiel
-betriebssystem = "Windows"
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10152d">
+<meta name="description" content="LF05 Lernen: ausführliche Lernmaterialien für Tag 1 bis Tag 5 mit Begriffen, Beispielen, Tipps und Selbstkontrollen.">
+<title>LF05 Lernen – Tag 1 bis Tag 5</title>
+<style>
+:root{--bg:#060d19;--panel:#0d2038;--text:#f7fbff;--muted:#b4c6d7;--line:#ffffff1c;--cyan:#47d9ff;--violet:#a181ff;--orange:#ff9858;--green:#45dc96;--red:#ff6e82;--yellow:#ffd166;--shadow:0 22px 58px #0006}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--text);font-family:"Segoe UI",Arial,sans-serif;background:radial-gradient(circle at 7% 7%,#ff88552a,transparent 27%),radial-gradient(circle at 93% 10%,#8d64ff30,transparent 29%),linear-gradient(145deg,#19102e,#07182d 56%,var(--bg))}body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.1;background-image:linear-gradient(#70ceff55 1px,transparent 1px),linear-gradient(90deg,#70ceff55 1px,transparent 1px);background-size:46px 46px}button{font:inherit}.hidden{display:none!important}.shell{width:min(1200px,calc(100% - 22px));margin:auto;padding:15px 0 36px}.top{display:flex;justify-content:space-between;gap:10px;margin-bottom:14px}.top a{min-height:43px;padding:9px 14px;border:1px solid var(--line);border-radius:13px;color:#fff;background:#0b2947;text-decoration:none;font-weight:850}.hero{padding:36px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(135deg,#7442addd,#225e91dd);box-shadow:var(--shadow)}.eyebrow{display:inline-block;padding:7px 12px;border-radius:999px;background:#07162c77;font-size:.78rem;font-weight:950;letter-spacing:.09em}h1{margin:14px 0 9px;font-size:clamp(2.25rem,5vw,4.35rem);line-height:1.03}.hero p{max-width:850px;margin:0;color:#e0e9f3;line-height:1.65}.overview{display:grid;grid-template-columns:1fr 330px;gap:14px;margin:15px 0}.progress-box,.glossary-box{padding:18px;border:1px solid var(--line);border-radius:19px;background:#0b2440e8}.progress-head{display:flex;justify-content:space-between;gap:10px}.progress{height:10px;margin-top:12px;overflow:hidden;border-radius:999px;background:#ffffff12}.progress i{display:block;width:0;height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan),var(--green));transition:.3s}.glossary-box b{color:var(--yellow)}.glossary-box p{margin:6px 0 0;color:var(--muted);line-height:1.5}.day-nav{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin-bottom:16px}.day-nav a{padding:11px;border:1px solid var(--line);border-radius:13px;color:#fff;background:#0d2948;text-align:center;text-decoration:none;font-weight:900}.days{display:grid;gap:15px}.day{--accent:var(--orange);overflow:hidden;border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);border-radius:22px;background:#0a1e37ed}.day:nth-child(2){--accent:var(--violet)}.day:nth-child(3){--accent:var(--cyan)}.day:nth-child(4){--accent:var(--red)}.day:nth-child(5){--accent:var(--green)}.day-head{width:100%;display:grid;grid-template-columns:58px 1fr auto;gap:13px;align-items:center;padding:18px;border:0;color:#fff;background:transparent;text-align:left;cursor:pointer}.day-head:hover{background:#ffffff08}.icon{width:55px;height:55px;display:grid;place-items:center;border-radius:17px;background:color-mix(in srgb,var(--accent) 18%,transparent);font-size:1.75rem}.day-title small{color:var(--accent);font-weight:1000;letter-spacing:.12em}.day-title h2{margin:4px 0 0;font-size:1.28rem}.arrow{font-size:1.35rem;transition:.2s}.day.open .arrow{transform:rotate(180deg)}.content{display:none;padding:0 18px 20px}.day.open .content{display:block}.summary{padding:15px;border-left:4px solid var(--accent);border-radius:12px;background:#122b49;color:#dfeaf2;line-height:1.6}.section{margin-top:17px}.section h3{margin:0 0 10px;color:var(--accent)}.terms{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.term{padding:13px;border:1px solid #ffffff12;border-radius:13px;background:#0e2946}.term b{display:block;margin-bottom:5px;color:#fff}.term p{margin:0;color:var(--muted);line-height:1.48}.examples{display:grid;grid-template-columns:1fr 1fr;gap:10px}.example{padding:14px;border-radius:14px;background:#07172b}.example h4{margin:0 0 8px}.example p,.example li{color:var(--muted);line-height:1.5}.example ul{margin:7px 0 0;padding-left:18px}pre{overflow:auto;margin:9px 0 0;padding:14px;border-radius:12px;background:#041020;color:#d7f5ff;font:0.9rem/1.6 Consolas,monospace;white-space:pre-wrap}.boxes{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.box{padding:13px;border:1px solid #ffffff13;border-radius:13px}.tip{background:#15364e}.warning{background:#482238}.exam{background:#383226}.box b{display:block;margin-bottom:5px}.box p{margin:0;color:#d9e5ed;line-height:1.48}.self{margin-top:15px;padding:14px;border:1px solid #45dc9650;border-radius:14px;background:#10382d}.self h4{margin:0 0 9px}.self label{display:block;margin:7px 0;color:#dce9f1}.self input{accent-color:var(--green)}.day-foot{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:15px;padding-top:13px;border-top:1px solid #ffffff10}.done{padding:9px 13px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);border-radius:11px;color:#fff;background:color-mix(in srgb,var(--accent) 18%,transparent);cursor:pointer;font-weight:900}.done.active{color:#052216;background:var(--green)}footer{padding:26px;text-align:center;color:#819aae}@media(max-width:850px){.overview{grid-template-columns:1fr}.day-nav{grid-template-columns:repeat(5,1fr)}.terms,.examples{grid-template-columns:1fr}.boxes{grid-template-columns:1fr}}@media(max-width:580px){.top{flex-direction:column}.hero{padding:24px 20px}.day-nav{grid-template-columns:1fr 1fr}.day-head{grid-template-columns:48px 1fr}.arrow{grid-column:2;justify-self:end}.icon{width:47px;height:47px}.day-foot{align-items:stretch;flex-direction:column}}
+</style></head>
+<body><main class="shell"><nav class="top"><a href="../">← Zurück zu LF05</a><a href="/">⌂ Lernplattform</a></nav><header class="hero"><span class="eyebrow">📘 LF05 · LERNEN</span><h1>Tag 1–5 ausführlich lernen</h1><p>Kurze Begriffsdefinitionen, verständliche Zusammenfassungen, typische Beispiele, häufige Fehler und LZK-/IHK-nahe Prüfungstipps. Tag 6 ist bewusst nicht enthalten, weil dieser Unterrichtsabschnitt noch nicht behandelt wurde.</p></header><section class="overview"><div class="progress-box"><div class="progress-head"><b id="progressText">0 von 5 Tagen abgeschlossen</b><span id="percent">0 %</span></div><div class="progress"><i id="bar"></i></div></div><aside class="glossary-box"><b>So lernst du am besten</b><p>Begriff lesen → Beispiel nachvollziehen → typischen Fehler prüfen → Selbstkontrolle beantworten → Tag als gelernt markieren.</p></aside></section><nav class="day-nav"><a href="#tag1">Tag 1</a><a href="#tag2">Tag 2</a><a href="#tag3">Tag 3</a><a href="#tag4">Tag 4</a><a href="#tag5">Tag 5</a></nav><section class="days">
+
+<article class="day open" id="tag1" data-day="1"><button class="day-head"><span class="icon">🧩</span><span class="day-title"><small>TAG 1</small><h2>Softwaregrundlagen und Programmierung</h2></span><span class="arrow">⌄</span></button><div class="content"><div class="summary"><b>Zusammenfassung:</b> Software wird nach Aufgabe und Zielgruppe unterschieden. Systemsoftware ermöglicht den Betrieb eines Computers; Anwendungssoftware löst konkrete Benutzeraufgaben. Programme werden aus Quellcode erzeugt und durch Compiler oder Interpreter verarbeitet.</div><section class="section"><h3>Kurze Begriffsdefinitionen</h3><div class="terms">
+<div class="term"><b>Systemsoftware</b><p>Software, die Hardware verwaltet und grundlegende Dienste bereitstellt, zum Beispiel Betriebssystem und Treiber.</p></div><div class="term"><b>Anwendungssoftware</b><p>Software für konkrete Aufgaben, zum Beispiel Textverarbeitung, Browser oder Warenwirtschaft.</p></div><div class="term"><b>Standardsoftware</b><p>Für viele Kunden entwickelte Lösung mit allgemein nutzbaren Funktionen.</p></div><div class="term"><b>Individualsoftware</b><p>Für einen bestimmten Auftraggeber oder besonderen Geschäftsprozess entwickelte Lösung.</p></div><div class="term"><b>Betriebssystem</b><p>Schnittstelle zwischen Hardware, Anwendungen und Benutzern; verwaltet Prozesse, Speicher, Dateien und Geräte.</p></div><div class="term"><b>Treiber</b><p>Software, die dem Betriebssystem die Kommunikation mit einem Gerät ermöglicht.</p></div><div class="term"><b>Embedded System</b><p>Rechnersystem innerhalb eines Geräts mit einer klar begrenzten Aufgabe, etwa Router- oder Fahrzeugsteuerung.</p></div><div class="term"><b>Quellcode</b><p>Lesbarer Programmtext, der in einer Programmiersprache geschrieben wurde.</p></div><div class="term"><b>Compiler</b><p>Übersetzt ein Programm vor der Ausführung in eine ausführbare Form.</p></div><div class="term"><b>Interpreter</b><p>Verarbeitet und führt Quellcode während der Programmausführung schrittweise aus.</p></div><div class="term"><b>Debugging</b><p>Systematisches Finden, Eingrenzen und Beheben von Fehlern.</p></div><div class="term"><b>Jupyter Notebook</b><p>Arbeitsumgebung, in der Code, Ergebnisse und erklärender Text in Zellen kombiniert werden.</p></div></div></section><section class="section"><h3>Beispiele und Vergleich</h3><div class="examples"><div class="example"><h4>Software richtig einordnen</h4><ul><li>Windows: System- und Standardsoftware</li><li>Firefox: Anwendungs- und Standardsoftware</li><li>Router-Firmware: Systemsoftware eines Embedded Systems</li><li>Eigene Tourenplanung für eine Spedition: Individualsoftware</li></ul></div><div class="example"><h4>Kleines Python-Beispiel</h4><pre>betriebssystem = "Linux"
 anwendung = "Firefox"
-print(betriebssystem, anwendung)</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: Systemsoftware ermöglicht den Betrieb, Anwendungssoftware löst konkrete Aufgaben.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
+print(betriebssystem, anwendung)</pre><p>Variablen speichern Werte; <code>print()</code> gibt Werte aus.</p></div></div></section><div class="boxes"><div class="box tip"><b>💡 Merksatz</b><p>Systemsoftware betreibt das System. Anwendungssoftware unterstützt die Arbeit des Benutzers.</p></div><div class="box warning"><b>⚠️ Typischer Fehler</b><p>„Vorinstalliert“ bedeutet nicht automatisch Systemsoftware. Entscheidend ist die Aufgabe der Software.</p></div><div class="box exam"><b>🎯 Prüfungs-Tipp</b><p>Bei „Welche Softwareart?“ zuerst Zweck, Zielgruppe und Anpassungsgrad markieren.</p></div></div><div class="self"><h4>✅ Selbstkontrolle</h4><label><input type="checkbox"> Ich kann System- und Anwendungssoftware unterscheiden.</label><label><input type="checkbox"> Ich kann Standard- und Individualsoftware anhand eines Szenarios bestimmen.</label><label><input type="checkbox"> Ich kann Compiler und Interpreter kurz erklären.</label></div><div class="day-foot"><span>Schlüsselwörter: Softwarearten · Betriebssystem · Compiler · Interpreter</span><button class="done">Als gelernt markieren</button></div></div></article>
 
-        <article class="day-card" id="tag2" data-day="2">
-          <button class="day-heading" type="button" aria-expanded="false">
-            <span class="day-icon">🧠</span>
-            <span class="day-title"><small>TAG 2</small><h3>Algorithmen, PAP, Struktogramme und Pseudocode</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>Algorithmus und Programm</h4><p>Ein Algorithmus ist eine eindeutige, endliche Abfolge von Schritten. Ein Programm ist die Umsetzung eines Algorithmus in einer Programmiersprache.</p></section>
-              <section class="lesson"><h4>PAP und Struktogramm</h4><p>Ein Programmablaufplan stellt Abläufe mit Symbolen dar. Ein Struktogramm zeigt Kontrollstrukturen in verschachtelten Blöcken.</p></section>
-              <section class="lesson"><h4>Use-Case-Diagramm</h4><p>Use Cases beschreiben, welche Funktionen ein System für externe Akteure bereitstellt.</p></section>
-              <section class="lesson"><h4>Pseudocode</h4><p>Pseudocode beschreibt Programmlogik unabhängig von einer konkreten Programmiersprache und hilft vor dem Codieren.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre># Pseudocode: Login
-name ← EINGABE
-WENN name = "admin" ODER name = "trainer"
-    AUSGABE "Login erfolgreich"
+<article class="day" id="tag2" data-day="2"><button class="day-head"><span class="icon">🧠</span><span class="day-title"><small>TAG 2</small><h2>Algorithmen und Modellierung</h2></span><span class="arrow">⌄</span></button><div class="content"><div class="summary"><b>Zusammenfassung:</b> Ein Algorithmus beschreibt eine eindeutige und endliche Lösungsfolge. Vor dem Programmieren helfen Pseudocode, PAP, Struktogramm, Entscheidungstabelle und Use-Case-Diagramm dabei, Anforderungen und Abläufe verständlich darzustellen.</div><section class="section"><h3>Kurze Begriffsdefinitionen</h3><div class="terms"><div class="term"><b>Algorithmus</b><p>Eindeutige, ausführbare und endliche Folge von Schritten zur Lösung eines Problems.</p></div><div class="term"><b>Programm</b><p>Technische Umsetzung eines Algorithmus in einer Programmiersprache.</p></div><div class="term"><b>Sequenz</b><p>Anweisungen werden nacheinander ausgeführt.</p></div><div class="term"><b>Auswahl</b><p>Eine Bedingung entscheidet, welcher Weg ausgeführt wird.</p></div><div class="term"><b>Wiederholung</b><p>Anweisungen werden mehrfach ausgeführt, gezählt oder bedingungsgesteuert.</p></div><div class="term"><b>Pseudocode</b><p>Sprachunabhängige, gut lesbare Beschreibung der Programmlogik.</p></div><div class="term"><b>PAP</b><p>Programmablaufplan: grafische Darstellung eines Ablaufs mit genormten Symbolen.</p></div><div class="term"><b>Struktogramm</b><p>Blockorientierte Darstellung von Sequenz, Auswahl und Wiederholung.</p></div><div class="term"><b>Use Case</b><p>Beschreibt eine Funktion, die ein System für einen externen Akteur bereitstellt.</p></div><div class="term"><b>Akteur</b><p>Externe Rolle, Person oder anderes System, das mit dem betrachteten System interagiert.</p></div><div class="term"><b>include</b><p>Zwingend eingebundener, wiederverwendeter Teilablauf eines Use Cases.</p></div><div class="term"><b>extend</b><p>Optionale Erweiterung eines Use Cases unter einer Bedingung.</p></div></div></section><section class="section"><h3>Symbole und Beispiele</h3><div class="examples"><div class="example"><h4>PAP-Symbole</h4><ul><li>Oval: Start oder Ende</li><li>Rechteck: Verarbeitung</li><li>Raute: Entscheidung</li><li>Parallelogramm: Ein- oder Ausgabe</li><li>Pfeil: Ablaufrichtung</li></ul></div><div class="example"><h4>Pseudocode: Login</h4><pre>Benutzername EINGEBEN
+Passwort EINGEBEN
+WENN Benutzername = "admin"
+  UND Passwort = "geheim"
+  AUSGABE "Zugriff erlaubt"
 SONST
-    AUSGABE "Login fehlgeschlagen"</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: Erst den Ablauf planen, dann den Code schreiben.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
+  AUSGABE "Zugriff verweigert"</pre></div><div class="example"><h4>Use Case: Online-Bücherei</h4><p>Akteur: Leser</p><ul><li>Buch suchen</li><li>Buch ausleihen</li><li>Ausleihe verlängern</li><li>Benutzer authentifizieren: möglicher include-Fall</li></ul></div><div class="example"><h4>Guter Algorithmus</h4><ul><li>eindeutig</li><li>endlich</li><li>ausführbar</li><li>deterministisch</li><li>zielgerichtet</li></ul></div></div></section><div class="boxes"><div class="box tip"><b>💡 Merksatz</b><p>Erst Problem und Ablauf planen, dann programmieren und testen.</p></div><div class="box warning"><b>⚠️ Typischer Fehler</b><p>PAP zeigt den Ablauf; Use Case zeigt Systemfunktionen aus Sicht der Akteure.</p></div><div class="box exam"><b>🎯 Prüfungs-Tipp</b><p>Bei Reihenfolgefragen immer Eingabe → Verarbeitung → Ausgabe prüfen.</p></div></div><div class="self"><h4>✅ Selbstkontrolle</h4><label><input type="checkbox"> Ich kann Algorithmus und Programm unterscheiden.</label><label><input type="checkbox"> Ich kenne die wichtigsten PAP-Symbole.</label><label><input type="checkbox"> Ich kann einen kleinen Ablauf in Pseudocode formulieren.</label></div><div class="day-foot"><span>Schlüsselwörter: Algorithmus · PAP · Struktogramm · Use Case · Pseudocode</span><button class="done">Als gelernt markieren</button></div></div></article>
 
-        <article class="day-card" id="tag3" data-day="3">
-          <button class="day-heading" type="button" aria-expanded="false">
-            <span class="day-icon">🔢</span>
-            <span class="day-title"><small>TAG 3</small><h3>Variablen, Datentypen und Operatoren</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>Variablen</h4><p>Variablen speichern Werte unter einem Namen. Der Wert und sogar der Datentyp können sich während der Programmausführung ändern.</p></section>
-              <section class="lesson"><h4>Wichtige Datentypen</h4><ul><li><code>int</code>: ganze Zahl</li><li><code>float</code>: Kommazahl</li><li><code>str</code>: Text</li><li><code>bool</code>: Wahrheitswert</li></ul></section>
-              <section class="lesson"><h4>Type Casting</h4><p>Mit <code>int()</code>, <code>float()</code>, <code>str()</code> und <code>bool()</code> werden Werte umgewandelt.</p></section>
-              <section class="lesson"><h4>Operatoren</h4><p><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code>, <code>%</code> und <code>**</code> führen Berechnungen durch. Vergleichsoperatoren liefern <code>True</code> oder <code>False</code>.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre>alter = 30
-preis = 19.99
-name = "Python"
-aktiv = True
+<article class="day" id="tag3" data-day="3"><button class="day-head"><span class="icon">🔢</span><span class="day-title"><small>TAG 3</small><h2>Variablen, Datentypen, Operatoren und EVA</h2></span><span class="arrow">⌄</span></button><div class="content"><div class="summary"><b>Zusammenfassung:</b> Variablen speichern Werte. Der Datentyp bestimmt, welche Operationen möglich sind. Python verwendet unter anderem int, float, str und bool. Eingaben über <code>input()</code> sind zunächst Strings und müssen für Berechnungen häufig konvertiert werden.</div><section class="section"><h3>Kurze Begriffsdefinitionen</h3><div class="terms"><div class="term"><b>Variable</b><p>Name, der auf einen gespeicherten Wert verweist.</p></div><div class="term"><b>Datentyp</b><p>Legt Bedeutung, Darstellung und erlaubte Operationen eines Wertes fest.</p></div><div class="term"><b>int</b><p>Ganze Zahl, zum Beispiel 42 oder -7.</p></div><div class="term"><b>float</b><p>Kommazahl mit Dezimalpunkt, zum Beispiel 3.14.</p></div><div class="term"><b>str</b><p>Zeichenkette in Anführungszeichen, zum Beispiel "Python".</p></div><div class="term"><b>bool</b><p>Wahrheitswert: True oder False.</p></div><div class="term"><b>Type Casting</b><p>Gezielte Umwandlung eines Wertes, etwa mit int(), float(), str() oder bool().</p></div><div class="term"><b>Operator</b><p>Zeichen oder Wort für eine Operation, etwa +, %, ==, and.</p></div><div class="term"><b>EVA-Prinzip</b><p>Grundstruktur: Eingabe, Verarbeitung, Ausgabe.</p></div><div class="term"><b>TypeError</b><p>Operation ist für die beteiligten Datentypen nicht zulässig.</p></div><div class="term"><b>ValueError</b><p>Datentyp wäre grundsätzlich möglich, aber der konkrete Wert ist ungültig.</p></div><div class="term"><b>Debugging</b><p>Fehler reproduzieren, Meldung lesen, Ursache eingrenzen, korrigieren und erneut testen.</p></div></div></section><section class="section"><h3>Operatoren und Beispiele</h3><div class="examples"><div class="example"><h4>Rechenoperatoren</h4><ul><li><code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li><li><code>//</code>: Ganzzahldivision</li><li><code>%</code>: Divisionsrest</li><li><code>**</code>: Potenz</li></ul><pre>print(17 // 5)  # 3
+print(17 % 5)   # 2
+print(2 ** 3)   # 8</pre></div><div class="example"><h4>Eingabe und Umwandlung</h4><pre>eingabe = input("Anzahl: ")
+anzahl = int(eingabe)
+print(anzahl * 5)</pre><p>Ohne <code>int()</code> bleibt die Eingabe ein String.</p></div><div class="example"><h4>Vergleiche</h4><pre>alter = 18
+print(alter >= 18)  # True
+print(alter == 18)  # True
+print(alter != 18)  # False</pre></div><div class="example"><h4>Variablennamen</h4><ul><li>erlaubt: <code>kunden_name</code>, <code>anzahl2</code></li><li>nicht erlaubt: <code>2anzahl</code>, Leerzeichen</li><li>sprechende Namen statt <code>x1</code></li></ul></div></div></section><div class="boxes"><div class="box tip"><b>💡 Merksatz</b><p><code>input()</code> liefert immer <code>str</code>. Vor dem Rechnen den benötigten Datentyp herstellen.</p></div><div class="box warning"><b>⚠️ Typischer Fehler</b><p><code>"5" + 2</code> erzeugt TypeError; <code>int("abc")</code> erzeugt ValueError.</p></div><div class="box exam"><b>🎯 Prüfungs-Tipp</b><p>Bei Codeanalyse zuerst Variablenwerte und Datentypen Zeile für Zeile notieren.</p></div></div><div class="self"><h4>✅ Selbstkontrolle</h4><label><input type="checkbox"> Ich kann int, float, str und bool erkennen.</label><label><input type="checkbox"> Ich kenne den Unterschied zwischen /, // und %.</label><label><input type="checkbox"> Ich kann TypeError und ValueError unterscheiden.</label></div><div class="day-foot"><span>Schlüsselwörter: Variable · Datentyp · Casting · Operator · EVA · Debugging</span><button class="done">Als gelernt markieren</button></div></div></article>
 
-print(type(alter))
-print(17 // 5, 17 % 5)</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: Der Datentyp bestimmt, welche Operationen sinnvoll möglich sind.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
+<article class="day" id="tag4" data-day="4"><button class="day-head"><span class="icon">🔤</span><span class="day-title"><small>TAG 4</small><h2>Strings, Indizes, Slicing und Formatierung</h2></span><span class="arrow">⌄</span></button><div class="content"><div class="summary"><b>Zusammenfassung:</b> Strings speichern Text. Einzelne Zeichen werden über Indizes gelesen; Teilstrings entstehen durch Slicing. Stringmethoden liefern neue Strings, weil Strings unveränderbar sind.</div><section class="section"><h3>Kurze Begriffsdefinitionen</h3><div class="terms"><div class="term"><b>String</b><p>Folge von Zeichen in einfachen oder doppelten Anführungszeichen.</p></div><div class="term"><b>Index</b><p>Position eines Zeichens; das erste Zeichen hat Index 0.</p></div><div class="term"><b>Negativer Index</b><p>Zählt vom Ende; -1 bezeichnet das letzte Zeichen.</p></div><div class="term"><b>Slicing</b><p>Auslesen eines Teilbereichs mit <code>[start:ende:schritt]</code>.</p></div><div class="term"><b>Escape-Zeichen</b><p>Sonderdarstellung mit Backslash, zum Beispiel \n, \t oder \".</p></div><div class="term"><b>Immutable</b><p>Unveränderbar: Methoden erzeugen einen neuen String statt den alten direkt zu ändern.</p></div><div class="term"><b>f-String</b><p>Formatierter String, der Variablen in geschweiften Klammern einsetzt.</p></div><div class="term"><b>Stringmethode</b><p>Funktion eines Stringobjekts, etwa lower(), strip() oder replace().</p></div></div></section><section class="section"><h3>Methoden und Beispiele</h3><div class="examples"><div class="example"><h4>Index und Slicing</h4><pre>text = "Python"
+print(text[0])    # P
+print(text[-1])   # n
+print(text[1:4])  # yth
+print(text[::-1]) # nohtyP</pre></div><div class="example"><h4>Nützliche Methoden</h4><ul><li><code>strip()</code>: äußere Leerzeichen entfernen</li><li><code>lower()</code>, <code>upper()</code>: Schreibweise ändern</li><li><code>replace(a,b)</code>: Text ersetzen</li><li><code>count(x)</code>: Vorkommen zählen</li><li><code>isdigit()</code>, <code>isalpha()</code>, <code>isalnum()</code>: Zeichen prüfen</li></ul></div><div class="example"><h4>f-String und Kassenbeleg</h4><pre>artikel = "Tastatur"
+preis = 39.90
+print(f"{artikel}: {preis:.2f} EUR")</pre></div><div class="example"><h4>Dateiendung prüfen</h4><pre>datei = input("Datei: ").strip()
+if datei.lower().endswith(".pdf"):
+    print("PDF erkannt")</pre></div></div></section><div class="boxes"><div class="box tip"><b>💡 Merksatz</b><p>Beim Slicing ist der Endindex nicht enthalten.</p></div><div class="box warning"><b>⚠️ Typischer Fehler</b><p><code>text.upper()</code> ändert <code>text</code> nur, wenn das Ergebnis wieder gespeichert wird.</p></div><div class="box exam"><b>🎯 Prüfungs-Tipp</b><p>Indizes immer unter den String schreiben; dadurch werden negative Indizes und Slices sicherer.</p></div></div><div class="self"><h4>✅ Selbstkontrolle</h4><label><input type="checkbox"> Ich kann positive und negative Indizes bestimmen.</label><label><input type="checkbox"> Ich kann ein Slicing-Ergebnis berechnen.</label><label><input type="checkbox"> Ich kenne strip(), lower(), replace() und isdigit().</label></div><div class="day-foot"><span>Schlüsselwörter: String · Index · Slicing · Escape · Methode · f-String</span><button class="done">Als gelernt markieren</button></div></div></article>
 
-        <article class="day-card" id="tag4" data-day="4">
-          <button class="day-heading" type="button" aria-expanded="false">
-            <span class="day-icon">🔤</span>
-            <span class="day-title"><small>TAG 4</small><h3>Strings, Indizes, Slicing und Methoden</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>Strings und Escape-Zeichen</h4><p>Strings speichern Text. <code>\n</code> erzeugt eine neue Zeile, <code>\t</code> einen Tabulator und <code>\\</code> einen Backslash.</p></section>
-              <section class="lesson"><h4>Indizes und Slicing</h4><p>Ein einzelnes Zeichen wird über einen Index gelesen. Mit <code>text[start:ende]</code> wird ein Teilstring erzeugt.</p></section>
-              <section class="lesson"><h4>Unveränderbarkeit</h4><p>String-Methoden erzeugen einen neuen String. Der ursprüngliche String verändert sich nur, wenn das Ergebnis wieder gespeichert wird.</p></section>
-              <section class="lesson"><h4>Nützliche Methoden</h4><p><code>strip()</code>, <code>lower()</code>, <code>upper()</code>, <code>replace()</code>, <code>count()</code>, <code>isalnum()</code>.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre>text = "  Hallo Python Hallo  "
-text = text.strip().lower()
-print(text.replace("hallo", "hi"))
-print("Python 3".isalnum())</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: String-Methoden liefern meist einen neuen Wert zurück.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
-
-        <article class="day-card" id="tag5" data-day="5">
-          <button class="day-heading" type="button" aria-expanded="false">
-            <span class="day-icon">🚦</span>
-            <span class="day-title"><small>TAG 5</small><h3>if, elif, else und boolesche Logik</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>Bedingungen</h4><p><code>if</code> prüft eine Bedingung. <code>elif</code> ergänzt weitere Fälle. <code>else</code> behandelt alle übrigen Fälle.</p></section>
-              <section class="lesson"><h4>Boolesche Operatoren</h4><p><code>and</code> verlangt zwei wahre Bedingungen, <code>or</code> mindestens eine und <code>not</code> kehrt einen Wahrheitswert um.</p></section>
-              <section class="lesson"><h4>Einrückung</h4><p>Python erkennt zusammengehörige Anweisungen an der Einrückung. Falsche Einrückung verändert die Logik oder verursacht Fehler.</p></section>
-              <section class="lesson"><h4>Typische Anwendung</h4><p>Login-Prüfung, Altersprüfung, Ampelsteuerung, Versandkosten oder Menüauswahl.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre>farbe = input("Ampelfarbe: ").lower()
-
-if farbe == "rot":
-    print("Stehen bleiben")
-elif farbe == "gelb":
-    print("Bereit machen")
-elif farbe == "grün":
-    print("Losfahren")
-else:
-    print("Ungültige Farbe")</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: Bedingungen steuern, welcher Programmteil ausgeführt wird.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
-
-        <article class="day-card" id="tag6" data-day="6">
-          <button class="day-heading" type="button" aria-expanded="false">
-            <span class="day-icon">🔁</span>
-            <span class="day-title"><small>TAG 6</small><h3>for, while, range, break, continue und Debugging</h3></span>
-            <span class="chevron">⌄</span>
-          </button>
-          <div class="day-content">
-            <div class="lesson-grid">
-              <section class="lesson"><h4>for-Schleife</h4><p>Eine <code>for</code>-Schleife durchläuft Elemente einer Folge oder einen mit <code>range()</code> erzeugten Zahlenbereich.</p></section>
-              <section class="lesson"><h4>while-Schleife</h4><p>Eine <code>while</code>-Schleife läuft, solange ihre Bedingung wahr ist. Die Bedingung muss irgendwann falsch werden.</p></section>
-              <section class="lesson"><h4>break und continue</h4><p><code>break</code> beendet eine Schleife. <code>continue</code> überspringt nur den aktuellen Durchlauf.</p></section>
-              <section class="lesson"><h4>Debugging</h4><p>Fehler werden durch Lesen der Meldung, Prüfen von Datentypen, Zwischenausgaben und schrittweises Testen eingegrenzt.</p></section>
-              <section class="code-example"><button class="copy-button" type="button">Kopieren</button><pre>for zahl in range(1, 11):
-    if zahl == 5:
-        continue
-    if zahl == 9:
+<article class="day" id="tag5" data-day="5"><button class="day-head"><span class="icon">🚦</span><span class="day-title"><small>TAG 5</small><h2>Kontrollstrukturen, Schleifen und Debugging</h2></span><span class="arrow">⌄</span></button><div class="content">
+<div class="summary"><b>Zusammenfassung:</b> Kontrollstrukturen steuern, welche Programmschritte ausgeführt oder wiederholt werden. <code>if</code>, <code>elif</code> und <code>else</code> treffen Entscheidungen. <code>for</code> eignet sich meist für bekannte Wiederholungen, <code>while</code> für bedingungsabhängige Wiederholungen. <code>range()</code> erzeugt Zahlenfolgen. <code>break</code> beendet eine Schleife, <code>continue</code> überspringt nur den aktuellen Durchlauf. Eine Endlosschleife entsteht, wenn die Abbruchbedingung niemals erreicht wird.</div>
+<section class="section"><h3>Kurze Begriffsdefinitionen</h3><div class="terms">
+<div class="term"><b>if</b><p>Führt einen eingerückten Codeblock aus, wenn die Bedingung <code>True</code> ist.</p></div><div class="term"><b>elif</b><p>Prüft eine weitere Bedingung, wenn vorherige Bedingungen nicht erfüllt waren.</p></div><div class="term"><b>else</b><p>Auffangfall ohne eigene Bedingung, wenn kein vorheriger Fall zutrifft.</p></div><div class="term"><b>and</b><p>Verknüpft Bedingungen. Das Gesamtergebnis ist nur dann True, wenn beide Bedingungen True sind.</p></div><div class="term"><b>or</b><p>Das Gesamtergebnis ist True, wenn mindestens eine Bedingung True ist.</p></div><div class="term"><b>not</b><p>Kehrt einen Wahrheitswert um: aus True wird False und umgekehrt.</p></div>
+<div class="term"><b>for-Schleife</b><p>Durchläuft nacheinander Elemente einer Folge, eines Strings, einer Liste oder eines mit <code>range()</code> erzeugten Zahlenbereichs.</p></div><div class="term"><b>while-Schleife</b><p>Wiederholt einen Codeblock, solange die Bedingung True bleibt. Die Anzahl der Wiederholungen ist häufig vorher nicht bekannt.</p></div><div class="term"><b>range()</b><p>Erzeugt einen Zahlenbereich für Schleifen. Der Endwert ist immer ausgeschlossen.</p></div><div class="term"><b>break</b><p>Beendet die aktuell laufende Schleife sofort. Das Programm wird nach der Schleife fortgesetzt.</p></div><div class="term"><b>continue</b><p>Überspringt den restlichen Code des aktuellen Schleifendurchlaufs und startet den nächsten Durchlauf.</p></div><div class="term"><b>Endlosschleife</b><p>Schleife ohne erreichbares Ende, weil die Bedingung dauerhaft True bleibt oder der Kontrollwert nicht verändert wird.</p></div>
+<div class="term"><b>Zähler</b><p>Variable, die während einer Schleife erhöht oder verringert wird, zum Beispiel mit <code>+= 1</code> oder <code>-= 1</code>.</p></div><div class="term"><b>Iteration</b><p>Ein einzelner Durchlauf einer Schleife.</p></div><div class="term"><b>Verschachtelte Schleife</b><p>Schleife innerhalb einer anderen Schleife. Die innere Schleife läuft für jeden äußeren Durchlauf.</p></div><div class="term"><b>Debugging</b><p>Systematisches Finden, Erklären und Beheben von Syntax-, Laufzeit- und Logikfehlern.</p></div>
+</div></section>
+<section class="section"><h3>for-Schleife und range()</h3><div class="examples">
+<div class="example"><h4>Bekannte Anzahl Wiederholungen</h4><pre>for zahl in range(5):
+    print(zahl)</pre><p>Ausgabe: 0, 1, 2, 3, 4. Der Endwert 5 ist nicht enthalten.</p></div>
+<div class="example"><h4>range(start, stop, step)</h4><pre>for zahl in range(2, 11, 2):
+    print(zahl)</pre><p>Ausgabe: 2, 4, 6, 8, 10. Start = 2, Ende = 11 ausgeschlossen, Schrittweite = 2.</p></div>
+<div class="example"><h4>Liste durchlaufen</h4><pre>server = ["DC01", "WEB01", "DB01"]
+for name in server:
+    print(name)</pre><p>Die Schleife verwendet direkt jedes Element der Liste.</p></div>
+<div class="example"><h4>Verschachtelte Schleifen</h4><pre>for zeile in range(2):
+    for spalte in range(3):
+        print(zeile, spalte)</pre><p>Die innere Schleife läuft 3-mal für jeden der 2 äußeren Durchläufe: insgesamt 6 Ausgaben.</p></div>
+</div></section>
+<section class="section"><h3>while-Schleife und Abbruchbedingung</h3><div class="examples">
+<div class="example"><h4>Kontrollierter Zähler</h4><pre>x = 0
+while x < 5:
+    print(x)
+    x += 1</pre><p><code>x += 1</code> sorgt dafür, dass die Abbruchbedingung erreicht wird.</p></div>
+<div class="example"><h4>Login mit maximal 3 Versuchen</h4><pre>versuche = 0
+while versuche < 3:
+    passwort = input("Passwort: ")
+    if passwort == "geheim":
+        print("Zugriff erlaubt")
         break
-    print(zahl)</pre></section>
-            </div>
-            <div class="day-footer"><span>Merksatz: for zählt strukturiert, while wiederholt abhängig von einer Bedingung.</span><button class="complete-button" type="button">Als gelernt markieren</button></div>
-          </div>
-        </article>
-      </div>
-    </section>
+    versuche += 1</pre><p>Die Schleife endet bei Erfolg durch <code>break</code> oder nach drei Fehlversuchen durch die while-Bedingung.</p></div>
+<div class="example"><h4>Menü bis zur Auswahl 0</h4><pre>auswahl = ""
+while auswahl != "0":
+    auswahl = input("1 = Start, 0 = Ende: ")
+    if auswahl == "1":
+        print("Programm startet")</pre><p>Die Anzahl der Menüaufrufe ist nicht vorher bekannt. Deshalb passt <code>while</code>.</p></div>
+<div class="example"><h4>Endlosschleife vermeiden</h4><pre># Fehlerhaft:
+x = 1
+while x < 5:
+    print(x)
 
-    <section class="next-box">
-      <h2>Bereit zum Üben?</h2>
-      <p>Nutze nach den Lernmodulen die Lernkontrollen oder starte ein interaktives Lernspiel.</p>
-      <div class="next-actions">
-        <a href="../quiz/">Zu den Lernkontrollen →</a>
-        <a class="secondary" href="../games/">Lernspiele öffnen</a>
-      </div>
-    </section>
+# Korrekt:
+x = 1
+while x < 5:
+    print(x)
+    x += 1</pre><p>In der fehlerhaften Variante ändert sich <code>x</code> nicht. Die Bedingung bleibt immer True.</p></div>
+</div></section>
+<section class="section"><h3>break und continue</h3><div class="examples">
+<div class="example"><h4>break beendet die Schleife</h4><pre>for zahl in range(10):
+    if zahl == 5:
+        break
+    print(zahl)</pre><p>Ausgabe: 0, 1, 2, 3, 4. Bei 5 endet die Schleife vollständig.</p></div>
+<div class="example"><h4>continue überspringt einen Durchlauf</h4><pre>for zahl in range(5):
+    if zahl == 2:
+        continue
+    print(zahl)</pre><p>Ausgabe: 0, 1, 3, 4. Nur der Durchlauf mit 2 wird übersprungen.</p></div>
+<div class="example"><h4>Ungültige Werte überspringen</h4><pre>werte = [5, -2, 8, 0, 3]
+for wert in werte:
+    if wert <= 0:
+        continue
+    print(wert)</pre><p>Nur positive Werte werden weiterverarbeitet.</p></div>
+<div class="example"><h4>Suche beim Treffer beenden</h4><pre>for server in serverliste:
+    if server == "WEB01":
+        print("Treffer gefunden")
+        break</pre><p>Nach dem Treffer sind weitere Prüfungen nicht mehr notwendig.</p></div>
+</div></section>
+<section class="section"><h3>Kontrollstrukturen in Szenarien</h3><div class="examples">
+<div class="example"><h4>FizzBuzz</h4><pre>for zahl in range(1, 101):
+    if zahl % 15 == 0:
+        print("FizzBuzz")
+    elif zahl % 3 == 0:
+        print("Fizz")
+    elif zahl % 5 == 0:
+        print("Buzz")
+    else:
+        print(zahl)</pre><p>Der speziellste Fall, teilbar durch 15, muss zuerst geprüft werden.</p></div>
+<div class="example"><h4>Ampelsteuerung</h4><pre>farbe = input("Ampelfarbe: ").lower()
+if farbe == "rot":
+    print("stehen")
+elif farbe == "gelb":
+    print("warten")
+elif farbe == "grün":
+    print("fahren")
+else:
+    print("ungültige Eingabe")</pre></div>
+<div class="example"><h4>Grenzwerte richtig prüfen</h4><pre>if preis >= 100:
+    rabatt = 0.10
+else:
+    rabatt = 0</pre><p>„Ab 100 Euro“ schließt den Wert 100 ein. Deshalb wird <code>>=</code> verwendet.</p></div>
+<div class="example"><h4>Boolesche Operatoren</h4><pre>if benutzer == "admin" and aktiv:
+    print("Zugriff")
 
-    <footer>LF05 · Software zur Verwaltung von Daten anpassen</footer>
-  </main>
-
-  <script>
-    const STORAGE_KEY = "lf05_lernen_fortschritt_v1";
-    const completed = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]"));
-
-    document.querySelectorAll(".day-heading").forEach(button => {
-      button.addEventListener("click", () => {
-        const card = button.closest(".day-card");
-        const isOpen = card.classList.toggle("open");
-        button.setAttribute("aria-expanded", String(isOpen));
-      });
-    });
-
-    document.querySelectorAll(".complete-button").forEach(button => {
-      const card = button.closest(".day-card");
-      const day = card.dataset.day;
-
-      if (completed.has(day)) {
-        button.classList.add("done");
-        button.textContent = "✓ Gelernt";
-      }
-
-      button.addEventListener("click", () => {
-        if (completed.has(day)) {
-          completed.delete(day);
-          button.classList.remove("done");
-          button.textContent = "Als gelernt markieren";
-        } else {
-          completed.add(day);
-          button.classList.add("done");
-          button.textContent = "✓ Gelernt";
-        }
-
-        localStorage.setItem(STORAGE_KEY, JSON.stringify([...completed]));
-        updateProgress();
-      });
-    });
-
-    document.querySelectorAll(".copy-button").forEach(button => {
-      button.addEventListener("click", async () => {
-        const code = button.nextElementSibling.textContent;
-
-        try {
-          await navigator.clipboard.writeText(code);
-          button.textContent = "Kopiert ✓";
-        } catch {
-          button.textContent = "Kopieren nicht möglich";
-        }
-
-        window.setTimeout(() => button.textContent = "Kopieren", 1400);
-      });
-    });
-
-    function updateProgress() {
-      const count = completed.size;
-      const percent = Math.round((count / 6) * 100);
-
-      document.getElementById("progressText").textContent =
-        `${count} von 6 Tagen abgeschlossen`;
-
-      document.getElementById("progressPercent").textContent = `${percent} %`;
-      document.getElementById("progressBar").style.width = `${percent}%`;
-    }
-
-    updateProgress();
-  </script>
-</body>
-</html>
+if rolle == "admin" or rolle == "trainer":
+    print("Menü anzeigen")</pre></div>
+</div></section>
+<section class="section"><h3>Debugging-Grundlagen bei Schleifen</h3><div class="terms">
+<div class="term"><b>SyntaxError</b><p>Python-Syntax ist verletzt, zum Beispiel fehlender Doppelpunkt: <code>while x &lt; 5</code>.</p></div><div class="term"><b>IndentationError</b><p>Ein Codeblock ist nicht oder falsch eingerückt.</p></div><div class="term"><b>TypeError</b><p>Eine Operation passt nicht zu den Datentypen, zum Beispiel <code>"5" + 2</code>.</p></div><div class="term"><b>ValueError</b><p>Der Typ wäre möglich, der konkrete Wert aber nicht, zum Beispiel <code>int("abc")</code>.</p></div><div class="term"><b>NameError</b><p>Eine Variable wurde vor der Verwendung nicht definiert.</p></div><div class="term"><b>Logikfehler</b><p>Das Programm läuft, liefert aber ein fachlich falsches Ergebnis, etwa durch <code>range(1, 5)</code> statt <code>range(1, 6)</code>.</p></div>
+</div><div class="example" style="margin-top:10px"><h4>Systematische Fehlersuche</h4><ol><li>Fehler reproduzieren.</li><li>Fehlermeldung und betroffene Zeile lesen.</li><li>Variablenwerte und Datentypen prüfen.</li><li>Schleifenbedingung und Zählerveränderung kontrollieren.</li><li>Grenzwerte testen.</li><li>Korrigieren und erneut ausführen.</li></ol></div></section>
+<div class="boxes"><div class="box tip"><b>💡 Merksatz</b><p>Bekannte Anzahl oder bekannte Folge: meist <code>for</code>. Wiederholen bis zu einer Bedingung: meist <code>while</code>.</p></div><div class="box warning"><b>⚠️ Typische Fehler</b><p>Endwert bei <code>range()</code> eingeschlossen denken, Zähler in while nicht verändern, <code>break</code> mit <code>continue</code> verwechseln oder Code falsch einrücken.</p></div><div class="box exam"><b>🎯 LZK-/IHK-Tipp</b><p>Erstelle bei Codeanalyse eine Tabelle mit Durchlauf, Zähler, Bedingung und Ausgabe. So werden Grenzwerte und Schleifenfehler sichtbar.</p></div></div>
+<div class="self"><h4>✅ Selbstkontrolle</h4><label><input type="checkbox"> Ich kann erklären, wann for und wann while sinnvoll ist.</label><label><input type="checkbox"> Ich kann die Ausgabe von range(start, stop, step) bestimmen.</label><label><input type="checkbox"> Ich kann break und continue unterscheiden.</label><label><input type="checkbox"> Ich erkenne eine mögliche Endlosschleife.</label><label><input type="checkbox"> Ich kann einen Schleifendurchlauf zeilenweise analysieren.</label></div><div class="day-foot"><span>Schlüsselwörter: if · elif · else · for · while · range · break · continue · Endlosschleife · Debugging</span><button class="done">Als gelernt markieren</button></div>
+</div></article>
+</section><footer>LF05 · Lernen · Tag 1–5</footer></main>
+<script>
+const KEY='lf05_lernen_tag1_5_v2';let done=new Set(JSON.parse(localStorage.getItem(KEY)||'[]'));const $=id=>document.getElementById(id);document.querySelectorAll('.day-head').forEach(b=>b.onclick=()=>b.closest('.day').classList.toggle('open'));document.querySelectorAll('.day').forEach(day=>{const btn=day.querySelector('.done'),id=day.dataset.day;if(done.has(id)){btn.classList.add('active');btn.textContent='✓ Gelernt'}btn.onclick=()=>{if(done.has(id)){done.delete(id);btn.classList.remove('active');btn.textContent='Als gelernt markieren'}else{done.add(id);btn.classList.add('active');btn.textContent='✓ Gelernt'}localStorage.setItem(KEY,JSON.stringify([...done]));update()}});function update(){const n=done.size,p=Math.round(n/5*100);$('progressText').textContent=`${n} von 5 Tagen abgeschlossen`;$('percent').textContent=`${p} %`;$('bar').style.width=`${p}%`}update();
+</script></body></html>
