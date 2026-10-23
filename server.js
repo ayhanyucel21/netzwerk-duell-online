@@ -28,8 +28,6 @@ const ALLOWED_AVATARS = new Set([
   'bug-hunter'
 ]);
 
-const ROUND_DURATION_MS = 20000;
-const ROUND_RESULT_MS = 2600;
 const TOTAL_ROUNDS = 15;
 
 function shuffle(array) {
@@ -74,8 +72,11 @@ function publicQuestion(room) {
     question: source.question,
     code: source.code,
     options: shuffle(source.options),
-    deadline: game.deadline,
-    answeredPlayerIds: [...game.answers.keys()]
+    answeredPlayerIds: [...game.answers.keys()],
+    answered: game.answers.size,
+    expected: room.players.filter(item => item.connected).length,
+    resultShown: game.resultShown,
+    nextReadyPlayerIds: [...game.nextReady]
   };
 }
 
@@ -93,29 +94,28 @@ function startRound(room) {
   if (!room.game || room.status !== 'playing') return;
   if (room.game.round >= room.game.totalRounds) return finishServerGame(room);
   room.game.answers = new Map();
+  room.game.nextReady = new Set();
+  room.game.resultShown = false;
   room.game.roundClosing = false;
-  room.game.deadline = Date.now() + ROUND_DURATION_MS;
+  room.game.correctAnswerCount = 0;
   clearRoundTimer(room);
-  room.game.timer = setTimeout(() => closeRound(room), ROUND_DURATION_MS + 250);
   emitRound(room);
 }
 
 function closeRound(room) {
   if (!room.game || room.game.roundClosing || room.status !== 'playing') return;
   room.game.roundClosing = true;
+  room.game.resultShown = true;
   clearRoundTimer(room);
   const source = DUEL_QUESTIONS[room.game.questionIndexes[room.game.round]];
   io.to(room.code).emit('python-round-result', {
     round: room.game.round,
     correctAnswer: source.answer,
     explanation: source.explanation,
-    players: room.players.map(publicPlayer)
+    players: room.players.map(publicPlayer),
+    nextReady: 0,
+    expected: room.players.filter(item => item.connected).length
   });
-  setTimeout(() => {
-    if (!rooms.has(room.code) || room.status !== 'playing') return;
-    room.game.round += 1;
-    startRound(room);
-  }, ROUND_RESULT_MS);
 }
 
 function finishServerGame(room) {
@@ -455,7 +455,9 @@ io.on('connection', socket => {
       totalRounds: TOTAL_ROUNDS,
       questionIndexes: selectBalancedQuestionIndexes(),
       answers: new Map(),
-      deadline: 0,
+      correctAnswerCount: 0,
+      nextReady: new Set(),
+      resultShown: false,
       roundClosing: false,
       timer: null
     };
@@ -499,18 +501,23 @@ io.on('connection', socket => {
     const { room, player } = result;
     const game = room.game;
     if (!game || room.status !== 'playing') return callback({ ok: false, message: 'Kein aktives Spiel.' });
-    if (game.roundClosing || Date.now() > game.deadline) return callback({ ok: false, message: 'Antwortzeit abgelaufen.' });
+    if (game.roundClosing) return callback({ ok: false, message: 'Diese Runde wird bereits ausgewertet.' });
     if (Number(data.round) !== game.round) return callback({ ok: false, message: 'Diese Runde ist nicht mehr aktuell.' });
     if (game.answers.has(player.playerId)) return callback({ ok: false, message: 'Antwort wurde bereits abgegeben.' });
 
     const question = DUEL_QUESTIONS[game.questionIndexes[game.round]];
     const value = String(data.value ?? '');
     const correct = value === question.answer;
-    const remainingMs = Math.max(0, game.deadline - Date.now());
-    const speedBonus = correct ? Math.min(50, Math.floor(remainingMs / 400)) : 0;
+    let correctRank = null;
+    let speedBonus = 0;
+    if (correct) {
+      game.correctAnswerCount += 1;
+      correctRank = game.correctAnswerCount;
+      speedBonus = [50, 35, 20, 10][correctRank - 1] || 5;
+    }
     const points = correct ? 100 + speedBonus : 0;
 
-    game.answers.set(player.playerId, { value, correct, points, at: Date.now() });
+    game.answers.set(player.playerId, { value, correct, points, correctRank, at: Date.now() });
     player.score += points;
     if (correct) player.right += 1;
     else player.wrong += 1;
@@ -522,10 +529,31 @@ io.on('connection', socket => {
       answered: game.answers.size,
       expected: room.players.filter(item => item.connected).length
     });
-    callback({ ok: true, correct, points, speedBonus });
+    callback({ ok: true, correct, points, speedBonus, correctRank });
 
     const connectedIds = room.players.filter(item => item.connected).map(item => item.playerId);
     if (connectedIds.length > 0 && connectedIds.every(id => game.answers.has(id))) closeRound(room);
+  });
+
+  socket.on('python-next-question', (data = {}, callback = () => {}) => {
+    const result = resolveRoomAndPlayer(socket, data.roomCode);
+    if (result.error) return callback({ ok: false, message: result.error });
+    const { room, player } = result;
+    const game = room.game;
+    if (!game || room.status !== 'playing') return callback({ ok: false, message: 'Kein aktives Spiel.' });
+    if (!game.resultShown) return callback({ ok: false, message: 'Die aktuelle Runde ist noch nicht ausgewertet.' });
+    if (Number(data.round) !== game.round) return callback({ ok: false, message: 'Diese Runde ist nicht mehr aktuell.' });
+
+    game.nextReady.add(player.playerId);
+    const connectedIds = room.players.filter(item => item.connected).map(item => item.playerId);
+    const ready = connectedIds.filter(id => game.nextReady.has(id)).length;
+    io.to(room.code).emit('python-next-progress', { round: game.round, ready, expected: connectedIds.length });
+    callback({ ok: true, ready, expected: connectedIds.length });
+
+    if (connectedIds.length > 0 && connectedIds.every(id => game.nextReady.has(id))) {
+      game.round += 1;
+      startRound(room);
+    }
   });
 
   // Used later by duel.html for the live scoreboard.

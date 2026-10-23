@@ -11,7 +11,10 @@ const quizQuestions = [
       "bool"
     ],
     "answer": "int",
-    "explanation": "Kundennummern werden als ganze Zahlen gespeichert."
+    "explanation": "Kundennummern werden als ganze Zahlen gespeichert.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen float, str, bool verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-001",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Quiz",
@@ -25,7 +28,10 @@ const quizQuestions = [
       "bool"
     ],
     "answer": "str",
-    "explanation": "input() liefert immer einen String."
+    "explanation": "input() liefert immer einen String.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int, float, bool verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-002",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -39,7 +45,10 @@ const quizQuestions = [
       "float"
     ],
     "answer": "bool",
-    "explanation": "True und False gehören zum Typ bool."
+    "explanation": "True und False gehören zum Typ bool.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen str, int, float verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-003",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -53,7 +62,10 @@ const quizQuestions = [
       "str"
     ],
     "answer": "float",
-    "explanation": "float speichert Kommazahlen."
+    "explanation": "float speichert Kommazahlen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int, bool, str verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-004",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -67,7 +79,10 @@ const quizQuestions = [
       "int"
     ],
     "answer": "list",
-    "explanation": "Listen speichern mehrere Werte."
+    "explanation": "Listen speichern mehrere Werte.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen bool, float, int verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-005",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -81,7 +96,10 @@ const quizQuestions = [
       "%"
     ],
     "answer": "==",
-    "explanation": "== vergleicht zwei Werte."
+    "explanation": "== vergleicht zwei Werte.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen =, +, % verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-006",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Quiz",
@@ -95,7 +113,10 @@ const quizQuestions = [
       "len(passwort) > 80"
     ],
     "answer": "len(passwort) >= 8",
-    "explanation": "Der Grenzwert 8 wird eingeschlossen."
+    "explanation": "Der Grenzwert 8 wird eingeschlossen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen len(passwort) <= 8, passwort == 8, len(passwort) > 80 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-007",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -109,7 +130,10 @@ const quizQuestions = [
       "break"
     ],
     "answer": "for",
-    "explanation": "for wird für bekannte Mengen eingesetzt."
+    "explanation": "for wird für bekannte Mengen eingesetzt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen if, else, break verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-008",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -123,7 +147,10 @@ const quizQuestions = [
       "elif"
     ],
     "answer": "break",
-    "explanation": "break beendet die Schleife sofort."
+    "explanation": "break beendet die Schleife sofort.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen continue, pass, elif verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-009",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -137,7 +164,10 @@ const quizQuestions = [
       "text()"
     ],
     "answer": "len()",
-    "explanation": "len() liefert die Anzahl der Zeichen."
+    "explanation": "len() liefert die Anzahl der Zeichen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen size(), count(), text() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-010",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -151,7 +181,10 @@ const quizQuestions = [
       "tiny()"
     ],
     "answer": "lower()",
-    "explanation": "lower() wandelt Text in Kleinbuchstaben um."
+    "explanation": "lower() wandelt Text in Kleinbuchstaben um.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen small(), down(), tiny() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-011",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Quiz",
@@ -165,7 +198,10 @@ const quizQuestions = [
       "trimspace()"
     ],
     "answer": "strip()",
-    "explanation": "strip() entfernt führende und nachfolgende Leerzeichen."
+    "explanation": "strip() entfernt führende und nachfolgende Leerzeichen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen clean(), remove(), trimspace() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-012",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -179,7 +215,10 @@ const quizQuestions = [
       "int()"
     ],
     "answer": "print()",
-    "explanation": "print() schreibt Daten in die Konsole."
+    "explanation": "print() schreibt Daten in die Konsole.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen input(), len(), int() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-013",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -193,7 +232,10 @@ const quizQuestions = [
       "bool()"
     ],
     "answer": "int()",
-    "explanation": "int() erzeugt eine Ganzzahl."
+    "explanation": "int() erzeugt eine Ganzzahl.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen float(), str(), bool() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-014",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -207,7 +249,10 @@ const quizQuestions = [
       "bool()"
     ],
     "answer": "float()",
-    "explanation": "float() erzeugt eine Kommazahl."
+    "explanation": "float() erzeugt eine Kommazahl.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int(), str(), bool() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-015",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -221,7 +266,10 @@ const quizQuestions = [
       "4"
     ],
     "answer": "0",
-    "explanation": "Python beginnt die Zählung bei 0."
+    "explanation": "Python beginnt die Zählung bei 0.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen 1, -1, 4 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-016",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Quiz",
@@ -235,7 +283,10 @@ const quizQuestions = [
       "0"
     ],
     "answer": "3",
-    "explanation": "Der letzte Index ist Länge minus 1."
+    "explanation": "Der letzte Index ist Länge minus 1.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen 4, 1, 0 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-017",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -249,7 +300,10 @@ const quizQuestions = [
       "break"
     ],
     "answer": "if",
-    "explanation": "if startet eine Bedingung."
+    "explanation": "if startet eine Bedingung.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, while, break verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-018",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -263,7 +317,10 @@ const quizQuestions = [
       "pass"
     ],
     "answer": "else",
-    "explanation": "else wird bei falscher Bedingung ausgeführt."
+    "explanation": "else wird bei falscher Bedingung ausgeführt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, while, pass verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-019",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -277,7 +334,10 @@ const quizQuestions = [
       "range"
     ],
     "answer": "elif",
-    "explanation": "elif ergänzt weitere Bedingungen."
+    "explanation": "elif ergänzt weitere Bedingungen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen loop, break, range verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-020",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -291,7 +351,10 @@ const quizQuestions = [
       "elif"
     ],
     "answer": "while",
-    "explanation": "while arbeitet bedingungsgesteuert."
+    "explanation": "while arbeitet bedingungsgesteuert.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, if, elif verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-021",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Quiz",
@@ -305,7 +368,10 @@ const quizQuestions = [
       "loop(10)"
     ],
     "answer": "range(10)",
-    "explanation": "range(10) erzeugt die Werte 0 bis 9."
+    "explanation": "range(10) erzeugt die Werte 0 bis 9.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen range(11,20), while(10), loop(10) verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-022",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -319,7 +385,10 @@ const quizQuestions = [
       "Energie-Verarbeitung-Ausgabe"
     ],
     "answer": "Eingabe-Verarbeitung-Ausgabe",
-    "explanation": "EVA beschreibt den Grundablauf von Programmen."
+    "explanation": "EVA beschreibt den Grundablauf von Programmen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Einsatz-Verbindung-Anzeige, Ergebnis-Verarbeitung-Aktion, Energie-Verarbeitung-Ausgabe verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-023",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Quiz",
@@ -333,7 +402,10 @@ const quizQuestions = [
       "Firmware"
     ],
     "answer": "Individualsoftware",
-    "explanation": "Sie wird für einen bestimmten Kunden entwickelt."
+    "explanation": "Sie wird für einen bestimmten Kunden entwickelt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Standardsoftware, Systemsoftware, Firmware verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-024",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Quiz",
@@ -347,7 +419,10 @@ const quizQuestions = [
       "Treiber"
     ],
     "answer": "Standardsoftware",
-    "explanation": "Standardsoftware wird für viele Nutzer entwickelt."
+    "explanation": "Standardsoftware wird für viele Nutzer entwickelt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Individualsoftware, Firmware, Treiber verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "id": "QUIZ-025",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   }
 ];
 

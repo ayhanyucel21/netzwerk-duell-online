@@ -11,7 +11,10 @@ const codeBuilderQuestions = [
       "print(input)"
     ],
     "answer": "zahl = int(input())",
-    "explanation": "Die Eingabe wird eingelesen und konvertiert."
+    "explanation": "Die Eingabe wird eingelesen und konvertiert.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen input = zahl(), zahl = str(int), print(input) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-001",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Code Builder",
@@ -25,7 +28,10 @@ const codeBuilderQuestions = [
       "str = name"
     ],
     "answer": "name = input()",
-    "explanation": "input() liest Texteingaben ein."
+    "explanation": "input() liest Texteingaben ein.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen input(name), name = print(), str = name sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-002",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -39,7 +45,10 @@ const codeBuilderQuestions = [
       "show(name)"
     ],
     "answer": "print(name)",
-    "explanation": "print() erzeugt Konsolenausgaben."
+    "explanation": "print() erzeugt Konsolenausgaben.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen output(name), echo(name), show(name) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-003",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -53,7 +62,10 @@ const codeBuilderQuestions = [
       "if alter => 18:"
     ],
     "answer": "if alter >= 18:",
-    "explanation": "Nach einer if-Bedingung wird ein Doppelpunkt benötigt."
+    "explanation": "Nach einer if-Bedingung wird ein Doppelpunkt benötigt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen if alter >= 18, if (alter >= 18), if alter => 18: sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-004",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -67,7 +79,10 @@ const codeBuilderQuestions = [
       "alternative:"
     ],
     "answer": "else:",
-    "explanation": "else endet mit einem Doppelpunkt."
+    "explanation": "else endet mit einem Doppelpunkt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen else, otherwise:, alternative: sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-005",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -81,7 +96,10 @@ const codeBuilderQuestions = [
       "elif(note==2)"
     ],
     "answer": "elif note == 2:",
-    "explanation": "elif erweitert eine Verzweigung."
+    "explanation": "elif erweitert eine Verzweigung.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen elseif note == 2:, else if note == 2:, elif(note==2) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-006",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Code Builder",
@@ -95,7 +113,10 @@ const codeBuilderQuestions = [
       "while range(5):"
     ],
     "answer": "for i in range(5):",
-    "explanation": "So wird eine klassische for-Schleife geschrieben."
+    "explanation": "So wird eine klassische for-Schleife geschrieben.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen for(5):, loop range(5):, while range(5): sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-007",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -109,7 +130,10 @@ const codeBuilderQuestions = [
       "while = True"
     ],
     "answer": "while True:",
-    "explanation": "True ist ein boolescher Wert."
+    "explanation": "True ist ein boolescher Wert.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen while(true), loop True:, while = True sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-008",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -123,7 +147,10 @@ const codeBuilderQuestions = [
       "text.small()"
     ],
     "answer": "text = text.lower()",
-    "explanation": "lower() liefert einen neuen String."
+    "explanation": "lower() liefert einen neuen String.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text.lower, lower(text), text.small() sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-009",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -137,7 +164,10 @@ const codeBuilderQuestions = [
       "strip(text())"
     ],
     "answer": "text = text.strip()",
-    "explanation": "strip() entfernt führende und nachlaufende Leerzeichen."
+    "explanation": "strip() entfernt führende und nachlaufende Leerzeichen.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text.removeSpace(), text.trimspace(), strip(text()) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-010",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -151,7 +181,10 @@ const codeBuilderQuestions = [
       "zahl+"
     ],
     "answer": "zahl += 1",
-    "explanation": "+= erhöht eine Variable."
+    "explanation": "+= erhöht eine Variable.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen zahl =+ 1, ++zahl, zahl+ sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-011",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Code Builder",
@@ -165,7 +198,10 @@ const codeBuilderQuestions = [
       "server = <>"
     ],
     "answer": "server = []",
-    "explanation": "Listen werden mit [] angelegt."
+    "explanation": "Listen werden mit [] angelegt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen server = (), server = {}, server = <> sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-012",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -179,7 +215,10 @@ const codeBuilderQuestions = [
       "server.insert()"
     ],
     "answer": "server.append('DC01')",
-    "explanation": "append() fügt Elemente an Listen an."
+    "explanation": "append() fügt Elemente an Listen an.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen server.add('DC01'), server.push('DC01'), server.insert() sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-013",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -193,7 +232,10 @@ const codeBuilderQuestions = [
       "count(server)"
     ],
     "answer": "len(server)",
-    "explanation": "len() liefert die Anzahl der Elemente."
+    "explanation": "len() liefert die Anzahl der Elemente.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen size(server), length(server), count(server) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-014",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -207,7 +249,10 @@ const codeBuilderQuestions = [
       "string(zahl)"
     ],
     "answer": "str(zahl)",
-    "explanation": "str() konvertiert in einen String."
+    "explanation": "str() konvertiert in einen String.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text(zahl), convert(zahl), string(zahl) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-015",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -221,7 +266,10 @@ const codeBuilderQuestions = [
       "number(text)"
     ],
     "answer": "int(text)",
-    "explanation": "int() erzeugt eine Ganzzahl."
+    "explanation": "int() erzeugt eine Ganzzahl.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen integer(text), parse(text), number(text) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-016",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Code Builder",
@@ -235,7 +283,10 @@ const codeBuilderQuestions = [
       "if(admin)"
     ],
     "answer": "if name == 'admin':",
-    "explanation": "Vergleiche verwenden ==."
+    "explanation": "Vergleiche verwenden ==.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen if name = 'admin':, if name === 'admin':, if(admin) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-017",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -249,7 +300,10 @@ const codeBuilderQuestions = [
       "cancel"
     ],
     "answer": "break",
-    "explanation": "break beendet die Schleife."
+    "explanation": "break beendet die Schleife.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen stop, exitloop, cancel sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-018",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -263,7 +317,10 @@ const codeBuilderQuestions = [
       "jump"
     ],
     "answer": "continue",
-    "explanation": "continue überspringt den aktuellen Durchlauf."
+    "explanation": "continue überspringt den aktuellen Durchlauf.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen skip, next, jump sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-019",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -277,7 +334,10 @@ const codeBuilderQuestions = [
       "aktiv = 1"
     ],
     "answer": "aktiv = True",
-    "explanation": "Python verwendet True mit großem T."
+    "explanation": "Python verwendet True mit großem T.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen aktiv = true, aktiv = YES, aktiv = 1 sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-020",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -291,7 +351,10 @@ const codeBuilderQuestions = [
       "daten = <>"
     ],
     "answer": "daten = {}",
-    "explanation": "Dictionarys werden mit {} erstellt."
+    "explanation": "Dictionarys werden mit {} erstellt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen daten = [], daten = (), daten = <> sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-021",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Code Builder",
@@ -305,7 +368,10 @@ const codeBuilderQuestions = [
       "daten->name"
     ],
     "answer": "daten['name']",
-    "explanation": "So greift man auf einen Dictionary-Schlüssel zu."
+    "explanation": "So greift man auf einen Dictionary-Schlüssel zu.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen daten(name), daten.name(), daten->name sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-022",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -319,7 +385,10 @@ const codeBuilderQuestions = [
       "preis = [19.99]"
     ],
     "answer": "preis = 19.99",
-    "explanation": "19.99 ist ein float."
+    "explanation": "19.99 ist ein float.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen preis = '19.99', preis = True, preis = [19.99] sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-023",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Code Builder",
@@ -333,7 +402,10 @@ const codeBuilderQuestions = [
       "loop(10)"
     ],
     "answer": "range(10)",
-    "explanation": "range(10) erzeugt die Werte 0 bis 9."
+    "explanation": "range(10) erzeugt die Werte 0 bis 9.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen range(9), for(10), loop(10) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-024",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Code Builder",
@@ -347,7 +419,10 @@ const codeBuilderQuestions = [
       "write(name)"
     ],
     "answer": "print(f'Hallo {name}')",
-    "explanation": "f-Strings ermöglichen Variablenausgaben im Text."
+    "explanation": "f-Strings ermöglichen Variablenausgaben im Text.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen echo(name), show(name), write(name) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "id": "CODEBUILDER-025",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   }
 ];
 

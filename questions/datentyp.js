@@ -11,7 +11,10 @@ const datentypQuestions = [
       "str"
     ],
     "answer": "int",
-    "explanation": "42 ist eine ganze Zahl."
+    "explanation": "42 ist eine ganze Zahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen float, bool, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-001",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Datentyp Match",
@@ -25,7 +28,10 @@ const datentypQuestions = [
       "str"
     ],
     "answer": "float",
-    "explanation": "3.14 enthält Nachkommastellen."
+    "explanation": "3.14 enthält Nachkommastellen.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, bool, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-002",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -39,7 +45,10 @@ const datentypQuestions = [
       "str"
     ],
     "answer": "bool",
-    "explanation": "True ist ein Wahrheitswert."
+    "explanation": "True ist ein Wahrheitswert.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-003",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -53,7 +62,10 @@ const datentypQuestions = [
       "float"
     ],
     "answer": "bool",
-    "explanation": "False gehört zum Datentyp bool."
+    "explanation": "False gehört zum Datentyp bool.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, int, float passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-004",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -67,7 +79,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "str",
-    "explanation": "Text in Anführungszeichen ist ein String."
+    "explanation": "Text in Anführungszeichen ist ein String.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-005",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -81,7 +96,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "str",
-    "explanation": "Anführungszeichen bedeuten Text."
+    "explanation": "Anführungszeichen bedeuten Text.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-006",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Datentyp Match",
@@ -95,7 +113,10 @@ const datentypQuestions = [
       "int"
     ],
     "answer": "list",
-    "explanation": "Eckige Klammern erzeugen eine Liste."
+    "explanation": "Eckige Klammern erzeugen eine Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen tuple, str, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-007",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -109,7 +130,10 @@ const datentypQuestions = [
       "tuple"
     ],
     "answer": "list",
-    "explanation": "Leere Liste."
+    "explanation": "Leere Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, dict, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-008",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -123,7 +147,10 @@ const datentypQuestions = [
       "set"
     ],
     "answer": "tuple",
-    "explanation": "Runde Klammern erzeugen ein Tupel."
+    "explanation": "Runde Klammern erzeugen ein Tupel.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, dict, set passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-009",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -137,7 +164,10 @@ const datentypQuestions = [
       "tuple"
     ],
     "answer": "dict",
-    "explanation": "Schlüssel-Wert-Paare bilden ein Dictionary."
+    "explanation": "Schlüssel-Wert-Paare bilden ein Dictionary.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen set, list, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-010",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -151,7 +181,10 @@ const datentypQuestions = [
       "tuple"
     ],
     "answer": "set",
-    "explanation": "Menge ohne Schlüssel = Set."
+    "explanation": "Menge ohne Schlüssel = Set.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen dict, list, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-011",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Datentyp Match",
@@ -165,7 +198,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "str",
-    "explanation": "input() liefert standardmäßig Text."
+    "explanation": "input() liefert standardmäßig Text.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-012",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -179,7 +215,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "int",
-    "explanation": "int() erzeugt einen Integer."
+    "explanation": "int() erzeugt einen Integer.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-013",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -193,7 +232,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "float",
-    "explanation": "float() erzeugt eine Kommazahl."
+    "explanation": "float() erzeugt eine Kommazahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, str, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-014",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -207,7 +249,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "str",
-    "explanation": "str() wandelt in Text um."
+    "explanation": "str() wandelt in Text um.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-015",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -221,7 +266,10 @@ const datentypQuestions = [
       "str"
     ],
     "answer": "bool",
-    "explanation": "bool() liefert Wahrheitswerte."
+    "explanation": "bool() liefert Wahrheitswerte.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-016",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Datentyp Match",
@@ -235,7 +283,10 @@ const datentypQuestions = [
       "str"
     ],
     "answer": "bool",
-    "explanation": "Vergleiche liefern True oder False."
+    "explanation": "Vergleiche liefern True oder False.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-017",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -249,7 +300,10 @@ const datentypQuestions = [
       "list"
     ],
     "answer": "str",
-    "explanation": "Das Ergebnis ist 'AAA'."
+    "explanation": "Das Ergebnis ist 'AAA'.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, list passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-018",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -263,7 +317,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "int",
-    "explanation": "len() liefert eine ganze Zahl."
+    "explanation": "len() liefert eine ganze Zahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen float, str, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-019",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -277,7 +334,10 @@ const datentypQuestions = [
       "bool"
     ],
     "answer": "int",
-    "explanation": "Das erste Element ist die Zahl 1."
+    "explanation": "Das erste Element ist die Zahl 1.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, tuple, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-020",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -291,7 +351,10 @@ const datentypQuestions = [
       "dict"
     ],
     "answer": "list",
-    "explanation": "Eckige Klammern bedeuten Liste."
+    "explanation": "Eckige Klammern bedeuten Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen tuple, set, dict passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-021",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Datentyp Match",
@@ -305,7 +368,10 @@ const datentypQuestions = [
       "int"
     ],
     "answer": "str",
-    "explanation": "lower() gibt einen String zurück."
+    "explanation": "lower() gibt einen String zurück.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, bool, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-022",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -319,7 +385,10 @@ const datentypQuestions = [
       "float"
     ],
     "answer": "bool",
-    "explanation": "Das Ergebnis eines logischen Vergleichs ist bool."
+    "explanation": "Das Ergebnis eines logischen Vergleichs ist bool.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, str, float passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-023",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Datentyp Match",
@@ -333,7 +402,10 @@ const datentypQuestions = [
       "tuple"
     ],
     "answer": "range",
-    "explanation": "range() erzeugt ein Range-Objekt."
+    "explanation": "range() erzeugt ein Range-Objekt.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, int, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-024",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Datentyp Match",
@@ -347,7 +419,10 @@ const datentypQuestions = [
       "int"
     ],
     "answer": "NoneType",
-    "explanation": "None besitzt den speziellen Typ NoneType."
+    "explanation": "None besitzt den speziellen Typ NoneType.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen bool, str, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "id": "DATENTYP-025",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   }
 ];
 

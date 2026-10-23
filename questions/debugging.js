@@ -11,7 +11,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "TypeError",
-    "explanation": "String und Zahl können nicht direkt addiert werden."
+    "explanation": "String und Zahl können nicht direkt addiert werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, NameError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-001",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Debugging",
@@ -25,7 +28,10 @@ const debuggingQuestions = [
       "IndexError"
     ],
     "answer": "NameError",
-    "explanation": "Die Variable wurde nicht definiert."
+    "explanation": "Die Variable wurde nicht definiert.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, IndexError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-002",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -39,7 +45,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "ValueError",
-    "explanation": "Der Text kann nicht als Zahl interpretiert werden."
+    "explanation": "Der Text kann nicht als Zahl interpretiert werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-003",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -53,7 +62,10 @@ const debuggingQuestions = [
       "TypeError"
     ],
     "answer": "IndexError",
-    "explanation": "Index 5 existiert nicht."
+    "explanation": "Index 5 existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen NameError, ValueError, TypeError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-004",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -67,7 +79,10 @@ const debuggingQuestions = [
       "IndexError"
     ],
     "answer": "SyntaxError",
-    "explanation": "Der Doppelpunkt fehlt."
+    "explanation": "Der Doppelpunkt fehlt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, NameError, IndexError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-005",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -81,7 +96,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "NameError",
-    "explanation": "Die Funktion heißt len()."
+    "explanation": "Die Funktion heißt len().  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-006",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Debugging",
@@ -95,7 +113,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "TypeError",
-    "explanation": "Integer sind nicht indexierbar."
+    "explanation": "Integer sind nicht indexierbar.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-007",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -109,7 +130,10 @@ const debuggingQuestions = [
       "NameError"
     ],
     "answer": "KeyError",
-    "explanation": "Der Schlüssel existiert nicht."
+    "explanation": "Der Schlüssel existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen IndexError, TypeError, NameError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-008",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -123,7 +147,10 @@ const debuggingQuestions = [
       "SyntaxError"
     ],
     "answer": "ZeroDivisionError",
-    "explanation": "Eine Division durch Null ist nicht erlaubt."
+    "explanation": "Eine Division durch Null ist nicht erlaubt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, SyntaxError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-009",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -137,7 +164,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "ModuleNotFoundError",
-    "explanation": "Das Modul existiert nicht."
+    "explanation": "Das Modul existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ImportError, TypeError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-010",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -151,7 +181,10 @@ const debuggingQuestions = [
       "elif"
     ],
     "answer": "break",
-    "explanation": "Ohne break entsteht eine Endlosschleife."
+    "explanation": "Ohne break entsteht eine Endlosschleife.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen pass, return, elif erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-011",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Debugging",
@@ -165,7 +198,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "IndentationError",
-    "explanation": "Nach dem Doppelpunkt muss eingerückt werden."
+    "explanation": "Nach dem Doppelpunkt muss eingerückt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen NameError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-012",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -179,7 +215,10 @@ const debuggingQuestions = [
       "Kein Fehler"
     ],
     "answer": "= statt ==",
-    "explanation": "Vergleich benötigt ==."
+    "explanation": "Vergleich benötigt ==.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen fehlendes if, falscher Datentyp, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-013",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -193,7 +232,10 @@ const debuggingQuestions = [
       "SyntaxError"
     ],
     "answer": "AAA",
-    "explanation": "Strings können wiederholt werden."
+    "explanation": "Strings können wiederholt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, ValueError, SyntaxError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-014",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -207,7 +249,10 @@ const debuggingQuestions = [
       "zahl = range()"
     ],
     "answer": "zahl = int(zahl)",
-    "explanation": "Der String muss in int umgewandelt werden."
+    "explanation": "Der String muss in int umgewandelt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen zahl = bool(), zahl = print(), zahl = range() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-015",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -221,7 +266,10 @@ const debuggingQuestions = [
       "str"
     ],
     "answer": "bool",
-    "explanation": "Vergleiche liefern Wahrheitswerte."
+    "explanation": "Vergleiche liefern Wahrheitswerte.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen int, float, str erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-016",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Debugging",
@@ -235,7 +283,10 @@ const debuggingQuestions = [
       "min()"
     ],
     "answer": "lower()",
-    "explanation": "lower() wandelt in Kleinbuchstaben um."
+    "explanation": "lower() wandelt in Kleinbuchstaben um.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen small(), tiny(), min() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-017",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -249,7 +300,10 @@ const debuggingQuestions = [
       "[1|2|3]"
     ],
     "answer": "[1,2,3]",
-    "explanation": "Listen werden mit eckigen Klammern erstellt."
+    "explanation": "Listen werden mit eckigen Klammern erstellt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen (1,2,3, {1;2;3}, [1|2|3] erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-018",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -263,7 +317,10 @@ const debuggingQuestions = [
       "1"
     ],
     "answer": "False",
-    "explanation": "Beide Werte müssten True sein."
+    "explanation": "Beide Werte müssten True sein.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen True, 0, 1 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-019",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -277,7 +334,10 @@ const debuggingQuestions = [
       "0"
     ],
     "answer": "2",
-    "explanation": "range(3) erzeugt 0,1,2."
+    "explanation": "range(3) erzeugt 0,1,2.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen 3, 1, 0 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-020",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -291,7 +351,10 @@ const debuggingQuestions = [
       "network"
     ],
     "answer": "Netzwerk",
-    "explanation": "Strings werden zusammengefügt."
+    "explanation": "Strings werden zusammengefügt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen Netz werk, Fehler, network erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-021",
+    "exam": "IHK-Transfer",
+    "difficulty": 3
   },
   {
     "mode": "Debugging",
@@ -305,7 +368,10 @@ const debuggingQuestions = [
       "0"
     ],
     "answer": "2",
-    "explanation": "Der letzte Index ist Länge minus 1."
+    "explanation": "Der letzte Index ist Länge minus 1.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen 3, 1, 0 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-022",
+    "exam": "LZK-Szenario",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -319,7 +385,10 @@ const debuggingQuestions = [
       "Kein Problem"
     ],
     "answer": "Die eingebaute Funktion list() wird überschrieben",
-    "explanation": "Reservierte Funktionsnamen sollten vermieden werden."
+    "explanation": "Reservierte Funktionsnamen sollten vermieden werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen SyntaxError, ValueError, Kein Problem erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-023",
+    "exam": "LZK",
+    "difficulty": 1
   },
   {
     "mode": "Debugging",
@@ -333,7 +402,10 @@ const debuggingQuestions = [
       "continue"
     ],
     "answer": "x -= 1",
-    "explanation": "Sonst entsteht eine Endlosschleife."
+    "explanation": "Sonst entsteht eine Endlosschleife.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen x += 1, break, continue erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-024",
+    "exam": "LZK",
+    "difficulty": 2
   },
   {
     "mode": "Debugging",
@@ -347,7 +419,10 @@ const debuggingQuestions = [
       "remove()"
     ],
     "answer": "strip()",
-    "explanation": "strip() entfernt Leerzeichen am Anfang und Ende."
+    "explanation": "strip() entfernt Leerzeichen am Anfang und Ende.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen clean(), delete(), remove() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "id": "DEBUGGING-025",
+    "exam": "LZK-Szenario",
+    "difficulty": 1
   }
 ];
 
