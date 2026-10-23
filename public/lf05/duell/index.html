@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LF05 Python-Duell für 2 bis 4 Spieler mit Avataren, Quiz- und Code-Duellen.">
+  <meta name="theme-color" content="#0a1024">
+  <title>Python-Duell – LF05</title>
+  <style>
+    :root{
+      --bg:#050a16;--panel:rgba(10,24,48,.92);--panel2:#0e2948;
+      --text:#f6fbff;--muted:#adc0d2;--line:rgba(147,214,255,.18);
+      --cyan:#49dcff;--violet:#a37fff;--orange:#ff9858;--green:#46dd99;
+      --red:#ff6d82;--yellow:#ffd166;--shadow:0 22px 58px rgba(0,0,0,.42)
+    }
+    *{box-sizing:border-box}html{scroll-behavior:smooth}
+    body{margin:0;min-height:100vh;color:var(--text);font-family:"Segoe UI",Inter,Arial,sans-serif;background:radial-gradient(circle at 8% 8%,rgba(255,140,80,.23),transparent 27%),radial-gradient(circle at 92% 10%,rgba(139,96,255,.28),transparent 28%),linear-gradient(145deg,#18102d,#07172c 55%,var(--bg));overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;z-index:-1;opacity:.1;pointer-events:none;background-image:linear-gradient(rgba(105,203,255,.5) 1px,transparent 1px),linear-gradient(90deg,rgba(105,203,255,.5) 1px,transparent 1px);background-size:45px 45px;mask-image:linear-gradient(to bottom,#000,transparent 94%)}
+    button,input,select{font:inherit}.hidden{display:none!important}
+    .shell{width:min(1120px,calc(100% - 22px));margin:auto;padding:14px 0 30px}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:13px}
+    .topbar a,.connection{display:inline-flex;align-items:center;gap:8px;min-height:42px;padding:9px 14px;border:1px solid var(--line);border-radius:13px;color:white;background:rgba(9,34,59,.87);text-decoration:none;font-weight:800}
+    .connection.online{color:#8cffc1;border-color:#46dd9966}.connection.offline{color:#ff9cab;border-color:#ff6d8266}
+    .arena{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 300px 1fr;gap:20px;align-items:center;padding:26px;border:1px solid var(--line);border-radius:27px;background:linear-gradient(135deg,rgba(102,43,126,.86),rgba(21,79,126,.86));box-shadow:var(--shadow)}
+    .arena:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% 50%,rgba(255,225,117,.18),transparent 18%),linear-gradient(to top,rgba(1,7,17,.35),transparent 40%)}
+    .intro,.lobby-panel{position:relative;z-index:2}.eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(4,13,29,.25);font-size:.76rem;font-weight:950;letter-spacing:.09em}
+    h1{margin:13px 0 9px;font-size:clamp(2rem,4.8vw,3.75rem);line-height:1.02;letter-spacing:-.045em}.intro p{max-width:450px;margin:0;color:#e0e9f2;line-height:1.55}.chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}.chips span{padding:6px 9px;border:1px solid #ffffff1c;border-radius:999px;background:#ffffff0c;color:#deedf5;font-size:.73rem;font-weight:750}
+    .battle{position:relative;z-index:2;height:230px;display:flex;align-items:center;justify-content:center}.fighter{position:absolute;width:118px;height:170px;filter:drop-shadow(0 14px 12px #0007)}.fighter.left{left:8px;animation:advanceLeft 1.5s ease-in-out infinite alternate}.fighter.right{right:8px;transform:scaleX(-1);animation:advanceRight 1.5s ease-in-out infinite alternate}.helmet{position:absolute;left:31px;top:5px;width:55px;height:48px;border:4px solid #c9e7f5;border-radius:28px 28px 15px 15px;background:linear-gradient(#b9d9e5,#486b7f)}.helmet:before{content:"";position:absolute;left:7px;top:23px;width:34px;height:7px;border-radius:5px;background:#071421;box-shadow:0 11px #486b7f}.plume{position:absolute;left:49px;top:-16px;width:16px;height:28px;border-radius:14px 14px 2px 2px;background:var(--violet);transform:rotate(-12deg)}.body-armor{position:absolute;left:34px;top:52px;width:51px;height:67px;border:4px solid #bddbe8;border-radius:13px 13px 19px 19px;background:linear-gradient(135deg,#436e88,#132d43)}.shield{position:absolute;left:4px;top:61px;width:43px;height:59px;border:4px solid #dfedf3;border-radius:22px 22px 30px 30px;background:linear-gradient(145deg,var(--violet),#4f36a0)}.fighter.right .shield{background:linear-gradient(145deg,var(--orange),#a63b20)}.arm{position:absolute;left:76px;top:65px;width:42px;height:11px;border-radius:8px;background:#aacbd9;transform:rotate(-24deg);transform-origin:left}.sword{position:absolute;left:98px;top:36px;width:8px;height:94px;border-radius:5px;background:linear-gradient(90deg,#b8e9ff,#fff,#6e9cb2);transform:rotate(48deg);transform-origin:bottom;animation:swing 1.5s ease-in-out infinite alternate}.sword:after{content:"";position:absolute;left:-10px;bottom:12px;width:28px;height:7px;border-radius:5px;background:#ffd166}.leg{position:absolute;top:113px;width:13px;height:48px;border-radius:7px;background:#264c67}.leg.one{left:42px;transform:rotate(8deg)}.leg.two{left:67px;transform:rotate(-8deg)}
+    .clash{position:absolute;z-index:4;width:46px;height:46px;border-radius:50%;background:radial-gradient(circle,#fff 0 13%,#ffe46b 16% 27%,#ff7b45 31%,transparent 66%);animation:clash 1.5s ease-in-out infinite}.spark{position:absolute;z-index:3;width:6px;height:6px;border-radius:50%;background:#ffd166;box-shadow:0 0 11px #ffd166}.s1{animation:spark1 1.5s infinite}.s2{animation:spark2 1.5s infinite}.s3{animation:spark3 1.5s infinite}
+    @keyframes advanceLeft{to{transform:translateX(12px) translateY(-3px)}}@keyframes advanceRight{to{transform:scaleX(-1) translateX(12px) translateY(-3px)}}@keyframes swing{to{transform:rotate(28deg)}}@keyframes clash{0%,58%,100%{opacity:.2;transform:scale(.55)}70%{opacity:1;transform:scale(1.3)}}@keyframes spark1{0%,60%,100%{opacity:0;transform:translate(0)}70%{opacity:1;transform:translate(-50px,-45px)}}@keyframes spark2{0%,60%,100%{opacity:0;transform:translate(0)}70%{opacity:1;transform:translate(58px,-30px)}}@keyframes spark3{0%,60%,100%{opacity:0;transform:translate(0)}70%{opacity:1;transform:translate(10px,55px)}}
+    .lobby-panel{padding:16px;border:1px solid rgba(255,255,255,.18);border-radius:20px;background:rgba(5,17,35,.72);backdrop-filter:blur(9px)}.player-row{display:grid;grid-template-columns:1fr 112px;gap:9px}.field{margin-bottom:10px}.field label{display:block;margin-bottom:5px;color:#bed1df;font-size:.75rem;font-weight:850}.field input,.field select{width:100%;min-height:43px;padding:9px 11px;border:1px solid #ffffff22;border-radius:11px;color:white;background:#0d2a48;outline:none}.field input:focus,.field select:focus{border-color:var(--cyan);box-shadow:0 0 0 3px rgba(73,220,255,.12)}
+    .avatars{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin:7px 0 12px}.avatar{padding:7px 3px;border:2px solid transparent;border-radius:11px;color:white;background:#0e2c4b;cursor:pointer}.avatar span{display:block;font-size:1.5rem}.avatar small{font-size:.55rem}.avatar.selected{border-color:var(--cyan);background:#17456d;box-shadow:0 0 14px rgba(73,220,255,.25)}
+    .divider{display:flex;align-items:center;gap:9px;margin:11px 0;color:#8fa7b9;font-size:.72rem}.divider:before,.divider:after{content:"";flex:1;height:1px;background:#ffffff18}.primary,.secondary{width:100%;min-height:43px;border:0;border-radius:12px;cursor:pointer;font-weight:950}.primary{color:#07121f;background:linear-gradient(135deg,var(--yellow),var(--orange));box-shadow:0 10px 22px rgba(255,152,88,.22)}.secondary{color:white;border:1px solid #ffffff20;background:linear-gradient(135deg,#744ac3,#315f9a)}.primary:hover,.secondary:hover{transform:translateY(-2px)}.message{min-height:20px;margin:9px 0 0;color:#ffb0bd;font-size:.78rem;text-align:center}
+    .created{margin-top:10px;padding:12px;border:1px solid #46dd9950;border-radius:13px;background:#123d31}.room-code{display:flex;justify-content:space-between;align-items:center;gap:8px}.room-code b{font:1000 1.5rem Consolas,monospace;letter-spacing:.14em;color:#a5ffd0}.copy{padding:7px 9px;border:1px solid #ffffff1f;border-radius:9px;color:white;background:#ffffff0e;cursor:pointer}
+    .features{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}.feature{padding:12px;border:1px solid var(--line);border-radius:14px;background:rgba(8,30,53,.82);text-align:center}.feature b{display:block;margin-bottom:3px;color:var(--cyan);font-size:.82rem}.feature span{color:var(--muted);font-size:.68rem}
+    @media(max-width:940px){.arena{grid-template-columns:1fr 260px}.battle{display:none}.features{grid-template-columns:repeat(2,1fr)}}@media(max-width:680px){.shell{width:min(100% - 14px,1120px);padding-top:7px}.topbar{align-items:stretch;flex-direction:column}.arena{grid-template-columns:1fr;padding:20px;border-radius:20px}.intro{text-align:center}.chips{justify-content:center}.lobby-panel{padding:14px}.avatars{grid-template-columns:repeat(3,1fr)}.player-row{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}}
+    @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <nav class="topbar"><a href="../">← Zurück zu LF05</a><span id="connection" class="connection offline">● Server wird verbunden</span></nav>
+    <section class="arena">
+      <div class="intro"><span class="eyebrow">⚔️ LF05 · LIVE MULTIPLAYER</span><h1>Python-Duell</h1><p>Fordere 2–4 Mitspieler heraus. Quiz, Code Builder, Datentyp Match und Debugging in einem gemeinsamen Duell.</p><div class="chips"><span>2–4 Spieler</span><span>Live-Rangliste</span><span>Avatare</span><span>Drag & Drop</span></div></div>
+      <div class="battle" aria-hidden="true"><div class="fighter left"><i class="plume"></i><i class="helmet"></i><i class="body-armor"></i><i class="shield"></i><i class="arm"></i><i class="sword"></i><i class="leg one"></i><i class="leg two"></i></div><div class="clash"></div><i class="spark s1"></i><i class="spark s2"></i><i class="spark s3"></i><div class="fighter right"><i class="plume"></i><i class="helmet"></i><i class="body-armor"></i><i class="shield"></i><i class="arm"></i><i class="sword"></i><i class="leg one"></i><i class="leg two"></i></div></div>
+      <aside class="lobby-panel">
+        <div class="player-row"><div class="field"><label for="playerName">Spielername</label><input id="playerName" maxlength="20" autocomplete="nickname" placeholder="Dein Name"></div><div class="field"><label for="maxPlayers">Spieler</label><select id="maxPlayers"><option value="2">2</option><option value="3">3</option><option value="4">4</option></select></div></div>
+        <div class="field"><label>Avatar auswählen</label><div id="avatars" class="avatars"></div></div>
+        <button id="createRoom" class="primary" type="button">Raum erstellen</button>
+        <div class="divider">ODER BEITRETEN</div>
+        <div class="field"><label for="roomInput">Raumcode</label><input id="roomInput" maxlength="6" autocomplete="off" placeholder="PY1234"></div>
+        <button id="joinRoom" class="secondary" type="button">Raum beitreten</button>
+        <div id="created" class="created hidden"><small>Dein Raumcode</small><div class="room-code"><b id="roomCode"></b><button id="copyCode" class="copy" type="button">Kopieren</button></div></div>
+        <p id="message" class="message" role="status"></p>
+      </aside>
+    </section>
+    <section class="features"><div class="feature"><b>📝 Quiz-Duell</b><span>Fragen schnell lösen</span></div><div class="feature"><b>🧩 Code Builder</b><span>Code korrekt bauen</span></div><div class="feature"><b>🐞 Debugging</b><span>Fehler erkennen</span></div><div class="feature"><b>🏆 Rangliste</b><span>Finales Podium</span></div></section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const $ = id => document.getElementById(id);
+    const AVATARS = [
+      ['python-bot','🤖','Bot'],['code-fox','🦊','Fuchs'],['linux-penguin','🐧','Pinguin'],
+      ['logic-lion','🦁','Löwe'],['debug-owl','🦉','Eule'],['bug-hunter','🐼','Panda']
+    ];
+    let selectedAvatar = 'python-bot';
+    let socket = null;
+
+    $('avatars').innerHTML = AVATARS.map((a,i) =>
+      `<button type="button" class="avatar ${i===0?'selected':''}" data-avatar="${a[0]}" aria-label="${a[2]}"><span>${a[1]}</span><small>${a[2]}</small></button>`
+    ).join('');
+
+    document.querySelectorAll('.avatar').forEach(button => {
+      button.addEventListener('click', () => {
+        selectedAvatar = button.dataset.avatar;
+        document.querySelectorAll('.avatar').forEach(item => item.classList.toggle('selected', item === button));
+      });
+    });
+
+    try {
+      socket = io({ transports: ['websocket','polling'] });
+      socket.on('connect', () => {
+        $('connection').className = 'connection online';
+        $('connection').textContent = '● Server verbunden';
+      });
+      socket.on('disconnect', () => {
+        $('connection').className = 'connection offline';
+        $('connection').textContent = '● Server getrennt';
+      });
+    } catch (error) {
+      $('connection').textContent = '● Socket.IO nicht verfügbar';
+    }
+
+    function playerData() {
+      const name = $('playerName').value.trim();
+      if (name.length < 2) throw new Error('Bitte einen Spielernamen mit mindestens 2 Zeichen eingeben.');
+      return { name, avatar: selectedAvatar };
+    }
+
+    function showMessage(text, ok=false) {
+      $('message').style.color = ok ? '#8cffc1' : '#ffb0bd';
+      $('message').textContent = text;
+    }
+
+    $('createRoom').addEventListener('click', () => {
+      try {
+        if (!socket?.connected) throw new Error('Keine Verbindung zum Spielserver.');
+        const player = playerData();
+        socket.emit('python-create-room', { ...player, maxPlayers: Number($('maxPlayers').value) }, response => {
+          if (!response?.ok) return showMessage(response?.message || 'Raum konnte nicht erstellt werden.');
+          sessionStorage.setItem('pythonDuelSession', JSON.stringify({
+            roomCode: response.roomCode,
+            playerIndex: response.playerIndex,
+            playerId: response.playerId,
+            name: player.name,
+            avatar: player.avatar,
+            host: true
+          }));
+          $('roomCode').textContent = response.roomCode;
+          $('created').classList.remove('hidden');
+          showMessage('Raum erstellt. Teile den Code mit deinen Mitspielern.', true);
+          window.setTimeout(() => location.href = './waiting-room.html', 850);
+        });
+      } catch (error) { showMessage(error.message); }
+    });
+
+    $('joinRoom').addEventListener('click', () => {
+      try {
+        if (!socket?.connected) throw new Error('Keine Verbindung zum Spielserver.');
+        const player = playerData();
+        const roomCode = $('roomInput').value.trim().toUpperCase();
+        if (!/^[A-Z0-9]{4,6}$/.test(roomCode)) throw new Error('Bitte einen gültigen Raumcode eingeben.');
+        socket.emit('python-join-room', { ...player, roomCode }, response => {
+          if (!response?.ok) return showMessage(response?.message || 'Beitritt nicht möglich.');
+          sessionStorage.setItem('pythonDuelSession', JSON.stringify({
+            roomCode: response.roomCode,
+            playerIndex: response.playerIndex,
+            playerId: response.playerId,
+            name: player.name,
+            avatar: player.avatar,
+            host: false
+          }));
+          showMessage('Beitritt erfolgreich. Wartebereich wird geöffnet.', true);
+          window.setTimeout(() => location.href = './waiting-room.html', 650);
+        });
+      } catch (error) { showMessage(error.message); }
+    });
+
+    $('copyCode').addEventListener('click', async () => {
+      const code = $('roomCode').textContent;
+      try { await navigator.clipboard.writeText(code); $('copyCode').textContent = 'Kopiert ✓'; }
+      catch { showMessage('Der Code konnte nicht kopiert werden.'); }
+      setTimeout(() => $('copyCode').textContent = 'Kopieren', 1300);
+    });
+
+    $('roomInput').addEventListener('input', event => event.target.value = event.target.value.toUpperCase().replace(/[^A-Z0-9]/g,''));
+  </script>
+</body>
+</html>
