@@ -3,10 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="theme-color" content="#120916">
+<meta name="description" content="LF05 Lernplattform mit Lernen, Lernkontrollen, Lernspielen, IHK-Prüfungstrainer und Python-Duell.">
 <title>LF05 – Software zur Verwaltung von Daten anpassen</title>
-
 <style>
+:root{
+    --text:#ffffff;
+    --muted:#d6dcea;
+    --line:rgba(255,255,255,.18);
+    --yellow:#ffd166;
+    --orange:#ff7b00;
+    --red:#ff1744;
+    --pink:#d50074;
+    --violet:#7b2cbf;
+}
 
 *{
     margin:0;
@@ -14,77 +24,139 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     min-height:100vh;
-    font-family:"Segoe UI",sans-serif;
-    color:white;
+    font-family:"Segoe UI",Arial,sans-serif;
+    color:var(--text);
     background:
-        radial-gradient(circle at top left,#ff8c42 0%,transparent 30%),
-        radial-gradient(circle at top right,#ff4d6d 0%,transparent 30%),
-        linear-gradient(135deg,#1b0f2b,#060c18);
+        radial-gradient(circle at 8% 4%,rgba(255,140,66,.32),transparent 29%),
+        radial-gradient(circle at 92% 8%,rgba(255,38,91,.24),transparent 30%),
+        linear-gradient(145deg,#1b0f2b,#060c18 58%,#030711);
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    opacity:.08;
+    background-image:
+        linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px);
+    background-size:48px 48px;
 }
 
 .container{
-    max-width:1400px;
+    width:min(1400px,calc(100% - 28px));
     margin:auto;
-    padding:40px 20px;
+    padding:30px 0 42px;
+}
+
+.back{
+    display:inline-flex;
+    align-items:center;
+    min-height:44px;
+    margin-bottom:28px;
+    padding:10px 15px;
+    border:1px solid var(--line);
+    border-radius:13px;
+    color:white;
+    background:rgba(9,27,50,.78);
+    text-decoration:none;
+    font-weight:800;
+    transition:transform .18s ease,border-color .18s ease;
+}
+
+.back:hover,
+.back:focus-visible{
+    transform:translateY(-2px);
+    border-color:#ff9b5a;
+    outline:none;
 }
 
 .hero{
+    margin-bottom:42px;
     text-align:center;
-    margin-bottom:50px;
 }
 
 .hero h1{
-    font-size:3rem;
-    margin-bottom:15px;
+    margin-bottom:12px;
+    font-size:clamp(2.4rem,6vw,4.4rem);
+    letter-spacing:-.04em;
+}
+
+.hero h2{
+    margin-bottom:13px;
+    font-size:clamp(1.2rem,2.8vw,1.8rem);
 }
 
 .hero p{
     max-width:900px;
     margin:auto;
-    line-height:1.6;
-    color:#d6dcea;
-}
-
-.back{
-    display:inline-block;
-    margin-bottom:30px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
+    color:var(--muted);
+    line-height:1.65;
 }
 
 .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px;
 }
 
 .card{
-    text-decoration:none;
-    color:white;
+    position:relative;
+    overflow:hidden;
+    min-height:245px;
     padding:25px;
+    border:1px solid rgba(255,255,255,.13);
     border-radius:24px;
-    min-height:260px;
-    transition:.3s;
-    box-shadow:0 15px 30px rgba(0,0,0,.25);
+    color:white;
+    text-decoration:none;
+    box-shadow:0 15px 32px rgba(0,0,0,.28);
+    transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease;
 }
 
-.card:hover{
+.card:hover,
+.card:focus-visible{
     transform:translateY(-8px);
+    border-color:rgba(255,255,255,.34);
+    box-shadow:0 23px 48px rgba(0,0,0,.40);
+    outline:none;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:190px;
+    height:190px;
+    right:-75px;
+    top:-80px;
+    border-radius:50%;
+    background:rgba(255,255,255,.10);
 }
 
 .icon{
+    position:relative;
+    z-index:1;
     font-size:3rem;
 }
 
 .card h2{
-    margin-top:15px;
-    margin-bottom:12px;
+    position:relative;
+    z-index:1;
+    margin:15px 0 11px;
 }
 
 .card p{
+    position:relative;
+    z-index:1;
+    color:#f0f5fa;
     line-height:1.6;
 }
 
@@ -101,98 +173,383 @@ body{
 }
 
 .ihk{
-    background:linear-gradient(135deg,#38b000,#008000);
+    background:linear-gradient(135deg,#38b000,#007f5f);
+}
+
+.duell-wrap{
+    grid-column:1 / -1;
+    display:flex;
+    justify-content:center;
+    padding:18px 0 7px;
 }
 
 .duell{
-    background:linear-gradient(135deg,#ef476f,#b5179e);
+    isolation:isolate;
+    width:min(820px,100%);
+    min-height:370px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    padding:34px 28px 32px;
+    border:2px solid rgba(255,237,181,.58);
+    text-align:center;
+    background:
+        radial-gradient(circle at 50% 76%,rgba(255,225,85,.30),transparent 23%),
+        linear-gradient(135deg,#ff6a00 0%,#ff1744 42%,#b5179e 73%,#571089 100%);
+    box-shadow:
+        0 0 22px rgba(255,94,0,.52),
+        0 0 48px rgba(255,0,72,.42),
+        0 24px 65px rgba(0,0,0,.48);
+    animation:duelGlow 2.3s ease-in-out infinite alternate;
+}
+
+.duell:hover,
+.duell:focus-visible{
+    transform:translateY(-9px) scale(1.018);
+    box-shadow:
+        0 0 32px rgba(255,225,84,.78),
+        0 0 72px rgba(255,40,0,.68),
+        0 30px 80px rgba(0,0,0,.56);
+}
+
+.duell::before{
+    content:"";
+    position:absolute;
+    z-index:-2;
+    inset:-35%;
+    width:auto;
+    height:auto;
+    border-radius:40%;
+    background:
+        conic-gradient(
+            from 0deg,
+            transparent 0 12%,
+            rgba(255,232,103,.30) 14%,
+            transparent 19% 38%,
+            rgba(255,88,0,.34) 42%,
+            transparent 48% 68%,
+            rgba(255,0,76,.30) 72%,
+            transparent 78% 100%
+        );
+    animation:fireOrbit 7s linear infinite;
+}
+
+.duell::after{
+    content:"🔥 LIVE";
+    position:absolute;
+    top:16px;
+    right:17px;
+    z-index:5;
+    padding:7px 12px;
+    border:1px solid rgba(255,255,255,.45);
+    border-radius:999px;
+    color:#2e1600;
+    background:linear-gradient(135deg,#fff082,#ffb000);
+    box-shadow:0 0 20px rgba(255,225,80,.72);
+    font-size:.77rem;
+    font-weight:1000;
+    letter-spacing:.06em;
+    animation:livePulse 1.15s ease-in-out infinite alternate;
+}
+
+.flame-field{
+    position:absolute;
+    inset:auto 0 0;
+    z-index:-1;
+    height:145px;
+    pointer-events:none;
+    filter:blur(.2px);
+}
+
+.flame{
+    position:absolute;
+    bottom:-28px;
+    width:54px;
+    height:105px;
+    border-radius:50% 50% 22% 22%;
+    background:
+        radial-gradient(ellipse at 50% 74%,#fff277 0 13%,#ffb000 24%,#ff5e00 52%,#d90032 74%,transparent 76%);
+    transform-origin:50% 100%;
+    animation:flameMove 1.15s ease-in-out infinite alternate;
+    opacity:.9;
+}
+
+.flame:nth-child(1){left:3%;animation-delay:-.4s;transform:scale(.72)}
+.flame:nth-child(2){left:14%;animation-delay:-.9s;transform:scale(1.05)}
+.flame:nth-child(3){left:27%;animation-delay:-.2s;transform:scale(.86)}
+.flame:nth-child(4){left:41%;animation-delay:-.75s;transform:scale(1.16)}
+.flame:nth-child(5){left:56%;animation-delay:-.15s;transform:scale(.94)}
+.flame:nth-child(6){left:70%;animation-delay:-.65s;transform:scale(1.12)}
+.flame:nth-child(7){left:83%;animation-delay:-.3s;transform:scale(.82)}
+.flame:nth-child(8){left:93%;animation-delay:-.8s;transform:scale(1)}
+
+.duell-content{
+    position:relative;
+    z-index:4;
+    max-width:650px;
+}
+
+.duell-icon{
+    font-size:clamp(3.6rem,8vw,5.6rem);
+    filter:drop-shadow(0 8px 9px rgba(0,0,0,.42));
+    animation:swordFloat 1.2s ease-in-out infinite alternate;
+}
+
+.duell h2{
+    margin:10px 0 10px;
+    font-size:clamp(2rem,5vw,3.25rem);
+    text-shadow:0 3px 12px rgba(0,0,0,.48);
+}
+
+.duell p{
+    max-width:590px;
+    margin:auto;
+    color:#fff9f6;
+    font-size:clamp(1rem,2vw,1.14rem);
+}
+
+.duell-features{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:18px;
+}
+
+.duell-features span{
+    padding:7px 11px;
+    border:1px solid rgba(255,255,255,.32);
+    border-radius:999px;
+    background:rgba(22,8,37,.32);
+    backdrop-filter:blur(5px);
+    font-size:.77rem;
+    font-weight:800;
+}
+
+.knight-battle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+    margin-top:21px;
+    font-size:2.1rem;
+}
+
+.knight-left{
+    animation:knightLeft 850ms ease-in-out infinite alternate;
+}
+
+.clash{
+    position:relative;
+    font-size:2rem;
+    filter:drop-shadow(0 0 12px #fff37f);
+    animation:clashPulse 700ms ease-in-out infinite alternate;
+}
+
+.knight-right{
+    animation:knightRight 850ms ease-in-out infinite alternate;
+}
+
+.duell-cta{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:20px;
+    padding:11px 19px;
+    border:1px solid rgba(255,255,255,.62);
+    border-radius:13px;
+    color:#2c1500;
+    background:linear-gradient(135deg,#fff082,#ffb000);
+    box-shadow:0 9px 25px rgba(255,183,0,.36);
+    font-weight:1000;
 }
 
 footer{
     margin-top:40px;
-    text-align:center;
     color:#9fb3c8;
+    text-align:center;
 }
 
+@keyframes duelGlow{
+    from{
+        filter:saturate(1);
+        box-shadow:
+            0 0 20px rgba(255,94,0,.48),
+            0 0 42px rgba(255,0,72,.34),
+            0 24px 65px rgba(0,0,0,.45);
+    }
+    to{
+        filter:saturate(1.22);
+        box-shadow:
+            0 0 34px rgba(255,225,84,.65),
+            0 0 78px rgba(255,40,0,.58),
+            0 27px 72px rgba(0,0,0,.52);
+    }
+}
+
+@keyframes fireOrbit{
+    to{transform:rotate(360deg)}
+}
+
+@keyframes livePulse{
+    to{transform:scale(1.08);box-shadow:0 0 30px rgba(255,225,80,.95)}
+}
+
+@keyframes flameMove{
+    from{transform:translateY(12px) scaleX(.86) rotate(-3deg)}
+    to{transform:translateY(-8px) scaleX(1.08) rotate(4deg)}
+}
+
+@keyframes swordFloat{
+    to{transform:translateY(-6px) rotate(3deg)}
+}
+
+@keyframes knightLeft{
+    from{transform:translateX(-12px) rotate(-6deg)}
+    to{transform:translateX(10px) rotate(5deg)}
+}
+
+@keyframes knightRight{
+    from{transform:translateX(12px) rotate(6deg)}
+    to{transform:translateX(-10px) rotate(-5deg)}
+}
+
+@keyframes clashPulse{
+    from{transform:scale(.8) rotate(-10deg);opacity:.7}
+    to{transform:scale(1.28) rotate(10deg);opacity:1}
+}
+
+@media(max-width:760px){
+    .container{
+        width:min(100% - 18px,1400px);
+        padding-top:16px;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+
+    .duell-wrap{
+        grid-column:auto;
+        padding-top:8px;
+    }
+
+    .duell{
+        min-height:390px;
+        padding:32px 18px 28px;
+    }
+
+    .duell::after{
+        top:12px;
+        right:12px;
+    }
+}
+
+@media(prefers-reduced-motion:reduce){
+    *,*::before,*::after{
+        animation:none!important;
+        transition:none!important;
+    }
+}
 </style>
 </head>
 <body>
-
 <div class="container">
 
-<a href="/" class="back">
-← Zur Fachinformatiker Lernplattform
-</a>
+<a href="/" class="back">← Zur Fachinformatiker Lernplattform</a>
 
-<div class="hero">
+<header class="hero">
+    <h1>🗃️ LF05</h1>
+    <h2>Software zur Verwaltung von Daten anpassen</h2>
+    <p>
+        Programmierung, Algorithmen, Pseudocode, PAP, Struktogramme,
+        Variablen, Datentypen, Strings, Kontrollstrukturen,
+        Schleifen und Debugging.
+    </p>
+</header>
 
-<h1>🗃️ LF05</h1>
+<section class="grid" aria-label="LF05 Bereiche">
 
-<h2>Software zur Verwaltung von Daten anpassen</h2>
+    <a href="./lernen/" class="card learn">
+        <div class="icon">📘</div>
+        <h2>Lernen</h2>
+        <p>
+            Tag 1–5 Lernmaterialien, Zusammenfassungen,
+            Merkblätter, Begriffe, Beispiele und Erklärungen.
+        </p>
+    </a>
 
-<p>
-Programmierung, Algorithmen, Pseudocode,
-PAP, Struktogramme, Variablen, Datentypen,
-Strings, Kontrollstrukturen, Schleifen und Debugging.
-</p>
+    <a href="./quiz/" class="card quiz">
+        <div class="icon">📝</div>
+        <h2>Lernkontrollen</h2>
+        <p>
+            Quizfragen zu Variablen, Datentypen,
+            Strings, PAP, Use-Cases und Schleifen.
+        </p>
+    </a>
+
+    <a href="./games/" class="card games">
+        <div class="icon">🎮</div>
+        <h2>Lernspiele</h2>
+        <p>
+            Interaktive Drag-and-Drop-Spiele,
+            Sortieraufgaben und Programmier-Puzzles.
+        </p>
+    </a>
+
+    <a href="./ihk/" class="card ihk">
+        <div class="icon">🏆</div>
+        <h2>IHK Prüfungstrainer</h2>
+        <p>
+            Praxisnahe LZK- und IHK-Transferaufgaben,
+            Codeanalyse und Fehlersuche.
+        </p>
+    </a>
+
+    <div class="duell-wrap">
+        <a href="./duell/" class="card duell" aria-label="Python-Duell öffnen">
+            <div class="flame-field" aria-hidden="true">
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+                <i class="flame"></i>
+            </div>
+
+            <div class="duell-content">
+                <div class="duell-icon" aria-hidden="true">⚔️🔥</div>
+                <h2>Python-Duell</h2>
+                <p>
+                    2–4 Spieler, Rangliste, Avatare,
+                    Quiz- und Drag-and-Drop-Duelle.
+                </p>
+
+                <div class="duell-features" aria-hidden="true">
+                    <span>LIVE MULTIPLAYER</span>
+                    <span>QUIZ</span>
+                    <span>DRAG & DROP</span>
+                    <span>PODIUM</span>
+                </div>
+
+                <div class="knight-battle" aria-hidden="true">
+                    <span class="knight-left">🛡️</span>
+                    <span class="clash">⚔️</span>
+                    <span class="knight-right">🛡️</span>
+                </div>
+
+                <span class="duell-cta">Jetzt kämpfen →</span>
+            </div>
+        </a>
+    </div>
+
+</section>
+
+<footer>LF05 · Software zur Verwaltung von Daten anpassen</footer>
 
 </div>
-
-<div class="grid">
-
-<a href="./lernen/" class="card learn">
-<div class="icon">📘</div>
-<h2>Lernen</h2>
-<p>
-Tag 1–5 Lernmaterialien, Zusammenfassungen,
-Merkblätter und Erklärungen.
-</p>
-</a>
-
-<a href="./quiz/" class="card quiz">
-<div class="icon">📝</div>
-<h2>Lernkontrollen</h2>
-<p>
-Quizfragen zu Variablen, Datentypen,
-Strings, PAP, Use-Cases und Schleifen.
-</p>
-</a>
-
-<a href="./games/" class="card games">
-<div class="icon">🎮</div>
-<h2>Lernspiele</h2>
-<p>
-Interaktive Drag-and-Drop-Spiele,
-Sortieraufgaben und Programmier-Puzzles.
-</p>
-</a>
-
-<a href="./ihk/" class="card ihk">
-<div class="icon">🏆</div>
-<h2>IHK Prüfungstrainer</h2>
-<p>
-Praxisnahe AP1/AP2-Szenarien,
-Codeanalyse und Fehlersuche.
-</p>
-</a>
-
-<a href="./duell/" class="card duell">
-<div class="icon">⚔️</div>
-<h2>Python-Duell</h2>
-<p>
-2–4 Spieler,
-Rangliste, Avatare,
-Quiz- und Drag-and-Drop-Duelle.
-</p>
-</a>
-
-</div>
-
-<footer>
-LF05 · Software zur Verwaltung von Daten anpassen
-</footer>
-
-</div>
-
 </body>
 </html>
