@@ -3,51 +3,194 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LF01</title>
+
+<title>LF05 – Software zur Verwaltung von Daten anpassen</title>
 
 <style>
-body{
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:Segoe UI,sans-serif;
-    background:linear-gradient(135deg,#00b4d8,#0077b6);
+    font-family:"Segoe UI",sans-serif;
     color:white;
+    background:
+        radial-gradient(circle at top left,#ff8c42 0%,transparent 30%),
+        radial-gradient(circle at top right,#ff4d6d 0%,transparent 30%),
+        linear-gradient(135deg,#1b0f2b,#060c18);
 }
 
-.card{
-    max-width:800px;
-    padding:40px;
-    background:rgba(0,0,0,.2);
-    border-radius:20px;
+.container{
+    max-width:1400px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.hero{
     text-align:center;
+    margin-bottom:50px;
 }
 
-a{
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:900px;
+    margin:auto;
+    line-height:1.6;
+    color:#d6dcea;
+}
+
+.back{
     display:inline-block;
-    margin-top:20px;
+    margin-bottom:30px;
     color:white;
     text-decoration:none;
     font-weight:bold;
 }
-</style>
 
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.card{
+    text-decoration:none;
+    color:white;
+    padding:25px;
+    border-radius:24px;
+    min-height:260px;
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    font-size:3rem;
+}
+
+.card h2{
+    margin-top:15px;
+    margin-bottom:12px;
+}
+
+.card p{
+    line-height:1.6;
+}
+
+.learn{
+    background:linear-gradient(135deg,#00b4d8,#0077b6);
+}
+
+.quiz{
+    background:linear-gradient(135deg,#8338ec,#5a189a);
+}
+
+.games{
+    background:linear-gradient(135deg,#ffb703,#fb8500);
+}
+
+.ihk{
+    background:linear-gradient(135deg,#38b000,#008000);
+}
+
+.duell{
+    background:linear-gradient(135deg,#ef476f,#b5179e);
+}
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    color:#9fb3c8;
+}
+
+</style>
 </head>
 <body>
 
-<div class="card">
+<div class="container">
 
-<h1>🏢 LF05</h1>
+<a href="/" class="back">
+← Zur Fachinformatiker Lernplattform
+</a>
+
+<div class="hero">
+
+<h1>🗃️ LF05</h1>
 
 <h2>Software zur Verwaltung von Daten anpassen</h2>
 
 <p>
-Inhalte werden später ergänzt.
+Programmierung, Algorithmen, Pseudocode,
+PAP, Struktogramme, Variablen, Datentypen,
+Strings, Kontrollstrukturen, Schleifen und Debugging.
 </p>
 
-<a href="/">⬅ Zur Lernplattform</a>
+</div>
+
+<div class="grid">
+
+<a href="./lernen/" class="card learn">
+<div class="icon">📘</div>
+<h2>Lernen</h2>
+<p>
+Tag 1–6 Lernmaterialien, Zusammenfassungen,
+Merkblätter und Erklärungen.
+</p>
+</a>
+
+<a href="./quiz/" class="card quiz">
+<div class="icon">📝</div>
+<h2>Lernkontrollen</h2>
+<p>
+Quizfragen zu Variablen, Datentypen,
+Strings, PAP, Use-Cases und Schleifen.
+</p>
+</a>
+
+<a href="./games/" class="card games">
+<div class="icon">🎮</div>
+<h2>Lernspiele</h2>
+<p>
+Interaktive Drag-and-Drop-Spiele,
+Sortieraufgaben und Programmier-Puzzles.
+</p>
+</a>
+
+<a href="./ihk/" class="card ihk">
+<div class="icon">🏆</div>
+<h2>IHK Prüfungstrainer</h2>
+<p>
+Praxisnahe AP1/AP2-Szenarien,
+Codeanalyse und Fehlersuche.
+</p>
+</a>
+
+<a href="./duell/" class="card duell">
+<div class="icon">⚔️</div>
+<h2>Python-Duell</h2>
+<p>
+2–4 Spieler,
+Rangliste, Avatare,
+Quiz- und Drag-and-Drop-Duelle.
+</p>
+</a>
+
+</div>
+
+<footer>
+LF05 · Software zur Verwaltung von Daten anpassen
+</footer>
 
 </div>
 
