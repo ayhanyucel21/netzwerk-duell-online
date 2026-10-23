@@ -5,6 +5,7 @@ const crypto = require('crypto');
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
+const DUEL_QUESTIONS = require('./questions');
 
 const app = express();
 const server = http.createServer(app);
@@ -27,16 +28,38 @@ const ALLOWED_AVATARS = new Set([
   'bug-hunter'
 ]);
 
-const DUEL_QUESTIONS =
-  require("./questions");
+const ROUND_DURATION_MS = 20000;
+const ROUND_RESULT_MS = 2600;
+const TOTAL_ROUNDS = 15;
 
-function shuffledQuestionIndexes() {
-  const indexes = DUEL_QUESTIONS.map((_, index) => index);
-  for (let i = indexes.length - 1; i > 0; i -= 1) {
+function shuffle(array) {
+  const result = [...array];
+  for (let i = result.length - 1; i > 0; i -= 1) {
     const j = crypto.randomInt(i + 1);
-    [indexes[i], indexes[j]] = [indexes[j], indexes[i]];
+    [result[i], result[j]] = [result[j], result[i]];
   }
-  return indexes.slice(0, 15);
+  return result;
+}
+
+function selectBalancedQuestionIndexes() {
+  const plan = {
+    Quiz: 4,
+    Debugging: 4,
+    'Datentyp Match': 4,
+    'Code Builder': 3
+  };
+  const indexes = [];
+  for (const [mode, count] of Object.entries(plan)) {
+    const candidates = DUEL_QUESTIONS
+      .map((question, index) => ({ question, index }))
+      .filter(item => item.question.mode === mode)
+      .map(item => item.index);
+    if (candidates.length < count) {
+      throw new Error(`Not enough questions for mode ${mode}`);
+    }
+    indexes.push(...shuffle(candidates).slice(0, count));
+  }
+  return shuffle(indexes);
 }
 
 function publicQuestion(room) {
@@ -50,7 +73,7 @@ function publicQuestion(room) {
     scenario: source.scenario,
     question: source.question,
     code: source.code,
-    options: source.options,
+    options: shuffle(source.options),
     deadline: game.deadline,
     answeredPlayerIds: [...game.answers.keys()]
   };
@@ -70,9 +93,10 @@ function startRound(room) {
   if (!room.game || room.status !== 'playing') return;
   if (room.game.round >= room.game.totalRounds) return finishServerGame(room);
   room.game.answers = new Map();
-  room.game.deadline = Date.now() + 20000;
+  room.game.roundClosing = false;
+  room.game.deadline = Date.now() + ROUND_DURATION_MS;
   clearRoundTimer(room);
-  room.game.timer = setTimeout(() => closeRound(room), 20250);
+  room.game.timer = setTimeout(() => closeRound(room), ROUND_DURATION_MS + 250);
   emitRound(room);
 }
 
@@ -90,9 +114,8 @@ function closeRound(room) {
   setTimeout(() => {
     if (!rooms.has(room.code) || room.status !== 'playing') return;
     room.game.round += 1;
-    room.game.roundClosing = false;
     startRound(room);
-  }, 2600);
+  }, ROUND_RESULT_MS);
 }
 
 function finishServerGame(room) {
@@ -100,9 +123,9 @@ function finishServerGame(room) {
   room.status = 'finished';
   room.started = false;
   room.finishedAt = Date.now();
-  const ranking = [...room.players].sort((a,b) =>
-    b.score - a.score || b.right - a.right || a.wrong - b.wrong
-  ).map(publicPlayer);
+  const ranking = [...room.players]
+    .sort((a, b) => b.score - a.score || b.right - a.right || a.wrong - b.wrong)
+    .map(publicPlayer);
   emitRoom(room);
   io.to(room.code).emit('python-game-finished', { ranking, roomCode: room.code });
 }
@@ -429,8 +452,8 @@ io.on('connection', socket => {
     });
     room.game = {
       round: 0,
-      totalRounds: 15,
-      questionIndexes: shuffledQuestionIndexes(),
+      totalRounds: TOTAL_ROUNDS,
+      questionIndexes: selectBalancedQuestionIndexes(),
       answers: new Map(),
       deadline: 0,
       roundClosing: false,
@@ -480,9 +503,9 @@ io.on('connection', socket => {
     if (Number(data.round) !== game.round) return callback({ ok: false, message: 'Diese Runde ist nicht mehr aktuell.' });
     if (game.answers.has(player.playerId)) return callback({ ok: false, message: 'Antwort wurde bereits abgegeben.' });
 
-    const source = DUEL_QUESTIONS[game.questionIndexes[game.round]];
+    const question = DUEL_QUESTIONS[game.questionIndexes[game.round]];
     const value = String(data.value ?? '');
-    const correct = value === source.answer;
+    const correct = value === question.answer;
     const remainingMs = Math.max(0, game.deadline - Date.now());
     const speedBonus = correct ? Math.min(50, Math.floor(remainingMs / 400)) : 0;
     const points = correct ? 100 + speedBonus : 0;
