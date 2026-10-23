@@ -27,28 +27,8 @@ const ALLOWED_AVATARS = new Set([
   'bug-hunter'
 ]);
 
-const DUEL_QUESTIONS = [
-  { mode:'Quiz', scenario:'Eine Supportanwendung verarbeitet eine Portnummer.', question:'Welcher Datentyp passt für den Wert 443?', code:'', options:['int','float','str','bool'], answer:'int', explanation:'443 ist eine ganze Zahl.' },
-  { mode:'Debugging', scenario:'Ein Textwert wird mit einer Zahl addiert.', question:'Welcher Fehler tritt auf?', code:'zahl = "5"\nprint(zahl + 2)', options:['TypeError','ValueError','NameError','Kein Fehler'], answer:'TypeError', explanation:'str und int können nicht direkt addiert werden.' },
-  { mode:'Datentyp Match', scenario:'Eine Benutzereingabe wird ausgewertet.', question:'Welchen Rückgabetyp besitzt input() standardmäßig?', code:'name = input("Name: ")', options:['str','int','float','bool'], answer:'str', explanation:'input() liefert immer eine Zeichenkette.' },
-  { mode:'Code Builder', scenario:'Eine Eingabe soll in eine Ganzzahl umgewandelt werden.', question:'Welche Zeile ist korrekt?', code:'', options:['zahl = int(input("Zahl: "))','zahl = input(int)','int = zahl(input())','zahl = str(input())'], answer:'zahl = int(input("Zahl: "))', explanation:'Die Texteingabe wird mit int() konvertiert.' },
-  { mode:'Quiz', scenario:'Eine Schleife soll fünfmal laufen.', question:'Welcher Ausdruck passt?', code:'', options:['range(5)','range(1)','while False','break(5)'], answer:'range(5)', explanation:'range(5) erzeugt 0 bis 4.' },
-  { mode:'Codeanalyse', scenario:'Der Code erhöht x dreimal.', question:'Welche Ausgabe erscheint?', code:'x = 5\nfor i in range(3):\n    x += 1\nprint(x)', options:['8','7','5','9'], answer:'8', explanation:'x wird dreimal um 1 erhöht.' },
-  { mode:'Debugging', scenario:'Eine if-Anweisung ist unvollständig.', question:'Welcher Fehler liegt vor?', code:'if alter >= 18\n    print("OK")', options:['SyntaxError','TypeError','ValueError','NameError'], answer:'SyntaxError', explanation:'Der Doppelpunkt fehlt.' },
-  { mode:'Quiz', scenario:'Eine Datei soll auf .csv geprüft werden.', question:'Welcher Ausdruck berücksichtigt Großschreibung?', code:'', options:['datei.lower().endswith(".csv")','datei == ".csv"','int(datei)','datei.strip("csv")'], answer:'datei.lower().endswith(".csv")', explanation:'lower() normalisiert die Schreibweise.' },
-  { mode:'Datentyp Match', scenario:'Ein Vergleich wird ausgeführt.', question:'Welchen Datentyp liefert 5 > 3?', code:'', options:['bool','int','float','str'], answer:'bool', explanation:'Vergleiche liefern True oder False.' },
-  { mode:'Codeanalyse', scenario:'continue überspringt einen Durchlauf.', question:'Welche Ausgabe erscheint?', code:'for i in range(4):\n    if i == 2:\n        continue\n    print(i, end=" ")', options:['0 1 3','0 1 2 3','1 3','0 1'], answer:'0 1 3', explanation:'Bei i=2 wird die Ausgabe übersprungen.' },
-  { mode:'Quiz', scenario:'Ein Passwort muss mindestens acht Zeichen haben.', question:'Welche Bedingung passt?', code:'', options:['len(pw) >= 8','len(pw) > 8','pw == 8','len(pw) <= 8'], answer:'len(pw) >= 8', explanation:'Der Grenzwert 8 muss eingeschlossen werden.' },
-  { mode:'Debugging', scenario:'Eine unbekannte Variable wird ausgegeben.', question:'Welcher Fehler tritt auf?', code:'print(kundenname)', options:['NameError','IndexError','ValueError','TypeError'], answer:'NameError', explanation:'kundenname wurde nicht definiert.' },
-  { mode:'Code Builder', scenario:'Ein Benutzername soll normalisiert werden.', question:'Welche Zeile entfernt Leerzeichen und wandelt in Kleinbuchstaben um?', code:'', options:['user = input().strip().lower()','user = int(input())','user.lower = input','strip(user).int()'], answer:'user = input().strip().lower()', explanation:'Methoden können verkettet werden.' },
-  { mode:'Codeanalyse', scenario:'Ein String wird ausgeschnitten.', question:'Welche Ausgabe erscheint?', code:'text = "Python"\nprint(text[1:4])', options:['yth','Pyt','ytho','tho'], answer:'yth', explanation:'Endindex 4 ist ausgeschlossen.' },
-  { mode:'Quiz', scenario:'Eine Suche soll beim Treffer enden.', question:'Welche Anweisung passt?', code:'', options:['break','continue','pass','elif'], answer:'break', explanation:'break beendet die Schleife.' },
-  { mode:'Debugging', scenario:'Ein ungültiger Text wird konvertiert.', question:'Welcher Fehler tritt auf?', code:'anzahl = int("zwölf")', options:['ValueError','TypeError','NameError','Kein Fehler'], answer:'ValueError', explanation:'Der Text ist keine gültige Ganzzahl.' },
-  { mode:'Datentyp Match', scenario:'Ein Wert wird umgewandelt.', question:'Welchen Typ hat str(42)?', code:'', options:['str','int','float','bool'], answer:'str', explanation:'str() erzeugt Text.' },
-  { mode:'Codeanalyse', scenario:'Eine while-Schleife verdoppelt x.', question:'Welche Ausgabe erscheint?', code:'x = 1\nwhile x < 8:\n    x *= 2\nprint(x)', options:['8','4','16','7'], answer:'8', explanation:'1, 2, 4, 8; danach endet die Schleife.' },
-  { mode:'Quiz', scenario:'Mehrere bekannte Server sollen geprüft werden.', question:'Welche Schleife passt am besten?', code:'', options:['for','if','elif','else'], answer:'for', explanation:'for durchläuft eine bekannte Folge.' },
-  { mode:'Debugging', scenario:'Der Schleifenzähler wird nie verändert.', question:'Was ist die Folge?', code:'x = 1\nwhile x < 5:\n    print(x)', options:['Endlosschleife','ValueError','SyntaxError','IndexError'], answer:'Endlosschleife', explanation:'Die Bedingung bleibt dauerhaft wahr.' }
-];
+const DUEL_QUESTIONS =
+  require("./questions");
 
 function shuffledQuestionIndexes() {
   const indexes = DUEL_QUESTIONS.map((_, index) => index);
