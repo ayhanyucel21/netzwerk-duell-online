@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Algorithmus Puzzle - LF05</title>
+
+<style>
+
+:root{
+--bg:#081321;
+--panel:#11243f;
+--text:#ffffff;
+--muted:#b8c8d8;
+--cyan:#48d7ff;
+--purple:#9c7fff;
+--green:#46db97;
+--red:#ff6f83;
+--yellow:#ffd166;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Segoe UI",sans-serif;
+min-height:100vh;
+color:var(--text);
+
+background:
+radial-gradient(circle at top left,#8e61ff33,transparent 30%),
+radial-gradient(circle at top right,#ff8b5533,transparent 30%),
+linear-gradient(135deg,#18112b,#081321);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:25px;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-bottom:20px;
+}
+
+.top a{
+padding:12px 16px;
+border-radius:12px;
+background:#173554;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+
+.hero{
+padding:30px;
+border-radius:24px;
+background:linear-gradient(135deg,#8646d6,#225f9f);
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:2.7rem;
+margin-bottom:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-bottom:20px;
+}
+
+.stat{
+background:var(--panel);
+padding:15px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat b{
+display:block;
+font-size:1.4rem;
+color:var(--cyan);
+}
+
+.progress{
+height:12px;
+background:#ffffff15;
+border-radius:999px;
+overflow:hidden;
+margin-bottom:20px;
+}
+
+.progress i{
+display:block;
+height:100%;
+width:0%;
+background:linear-gradient(90deg,var(--purple),var(--green));
+transition:.3s;
+}
+
+.game{
+background:var(--panel);
+padding:25px;
+border-radius:20px;
+}
+
+.scenario{
+padding:20px;
+background:#17314d;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.steps{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:20px;
+}
+
+.step{
+padding:14px 16px;
+background:#22507a;
+border-radius:12px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.step:hover{
+transform:translateY(-2px);
+}
+
+.answer{
+min-height:80px;
+padding:15px;
+border:2px dashed rgba(255,255,255,.25);
+border-radius:15px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:20px;
+}
+
+.answer .step{
+background:#6f42c1;
+}
+
+.feedback{
+padding:15px;
+border-radius:12px;
+background:#13253b;
+}
+
+.good{
+background:#184234;
+}
+
+.bad{
+background:#57283a;
+}
+
+.actions{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-top:15px;
+}
+
+.btn{
+padding:12px 18px;
+border:none;
+border-radius:12px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.primary{
+background:var(--yellow);
+}
+
+.secondary{
+background:#264a70;
+color:white;
+}
+
+.result{
+text-align:center;
+padding:40px;
+}
+
+.result-score{
+font-size:3rem;
+font-weight:bold;
+color:var(--yellow);
+}
+
+@media(max-width:700px){
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top">
+<a href="../">← Lernspiele</a>
+<a href="/">⌂ Plattform</a>
+</div>
+
+<div class="hero">
+<h1>🧠 Algorithmus Puzzle</h1>
+<p>
+Ordne die Schritte eines Algorithmus in die richtige Reihenfolge.
+</p>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<b id="round">1/20</b>
+<span>Aufgabe</span>
+</div>
+
+<div class="stat">
+<b id="xp">0</b>
+<span>XP</span>
+</div>
+
+<div class="stat">
+<b id="combo">0</b>
+<span>Combo</span>
+</div>
+
+<div class="stat">
+<b id="lives">❤️❤️❤️</b>
+<span>Leben</span>
+</div>
+
+</div>
+
+<div class="progress">
+<i id="progress"></i>
+</div>
+
+<div id="game"></div>
+
+</div>
+
+<script>
+
+const tasks = [
+
+{
+scenario:"Ein Benutzer gibt seinen Namen ein und wird begrüßt.",
+steps:[
+"Eingabe Name",
+"Name speichern",
+"Ausgabe Begrüßung"
+]
+},
+
+{
+scenario:"Alter eingeben und Volljährigkeit prüfen.",
+steps:[
+"Eingabe Alter",
+"Alter speichern",
+"if Alter >= 18",
+"Ausgabe Ergebnis"
+]
+},
+
+{
+scenario:"Zwei Zahlen addieren.",
+steps:[
+"Eingabe Zahl 1",
+"Eingabe Zahl 2",
+"Berechnung Summe",
+"Ausgabe Ergebnis"
+]
+},
+
+{
+scenario:"Passwort prüfen.",
+steps:[
+"Eingabe Passwort",
+"Passwort speichern",
+"Passwort vergleichen",
+"Ausgabe Zugriff"
+]
+},
+
+{
+scenario:"Datei suchen.",
+steps:[
+"Eingabe Dateiname",
+"Suche starten",
+"Datei gefunden?",
+"Ausgabe Ergebnis"
+]
+}
+
+];
+
+while(tasks.length < 20){
+tasks.push(...tasks.slice(0,5));
+}
+
+tasks.length = 20;
+
+let round=0;
+let xp=0;
+let combo=0;
+let lives=3;
+
+function shuffle(a){
+return [...a].sort(()=>Math.random()-0.5);
+}
+
+function render(){
+
+if(round >= 20 || lives <= 0){
+showResult();
+return;
+}
+
+const task = tasks[round];
+
+document.getElementById("round").textContent =
+`${round+1}/20`;
+
+document.getElementById("xp").textContent = xp;
+
+document.getElementById("combo").textContent =
+combo;
+
+document.getElementById("lives").textContent =
+"❤️".repeat(lives)+"🖤".repeat(3-lives);
+
+document.getElementById("progress").style.width =
+`${round/20*100}%`;
+
+document.getElementById("game").innerHTML =
+`
+<div class="game">
+
+<div class="scenario">
+${task.scenario}
+</div>
+
+<div class="steps" id="steps">
+${shuffle(task.steps)
+.map(step => `
+<div class="step"
+onclick="addStep('${step}')">
+${step}
+</div>
+`).join("")}
+</div>
+
+<div class="answer"
+id="answer">
+</div>
+
+<div id="feedback"
+class="feedback">
+Ordne die Schritte richtig an.
+</div>
+
+<div class="actions">
+
+<button class="btn secondary"
+onclick="resetPuzzle()">
+Zurücksetzen
+</button>
+
+<button class="btn primary"
+onclick="checkPuzzle()">
+Prüfen
+</button>
+
+</div>
+
+</div>
+`;
+
+window.selectedSteps=[];
+}
+
+function addStep(step){
+
+selectedSteps.push(step);
+
+document.getElementById("answer")
+.innerHTML +=
+`<div class="step">${step}</div>`;
+
+}
+
+function resetPuzzle(){
+
+selectedSteps=[];
+
+document.getElementById("answer")
+.innerHTML="";
+
+}
+
+function checkPuzzle(){
+
+const correct =
+JSON.stringify(selectedSteps)
+===
+JSON.stringify(tasks[round].steps);
+
+const feedback =
+document.getElementById("feedback");
+
+if(correct){
+
+xp += 10 + combo*2;
+
+combo++;
+
+feedback.className=
+"feedback good";
+
+feedback.innerHTML=
+"✅ Richtige Reihenfolge!";
+
+}else{
+
+lives--;
+
+combo=0;
+
+feedback.className=
+"feedback bad";
+
+feedback.innerHTML=
+"❌ Reihenfolge falsch.";
+}
+
+setTimeout(() => {
+
+round++;
+render();
+
+},1500);
+
+}
+
+function showResult(){
+
+document.getElementById("game").innerHTML=
+`
+<div class="result">
+
+<h2>🏆 Puzzle beendet</h2>
+
+<div class="result-score">
+${xp} XP
+</div>
+
+<p>
+Bearbeitete Aufgaben:
+${round}/20
+</p>
+
+<br>
+
+<button
+onclick="location.reload()"
+class="btn primary">
+
+Nochmal spielen
+
+</button>
+
+</div>
+`;
+
+}
+
+render();
+
+</script>
+
+</body>
+</html>

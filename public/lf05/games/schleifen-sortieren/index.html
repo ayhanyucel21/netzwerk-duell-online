@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Schleifen Sortieren - LF05</title>
+
+<style>
+
+:root{
+--bg:#081321;
+--panel:#11243f;
+--text:#ffffff;
+--muted:#bac8d8;
+
+--blue:#42c8ff;
+--green:#47dc98;
+--orange:#ff9a57;
+--purple:#a17fff;
+--red:#ff6f80;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Segoe UI",sans-serif;
+min-height:100vh;
+color:var(--text);
+
+background:
+radial-gradient(circle at top left,#8e64ff33,transparent 30%),
+radial-gradient(circle at top right,#ff8d5533,transparent 30%),
+linear-gradient(135deg,#171129,#081321);
+}
+
+.container{
+max-width:1400px;
+margin:auto;
+padding:25px;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+gap:10px;
+}
+
+.top a{
+padding:12px 16px;
+border-radius:12px;
+background:#173554;
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+.hero{
+padding:30px;
+background:linear-gradient(135deg,#8445d6,#235f9f);
+border-radius:24px;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+.hero p{
+color:#ecf3fa;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:14px;
+margin-bottom:20px;
+}
+
+.stat{
+padding:15px;
+background:var(--panel);
+border-radius:16px;
+text-align:center;
+}
+
+.stat b{
+display:block;
+font-size:1.5rem;
+color:var(--blue);
+}
+
+.progress{
+height:12px;
+background:#ffffff15;
+border-radius:999px;
+overflow:hidden;
+margin-bottom:20px;
+}
+
+.progress i{
+display:block;
+height:100%;
+width:0%;
+background:linear-gradient(90deg,var(--purple),var(--green));
+transition:.3s;
+}
+
+.board{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
+
+.cards{
+background:var(--panel);
+padding:20px;
+border-radius:20px;
+}
+
+.cards h2{
+margin-bottom:15px;
+}
+
+.card-list{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.card{
+padding:14px 18px;
+background:#20476f;
+border-radius:12px;
+cursor:pointer;
+font-family:Consolas;
+font-weight:bold;
+transition:.2s;
+}
+
+.card:hover{
+transform:translateY(-3px);
+}
+
+.card.used{
+opacity:.35;
+pointer-events:none;
+}
+
+.zones{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px;
+}
+
+.zone{
+background:var(--panel);
+border:3px dashed rgba(255,255,255,.15);
+border-radius:20px;
+padding:20px;
+min-height:220px;
+}
+
+.zone h3{
+margin-bottom:12px;
+}
+
+.zone-items{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+}
+
+.zone.correct{
+border-color:var(--green);
+}
+
+.feedback{
+padding:18px;
+border-radius:16px;
+margin-top:20px;
+background:#13253b;
+}
+
+.good{
+background:#174132;
+}
+
+.bad{
+background:#57283a;
+}
+
+.actions{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-top:15px;
+}
+
+.btn{
+padding:12px 18px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.primary{
+background:#ffd166;
+}
+
+.secondary{
+background:#25496f;
+color:white;
+}
+
+.result{
+text-align:center;
+padding:40px;
+}
+
+.result-score{
+font-size:3rem;
+font-weight:bold;
+color:#ffd166;
+}
+
+@media(max-width:900px){
+
+.board{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top">
+<a href="../">← Lernspiele</a>
+<a href="/">⌂ Plattform</a>
+</div>
+
+<div class="hero">
+
+<h1>🔁 Schleifen Sortieren</h1>
+
+<p>
+Ordne Python-Anweisungen der richtigen Kategorie zu.
+IHK-orientiertes Training für AP1.
+</p>
+
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<b id="round">1/15</b>
+<span>Level</span>
+</div>
+
+<div class="stat">
+<b id="xp">0</b>
+<span>XP</span>
+</div>
+
+<div class="stat">
+<b id="correct">0</b>
+<span>Richtig</span>
+</div>
+
+<div class="stat">
+<b id="lives">❤️❤️❤️</b>
+<span>Leben</span>
+</div>
+
+</div>
+
+<div class="progress">
+<i id="progress"></i>
+</div>
+
+<div id="game"></div>
+
+</div>
+
+<script>
+
+const levels = [
+
+[
+ {item:"for",cat:"loop"},
+ {item:"while",cat:"loop"},
+ {item:"if",cat:"condition"},
+ {item:"print()",cat:"io"}
+],
+
+[
+ {item:"continue",cat:"control"},
+ {item:"break",cat:"control"},
+ {item:"elif",cat:"condition"},
+ {item:"input()",cat:"io"}
+],
+
+[
+ {item:"for i in range(5):",cat:"loop"},
+ {item:"while login != 'exit':",cat:"loop"},
+ {item:"if alter >= 18:",cat:"condition"},
+ {item:"print(name)",cat:"io"}
+],
+
+[
+ {item:"range(10)",cat:"loop"},
+ {item:"continue",cat:"control"},
+ {item:"else",cat:"condition"},
+ {item:"input('Name:')",cat:"io"}
+]
+
+];
+
+let round=0;
+let xp=0;
+let lives=3;
+let correct=0;
+
+function renderLevel(){
+
+if(round>=levels.length || lives<=0){
+showResult();
+return;
+}
+
+document.getElementById("round").textContent=
+`${round+1}/${levels.length}`;
+
+document.getElementById("xp").textContent=xp;
+
+document.getElementById("correct").textContent=correct;
+
+document.getElementById("lives").textContent=
+"❤️".repeat(lives)+"🖤".repeat(3-lives);
+
+document.getElementById("progress").style.width=
+`${(round/levels.length)*100}%`;
+
+const game=document.getElementById("game");
+
+game.innerHTML=`
+<div class="board">
+
+<div class="cards">
+<h2>Karten</h2>
+<div class="card-list" id="cards"></div>
+</div>
+
+<div class="zones">
+
+<div class="zone">
+<h3>🔁 Schleifen</h3>
+<div id="loop" class="zone-items"></div>
+</div>
+
+<div class="zone">
+<h3>🚦 Bedingungen</h3>
+<div id="condition" class="zone-items"></div>
+</div>
+
+<div class="zone">
+<h3>⌨️ Ein-/Ausgabe</h3>
+<div id="io" class="zone-items"></div>
+</div>
+
+<div class="zone">
+<h3>🛠️ Steuerung</h3>
+<div id="control" class="zone-items"></div>
+</div>
+
+</div>
+
+</div>
+
+<div id="feedback" class="feedback">
+Ordne alle Karten richtig zu.
+</div>
+
+<div class="actions">
+
+<button class="btn secondary"
+onclick="renderLevel()">
+Neu mischen
+</button>
+
+<button class="btn primary"
+onclick="checkLevel()">
+Prüfen
+</button>
+
+</div>
+`;
+
+levels[round]
+.sort(()=>Math.random()-0.5)
+.forEach(c=>{
+
+const div=document.createElement("div");
+
+div.className="card";
+div.textContent=c.item;
+
+div.onclick=()=>{
+
+const cat=prompt(
+"Kategorie?\n\nloop\ncondition\nio\ncontrol"
+);
+
+if(cat){
+document.getElementById(cat)
+?.appendChild(div);
+}
+
+};
+
+document.getElementById("cards")
+.appendChild(div);
+
+});
+
+}
+
+function checkLevel(){
+
+let ok=true;
+
+levels[round].forEach(item=>{
+
+const zone=document.getElementById(item.cat);
+
+const found=[...zone.children]
+.some(x=>x.textContent===item.item);
+
+if(!found) ok=false;
+
+});
+
+const fb=document.getElementById("feedback");
+
+if(ok){
+
+correct++;
+
+xp+=20;
+
+fb.className="feedback good";
+
+fb.innerHTML=
+"✅ Alles richtig sortiert!";
+
+round++;
+
+setTimeout(renderLevel,1200);
+
+}else{
+
+lives--;
+
+fb.className="feedback bad";
+
+fb.innerHTML=
+"❌ Mindestens eine Karte ist falsch.";
+
+}
+
+}
+
+function showResult(){
+
+document.getElementById("game").innerHTML=
+`
+<div class="result">
+
+<h2>🏆 Spiel beendet</h2>
+
+<div class="result-score">
+${xp} XP
+</div>
+
+<p>
+Richtige Level:
+${correct}/${levels.length}
+</p>
+
+<br>
+
+<button onclick="location.reload()"
+class="btn primary">
+Nochmal spielen
+</button>
+
+</div>
+`;
+
+}
+
+renderLevel();
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Debugging Challenge - LF05</title>
+
+<style>
+
+:root{
+--bg:#07121f;
+--panel:#11243f;
+--text:#fff;
+--muted:#b8c8d8;
+
+--cyan:#46d8ff;
+--green:#45dc95;
+--red:#ff6e82;
+--yellow:#ffd166;
+--purple:#9a7fff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:"Segoe UI",sans-serif;
+min-height:100vh;
+color:var(--text);
+
+background:
+radial-gradient(circle at top left,#8e61ff33,transparent 30%),
+radial-gradient(circle at top right,#ff8d5533,transparent 30%),
+linear-gradient(135deg,#171129,#07121f);
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:25px;
+}
+
+.top{
+display:flex;
+justify-content:space-between;
+gap:10px;
+margin-bottom:20px;
+}
+
+.top a{
+padding:12px 16px;
+background:#173554;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+}
+
+.hero{
+padding:30px;
+border-radius:24px;
+background:linear-gradient(135deg,#8344d4,#225f9f);
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:2.8rem;
+margin-bottom:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:12px;
+margin-bottom:20px;
+}
+
+.stat{
+background:var(--panel);
+padding:15px;
+border-radius:15px;
+text-align:center;
+}
+
+.stat b{
+display:block;
+font-size:1.4rem;
+color:var(--cyan);
+}
+
+.progress{
+height:12px;
+border-radius:999px;
+overflow:hidden;
+background:#ffffff12;
+margin-bottom:20px;
+}
+
+.progress i{
+display:block;
+height:100%;
+width:0%;
+background:linear-gradient(90deg,var(--purple),var(--green));
+transition:.3s;
+}
+
+.game{
+background:var(--panel);
+padding:25px;
+border-radius:20px;
+}
+
+.scenario{
+padding:18px;
+border-radius:15px;
+background:#17314d;
+margin-bottom:15px;
+}
+
+.code{
+background:#081522;
+padding:20px;
+border-radius:15px;
+font-family:Consolas;
+font-size:1rem;
+white-space:pre-wrap;
+margin-bottom:20px;
+overflow-x:auto;
+}
+
+.answers{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:12px;
+}
+
+.answer{
+border:none;
+cursor:pointer;
+padding:15px;
+border-radius:12px;
+background:#20476f;
+color:white;
+font-weight:bold;
+transition:.2s;
+}
+
+.answer:hover{
+transform:translateY(-3px);
+}
+
+.feedback{
+margin-top:20px;
+padding:15px;
+border-radius:12px;
+background:#0d1a2a;
+}
+
+.good{
+background:#164132;
+}
+
+.bad{
+background:#5a2335;
+}
+
+.result{
+text-align:center;
+padding:40px;
+}
+
+.result-score{
+font-size:3rem;
+font-weight:bold;
+color:var(--yellow);
+}
+
+@media(max-width:700px){
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+}
+
+.answers{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="top">
+<a href="../">← Lernspiele</a>
+<a href="/">⌂ Plattform</a>
+</div>
+
+<div class="hero">
+<h1>🐞 Debugging Challenge</h1>
+<p>
+Finde typische Python-Fehler und bereite dich auf die AP1 vor.
+</p>
+</div>
+
+<div class="stats">
+
+<div class="stat">
+<b id="round">1/20</b>
+<span>Aufgabe</span>
+</div>
+
+<div class="stat">
+<b id="xp">0</b>
+<span>XP</span>
+</div>
+
+<div class="stat">
+<b id="combo">0</b>
+<span>Combo</span>
+</div>
+
+<div class="stat">
+<b id="lives">❤️❤️❤️</b>
+<span>Leben</span>
+</div>
+
+</div>
+
+<div class="progress">
+<i id="progressBar"></i>
+</div>
+
+<div id="game"></div>
+
+</div>
+
+<script>
+
+const tasks = [
+
+{
+scenario:"Ein Benutzer soll eine gerade Zahl prüfen.",
+code:
+`zahl = "5"
+print(zahl % 2)`,
+
+answers:[
+"SyntaxError",
+"TypeError",
+"ValueError",
+"Kein Fehler"
+],
+
+correct:"TypeError",
+
+explanation:
+"Modulo (%) funktioniert nicht mit einem String."
+},
+
+{
+scenario:"Benutzername prüfen",
+code:
+`if name == "admin"
+    print("OK")`,
+
+answers:[
+"NameError",
+"ValueError",
+"SyntaxError",
+"Kein Fehler"
+],
+
+correct:"SyntaxError",
+
+explanation:
+"Nach der if-Bedingung fehlt der Doppelpunkt."
+},
+
+{
+scenario:"Alter in Zahl umwandeln",
+code:
+`alter = int("abc")`,
+
+answers:[
+"TypeError",
+"ValueError",
+"NameError",
+"Kein Fehler"
+],
+
+correct:"ValueError",
+
+explanation:
+"abc kann nicht in eine Ganzzahl umgewandelt werden."
+},
+
+{
+scenario:"Variable ausgeben",
+code:
+`print(username)`,
+
+answers:[
+"ValueError",
+"NameError",
+"SyntaxError",
+"Kein Fehler"
+],
+
+correct:"NameError",
+
+explanation:
+"username wurde nicht definiert."
+},
+
+{
+scenario:"Falsche Einrückung",
+code:
+`if True:
+print("Hallo")`,
+
+answers:[
+"SyntaxError",
+"IndentationError",
+"TypeError",
+"Kein Fehler"
+],
+
+correct:"IndentationError",
+
+explanation:
+"Der Codeblock muss eingerückt sein."
+}
+
+];
+
+while(tasks.length < 20){
+tasks.push(...tasks.slice(0,5));
+}
+
+tasks.length = 20;
+
+let current=0;
+let xp=0;
+let combo=0;
+let lives=3;
+
+function renderTask(){
+
+if(current>=20 || lives<=0){
+showResult();
+return;
+}
+
+document.getElementById("round").textContent=
+`${current+1}/20`;
+
+document.getElementById("xp").textContent=xp;
+
+document.getElementById("combo").textContent=combo;
+
+document.getElementById("lives").textContent=
+"❤️".repeat(lives)+"🖤".repeat(3-lives);
+
+document.getElementById("progressBar").style.width=
+`${(current/20)*100}%`;
+
+const task=tasks[current];
+
+document.getElementById("game").innerHTML=
+
+`
+<div class="game">
+
+<div class="scenario">
+${task.scenario}
+</div>
+
+<div class="code">
+${task.code}
+</div>
+
+<div class="answers">
+
+${task.answers.map(a=>`
+<button class="answer"
+onclick="checkAnswer('${a}')">
+
+${a}
+
+</button>
+`).join("")}
+
+</div>
+
+<div id="feedback"
+class="feedback">
+
+Wähle den Fehler aus.
+
+</div>
+
+</div>
+`;
+
+}
+
+function checkAnswer(answer){
+
+const task=tasks[current];
+
+const feedback=
+document.getElementById("feedback");
+
+if(answer===task.correct){
+
+xp += 10 + combo*2;
+
+combo++;
+
+feedback.className=
+"feedback good";
+
+feedback.innerHTML=
+`✅ Richtig!<br><br>${task.explanation}`;
+
+}else{
+
+lives--;
+
+combo=0;
+
+feedback.className=
+"feedback bad";
+
+feedback.innerHTML=
+`
+❌ Falsch.<br><br>
+Richtig:
+<b>${task.correct}</b>
+<br><br>
+${task.explanation}
+`;
+
+}
+
+setTimeout(()=>{
+
+current++;
+renderTask();
+
+},1800);
+
+}
+
+function showResult(){
+
+document.getElementById("game").innerHTML=
+`
+<div class="result">
+
+<h2>🏆 Challenge beendet</h2>
+
+<div class="result-score">
+
+${xp} XP
+
+</div>
+
+<p>
+Bearbeitete Aufgaben:
+${current}/20
+</p>
+
+<br>
+
+<button
+onclick="location.reload()"
+style="
+padding:12px 20px;
+border:none;
+border-radius:10px;
+font-size:1rem;
+font-weight:bold;
+cursor:pointer;
+background:#ffd166;
+">
+
+Nochmal spielen
+
+</button>
+
+</div>
+`;
+
+}
+
+renderTask();
+
+</script>
+
+</body>
+</html>
