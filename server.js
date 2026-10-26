@@ -131,8 +131,17 @@ function finishServerGame(room) {
 }
 
 app.disable('x-powered-by');
+
 app.use(express.json({ limit: '64kb' }));
+
+// public klasörü
 app.use(express.static(PUBLIC_DIR));
+
+// questions klasörünü browser erişimine aç
+app.use(
+  '/questions',
+  express.static(path.join(__dirname, 'questions'))
+);
 
 app.get('/health', (_req, res) => {
   res.json({
