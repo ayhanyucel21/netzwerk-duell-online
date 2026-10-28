@@ -1,0 +1,16 @@
+"use strict";
+const fs=require("fs");const path=require("path");const crypto=require("crypto");const express=require("express");
+const COLLECTIONS=["courses","tags","topics","lessons","questions","games","quizzes","pages","settings"];
+module.exports=function createAdminApi({dataDir=path.join(__dirname,"data"),adminToken=process.env.ADMIN_TOKEN}={}){
+ const router=express.Router();fs.mkdirSync(dataDir,{recursive:true});for(const name of COLLECTIONS){const file=path.join(dataDir,`${name}.json`);if(!fs.existsSync(file))fs.writeFileSync(file,"[]\n")}
+ router.use((req,res,next)=>{if(!adminToken)return res.status(503).json({message:"ADMIN_TOKEN ist auf dem Server nicht gesetzt."});const supplied=(req.get("authorization")||"").replace(/^Bearer\s+/i,"");const a=Buffer.from(supplied),b=Buffer.from(String(adminToken));if(a.length!==b.length||!crypto.timingSafeEqual(a,b))return res.status(401).json({message:"Nicht autorisiert."});next()});
+ const file=n=>path.join(dataDir,`${n}.json`);const read=n=>JSON.parse(fs.readFileSync(file(n),"utf8")||"[]");const write=(n,v)=>{const tmp=`${file(n)}.tmp`;fs.writeFileSync(tmp,JSON.stringify(v,null,2)+"\n");fs.renameSync(tmp,file(n))};const valid=(req,res)=>{const n=req.params.collection;if(!COLLECTIONS.includes(n)){res.status(404).json({message:"Unbekannte Sammlung."});return null}return n};
+ router.get("/summary",(_req,res)=>{const counts={};let total=0;for(const n of COLLECTIONS){counts[n]=read(n).length;total+=counts[n]}counts.total=total;res.json({counts})});
+ router.get("/backup",(_req,res)=>{const collections={};for(const n of COLLECTIONS)collections[n]=read(n);res.json({version:1,exportedAt:new Date().toISOString(),collections})});
+ router.get("/:collection",(req,res)=>{const n=valid(req,res);if(n)res.json({items:read(n)})});
+ router.post("/:collection/import",(req,res)=>{const n=valid(req,res);if(!n)return;const incoming=Array.isArray(req.body.items)?req.body.items:[];const current=read(n),now=new Date().toISOString();const items=incoming.map(x=>({...x,id:x.id||crypto.randomUUID(),createdAt:x.createdAt||now,updatedAt:now}));write(n,[...current,...items]);res.status(201).json({imported:items.length})});
+ router.post("/:collection",(req,res)=>{const n=valid(req,res);if(!n)return;const items=read(n),now=new Date().toISOString(),item={...req.body,id:crypto.randomUUID(),createdAt:now,updatedAt:now};items.push(item);write(n,items);res.status(201).json(item)});
+ router.put("/:collection/:id",(req,res)=>{const n=valid(req,res);if(!n)return;const items=read(n),i=items.findIndex(x=>x.id===req.params.id);if(i<0)return res.status(404).json({message:"Eintrag nicht gefunden."});items[i]={...items[i],...req.body,id:items[i].id,createdAt:items[i].createdAt,updatedAt:new Date().toISOString()};write(n,items);res.json(items[i])});
+ router.delete("/:collection/:id",(req,res)=>{const n=valid(req,res);if(!n)return;const items=read(n),next=items.filter(x=>x.id!==req.params.id);if(next.length===items.length)return res.status(404).json({message:"Eintrag nicht gefunden."});write(n,next);res.json({ok:true})});
+ router.use((err,_req,res,_next)=>{console.error("Admin API:",err);res.status(500).json({message:"Admin-Daten konnten nicht verarbeitet werden."})});return router;
+};

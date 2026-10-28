@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>FISI Lernen Admin Center</title>
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="/admin/" aria-label="FISI Lernen Admin Center">
+        <span class="brand-mark">FL</span>
+        <span><strong>FISI Lernen</strong><small>Admin Center</small></span>
+      </a>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-bottom">
+        <button id="exportAllBtn" class="ghost full">Gesamtes Backup</button>
+        <a class="ghost full center" href="/" target="_blank" rel="noopener">Website öffnen</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <button id="menuBtn" class="icon-button mobile-only" aria-label="Menü öffnen">☰</button>
+          <h1 id="pageTitle">Dashboard</h1>
+          <p id="pageSubtitle">Inhalte der Lernplattform zentral verwalten</p>
+        </div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input id="globalSearch" placeholder="Suchen …"></label>
+          <button id="refreshBtn" class="icon-button" title="Aktualisieren">↻</button>
+          <button id="tokenBtn" class="avatar" title="Admin-Zugang">AY</button>
+        </div>
+      </header>
+
+      <section id="dashboardView" class="view"></section>
+      <section id="managerView" class="view hidden">
+        <div class="toolbar">
+          <div class="filters">
+            <select id="courseFilter"><option value="">Alle Lernfelder</option></select>
+            <select id="statusFilter"><option value="">Alle Status</option><option value="published">Veröffentlicht</option><option value="draft">Entwurf</option><option value="inactive">Inaktiv</option></select>
+          </div>
+          <div class="toolbar-actions">
+            <label class="button secondary file-button">JSON importieren<input id="importInput" type="file" accept="application/json,.json"></label>
+            <button id="exportBtn" class="button secondary">Exportieren</button>
+            <button id="addBtn" class="button primary">+ Neu</button>
+          </div>
+        </div>
+        <div class="panel table-panel">
+          <div class="table-wrap">
+            <table>
+              <thead><tr id="tableHead"></tr></thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+          </div>
+          <div id="emptyState" class="empty hidden"><div>📭</div><h3>Noch keine Einträge</h3><p>Erstelle den ersten Eintrag oder importiere eine JSON-Datei.</p></div>
+        </div>
+      </section>
+
+      <section id="designView" class="view hidden"></section>
+    </main>
+  </div>
+
+  <dialog id="editorDialog" class="dialog">
+    <form id="editorForm" method="dialog">
+      <div class="dialog-head"><div><h2 id="dialogTitle">Eintrag bearbeiten</h2><p id="dialogHint"></p></div><button type="button" class="icon-button" id="closeDialogBtn">✕</button></div>
+      <div id="formFields" class="form-grid"></div>
+      <div class="dialog-actions"><button type="button" class="button danger hidden" id="deleteBtn">Löschen</button><span></span><button type="button" class="button secondary" id="cancelBtn">Abbrechen</button><button type="submit" class="button primary">Speichern</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="tokenDialog" class="dialog small">
+    <form id="tokenForm" method="dialog">
+      <div class="dialog-head"><div><h2>Admin-Zugang</h2><p>Das Token wird nur in diesem Browser gespeichert.</p></div><button type="button" class="icon-button" id="closeTokenBtn">✕</button></div>
+      <label class="field full"><span>ADMIN_TOKEN</span><input id="tokenInput" type="password" autocomplete="current-password" placeholder="Token eingeben"></label>
+      <div class="dialog-actions"><span></span><button type="button" class="button secondary" id="clearTokenBtn">Entfernen</button><button type="submit" class="button primary">Speichern</button></div>
+    </form>
+  </dialog>
+
+  <script src="/admin/admin.js" defer></script>
+</body>
+</html>

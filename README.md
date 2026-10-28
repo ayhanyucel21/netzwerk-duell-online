@@ -1,26 +1,30 @@
-# Netzwerk-Duell Online – 15 Runden
+# FISI Lernen Admin Center V1
 
-## Aktualisierung auf GitHub/Render
+## Dosyalar
+- `public/admin/index.html`
+- `public/admin/admin.css`
+- `public/admin/admin.js`
+- `admin-api.js`
+- `data/*.json`
 
-Ersetze im bestehenden Repository diese Dateien:
+## Mevcut server.js dosyasına eklenecek satırlar
+`express.json(...)` satırından sonra:
 
-- `server.js`
-- `package.json`
-- `public/index.html`
-- `public/app.js`
-- `public/style.css`
-
-Danach Commit erstellen. Render startet automatisch ein neues Deployment.
-
-## Lokal starten
-
-```bash
-npm install
-npm start
+```js
+const createAdminApi = require('./admin-api');
+app.use('/api/admin', createAdminApi({
+  dataDir: path.join(__dirname, 'data'),
+  adminToken: process.env.ADMIN_TOKEN
+}));
 ```
 
-Danach `http://localhost:3000` öffnen.
+Bu satırlar `express.static(PUBLIC_DIR)` satırından önce olmalıdır.
 
-## Inhalt
+## Render ayarı
+Render > Environment bölümünde `ADMIN_TOKEN` isimli güçlü bir gizli değer oluştur.
 
-15 deutsche LF03-Runden: OSI, Kapselung, DHCP-DORA, TCP/IP, Geräte, Ports, Topologien, Ethernet, IPv4, Subnetting, VLAN, PoE, WLAN/802.1X, IT-Sicherheit und Troubleshooting.
+## Açılış
+- Site: `/`
+- Admin: `/admin/`
+
+İlk açılışta panel `ADMIN_TOKEN` değerini ister. Token yalnızca tarayıcının localStorage alanında tutulur.

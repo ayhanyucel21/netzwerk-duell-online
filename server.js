@@ -5,7 +5,11 @@ const crypto = require('crypto');
 const express = require('express');
 const http = require('http');
 const { Server } = require('socket.io');
+
 const DUEL_QUESTIONS = require('./questions');
+
+// FISI Lernen Admin Center
+const createAdminApi = require('./admin-api');
 
 const app = express();
 const server = http.createServer(app);
@@ -130,9 +134,25 @@ function finishServerGame(room) {
   io.to(room.code).emit('python-game-finished', { ranking, roomCode: room.code });
 }
 
-app.disable('x-powered-by');
+aapp.disable('x-powered-by');
 
 app.use(express.json({ limit: '64kb' }));
+
+// =====================================================
+// FISI LERNEN ADMIN CENTER API
+// =====================================================
+
+app.use(
+  '/api/admin',
+  createAdminApi({
+    dataDir: path.join(__dirname, 'data'),
+    adminToken: process.env.ADMIN_TOKEN
+  })
+);
+
+// =====================================================
+// STATIC FILES
+// =====================================================
 
 // public klasörü
 app.use(express.static(PUBLIC_DIR));
