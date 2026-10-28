@@ -9,6 +9,7 @@ const PUBLIC_COLLECTIONS = [
   'tags',
   'topics',
   'lessons',
+  'questions',
   'games',
   'quizzes',
   'pages',
@@ -40,13 +41,8 @@ module.exports = function createContentApi({
       }
 
       return JSON.parse(content);
-
     } catch (error) {
-      console.error(
-        `Fehler beim Lesen von ${collection}:`,
-        error
-      );
-
+      console.error(`Fehler beim Lesen von ${collection}:`, error);
       return [];
     }
   }
@@ -55,12 +51,7 @@ module.exports = function createContentApi({
     return PUBLIC_COLLECTIONS.includes(collection);
   }
 
-  // =====================================================
-  // ALLE LERNFELDER
-  // =====================================================
-
   router.get('/courses', (req, res) => {
-
     const courses = readCollection('courses')
       .filter(item => item.status !== 'inactive');
 
@@ -68,197 +59,142 @@ module.exports = function createContentApi({
       success: true,
       items: courses
     });
-
   });
 
-  // =====================================================
-  // TAGS
-  // =====================================================
-
   router.get('/tags', (req, res) => {
-
     let tags = readCollection('tags')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      tags = tags.filter(
-        item => item.courseId === req.query.courseId
-      );
+      tags = tags.filter(item => item.courseId === req.query.courseId);
     }
 
-    tags.sort((a, b) => {
-      return Number(a.order || a.number || 0) -
-             Number(b.order || b.number || 0);
-    });
+    tags.sort((a, b) => Number(a.order || a.number || 0) - Number(b.order || b.number || 0));
 
     res.json({
       success: true,
       items: tags
     });
-
   });
 
-  // =====================================================
-  // THEMEN
-  // =====================================================
-
   router.get('/topics', (req, res) => {
-
     let topics = readCollection('topics')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      topics = topics.filter(
-        item => item.courseId === req.query.courseId
-      );
+      topics = topics.filter(item => item.courseId === req.query.courseId);
     }
 
     if (req.query.tagId) {
-      topics = topics.filter(
-        item => item.tagId === req.query.tagId
-      );
+      topics = topics.filter(item => item.tagId === req.query.tagId);
     }
 
-    topics.sort(
-      (a, b) =>
-        Number(a.order || 0) -
-        Number(b.order || 0)
-    );
+    topics.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
 
     res.json({
       success: true,
       items: topics
     });
-
   });
 
-  // =====================================================
-  // LERNINHALTE
-  // =====================================================
-
   router.get('/lessons', (req, res) => {
-
     let lessons = readCollection('lessons')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      lessons = lessons.filter(
-        item => item.courseId === req.query.courseId
-      );
+      lessons = lessons.filter(item => item.courseId === req.query.courseId);
     }
 
     if (req.query.tagId) {
-      lessons = lessons.filter(
-        item => item.tagId === req.query.tagId
-      );
+      lessons = lessons.filter(item => item.tagId === req.query.tagId);
     }
 
     if (req.query.topicId) {
-      lessons = lessons.filter(
-        item => item.topicId === req.query.topicId
-      );
+      lessons = lessons.filter(item => item.topicId === req.query.topicId);
     }
 
-    lessons.sort(
-      (a, b) =>
-        Number(a.order || 0) -
-        Number(b.order || 0)
-    );
+    lessons.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
 
     res.json({
       success: true,
       items: lessons
     });
-
   });
 
-  // =====================================================
-  // GAMES
-  // =====================================================
+  router.get('/questions', (req, res) => {
+    let questions = readCollection('questions')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      questions = questions.filter(item => item.courseId === req.query.courseId);
+    }
+
+    if (req.query.tagId) {
+      questions = questions.filter(item => item.tagId === req.query.tagId);
+    }
+
+    if (req.query.topicId) {
+      questions = questions.filter(item => item.topicId === req.query.topicId);
+    }
+
+    res.json({
+      success: true,
+      items: questions
+    });
+  });
 
   router.get('/games', (req, res) => {
-
     let games = readCollection('games')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      games = games.filter(
-        item => item.courseId === req.query.courseId
-      );
+      games = games.filter(item => item.courseId === req.query.courseId);
     }
 
     res.json({
       success: true,
       items: games
     });
-
   });
 
-  // =====================================================
-  // QUIZZES
-  // =====================================================
-
   router.get('/quizzes', (req, res) => {
-
     let quizzes = readCollection('quizzes')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      quizzes = quizzes.filter(
-        item => item.courseId === req.query.courseId
-      );
+      quizzes = quizzes.filter(item => item.courseId === req.query.courseId);
     }
 
     res.json({
       success: true,
       items: quizzes
     });
-
   });
 
-  // =====================================================
-  // PAGES
-  // =====================================================
-
   router.get('/pages', (req, res) => {
-
     let pages = readCollection('pages')
       .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
-      pages = pages.filter(
-        item => item.courseId === req.query.courseId
-      );
+      pages = pages.filter(item => item.courseId === req.query.courseId);
     }
 
     res.json({
       success: true,
       items: pages
     });
-
   });
 
-  // =====================================================
-  // SETTINGS
-  // =====================================================
-
   router.get('/settings', (req, res) => {
-
     const settings = readCollection('settings');
 
     res.json({
       success: true,
       items: settings
     });
-
   });
 
-  // =====================================================
-  // GENERIC READ
-  // =====================================================
-
   router.get('/:collection', (req, res) => {
-
     const collection = req.params.collection;
 
     if (!isAllowed(collection)) {
@@ -275,7 +211,6 @@ module.exports = function createContentApi({
       success: true,
       items
     });
-
   });
 
   return router;
