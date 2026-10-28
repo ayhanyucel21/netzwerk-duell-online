@@ -122,8 +122,8 @@ module.exports = function createContentApi({
   });
 
   router.get('/questions', (req, res) => {
-    let questions = readCollection('questions')
-      .filter(item => item.status !== 'inactive');
+  let questions = readCollection('questions-lf05')
+    .filter(item => item.status !== 'inactive');
 
     if (req.query.courseId) {
       questions = questions.filter(item => item.courseId === req.query.courseId);
