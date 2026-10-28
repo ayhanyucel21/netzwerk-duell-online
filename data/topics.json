@@ -592,5 +592,428 @@
     "shortDefinition": "Prüft Verhalten an und um Entscheidungsgrenzen.",
     "status": "published",
     "order": 19
+  },
+  {
+    "id": "lf05-tag1-softwaregrundlagen-und-entwicklungsumgebungen-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Softwaregrundlagen und Entwicklungsumgebungen",
+    "status": "published",
+    "order": 1,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 2,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 3,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-software-einordnen-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Software einordnen",
+    "status": "published",
+    "order": 4,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-python-starten-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Python starten",
+    "status": "published",
+    "order": 5,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-auswahlentscheidung-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Auswahlentscheidung",
+    "status": "published",
+    "order": 6,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-compiler-oder-interpreter-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Compiler oder Interpreter",
+    "status": "published",
+    "order": 7,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-algorithmen-pseudocode-pap-struktogramm-und-use-case-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Algorithmen, Pseudocode, PAP, Struktogramm und Use Case",
+    "status": "published",
+    "order": 8,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 9,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 10,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-pseudocode-altersprufung-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Pseudocode: Altersprüfung",
+    "status": "published",
+    "order": 11,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-pap-symbole-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "PAP-Symbole",
+    "status": "published",
+    "order": 12,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-use-case-online-bucherei-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Use Case: Online-Bücherei",
+    "status": "published",
+    "order": 13,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-algorithmus-prufen-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Algorithmus prüfen",
+    "status": "published",
+    "order": 14,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-variablen-datentypen-operatoren-eva-und-debugging-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Variablen, Datentypen, Operatoren, EVA und Debugging",
+    "status": "published",
+    "order": 15,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 16,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 17,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-eingabe-konvertieren-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Eingabe konvertieren",
+    "status": "published",
+    "order": 18,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-rechenoperatoren-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Rechenoperatoren",
+    "status": "published",
+    "order": 19,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-vergleiche-20",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Vergleiche",
+    "status": "published",
+    "order": 20,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-fehler-unterscheiden-21",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Fehler unterscheiden",
+    "status": "published",
+    "order": 21,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-strings-indizes-slicing-methoden-und-formatierung-22",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Strings, Indizes, Slicing, Methoden und Formatierung",
+    "status": "published",
+    "order": 22,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-23",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 23,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-24",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 24,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-index-und-slicing-25",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Index und Slicing",
+    "status": "published",
+    "order": 25,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-dateiendung-prufen-26",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Dateiendung prüfen",
+    "status": "published",
+    "order": 26,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-ziffernsumme-27",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Ziffernsumme",
+    "status": "published",
+    "order": 27,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-formatierte-ausgabe-28",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Formatierte Ausgabe",
+    "status": "published",
+    "order": 28,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-bedingungen-schleifen-range-break-continue-und-debugging-29",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Bedingungen, Schleifen, range(), break, continue und Debugging",
+    "status": "published",
+    "order": 29,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-30",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 30,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-31",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 31,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-for-und-range-32",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "for und range",
+    "status": "published",
+    "order": 32,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-while-kontrollieren-33",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "while kontrollieren",
+    "status": "published",
+    "order": 33,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-break-und-for-else-34",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "break und for-else",
+    "status": "published",
+    "order": 34,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-continue-35",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "continue",
+    "status": "published",
+    "order": 35,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-leerer-range-bereich-36",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Leerer range-Bereich",
+    "status": "published",
+    "order": 36,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-summe-bis-einschliesslich-i-37",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Summe bis einschließlich i",
+    "status": "published",
+    "order": 37,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-entscheidungstabellen-und-uml-aktivitatsdiagramme-38",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Entscheidungstabellen und UML-Aktivitätsdiagramme",
+    "status": "published",
+    "order": 38,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-kurze-begriffsdefinitionen-39",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Kurze Begriffsdefinitionen",
+    "status": "published",
+    "order": 39,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-erklarungen-und-beispiele-40",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Erklärungen und Beispiele",
+    "status": "published",
+    "order": 40,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-entscheidungstabelle-login-41",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Entscheidungstabelle: Login",
+    "status": "published",
+    "order": 41,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-aktivitatsdiagramm-flughafenschalter-42",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Aktivitätsdiagramm: Flughafenschalter",
+    "status": "published",
+    "order": 42,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-aktivitatsdiagramm-auto-mieten-43",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Aktivitätsdiagramm: Auto mieten",
+    "status": "published",
+    "order": 43,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-schleife-modellieren-44",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Schleife modellieren",
+    "status": "published",
+    "order": 44,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-parallelitat-45",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Parallelität",
+    "status": "published",
+    "order": 45,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-codeanalyse-ubertragen-46",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Codeanalyse übertragen",
+    "status": "published",
+    "order": 46,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag1-cms-test-47",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "CMS Test",
+    "status": "published",
+    "order": 47,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   }
 ]

@@ -3,9 +3,10 @@
     "id": "lf05",
     "code": "LF05",
     "title": "Software zur Verwaltung von Daten anpassen",
-    "description": "Programmierung und Softwareentwicklung mit Python",
+    "description": "Python, Algorithmen, Modellierung, Datenverarbeitung und Debugging",
     "color": "#2563eb",
     "status": "published",
-    "order": 5
+    "order": 5,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   }
 ]

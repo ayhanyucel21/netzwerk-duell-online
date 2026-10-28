@@ -2,11 +2,14 @@
   {
     "id": "lf05-quiz",
     "courseId": "lf05",
-    "title": "LF05 Lernkontrollen",
+    "title": "quiz",
     "description": "Fragen zu den Inhalten von Tag 1–5.",
     "path": "/lf05/quiz/",
     "status": "published",
-    "order": 1
+    "order": 7,
+    "source": "questions/quiz.js",
+    "questionCount": 65,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "entscheidungstabellen",
@@ -43,5 +46,75 @@
     "source": "questions/codeanalyse.js",
     "status": "published",
     "order": 5
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme",
+    "courseId": "lf05",
+    "title": "aktivitaetsdiagramme",
+    "source": "questions/aktivitaetsdiagramme.js",
+    "questionCount": 20,
+    "status": "published",
+    "order": 1,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-codeanalyse",
+    "courseId": "lf05",
+    "title": "codeanalyse",
+    "source": "questions/codeanalyse.js",
+    "questionCount": 20,
+    "status": "published",
+    "order": 2,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-codebuilder",
+    "courseId": "lf05",
+    "title": "codebuilder",
+    "source": "questions/codebuilder.js",
+    "questionCount": 25,
+    "status": "published",
+    "order": 3,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-datentyp",
+    "courseId": "lf05",
+    "title": "datentyp",
+    "source": "questions/datentyp.js",
+    "questionCount": 25,
+    "status": "published",
+    "order": 4,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-debugging",
+    "courseId": "lf05",
+    "title": "debugging",
+    "source": "questions/debugging.js",
+    "questionCount": 25,
+    "status": "published",
+    "order": 5,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-entscheidungstabellen",
+    "courseId": "lf05",
+    "title": "entscheidungstabellen",
+    "source": "questions/entscheidungstabellen.js",
+    "questionCount": 20,
+    "status": "published",
+    "order": 6,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-schleifenmodellierung",
+    "courseId": "lf05",
+    "title": "schleifenmodellierung",
+    "source": "questions/schleifenmodellierung.js",
+    "questionCount": 20,
+    "status": "published",
+    "order": 8,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   }
 ]

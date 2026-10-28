@@ -3,9 +3,10 @@
     "id": "lf05-tag1",
     "courseId": "lf05",
     "number": 1,
-    "title": "Softwaregrundlagen",
+    "title": "6 ausführlich lernen",
     "status": "published",
-    "order": 1
+    "order": 1,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "lf05-tag2",

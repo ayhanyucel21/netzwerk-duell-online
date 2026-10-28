@@ -1,0 +1,4402 @@
+[
+  {
+    "id": "lf05-aktivitaetsdiagramme-001",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Startknoten",
+      "Entscheidungsknoten",
+      "Swimlane",
+      "Join"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-002",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Aktivitätsendknoten",
+      "Fork",
+      "Guard",
+      "Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-003",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Entscheidungsknoten",
+      "Fork",
+      "Join",
+      "Startknoten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-004",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Alternative Pfade wieder zu einem Kontrollfluss zusammenführen",
+      "Parallele Pfade starten",
+      "Zuständigkeiten trennen",
+      "Den Prozess beenden"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-005",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Aktivitäten Verantwortlichen oder Systemen zuordnen",
+      "Datentypen speichern",
+      "Schleifen automatisch beenden",
+      "Entscheidungstabellen reduzieren"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-006",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Fork",
+      "Join",
+      "Entscheidungsknoten",
+      "Endknoten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-007",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Join",
+      "Fork",
+      "Zusammenführung",
+      "Startknoten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-008",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine Bedingung an einer Kante, die die Pfadauswahl steuert",
+      "Der Name einer Swimlane",
+      "Eine auszuführende Aktivität",
+      "Ein Endknoten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-009",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine Aktivität oder Aktion",
+      "Einen Startknoten",
+      "Einen Fork",
+      "Eine Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-010",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Kundendienst konsultieren und Flugteilnahme beenden",
+      "Gepäck aufgeben und Bordkarte drucken",
+      "Immer Zusatzkosten bezahlen",
+      "Ohne Prüfung zum Gate gehen"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-011",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zusätzliche Kosten übernehmen",
+      "Ticket automatisch ungültig machen",
+      "Den Startknoten löschen",
+      "Ohne weitere Aktion beenden"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-012",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zur erneuten Eingabe der Vertragsdaten zurückführen",
+      "Trotzdem Zugangscode senden",
+      "Fahrzeug ohne Vertrag freigeben",
+      "Den Prozess ohne Ende verlassen"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-013",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "In der Swimlane des Kunden",
+      "In der Swimlane des Druckers",
+      "In keiner Swimlane",
+      "Zwingend in der Datenbank-Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-014",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "In der Swimlane des Buchungssystems",
+      "In der Kunden-Swimlane",
+      "Im Endknoten",
+      "Im Fork"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-015",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die Synchronisation der parallelen Pfade",
+      "Die Entscheidung über alternative Pfade",
+      "Der Start des Prozesses",
+      "Die Zuordnung zu einem Akteur"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-016",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Fork erzeugt parallele Pfade, eine Entscheidung alternative Pfade",
+      "Beide Elemente bedeuten immer dasselbe",
+      "Eine Entscheidung synchronisiert parallele Pfade",
+      "Ein Fork benötigt Ja/Nein-Guards"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-017",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Reihenfolge und Richtung zwischen Aktivitäten",
+      "Die Größe einer Variablen",
+      "Die Anzahl aller Regeln",
+      "Nur die Systemgrenze"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-018",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Entscheidungsknoten mit eindeutig beschrifteten Guards",
+      "Fork ohne Guards",
+      "Zwei Startknoten",
+      "Join vor der Entscheidung"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-019",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine Entscheidung ohne eindeutige Guards",
+      "Ein Startknoten am Anfang",
+      "Eine Aktivität in einer Swimlane",
+      "Ein Join nach parallelen Pfaden"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-aktivitaetsdiagramme-020",
+    "courseId": "lf05",
+    "quizId": "lf05-aktivitaetsdiagramme",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Alle Aktivitäten sollten auf einem vergleichbaren Abstraktionsniveau liegen",
+      "Jeder Mausklick muss immer dargestellt werden",
+      "Nur der Startknoten reicht aus",
+      "Swimlanes ersetzen alle Aktivitäten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "aktivitaetsdiagramme.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-001",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 11\n\nif x > 7:\n    print(\"A\")\nelif x > 9:\n    print(\"B\")\nelse:\n    print(\"C\")\n\nif x > 10:\n    print(\"D\")",
+    "options": [
+      "A und D",
+      "B und D",
+      "A",
+      "A, B und D"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-002",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for i in range(2, 8):\n    if i == 5:\n        break\n    print(\"*\")\nelse:\n    print(\"*\")\n\nprint(\"*\")",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-003",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for i in range(1, 7):\n    if i == 4:\n        continue\n    print(\"*\")\nelse:\n    print(\"Ende\")",
+    "options": [
+      "5 Sterne und danach Ende",
+      "6 Sterne und danach Ende",
+      "5 Sterne ohne Ende",
+      "4 Sterne und danach Ende"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-004",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for i in range(2, 10, -2):\n    print(i)",
+    "options": [
+      "Keine Ausgabe",
+      "2, 4, 6, 8",
+      "2",
+      "2, 0, -2"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-005",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 1\nwhile x < 8:\n    x *= 2\nprint(x)",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "7"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-006",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "summe = 0\nfor i in range(5):\n    summe += i\nprint(summe)",
+    "options": [
+      "10",
+      "15",
+      "6",
+      "5"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-007",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "i = 5\nsumme = 0\nfor j in range(i + 1):\n    summe += j\nprint(summe)",
+    "options": [
+      "Damit i enthalten ist",
+      "Damit bei 1 begonnen wird",
+      "Damit nur gerade Zahlen entstehen",
+      "Damit i übersprungen wird"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-008",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for wert in werte:\n    if wert == ziel:\n        print(\"gefunden\")\n        break\nelse:\n    print(\"nicht gefunden\")",
+    "options": [
+      "Wenn kein Treffer gefunden und kein break ausgeführt wird",
+      "Nach jedem Durchlauf",
+      "Nur bei einer leeren Liste",
+      "Immer nach einem Treffer"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-009",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 1\nwhile x < 5:\n    print(x)",
+    "options": [
+      "Endlosschleife mit wiederholter Ausgabe 1",
+      "Ausgabe 1 bis 4",
+      "SyntaxError",
+      "Genau eine Ausgabe"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-010",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "text = \"Python\"\nfor zeichen in text:\n    if zeichen in \"yhn\":\n        continue\n    print(zeichen, end=\"\")",
+    "options": [
+      "Pto",
+      "Pyth",
+      "yhn",
+      "Pton"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-011",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for i in range(1, 6):\n    if i % 2 == 0:\n        continue\n    print(i)",
+    "options": [
+      "1, 3, 5",
+      "2, 4",
+      "1, 2, 3, 4, 5",
+      "Keine"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-012",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 0\nwhile x < 5:\n    x += 2\nprint(x)",
+    "options": [
+      "6",
+      "5",
+      "7",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-013",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for a in range(2):\n    for b in range(3):\n        print(\"X\")",
+    "options": [
+      "6",
+      "5",
+      "3",
+      "9"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-014",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "i = 0\nwhile i < 4:\n    if i == 2:\n        break\n    print(i, end=\" \")\n    i += 1\nprint(\"Ende\")",
+    "options": [
+      "0 1 Ende",
+      "0 1",
+      "0 1 2 Ende",
+      "Ende"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-015",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 5\nif x > 0:\n    print(\"A\", end=\"\")\nif x < 10:\n    print(\"B\", end=\"\")\nif x == 5:\n    print(\"C\", end=\"\")",
+    "options": [
+      "ABC",
+      "AB",
+      "AC",
+      "BC"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-016",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 12\nif x > 5:\n    print(\"A\")\nelif x > 10:\n    print(\"B\")\nelse:\n    print(\"C\")",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "A und B"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-017",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "produkt = 1\nfor i in range(1, 5):\n    produkt *= i\nprint(produkt)",
+    "options": [
+      "24",
+      "10",
+      "4",
+      "120"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-018",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "for i in range(5):\n    if i == 2:\n        continue\n    print(i, end=\" \")\nelse:\n    print(\"Ende\")",
+    "options": [
+      "0 1 3 4 Ende",
+      "0 1 2 3 4 Ende",
+      "0 1 3 4",
+      "Ende"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-019",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "summe = 0\nfor i in range(1, 6):\n    summe += i\nprint(summe)",
+    "options": [
+      "15",
+      "10",
+      "21",
+      "5"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-codeanalyse-020",
+    "courseId": "lf05",
+    "quizId": "lf05-codeanalyse",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": "x = 3\nwhile x > 0:\n    print(x, end=\" \")\n    x -= 1",
+    "options": [
+      "3 2 1",
+      "3 2 1 0",
+      "2 1 0",
+      "Endlosschleife"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "codeanalyse.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-001",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "zahl = int(input())",
+      "input = zahl()",
+      "zahl = str(int)",
+      "print(input)"
+    ],
+    "correct": 0,
+    "explanation": "Die Eingabe wird eingelesen und konvertiert.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen input = zahl(), zahl = str(int), print(input) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 3,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-002",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "name = input()",
+      "input(name)",
+      "name = print()",
+      "str = name"
+    ],
+    "correct": 0,
+    "explanation": "input() liest Texteingaben ein.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen input(name), name = print(), str = name sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-003",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "print(name)",
+      "output(name)",
+      "echo(name)",
+      "show(name)"
+    ],
+    "correct": 0,
+    "explanation": "print() erzeugt Konsolenausgaben.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen output(name), echo(name), show(name) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-004",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "if alter >= 18:",
+      "if alter >= 18",
+      "if (alter >= 18)",
+      "if alter => 18:"
+    ],
+    "correct": 0,
+    "explanation": "Nach einer if-Bedingung wird ein Doppelpunkt benötigt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen if alter >= 18, if (alter >= 18), if alter => 18: sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-005",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "else:",
+      "else",
+      "otherwise:",
+      "alternative:"
+    ],
+    "correct": 0,
+    "explanation": "else endet mit einem Doppelpunkt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen else, otherwise:, alternative: sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-006",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "elif note == 2:",
+      "elseif note == 2:",
+      "else if note == 2:",
+      "elif(note==2)"
+    ],
+    "correct": 0,
+    "explanation": "elif erweitert eine Verzweigung.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen elseif note == 2:, else if note == 2:, elif(note==2) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 3,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-007",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "for i in range(5):",
+      "for(5):",
+      "loop range(5):",
+      "while range(5):"
+    ],
+    "correct": 0,
+    "explanation": "So wird eine klassische for-Schleife geschrieben.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen for(5):, loop range(5):, while range(5): sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-008",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "while True:",
+      "while(true)",
+      "loop True:",
+      "while = True"
+    ],
+    "correct": 0,
+    "explanation": "True ist ein boolescher Wert.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen while(true), loop True:, while = True sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-009",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "text = text.lower()",
+      "text.lower",
+      "lower(text)",
+      "text.small()"
+    ],
+    "correct": 0,
+    "explanation": "lower() liefert einen neuen String.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text.lower, lower(text), text.small() sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-010",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "text = text.strip()",
+      "text.removeSpace()",
+      "text.trimspace()",
+      "strip(text())"
+    ],
+    "correct": 0,
+    "explanation": "strip() entfernt führende und nachlaufende Leerzeichen.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text.removeSpace(), text.trimspace(), strip(text()) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-011",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "zahl += 1",
+      "zahl =+ 1",
+      "++zahl",
+      "zahl+"
+    ],
+    "correct": 0,
+    "explanation": "+= erhöht eine Variable.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen zahl =+ 1, ++zahl, zahl+ sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 3,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-012",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Schreibweise ist korrekt?",
+    "code": null,
+    "options": [
+      "server = []",
+      "server = ()",
+      "server = {}",
+      "server = <>"
+    ],
+    "correct": 0,
+    "explanation": "Listen werden mit [] angelegt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen server = (), server = {}, server = <> sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-013",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "server.append('DC01')",
+      "server.add('DC01')",
+      "server.push('DC01')",
+      "server.insert()"
+    ],
+    "correct": 0,
+    "explanation": "append() fügt Elemente an Listen an.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen server.add('DC01'), server.push('DC01'), server.insert() sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-014",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "len(server)",
+      "size(server)",
+      "length(server)",
+      "count(server)"
+    ],
+    "correct": 0,
+    "explanation": "len() liefert die Anzahl der Elemente.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen size(server), length(server), count(server) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-015",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "str(zahl)",
+      "text(zahl)",
+      "convert(zahl)",
+      "string(zahl)"
+    ],
+    "correct": 0,
+    "explanation": "str() konvertiert in einen String.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen text(zahl), convert(zahl), string(zahl) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-016",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "int(text)",
+      "integer(text)",
+      "parse(text)",
+      "number(text)"
+    ],
+    "correct": 0,
+    "explanation": "int() erzeugt eine Ganzzahl.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen integer(text), parse(text), number(text) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 3,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-017",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "if name == 'admin':",
+      "if name = 'admin':",
+      "if name === 'admin':",
+      "if(admin)"
+    ],
+    "correct": 0,
+    "explanation": "Vergleiche verwenden ==.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen if name = 'admin':, if name === 'admin':, if(admin) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-018",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "break",
+      "stop",
+      "exitloop",
+      "cancel"
+    ],
+    "correct": 0,
+    "explanation": "break beendet die Schleife.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen stop, exitloop, cancel sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-019",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "continue",
+      "skip",
+      "next",
+      "jump"
+    ],
+    "correct": 0,
+    "explanation": "continue überspringt den aktuellen Durchlauf.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen skip, next, jump sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-020",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zuweisung ist korrekt?",
+    "code": null,
+    "options": [
+      "aktiv = True",
+      "aktiv = true",
+      "aktiv = YES",
+      "aktiv = 1"
+    ],
+    "correct": 0,
+    "explanation": "Python verwendet True mit großem T.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen aktiv = true, aktiv = YES, aktiv = 1 sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-021",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Schreibweise ist korrekt?",
+    "code": null,
+    "options": [
+      "daten = {}",
+      "daten = []",
+      "daten = ()",
+      "daten = <>"
+    ],
+    "correct": 0,
+    "explanation": "Dictionarys werden mit {} erstellt.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen daten = [], daten = (), daten = <> sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 3,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-022",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "daten['name']",
+      "daten(name)",
+      "daten.name()",
+      "daten->name"
+    ],
+    "correct": 0,
+    "explanation": "So greift man auf einen Dictionary-Schlüssel zu.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen daten(name), daten.name(), daten->name sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-023",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zuweisung ist korrekt?",
+    "code": null,
+    "options": [
+      "preis = 19.99",
+      "preis = '19.99'",
+      "preis = True",
+      "preis = [19.99]"
+    ],
+    "correct": 0,
+    "explanation": "19.99 ist ein float.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen preis = '19.99', preis = True, preis = [19.99] sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-024",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "range(10)",
+      "range(9)",
+      "for(10)",
+      "loop(10)"
+    ],
+    "correct": 0,
+    "explanation": "range(10) erzeugt die Werte 0 bis 9.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen range(9), for(10), loop(10) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 2,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "CODEBUILDER-025",
+    "courseId": "lf05",
+    "quizId": "lf05-codebuilder",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile ist korrekt?",
+    "code": null,
+    "options": [
+      "print(f'Hallo {name}')",
+      "echo(name)",
+      "show(name)",
+      "write(name)"
+    ],
+    "correct": 0,
+    "explanation": "f-Strings ermöglichen Variablenausgaben im Text.  Die richtige Lösung erfüllt sowohl die Python-Syntax als auch die fachliche Anforderung. Die Alternativen echo(name), show(name), write(name) sind syntaktisch ungültig oder bilden Eingabe, Verarbeitung beziehungsweise Ausgabe nicht korrekt ab. Prüfungsstrategie: Die Lösung nach EVA ordnen und anschließend Doppelpunkt, Einrückung, Operator und Datentyp prüfen.",
+    "difficulty": 1,
+    "sourceFile": "codebuilder.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-001",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt 42?",
+    "code": "42",
+    "options": [
+      "int",
+      "float",
+      "bool",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "42 ist eine ganze Zahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen float, bool, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 3,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-002",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt 3.14?",
+    "code": "3.14",
+    "options": [
+      "float",
+      "int",
+      "bool",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "3.14 enthält Nachkommastellen.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, bool, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-003",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt True?",
+    "code": "True",
+    "options": [
+      "bool",
+      "int",
+      "float",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "True ist ein Wahrheitswert.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-004",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt False?",
+    "code": "False",
+    "options": [
+      "bool",
+      "str",
+      "int",
+      "float"
+    ],
+    "correct": 0,
+    "explanation": "False gehört zum Datentyp bool.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, int, float passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-005",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt \"Python\"?",
+    "code": "\"Python\"",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "Text in Anführungszeichen ist ein String.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-006",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt \"123\"?",
+    "code": "\"123\"",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "Anführungszeichen bedeuten Text.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 3,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-007",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt [1,2,3]?",
+    "code": "[1,2,3]",
+    "options": [
+      "list",
+      "tuple",
+      "str",
+      "int"
+    ],
+    "correct": 0,
+    "explanation": "Eckige Klammern erzeugen eine Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen tuple, str, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-008",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt []?",
+    "code": "[]",
+    "options": [
+      "list",
+      "str",
+      "dict",
+      "tuple"
+    ],
+    "correct": 0,
+    "explanation": "Leere Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, dict, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-009",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt (1,2,3)?",
+    "code": "(1,2,3)",
+    "options": [
+      "tuple",
+      "list",
+      "dict",
+      "set"
+    ],
+    "correct": 0,
+    "explanation": "Runde Klammern erzeugen ein Tupel.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, dict, set passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-010",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt {'a':1}?",
+    "code": "{'a':1}",
+    "options": [
+      "dict",
+      "set",
+      "list",
+      "tuple"
+    ],
+    "correct": 0,
+    "explanation": "Schlüssel-Wert-Paare bilden ein Dictionary.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen set, list, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-011",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp besitzt {1,2,3}?",
+    "code": "{1,2,3}",
+    "options": [
+      "set",
+      "dict",
+      "list",
+      "tuple"
+    ],
+    "correct": 0,
+    "explanation": "Menge ohne Schlüssel = Set.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen dict, list, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 3,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-012",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert input()?",
+    "code": "input()",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "input() liefert standardmäßig Text.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-013",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert int('5')?",
+    "code": "int('5')",
+    "options": [
+      "int",
+      "str",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "int() erzeugt einen Integer.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen str, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-014",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert float('5')?",
+    "code": "float('5')",
+    "options": [
+      "float",
+      "int",
+      "str",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "float() erzeugt eine Kommazahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, str, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-015",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert str(5)?",
+    "code": "str(5)",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "str() wandelt in Text um.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-016",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert bool(1)?",
+    "code": "bool(1)",
+    "options": [
+      "bool",
+      "int",
+      "float",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "bool() liefert Wahrheitswerte.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 3,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-017",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert 5 > 3?",
+    "code": "5 > 3",
+    "options": [
+      "bool",
+      "int",
+      "float",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "Vergleiche liefern True oder False.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, str passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-018",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert 'A' * 3?",
+    "code": "'A' * 3",
+    "options": [
+      "str",
+      "int",
+      "float",
+      "list"
+    ],
+    "correct": 0,
+    "explanation": "Das Ergebnis ist 'AAA'.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, float, list passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-019",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert len('Python')?",
+    "code": "len('Python')",
+    "options": [
+      "int",
+      "float",
+      "str",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "len() liefert eine ganze Zahl.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen float, str, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-020",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert [1,2,3][0]?",
+    "code": "[1,2,3][0]",
+    "options": [
+      "int",
+      "list",
+      "tuple",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "Das erste Element ist die Zahl 1.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, tuple, bool passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-021",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ besitzt ['A','B']?",
+    "code": "['A','B']",
+    "options": [
+      "list",
+      "tuple",
+      "set",
+      "dict"
+    ],
+    "correct": 0,
+    "explanation": "Eckige Klammern bedeuten Liste.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen tuple, set, dict passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 3,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-022",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert 'Python'.lower()?",
+    "code": "'Python'.lower()",
+    "options": [
+      "str",
+      "list",
+      "bool",
+      "int"
+    ],
+    "correct": 0,
+    "explanation": "lower() gibt einen String zurück.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, bool, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-023",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert True and False?",
+    "code": "True and False",
+    "options": [
+      "bool",
+      "int",
+      "str",
+      "float"
+    ],
+    "correct": 0,
+    "explanation": "Das Ergebnis eines logischen Vergleichs ist bool.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen int, str, float passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-024",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ liefert range(5)?",
+    "code": "range(5)",
+    "options": [
+      "range",
+      "list",
+      "int",
+      "tuple"
+    ],
+    "correct": 0,
+    "explanation": "range() erzeugt ein Range-Objekt.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen list, int, tuple passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 2,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DATENTYP-025",
+    "courseId": "lf05",
+    "quizId": "lf05-datentyp",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Typ besitzt None?",
+    "code": "None",
+    "options": [
+      "NoneType",
+      "bool",
+      "str",
+      "int"
+    ],
+    "correct": 0,
+    "explanation": "None besitzt den speziellen Typ NoneType.  Entscheidend ist der tatsächlich erzeugte Rückgabewert. Die Alternativen bool, str, int passen nicht zum ausgewerteten Ausdruck. Prüfungsstrategie: Anführungszeichen, Konvertierungsfunktionen, Operatoren und Rückgabetypen von Funktionen oder Methoden einzeln prüfen.",
+    "difficulty": 1,
+    "sourceFile": "datentyp.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-001",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "zahl = \"5\"\nprint(zahl + 2)",
+    "options": [
+      "TypeError",
+      "ValueError",
+      "NameError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "String und Zahl können nicht direkt addiert werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, NameError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 3,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-002",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "print(kunde)",
+    "options": [
+      "NameError",
+      "ValueError",
+      "TypeError",
+      "IndexError"
+    ],
+    "correct": 0,
+    "explanation": "Die Variable wurde nicht definiert.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, IndexError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-003",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "alter = int(\"abc\")",
+    "options": [
+      "ValueError",
+      "TypeError",
+      "IndexError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Der Text kann nicht als Zahl interpretiert werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-004",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "werte = [1,2,3]\nprint(werte[5])",
+    "options": [
+      "IndexError",
+      "NameError",
+      "ValueError",
+      "TypeError"
+    ],
+    "correct": 0,
+    "explanation": "Index 5 existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen NameError, ValueError, TypeError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-005",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler liegt vor?",
+    "code": "if x > 5\n    print(x)",
+    "options": [
+      "SyntaxError",
+      "TypeError",
+      "NameError",
+      "IndexError"
+    ],
+    "correct": 0,
+    "explanation": "Der Doppelpunkt fehlt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, NameError, IndexError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-006",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "leng(\"Python\")",
+    "options": [
+      "NameError",
+      "ValueError",
+      "TypeError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Die Funktion heißt len().  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 3,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-007",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "zahl = 42\nprint(zahl[0])",
+    "options": [
+      "TypeError",
+      "ValueError",
+      "IndexError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Integer sind nicht indexierbar.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-008",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "daten = {}\nprint(daten[\"name\"])",
+    "options": [
+      "KeyError",
+      "IndexError",
+      "TypeError",
+      "NameError"
+    ],
+    "correct": 0,
+    "explanation": "Der Schlüssel existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen IndexError, TypeError, NameError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-009",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "print(5 / 0)",
+    "options": [
+      "ZeroDivisionError",
+      "ValueError",
+      "TypeError",
+      "SyntaxError"
+    ],
+    "correct": 0,
+    "explanation": "Eine Division durch Null ist nicht erlaubt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ValueError, TypeError, SyntaxError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-010",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "import nichtvorhanden",
+    "options": [
+      "ModuleNotFoundError",
+      "ImportError",
+      "TypeError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Das Modul existiert nicht.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen ImportError, TypeError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-011",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Anweisung fehlt?",
+    "code": "while True:\n    print(\"Hallo\")",
+    "options": [
+      "break",
+      "pass",
+      "return",
+      "elif"
+    ],
+    "correct": 0,
+    "explanation": "Ohne break entsteht eine Endlosschleife.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen pass, return, elif erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 3,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-012",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Fehler tritt auf?",
+    "code": "if True:\nprint(\"Hallo\")",
+    "options": [
+      "IndentationError",
+      "NameError",
+      "IndexError",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Nach dem Doppelpunkt muss eingerückt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen NameError, IndexError, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-013",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wo liegt der Fehler?",
+    "code": "if name = \"admin\":",
+    "options": [
+      "= statt ==",
+      "fehlendes if",
+      "falscher Datentyp",
+      "Kein Fehler"
+    ],
+    "correct": 0,
+    "explanation": "Vergleich benötigt ==.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen fehlendes if, falscher Datentyp, Kein Fehler erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-014",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Ergebnis ist korrekt?",
+    "code": "\"A\" * 3",
+    "options": [
+      "AAA",
+      "TypeError",
+      "ValueError",
+      "SyntaxError"
+    ],
+    "correct": 0,
+    "explanation": "Strings können wiederholt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen TypeError, ValueError, SyntaxError erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-015",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile fehlt?",
+    "code": "zahl = input()\n# ???",
+    "options": [
+      "zahl = int(zahl)",
+      "zahl = bool()",
+      "zahl = print()",
+      "zahl = range()"
+    ],
+    "correct": 0,
+    "explanation": "Der String muss in int umgewandelt werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen zahl = bool(), zahl = print(), zahl = range() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-016",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Datentyp entsteht?",
+    "code": "5 > 2",
+    "options": [
+      "bool",
+      "int",
+      "float",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "Vergleiche liefern Wahrheitswerte.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen int, float, str erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 3,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-017",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Methode existiert?",
+    "code": "\"Python\".???",
+    "options": [
+      "lower()",
+      "small()",
+      "tiny()",
+      "min()"
+    ],
+    "correct": 0,
+    "explanation": "lower() wandelt in Kleinbuchstaben um.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen small(), tiny(), min() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-018",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Schreibweise ist korrekt?",
+    "code": null,
+    "options": [
+      "[1,2,3]",
+      "(1,2,3",
+      "{1;2;3}",
+      "[1|2|3]"
+    ],
+    "correct": 0,
+    "explanation": "Listen werden mit eckigen Klammern erstellt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen (1,2,3, {1;2;3}, [1|2|3] erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-019",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "print(True and False)",
+    "options": [
+      "False",
+      "True",
+      "0",
+      "1"
+    ],
+    "correct": 0,
+    "explanation": "Beide Werte müssten True sein.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen True, 0, 1 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-020",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Wert erscheint zuletzt?",
+    "code": "for i in range(3):\n    print(i)",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "range(3) erzeugt 0,1,2.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen 3, 1, 0 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-021",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Ausgabe erscheint?",
+    "code": "print(\"Netz\" + \"werk\")",
+    "options": [
+      "Netzwerk",
+      "Netz werk",
+      "Fehler",
+      "network"
+    ],
+    "correct": 0,
+    "explanation": "Strings werden zusammengefügt.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen Netz werk, Fehler, network erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 3,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-022",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Index greift auf das letzte Element zu?",
+    "code": null,
+    "options": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "Der letzte Index ist Länge minus 1.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen 3, 1, 0 erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-023",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was ist problematisch?",
+    "code": "list = [1,2,3]",
+    "options": [
+      "Die eingebaute Funktion list() wird überschrieben",
+      "SyntaxError",
+      "ValueError",
+      "Kein Problem"
+    ],
+    "correct": 0,
+    "explanation": "Reservierte Funktionsnamen sollten vermieden werden.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen SyntaxError, ValueError, Kein Problem erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-024",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Zeile fehlt?",
+    "code": "x = 10\nwhile x > 0:\n    print(x)\n    ???",
+    "options": [
+      "x -= 1",
+      "x += 1",
+      "break",
+      "continue"
+    ],
+    "correct": 0,
+    "explanation": "Sonst entsteht eine Endlosschleife.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen x += 1, break, continue erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 2,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "DEBUGGING-025",
+    "courseId": "lf05",
+    "quizId": "lf05-debugging",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Methode entfernt sie?",
+    "code": null,
+    "options": [
+      "strip()",
+      "clean()",
+      "delete()",
+      "remove()"
+    ],
+    "correct": 0,
+    "explanation": "strip() entfernt Leerzeichen am Anfang und Ende.  Fehlerart und Fehlerursache müssen getrennt betrachtet werden. Die Alternativen clean(), delete(), remove() erklären die gezeigte Programmsituation nicht passend. Prüfungsstrategie: Zuerst die betroffene Zeile bestimmen, anschließend Datentypen, Werte, Syntax, Einrückung und Kontrollfluss prüfen. Danach die kleinste fachlich korrekte Änderung ableiten.",
+    "difficulty": 1,
+    "sourceFile": "debugging.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-001",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine Kombination aus Bedingungswerten und zugehörigen Aktionen",
+      "Nur eine einzelne Bedingung",
+      "Eine Verbindung zwischen UML-Aktivitäten",
+      "Eine Python-Variable"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-002",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Der Zustand ist für diese Regel unerheblich",
+      "Die Regel ist fehlerhaft",
+      "Die Aktion wird abgebrochen",
+      "Die Tabelle endet"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-003",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-004",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "8",
+      "6",
+      "9",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-005",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Jede fachlich mögliche Kombination benötigt eine definierte Reaktion",
+      "Alle Aktionen müssen gleichzeitig ausgeführt werden",
+      "Bedingungen werden dadurch überflüssig",
+      "Die Tabelle benötigt möglichst viele Spalten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-006",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die Regeln mit einem Ist-egal-Zustand zusammenfassen",
+      "Eine Regel ohne Prüfung löschen",
+      "Alle Bedingungen zu Aktionen machen",
+      "Eine dritte identische Regel ergänzen"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-007",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zahlung eingegangen?",
+      "Ware versenden",
+      "Kunden informieren",
+      "Bestellung stornieren"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-008",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zugriff gewähren",
+      "Passwort korrekt?",
+      "Nutzername korrekt?",
+      "Versuche größer als 3?"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-009",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Weniger redundante Regeln bei gleicher fachlicher Aussage",
+      "Bedingungen müssen nicht mehr dokumentiert werden",
+      "Alle Aktionen werden entfernt",
+      "Die Tabelle wird automatisch zum Aktivitätsdiagramm"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-010",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die Entscheidung ist nicht eindeutig",
+      "Die Tabelle ist automatisch vollständig",
+      "Ein Join fehlt",
+      "Der Bindestrich wurde korrekt verwendet"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-011",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Bedingungen sammeln, Kombinationen bilden, Aktionen zuordnen, prüfen",
+      "Aktionen löschen, Diagramm zeichnen, Bedingungen raten",
+      "Nur den häufigsten Fall dokumentieren",
+      "Zuerst Code schreiben und die Tabelle danach ableiten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-012",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Stammkunde? und Bestellwert mindestens 100 Euro?",
+      "Rabatt gewähren und Rechnung senden",
+      "Preis reduzieren und Kunden informieren",
+      "Bestellung abschließen"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-013",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Mehrere Regeln beschreiben unnötig dieselbe fachliche Reaktion",
+      "Eine Bedingung besitzt zwei mögliche Werte",
+      "Eine Aktion wird genau einmal ausgeführt",
+      "Die Tabelle enthält einen Titel"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-014",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "In einer Regel können mehrere Aktionen gleichzeitig markiert sein",
+      "Jede Regel darf nur eine Bedingung besitzen",
+      "Aktionen stehen immer oberhalb der Bedingungen",
+      "Aktionen ersetzen die Regeln"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-015",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die bisherige Anzahl der Fehlversuche, sofern keine Sperrregel entgegensteht",
+      "Ob das Passwort korrekt ist",
+      "Ob der Nutzername korrekt ist",
+      "Ob Zugriff gewährt wird"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-016",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Alle möglichen Bedingungskombinationen mit den vorhandenen Regeln vergleichen",
+      "Nur die erste Regel lesen",
+      "Nur die Aktionen zählen",
+      "Die Farbe der Tabelle kontrollieren"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-017",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "16",
+      "8",
+      "12",
+      "20"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-018",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Ob die Aktion fachlich widersprüchlich zur Bedingung ist",
+      "Ob ein Startknoten fehlt",
+      "Ob range() den Endwert enthält",
+      "Ob eine Swimlane vorhanden ist"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-019",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Wenn die beiden Zustände zu unterschiedlichen Aktionen führen",
+      "Wenn beide Zustände dieselben Aktionen auslösen",
+      "Wenn eine Tabelle reduziert werden soll",
+      "Wenn eine Bedingung in einer Regel wirklich irrelevant ist"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-entscheidungstabellen-020",
+    "courseId": "lf05",
+    "quizId": "lf05-entscheidungstabellen",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Jede Regel kann als Grundlage für mindestens einen Testfall dienen",
+      "Nur die erste Regel wird getestet",
+      "Aktionen können nicht getestet werden",
+      "Entscheidungstabellen ersetzen sämtliche Tests"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "entscheidungstabellen.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-001",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Datentyp eignet sich am besten?",
+    "code": null,
+    "options": [
+      "int",
+      "float",
+      "str",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "Kundennummern werden als ganze Zahlen gespeichert.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen float, str, bool verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-002",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Datentyp liefert input() zurück?",
+    "code": null,
+    "options": [
+      "str",
+      "int",
+      "float",
+      "bool"
+    ],
+    "correct": 0,
+    "explanation": "input() liefert immer einen String.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int, float, bool verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-003",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Datentyp wird verwendet?",
+    "code": null,
+    "options": [
+      "bool",
+      "str",
+      "int",
+      "float"
+    ],
+    "correct": 0,
+    "explanation": "True und False gehören zum Typ bool.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen str, int, float verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-004",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Datentyp ist geeignet?",
+    "code": null,
+    "options": [
+      "float",
+      "int",
+      "bool",
+      "str"
+    ],
+    "correct": 0,
+    "explanation": "float speichert Kommazahlen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int, bool, str verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-005",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Datenstruktur eignet sich?",
+    "code": null,
+    "options": [
+      "list",
+      "bool",
+      "float",
+      "int"
+    ],
+    "correct": 0,
+    "explanation": "Listen speichern mehrere Werte.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen bool, float, int verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-006",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Operator wird verwendet?",
+    "code": null,
+    "options": [
+      "==",
+      "=",
+      "+",
+      "%"
+    ],
+    "correct": 0,
+    "explanation": "== vergleicht zwei Werte.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen =, +, % verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-007",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Bedingung ist korrekt?",
+    "code": null,
+    "options": [
+      "len(passwort) >= 8",
+      "len(passwort) <= 8",
+      "passwort == 8",
+      "len(passwort) > 80"
+    ],
+    "correct": 0,
+    "explanation": "Der Grenzwert 8 wird eingeschlossen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen len(passwort) <= 8, passwort == 8, len(passwort) > 80 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-008",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Schleife wird typischerweise verwendet?",
+    "code": null,
+    "options": [
+      "for",
+      "if",
+      "else",
+      "break"
+    ],
+    "correct": 0,
+    "explanation": "for wird für bekannte Mengen eingesetzt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen if, else, break verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-009",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Anweisung wird verwendet?",
+    "code": null,
+    "options": [
+      "break",
+      "continue",
+      "pass",
+      "elif"
+    ],
+    "correct": 0,
+    "explanation": "break beendet die Schleife sofort.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen continue, pass, elif verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-010",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Funktion wird verwendet?",
+    "code": null,
+    "options": [
+      "len()",
+      "size()",
+      "count()",
+      "text()"
+    ],
+    "correct": 0,
+    "explanation": "len() liefert die Anzahl der Zeichen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen size(), count(), text() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-011",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Methode wird verwendet?",
+    "code": null,
+    "options": [
+      "lower()",
+      "small()",
+      "down()",
+      "tiny()"
+    ],
+    "correct": 0,
+    "explanation": "lower() wandelt Text in Kleinbuchstaben um.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen small(), down(), tiny() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-012",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Methode ist geeignet?",
+    "code": null,
+    "options": [
+      "strip()",
+      "clean()",
+      "remove()",
+      "trimspace()"
+    ],
+    "correct": 0,
+    "explanation": "strip() entfernt führende und nachfolgende Leerzeichen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen clean(), remove(), trimspace() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-013",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Funktion erzeugt eine Ausgabe?",
+    "code": null,
+    "options": [
+      "print()",
+      "input()",
+      "len()",
+      "int()"
+    ],
+    "correct": 0,
+    "explanation": "print() schreibt Daten in die Konsole.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen input(), len(), int() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-014",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Funktion wird verwendet?",
+    "code": null,
+    "options": [
+      "int()",
+      "float()",
+      "str()",
+      "bool()"
+    ],
+    "correct": 0,
+    "explanation": "int() erzeugt eine Ganzzahl.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen float(), str(), bool() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-015",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Funktion wird verwendet?",
+    "code": null,
+    "options": [
+      "float()",
+      "int()",
+      "str()",
+      "bool()"
+    ],
+    "correct": 0,
+    "explanation": "float() erzeugt eine Kommazahl.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen int(), str(), bool() verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-016",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Index besitzt das erste Element?",
+    "code": null,
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "4"
+    ],
+    "correct": 0,
+    "explanation": "Python beginnt die Zählung bei 0.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen 1, -1, 4 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-017",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welchen Index besitzt das letzte Element?",
+    "code": null,
+    "options": [
+      "3",
+      "4",
+      "1",
+      "0"
+    ],
+    "correct": 0,
+    "explanation": "Der letzte Index ist Länge minus 1.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen 4, 1, 0 verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-018",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Schlüsselwort startet eine Verzweigung?",
+    "code": null,
+    "options": [
+      "if",
+      "for",
+      "while",
+      "break"
+    ],
+    "correct": 0,
+    "explanation": "if startet eine Bedingung.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, while, break verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-019",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Schlüsselwort wird verwendet?",
+    "code": null,
+    "options": [
+      "else",
+      "for",
+      "while",
+      "pass"
+    ],
+    "correct": 0,
+    "explanation": "else wird bei falscher Bedingung ausgeführt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, while, pass verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-020",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Schlüsselwort ergänzt eine Verzweigung?",
+    "code": null,
+    "options": [
+      "elif",
+      "loop",
+      "break",
+      "range"
+    ],
+    "correct": 0,
+    "explanation": "elif ergänzt weitere Bedingungen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen loop, break, range verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-021",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Schleife wird verwendet?",
+    "code": null,
+    "options": [
+      "while",
+      "for",
+      "if",
+      "elif"
+    ],
+    "correct": 0,
+    "explanation": "while arbeitet bedingungsgesteuert.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen for, if, elif verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-022",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Ausdruck ist geeignet?",
+    "code": null,
+    "options": [
+      "range(10)",
+      "range(11,20)",
+      "while(10)",
+      "loop(10)"
+    ],
+    "correct": 0,
+    "explanation": "range(10) erzeugt die Werte 0 bis 9.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen range(11,20), while(10), loop(10) verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-023",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wofür steht EVA?",
+    "code": null,
+    "options": [
+      "Eingabe-Verarbeitung-Ausgabe",
+      "Einsatz-Verbindung-Anzeige",
+      "Ergebnis-Verarbeitung-Aktion",
+      "Energie-Verarbeitung-Ausgabe"
+    ],
+    "correct": 0,
+    "explanation": "EVA beschreibt den Grundablauf von Programmen.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Einsatz-Verbindung-Anzeige, Ergebnis-Verarbeitung-Aktion, Energie-Verarbeitung-Ausgabe verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-024",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie nennt man diese Software?",
+    "code": null,
+    "options": [
+      "Individualsoftware",
+      "Standardsoftware",
+      "Systemsoftware",
+      "Firmware"
+    ],
+    "correct": 0,
+    "explanation": "Sie wird für einen bestimmten Kunden entwickelt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Standardsoftware, Systemsoftware, Firmware verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-025",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Softwareart ist das?",
+    "code": null,
+    "options": [
+      "Standardsoftware",
+      "Individualsoftware",
+      "Firmware",
+      "Treiber"
+    ],
+    "correct": 0,
+    "explanation": "Standardsoftware wird für viele Nutzer entwickelt.  Die Lösung folgt aus der beschriebenen Anforderung und den behandelten Grundlagen. Die Alternativen Individualsoftware, Firmware, Treiber verwechseln Datentyp, Operator, Funktion oder Kontrollstruktur. Prüfungsstrategie: Fachliche Anforderung markieren, passende Python-Struktur bestimmen und Grenzwerte sowie Rückgabewerte kontrollieren.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-026",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was beschreibt eine Regel in einer Entscheidungstabelle?",
+    "code": null,
+    "options": [
+      "Eine Kombination von Bedingungswerten mit den zugehörigen Aktionen",
+      "Nur eine einzelne Aktion",
+      "Eine grafische Verbindung zwischen Aktivitäten",
+      "Eine Variable im Quellcode"
+    ],
+    "correct": 0,
+    "explanation": "Eine Regel ist eine Spalte mit einer konkreten Kombination von Bedingungszuständen. Dazu wird festgelegt, welche Aktionen ausgeführt werden. Prüfungsstrategie: Bedingungen, Kombination und Aktionen getrennt lesen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-027",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was bedeutet ein Bindestrich bei einer Bedingung?",
+    "code": null,
+    "options": [
+      "Der Zustand der Bedingung ist für diese Regel egal",
+      "Die Regel enthält einen Fehler",
+      "Die Aktion wird immer abgebrochen",
+      "Die Tabelle endet an dieser Stelle"
+    ],
+    "correct": 0,
+    "explanation": "Der Bindestrich steht für einen Ist-egal-Zustand. Ja und Nein führen in dieser Regel zu denselben Aktionen und können zusammengefasst werden.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-028",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie viele vollständige Kombinationen entstehen zunächst?",
+    "code": null,
+    "options": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "correct": 0,
+    "explanation": "Bei zwei binären Bedingungen entstehen 2² = 4 Kombinationen: Ja/Ja, Ja/Nein, Nein/Ja und Nein/Nein.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-029",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie viele vollständige Regeln sind vor einer Reduktion möglich?",
+    "code": null,
+    "options": [
+      "8",
+      "6",
+      "9",
+      "12"
+    ],
+    "correct": 0,
+    "explanation": "Für n binäre Bedingungen entstehen 2ⁿ Kombinationen. Bei drei Bedingungen sind das 2³ = 8 Regeln.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-030",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Warum muss die Entscheidungstabelle vollständig sein?",
+    "code": null,
+    "options": [
+      "Damit jede fachlich mögliche Kombination eine definierte Reaktion besitzt",
+      "Damit jede Aktion gleichzeitig ausgeführt wird",
+      "Damit keine Bedingung benötigt wird",
+      "Damit die Tabelle möglichst viele Spalten hat"
+    ],
+    "correct": 0,
+    "explanation": "Vollständigkeit verhindert unbehandelte Fälle. Für jede relevante Kombination muss eine eindeutige Aktion oder Fehlerbehandlung festgelegt sein.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-031",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie kann die Tabelle sinnvoll reduziert werden?",
+    "code": null,
+    "options": [
+      "Die beiden Regeln mit einem Ist-egal-Zustand zusammenfassen",
+      "Eine der Regeln ersatzlos löschen",
+      "Alle Bedingungen zu Aktionen machen",
+      "Eine weitere identische Regel ergänzen"
+    ],
+    "correct": 0,
+    "explanation": "Wenn beide Zustände einer Bedingung dieselbe Aktion auslösen, kann die Bedingung in der zusammengefassten Regel mit einem Bindestrich als irrelevant markiert werden.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-032",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Tabellenzeile gehört in den Aktionsbereich?",
+    "code": null,
+    "options": [
+      "Zugriff gewähren",
+      "Passwort korrekt?",
+      "Nutzername korrekt?",
+      "Anzahl Versuche größer 3?"
+    ],
+    "correct": 0,
+    "explanation": "„Zugriff gewähren“ ist eine auszuführende Reaktion und damit eine Aktion. Die anderen Antworten sind prüfbare Bedingungen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-033",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Formulierung ist eine Bedingung?",
+    "code": null,
+    "options": [
+      "Zahlung eingegangen?",
+      "Ware versenden",
+      "Kunden informieren",
+      "Bestellung stornieren"
+    ],
+    "correct": 0,
+    "explanation": "Eine Bedingung ist eine prüfbare Aussage. Versenden, informieren und stornieren sind mögliche Aktionen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-034",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was ist der wichtigste Vorteil einer reduzierten Entscheidungstabelle?",
+    "code": null,
+    "options": [
+      "Weniger redundante Regeln bei gleicher fachlicher Aussage",
+      "Alle Bedingungen werden entfernt",
+      "Die Tabelle wird zu einem Aktivitätsdiagramm",
+      "Die Aktionen müssen nicht mehr dokumentiert werden"
+    ],
+    "correct": 0,
+    "explanation": "Reduktion fasst Regeln mit identischen Aktionen zusammen. Die fachliche Vollständigkeit muss dabei erhalten bleiben.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-035",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Qualitätsproblem liegt vor?",
+    "code": null,
+    "options": [
+      "Die Regeln sind nicht eindeutig beziehungsweise widersprüchlich",
+      "Die Tabelle ist automatisch vollständig",
+      "Ein Bindestrich fehlt zwingend",
+      "Es wird ein Fork benötigt"
+    ],
+    "correct": 0,
+    "explanation": "Für dieselbe Bedingungskombination dürfen nicht widersprüchliche Aktionen gelten. Andernfalls ist die Entscheidung nicht eindeutig.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-036",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Element kennzeichnet den Beginn?",
+    "code": null,
+    "options": [
+      "Startknoten",
+      "Entscheidungsknoten",
+      "Swimlane",
+      "Join"
+    ],
+    "correct": 0,
+    "explanation": "Der Startknoten markiert den eindeutigen Beginn des Kontrollflusses. Er ist nicht mit einer Aktivität oder Entscheidung zu verwechseln.",
+    "difficulty": 1,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-037",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Element modelliert die Aufteilung?",
+    "code": null,
+    "options": [
+      "Entscheidungsknoten",
+      "Fork",
+      "Join",
+      "Endknoten"
+    ],
+    "correct": 0,
+    "explanation": "Ein Entscheidungsknoten verzweigt einen Ablauf anhand von Guards wie [gültig] und [ungültig].",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-038",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Element wird benötigt?",
+    "code": null,
+    "options": [
+      "Zusammenführung",
+      "Startknoten",
+      "Fork",
+      "Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "Eine Zusammenführung führt alternative Pfade wieder zusammen. Sie synchronisiert keine parallelen Pfade; dafür wird ein Join verwendet.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-039",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wozu dienen Swimlanes?",
+    "code": null,
+    "options": [
+      "Zur Zuordnung der Aktivitäten zu Verantwortlichen",
+      "Zur Kennzeichnung von Schleifenvariablen",
+      "Zum Speichern von Bedingungen",
+      "Zum Ersetzen des Endknotens"
+    ],
+    "correct": 0,
+    "explanation": "Swimlanes zeigen, welcher Akteur oder welches System für eine Aktivität verantwortlich ist.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-040",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Element teilt den Kontrollfluss?",
+    "code": null,
+    "options": [
+      "Fork",
+      "Join",
+      "Entscheidungsknoten",
+      "Aktionsknoten"
+    ],
+    "correct": 0,
+    "explanation": "Ein Fork teilt einen Kontrollfluss in parallele Pfade. Die parallelen Pfade können später mit einem Join synchronisiert werden.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-041",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Element synchronisiert die Pfade?",
+    "code": null,
+    "options": [
+      "Join",
+      "Fork",
+      "Startknoten",
+      "Guard"
+    ],
+    "correct": 0,
+    "explanation": "Ein Join wartet auf die erforderlichen eingehenden parallelen Pfade und führt sie zu einem gemeinsamen Kontrollfluss zusammen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-042",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was beschreibt diese Beschriftung?",
+    "code": null,
+    "options": [
+      "Eine Guard-Bedingung für die Auswahl des Pfades",
+      "Den Namen einer Swimlane",
+      "Eine auszuführende Aktivität",
+      "Einen Endknoten"
+    ],
+    "correct": 0,
+    "explanation": "Ein Guard legt fest, unter welcher Bedingung ein ausgehender Pfad gewählt wird.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-043",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Ablauf entspricht dem Szenario?",
+    "code": null,
+    "options": [
+      "Kundendienst konsultieren und Flugteilnahme beenden",
+      "Gepäck abgeben und Bordkarte ausstellen",
+      "Immer Zusatzkosten bezahlen",
+      "Ohne Entscheidung zum Start zurückkehren"
+    ],
+    "correct": 0,
+    "explanation": "Bei einem fehlerhaften Ticket wird der Kundendienst konsultiert; der Fluggast kann in diesem Ablauf nicht mitfliegen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-044",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie wird der Ablauf fortgesetzt?",
+    "code": null,
+    "options": [
+      "Zur erneuten Eingabe der Vertragsdaten zurückführen",
+      "Trotzdem Bestätigung und Zugangscode senden",
+      "Den Prozess ohne Endzustand verlassen",
+      "Eine zweite Fahrzeugklasse automatisch wählen"
+    ],
+    "correct": 0,
+    "explanation": "Fehlerhafte Daten erzeugen eine Wiederholung. Der Fehlerpfad führt zur erneuten Dateneingabe zurück.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-045",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welches Problem besteht?",
+    "code": null,
+    "options": [
+      "Die parallelen Pfade werden vor dem gemeinsamen Folgeschritt nicht synchronisiert",
+      "Die Swimlanes sind automatisch falsch",
+      "Der Startknoten ist überflüssig",
+      "Es fehlt eine Entscheidungstabelle"
+    ],
+    "correct": 0,
+    "explanation": "Wenn ein Folgeschritt beide parallelen Ergebnisse benötigt, muss ein Join die Pfade synchronisieren.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-046",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Aussage ist korrekt?",
+    "code": null,
+    "options": [
+      "Entscheidung und Rückverweis bilden die Schleife",
+      "Jede Schleife besitzt im PAP ein eigenes Schleifensymbol",
+      "Nur ein Rechteck reicht aus",
+      "Eine Schleife benötigt keinen Ausgang"
+    ],
+    "correct": 0,
+    "explanation": "Im PAP gibt es kein eigenes Schleifensymbol. Bedingung, Schleifenweg, Rückverweis und Ausstieg bilden die Wiederholung.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-047",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie sind die enthaltenen Schritte erkennbar?",
+    "code": null,
+    "options": [
+      "Sie stehen eingerückt innerhalb des Schleifenblocks",
+      "Sie stehen in einer separaten Swimlane",
+      "Sie werden nur durch Pfeile verbunden",
+      "Sie stehen außerhalb des Diagramms"
+    ],
+    "correct": 0,
+    "explanation": "Struktogramme besitzen eigene Wiederholungselemente. Die zum Schleifenrumpf gehörenden Anweisungen stehen innerhalb des Blocks.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-048",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was benötigt die Schleife zusätzlich zum Rückverweis?",
+    "code": null,
+    "options": [
+      "Einen erreichbaren Ausstieg bei gültigen Daten",
+      "Einen zweiten Startknoten",
+      "Immer einen Fork",
+      "Eine weitere Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "Eine Schleife muss unter einer fachlich definierten Bedingung verlassen werden können. Sonst modelliert sie einen endlosen Ablauf.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-049",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Bedingung sollte den Schleifenpfad verlassen?",
+    "code": null,
+    "options": [
+      "[Daten gültig]",
+      "[Fehler]",
+      "[immer]",
+      "[zurück]"
+    ],
+    "correct": 0,
+    "explanation": "Der Fehlerpfad wiederholt die Eingabe; der Gegenfall [Daten gültig] führt zum weiteren Prozess.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-050",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Folge ist möglich?",
+    "code": null,
+    "options": [
+      "Der Schleifenrumpf wird kein einziges Mal ausgeführt",
+      "Der Schleifenrumpf läuft immer mindestens einmal",
+      "Die Schleife benötigt keinen Kontrollwert",
+      "Ein break ist zwingend vorgeschrieben"
+    ],
+    "correct": 0,
+    "explanation": "Ist die Bedingung bereits bei der ersten Prüfung False, wird der Schleifenrumpf übersprungen.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-051",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Aussage ist richtig?",
+    "code": null,
+    "options": [
+      "Der Schleifenrumpf wird mindestens einmal ausgeführt",
+      "Der Schleifenrumpf kann grundsätzlich nie ausgeführt werden",
+      "Die Schleife besitzt keinen Ausstieg",
+      "Die Schleife ist immer parallel"
+    ],
+    "correct": 0,
+    "explanation": "Weil die Bedingung erst nach dem Rumpf geprüft wird, findet mindestens ein Durchlauf statt.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-052",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was fehlt für eine fachlich kontrollierte Schleife?",
+    "code": null,
+    "options": [
+      "Eine prüfbare Abbruchbedingung",
+      "Eine zweite identische Aktivität",
+      "Ein Join",
+      "Eine Entscheidungstabelle"
+    ],
+    "correct": 0,
+    "explanation": "Ohne Bedingung und Ausstieg ist nicht erkennbar, wann die Wiederholung endet. Das Risiko einer Endlosschleife besteht.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-053",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wohin sollte der Rückfluss führen?",
+    "code": null,
+    "options": [
+      "Zur zuständigen Aktivität „Vertragsdaten eingeben“ in der Kunden-Swimlane",
+      "Zum Endknoten",
+      "Zum Fork für parallele Pfade",
+      "Zu einer beliebigen Aktivität in der System-Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "Der Rückfluss muss zum fachlich zuständigen Eingabeschritt führen. Die Swimlane macht die Verantwortung sichtbar.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-054",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Modellinformation ist notwendig?",
+    "code": null,
+    "options": [
+      "Sowohl der Erfolgs- als auch der Grenzwertausstieg",
+      "Nur der Rückverweis",
+      "Nur ein Startknoten",
+      "Ausschließlich eine Aktion „Versuche erhöhen“"
+    ],
+    "correct": 0,
+    "explanation": "Für einen vollständigen Ablauf müssen beide Endbedingungen dargestellt werden: Erfolg oder Erreichen der maximalen Versuche.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-055",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Aussage ist fachlich richtig?",
+    "code": null,
+    "options": [
+      "Parallelität und Wiederholung müssen mit ihren jeweiligen Knoten eindeutig modelliert werden",
+      "Ein Fork ersetzt jede Schleifenbedingung",
+      "Ein Rückverweis ersetzt jeden Join",
+      "Swimlanes machen Bedingungen überflüssig"
+    ],
+    "correct": 0,
+    "explanation": "Fork/Join beschreiben Parallelität; Entscheidung, Guard und Rückverweis beschreiben Wiederholung. Die Konzepte dürfen nicht verwechselt werden.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-056",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "x = 11\n\nif x > 7:\n    print(\"A\")\nelif x > 9:\n    print(\"B\")\nelse:\n    print(\"C\")\n\nif x > 10:\n    print(\"D\")",
+    "options": [
+      "A und D",
+      "B und D",
+      "A",
+      "A, B und D"
+    ],
+    "correct": 0,
+    "explanation": "In der if/elif/else-Kette wird nur der erste passende Zweig A ausgeführt. Das zweite if ist unabhängig und liefert zusätzlich D.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-057",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wie viele Sternchen werden insgesamt ausgegeben?",
+    "code": "for i in range(2, 8):\n    if i == 5:\n        break\n    print(\"*\")\nelse:\n    print(\"*\")\n\nprint(\"*\")",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correct": 0,
+    "explanation": "Für i = 2, 3 und 4 werden drei Sterne ausgegeben. Bei i = 5 beendet break die Schleife und verhindert den else-Block. Danach folgt ein weiterer Stern.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-058",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "for i in range(1, 7):\n    if i == 4:\n        continue\n    print(\"*\")\nelse:\n    print(\"Ende\")",
+    "options": [
+      "5 Sterne und danach Ende",
+      "6 Sterne und danach Ende",
+      "5 Sterne ohne Ende",
+      "4 Sterne und danach Ende"
+    ],
+    "correct": 0,
+    "explanation": "range(1, 7) liefert sechs Werte. Bei i = 4 wird ein Stern übersprungen. Da kein break ausgeführt wird, läuft der else-Block.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-059",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Was wird ausgegeben?",
+    "code": "for i in range(2, 10, -2):\n    print(i)",
+    "options": [
+      "Keine Ausgabe",
+      "2, 4, 6, 8",
+      "2",
+      "2, 0, -2"
+    ],
+    "correct": 0,
+    "explanation": "Der Startwert 2 liegt unter 10, die Schrittweite ist aber negativ. Der Bereich kann sich nicht zum Endwert entwickeln und ist leer.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-060",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Endwert wird ausgegeben?",
+    "code": "x = 1\nwhile x < 8:\n    x *= 2\nprint(x)",
+    "options": [
+      "8",
+      "4",
+      "16",
+      "7"
+    ],
+    "correct": 0,
+    "explanation": "Die Werte entwickeln sich von 1 über 2 und 4 zu 8. Bei 8 ist die Bedingung x < 8 False.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-061",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welcher Wert wird für summe ausgegeben?",
+    "code": "summe = 0\nfor i in range(5):\n    summe += i\nprint(summe)",
+    "options": [
+      "10",
+      "15",
+      "6",
+      "5"
+    ],
+    "correct": 0,
+    "explanation": "range(5) liefert 0, 1, 2, 3 und 4. Deren Summe ist 10.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-062",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Warum wird range(i + 1) verwendet?",
+    "code": "i = int(input(\"Zahl: \"))\nsumme = 0\nfor j in range(i + 1):\n    summe += j\nprint(summe)",
+    "options": [
+      "Damit i als letzter Wert enthalten ist",
+      "Damit die Schleife bei 1 beginnt",
+      "Damit nur gerade Zahlen erzeugt werden",
+      "Damit i übersprungen wird"
+    ],
+    "correct": 0,
+    "explanation": "Der Stop-Wert von range() ist ausgeschlossen. Durch i + 1 wird i noch erzeugt.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-063",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Wann wird „nicht gefunden“ ausgegeben?",
+    "code": "for wert in werte:\n    if wert == ziel:\n        print(\"gefunden\")\n        break\nelse:\n    print(\"nicht gefunden\")",
+    "options": [
+      "Wenn kein Element dem Ziel entspricht und kein break ausgeführt wird",
+      "Nach jedem Schleifendurchlauf",
+      "Nur wenn die Liste mindestens ein Element enthält",
+      "Immer nach einem Treffer"
+    ],
+    "correct": 0,
+    "explanation": "Der else-Block einer for-Schleife läuft bei regulärem Ende. Ein Treffer führt zu break und verhindert den else-Block.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-064",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Folge hat der Code?",
+    "code": "x = 1\nwhile x < 5:\n    print(x)",
+    "options": [
+      "Endlosschleife mit wiederholter Ausgabe 1",
+      "Ausgabe 1 bis 4",
+      "SyntaxError",
+      "Die Schleife läuft genau einmal"
+    ],
+    "correct": 0,
+    "explanation": "x bleibt dauerhaft 1. Daher bleibt x < 5 immer True und die Schleife endet nicht.",
+    "difficulty": 2,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "QUIZ-065",
+    "courseId": "lf05",
+    "quizId": "lf05-quiz",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "text = \"Python\"\nfor zeichen in text:\n    if zeichen in \"yhn\":\n        continue\n    print(zeichen, end=\"\")",
+    "options": [
+      "Pto",
+      "Pyth",
+      "yhn",
+      "Pto n"
+    ],
+    "correct": 0,
+    "explanation": "continue überspringt bei y, h und n die Ausgabe. Ausgegeben werden P, t und o.",
+    "difficulty": 3,
+    "sourceFile": "quiz.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-001",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Durch Entscheidung, Bedingung und Rückverweis",
+      "Durch ein zwingendes eigenes Schleifensymbol",
+      "Nur durch ein Rechteck",
+      "Durch eine Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-002",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Durch einen eigenen Schleifenblock mit eingerücktem Rumpf",
+      "Nur durch Pfeile",
+      "Durch einen Fork",
+      "Durch einen Startknoten"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-003",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Einen erreichbaren Ausstiegspfad",
+      "Einen zweiten Startknoten",
+      "Immer einen Fork",
+      "Eine neue Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-004",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "[Fehler vorhanden]",
+      "[Daten gültig]",
+      "[Ende]",
+      "[immer korrekt]"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-005",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "[Daten gültig]",
+      "[Fehler vorhanden]",
+      "[zurück]",
+      "[wiederholen]"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-006",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Der Rumpf kann nullmal ausgeführt werden",
+      "Der Rumpf läuft immer mindestens einmal",
+      "Es gibt keine Bedingung",
+      "Ein break ist immer nötig"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-007",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Der Rumpf wird mindestens einmal ausgeführt",
+      "Der Rumpf wird nie ausgeführt",
+      "Es existiert kein Ausstieg",
+      "Die Schleife ist immer parallel"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-008",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine kontrollierte Abbruchbedingung",
+      "Eine weitere identische Aktivität",
+      "Ein Join",
+      "Eine Swimlane"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-009",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Beide Ausstiegsbedingungen",
+      "Nur der Rückverweis",
+      "Nur der Erfolgsweg",
+      "Nur der Zähler"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-010",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zur Aktivität „Vertragsdaten eingeben“",
+      "Zum Endknoten",
+      "Zum Fork",
+      "Zum Startknoten des gesamten Systems"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-011",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die Aktivitäten, die in jedem Durchlauf wiederholt werden",
+      "Nur die Abbruchbedingung",
+      "Der Endknoten",
+      "Die Swimlane-Bezeichnung"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-012",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine Wiederholung ohne erreichbare Abbruchbedingung",
+      "Eine Schleife mit genau einem Durchlauf",
+      "Ein Fork mit Join",
+      "Eine reduzierte Entscheidungstabelle"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-013",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Fork/Join modelliert Parallelität; Entscheidung und Rückfluss modellieren Wiederholung",
+      "Ein Fork ersetzt jede Schleifenbedingung",
+      "Ein Rückfluss ersetzt jeden Join",
+      "Beide Konzepte sind identisch"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-014",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Durch die Position innerhalb des Schleifenblocks",
+      "Durch Pfeilfarben",
+      "Durch eine zweite Seite",
+      "Durch einen Bindestrich"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-015",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Die Abbruchbedingung wird möglicherweise nie erreicht",
+      "Die Schleife endet immer sofort",
+      "Ein Join wird automatisch erzeugt",
+      "Die Schleife wird zur Entscheidungstabelle"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-016",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Eine eindeutige Bedingung wie [weitere Daten vorhanden]",
+      "Nur der Name des Autors",
+      "Die Dateigröße",
+      "Eine beliebige Zahl ohne Bedeutung"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-017",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Zähler- oder mengengesteuerte Wiederholung",
+      "Unbedingte Endlosschleife",
+      "Paralleler Fork ohne Join",
+      "Nur eine Auswahl"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-018",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Bedingungsgesteuerte Wiederholung",
+      "Nur Sequenz",
+      "Parallele Ausführung",
+      "Ist-egal-Regel"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-019",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Alternative Fehlerpfade können zu einem gemeinsamen Wiederholungspunkt führen",
+      "Sie startet parallele Pfade",
+      "Sie beendet das gesamte Diagramm",
+      "Sie ersetzt die Bedingungstabelle"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  },
+  {
+    "id": "lf05-schleifenmodellierung-020",
+    "courseId": "lf05",
+    "quizId": "lf05-schleifenmodellierung",
+    "tagId": null,
+    "type": "multiple-choice",
+    "question": "",
+    "code": null,
+    "options": [
+      "Ist der Ausstieg unter mindestens einer realistischen Bedingung erreichbar?",
+      "Hat jede Aktivität eine andere Farbe?",
+      "Gibt es mindestens zwei Startknoten?",
+      "Ist jede Schleife parallel?"
+    ],
+    "correct": 0,
+    "explanation": "",
+    "difficulty": "medium",
+    "sourceFile": "schleifenmodellierung.js",
+    "status": "published"
+  }
+]

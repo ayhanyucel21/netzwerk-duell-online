@@ -6,7 +6,9 @@
     "description": "Python-Werte den passenden Datentypen zuordnen.",
     "path": "/lf05/games/datentyp-match/",
     "status": "published",
-    "order": 1
+    "order": 3,
+    "source": "public/lf05/games/datentyp-match/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "string-builder",
@@ -15,7 +17,9 @@
     "description": "Strings, Slicing und String-Methoden üben.",
     "path": "/lf05/games/string-builder/",
     "status": "published",
-    "order": 2
+    "order": 6,
+    "source": "public/lf05/games/string-builder/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "schleifen-sortieren",
@@ -24,7 +28,9 @@
     "description": "Kontrollstrukturen und Schleifen korrekt zuordnen.",
     "path": "/lf05/games/schleifen-sortieren/",
     "status": "published",
-    "order": 3
+    "order": 5,
+    "source": "public/lf05/games/schleifen-sortieren/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "algorithmus-puzzle",
@@ -33,7 +39,9 @@
     "description": "Algorithmische Schritte in die richtige Reihenfolge bringen.",
     "path": "/lf05/games/algorithmus-puzzle/",
     "status": "published",
-    "order": 4
+    "order": 1,
+    "source": "public/lf05/games/algorithmus-puzzle/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "debugging-challenge",
@@ -42,7 +50,9 @@
     "description": "Fehler in Python-Code erkennen und beheben.",
     "path": "/lf05/games/debugging-challenge/",
     "status": "published",
-    "order": 5
+    "order": 4,
+    "source": "public/lf05/games/debugging-challenge/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "code-builder",
@@ -51,7 +61,9 @@
     "description": "Python-Code aus passenden Bausteinen zusammensetzen.",
     "path": "/lf05/games/code-builder/",
     "status": "published",
-    "order": 6
+    "order": 2,
+    "source": "public/lf05/games/code-builder/index.html",
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   },
   {
     "id": "python-duell",
@@ -60,6 +72,7 @@
     "description": "2–4 Spieler, Rangliste, Avatare, Quiz- und Drag-and-Drop-Duelle.",
     "path": "/lf05/duell/",
     "status": "published",
-    "order": 7
+    "order": 7,
+    "updatedAt": "2026-10-28T14:55:36.172Z"
   }
 ]

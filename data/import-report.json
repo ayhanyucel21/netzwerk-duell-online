@@ -1,0 +1,52 @@
+[
+  {
+    "success": true,
+    "importedAt": "2026-10-28T14:55:36.172Z",
+    "backupDir": "C:\\Users\\Student\\OneDrive - GFN GmbH (EDU)\\Dokumente\\GitHub\\netzwerk-duell-online\\backups\\lf05-import-2026-10-28T14-55-36-172Z",
+    "lernenFile": "public\\lf05\\lernen\\index.html",
+    "counts": {
+      "courses": 1,
+      "tags": 5,
+      "topics": 113,
+      "lessons": 5,
+      "quizzes": 12,
+      "questions": 220,
+      "games": 7,
+      "pages": 8
+    },
+    "questionModules": [
+      {
+        "file": "aktivitaetsdiagramme.js",
+        "count": 20
+      },
+      {
+        "file": "codeanalyse.js",
+        "count": 20
+      },
+      {
+        "file": "codebuilder.js",
+        "count": 25
+      },
+      {
+        "file": "datentyp.js",
+        "count": 25
+      },
+      {
+        "file": "debugging.js",
+        "count": 25
+      },
+      {
+        "file": "entscheidungstabellen.js",
+        "count": 20
+      },
+      {
+        "file": "quiz.js",
+        "count": 65
+      },
+      {
+        "file": "schleifenmodellierung.js",
+        "count": 20
+      }
+    ]
+  }
+]
