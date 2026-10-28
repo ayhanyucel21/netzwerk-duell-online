@@ -8,8 +8,9 @@ const { Server } = require('socket.io');
 
 const DUEL_QUESTIONS = require('./questions');
 
-// FISI Lernen Admin Center
+// FISI Lernen CMS
 const createAdminApi = require('./admin-api');
+const createContentApi = require('./content-api');
 
 const app = express();
 const server = http.createServer(app);
@@ -139,7 +140,9 @@ app.disable('x-powered-by');
 app.use(express.json({ limit: '64kb' }));
 
 // =====================================================
-// FISI LERNEN ADMIN CENTER API
+// FISI LERNEN ADMIN API
+// Yazma / düzenleme / silme işlemleri
+// ADMIN_TOKEN gerektirir
 // =====================================================
 
 app.use(
@@ -149,6 +152,20 @@ app.use(
     adminToken: process.env.ADMIN_TOKEN
   })
 );
+
+
+// =====================================================
+// FISI LERNEN PUBLIC CONTENT API
+// Lernen, Quiz, Spiele vb. buradan içerik okuyacak
+// =====================================================
+
+app.use(
+  '/api/content',
+  createContentApi({
+    dataDir: path.join(__dirname, 'data')
+  })
+);
+
 
 // =====================================================
 // STATIC FILES
@@ -162,6 +179,7 @@ app.use(
   '/questions',
   express.static(path.join(__dirname, 'questions'))
 );
+
 
 app.get('/health', (_req, res) => {
   res.json({
