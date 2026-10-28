@@ -3,53 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LF01</title>
-
+<title>LF04 – Grundlagen Projektmanagement</title>
+<link rel="stylesheet" href="../../admin/admin.css">
 <style>
-body{
-    margin:0;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-family:Segoe UI,sans-serif;
-    background:linear-gradient(135deg,#00b4d8,#0077b6);
-    color:white;
-}
-
-.card{
-    max-width:800px;
-    padding:40px;
-    background:rgba(0,0,0,.2);
-    border-radius:20px;
-    text-align:center;
-}
-
-a{
-    display:inline-block;
-    margin-top:20px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
+  body { font-family: "Segoe UI", Arial, sans-serif; background: #060c18; color: white; padding: 30px; margin: 0; }
+  .container { max-width: 900px; margin: 0 auto; }
+  .back { display: inline-flex; align-items: center; margin-bottom: 20px; color: #49dcff; text-decoration: none; font-weight: bold; }
+  .content-box { background: #0b203a; padding: 25px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
+  h1 { font-size: 2.2rem; margin-bottom: 10px; }
+  p { color: #aec1d3; line-height: 1.6; }
 </style>
-
 </head>
 <body>
-
-<div class="card">
-
-<h1>🏢 LF-F4</h1>
-
-<h2>Grundlagen Projektmanagement</h2>
-
-<p>
-Inhalte werden später ergänzt.
-</p>
-
-<a href="/">⬅ Zur Lernplattform</a>
-
+<div class="container">
+  <a class="back" href="/">← Zur Lernplattform</a>
+  <h1 id="lfTitle">LF04</h1>
+  <p id="lfDescription">Lerninhalte werden geladen...</p>
+  <div class="content-box" id="lessonContainer">
+    <p>Inhalte werden aus dem Admin-Bereich geladen...</p>
+  </div>
 </div>
-
+<script src="../../js/loader.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    FisiLoader.loadLessons({ courseId: "LF04", target: "#lessonContainer" });
+  });
+</script>
 </body>
 </html>
