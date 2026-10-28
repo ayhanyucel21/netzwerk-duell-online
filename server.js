@@ -134,7 +134,7 @@ function finishServerGame(room) {
   io.to(room.code).emit('python-game-finished', { ranking, roomCode: room.code });
 }
 
-aapp.disable('x-powered-by');
+app.disable('x-powered-by');
 
 app.use(express.json({ limit: '64kb' }));
 
