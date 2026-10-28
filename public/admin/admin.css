@@ -1,1 +1,1117 @@
-:root{--primary:#2563eb;--secondary:#7c3aed;--bg:#f3f6fb;--surface:#fff;--text:#172033;--muted:#6b7280;--line:#e5e7eb;--danger:#dc2626;--success:#059669;--radius:16px;--shadow:0 10px 30px rgba(15,23,42,.08);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--text)}*{box-sizing:border-box}body{margin:0;background:var(--bg)}button,input,select,textarea{font:inherit}.app-shell{min-height:100vh;display:grid;grid-template-columns:250px 1fr}.sidebar{position:sticky;top:0;height:100vh;padding:22px 14px;background:#101827;color:#dce4f2;display:flex;flex-direction:column}.brand{display:flex;gap:12px;align-items:center;color:#fff;text-decoration:none;padding:0 10px 24px}.brand-mark{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--secondary));font-weight:800}.brand strong,.brand small{display:block}.brand small{margin-top:2px;color:#94a3b8}.nav{display:grid;gap:5px}.nav button{border:0;background:transparent;color:#cbd5e1;text-align:left;padding:11px 12px;border-radius:11px;cursor:pointer}.nav button:hover,.nav button.active{color:#fff;background:#253047}.nav .nav-icon{display:inline-block;width:26px}.sidebar-bottom{margin-top:auto;display:grid;gap:8px}.main{min-width:0;padding:0 28px 40px}.topbar{min-height:100px;display:flex;align-items:center;justify-content:space-between;gap:20px}.topbar h1{margin:0;font-size:26px}.topbar p{margin:4px 0 0;color:var(--muted)}.top-actions{display:flex;align-items:center;gap:9px}.search{width:min(320px,32vw);display:flex;gap:8px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:0 12px}.search input{width:100%;height:42px;border:0;outline:0;background:transparent}.icon-button,.avatar{border:1px solid var(--line);background:var(--surface);cursor:pointer}.icon-button{width:42px;height:42px;border-radius:12px}.avatar{width:42px;height:42px;border-radius:50%;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--primary),var(--secondary));border:0}.view.hidden,.hidden{display:none!important}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.stat,.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.stat{padding:20px}.stat-top{display:flex;justify-content:space-between;color:var(--muted)}.stat strong{display:block;font-size:28px;margin-top:12px}.dashboard-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:16px;margin-top:16px}.panel{padding:20px}.panel h2{font-size:18px;margin:0 0 15px}.quick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.quick-card{padding:16px;border:1px solid var(--line);border-radius:13px;background:#f8fafc;text-align:left;cursor:pointer}.quick-card strong,.quick-card small{display:block}.quick-card small{color:var(--muted);margin-top:5px}.activity{display:grid;gap:10px}.activity-item{display:flex;gap:10px;padding:11px 0;border-bottom:1px solid var(--line)}.activity-item:last-child{border:0}.toolbar{display:flex;justify-content:space-between;gap:12px;margin-bottom:14px}.filters,.toolbar-actions{display:flex;gap:9px}.button,select{border:1px solid var(--line);border-radius:10px;min-height:40px;padding:9px 14px;background:#fff}.button{cursor:pointer;font-weight:650}.primary{border-color:var(--primary);background:var(--primary);color:#fff}.secondary{background:#fff;color:var(--text)}.danger{background:#fff;color:var(--danger);border-color:#fecaca}.ghost{border:1px solid #344158;background:transparent;color:#dbe5f4;border-radius:10px;padding:10px;text-decoration:none;cursor:pointer}.full{width:100%}.center{text-align:center}.file-button input{display:none}.table-panel{padding:0;overflow:hidden}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:720px}th,td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:13px;color:var(--muted);background:#f8fafc}td{font-size:14px}.row-title{font-weight:750}.row-sub{font-size:12px;color:var(--muted);margin-top:3px}.badge{display:inline-flex;padding:5px 9px;border-radius:99px;font-size:12px;font-weight:700;background:#eef2ff;color:#4338ca}.badge.published{background:#dcfce7;color:#047857}.badge.draft{background:#fef3c7;color:#92400e}.badge.inactive{background:#f3f4f6;color:#6b7280}.actions{display:flex;gap:6px}.actions button{border:0;background:#f1f5f9;border-radius:8px;padding:7px 9px;cursor:pointer}.empty{text-align:center;padding:60px 20px;color:var(--muted)}.empty div{font-size:38px}.dialog{width:min(850px,94vw);max-height:90vh;border:0;border-radius:18px;padding:0;box-shadow:0 30px 80px rgba(15,23,42,.28)}.dialog.small{width:min(520px,94vw)}.dialog::backdrop{background:rgba(15,23,42,.55)}.dialog form{padding:22px}.dialog-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;margin-bottom:20px}.dialog-head h2{margin:0}.dialog-head p{margin:5px 0 0;color:var(--muted)}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:grid;gap:7px}.field span{font-size:13px;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:#fff}.field textarea{min-height:110px;resize:vertical}.field.full{grid-column:1/-1}.dialog-actions{display:grid;grid-template-columns:auto 1fr auto auto;gap:10px;margin-top:22px}.toast{position:fixed;right:22px;bottom:22px;z-index:20;transform:translateY(120px);opacity:0;background:#111827;color:#fff;padding:12px 16px;border-radius:11px;transition:.25s}.toast.show{transform:none;opacity:1}.design-layout{display:grid;grid-template-columns:360px 1fr;gap:18px}.preview{min-height:520px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:25px}.preview-hero{border-radius:var(--radius);padding:30px;background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff}.preview-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.preview-card{border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}.color-row{display:grid;grid-template-columns:1fr 52px;gap:8px}.color-row input[type=color]{width:52px;height:42px;padding:2px}.mobile-only{display:none}@media(max-width:1000px){.stats{grid-template-columns:repeat(2,1fr)}.dashboard-grid,.design-layout{grid-template-columns:1fr}.app-shell{grid-template-columns:1fr}.sidebar{position:fixed;z-index:30;width:250px;transform:translateX(-110%);transition:.25s}.sidebar.open{transform:none}.main{padding:0 16px 30px}.mobile-only{display:inline-block}.search{display:none}}@media(max-width:650px){.stats,.quick-grid,.preview-cards{grid-template-columns:1fr}.toolbar,.filters,.toolbar-actions{flex-direction:column}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.topbar{align-items:flex-start;padding:18px 0}.topbar p{display:none}}
+'use strict';
+
+const fs = require('fs');
+const path = require('path');
+const express = require('express');
+
+const PUBLIC_COLLECTIONS = [
+  'courses',
+  'tags',
+  'topics',
+  'lessons',
+  'questions',
+  'games',
+  'quizzes',
+  'pages',
+  'settings'
+];
+
+module.exports = function createContentApi({
+  dataDir = path.join(__dirname, 'data')
+} = {}) {
+
+  const router = express.Router();
+
+  function getFile(collection) {
+    return path.join(dataDir, `${collection}.json`);
+  }
+
+  function readCollection(collection) {
+    const file = getFile(collection);
+
+    if (!fs.existsSync(file)) {
+      return [];
+    }
+
+    try {
+      const content = fs.readFileSync(file, 'utf8');
+
+      if (!content.trim()) {
+        return [];
+      }
+
+      return JSON.parse(content);
+    } catch (error) {
+      console.error(`Fehler beim Lesen von ${collection}:`, error);
+      return [];
+    }
+  }
+
+  function isAllowed(collection) {
+    return PUBLIC_COLLECTIONS.includes(collection);
+  }
+
+  router.get('/courses', (req, res) => {
+    const courses = readCollection('courses')
+      .filter(item => item.status !== 'inactive');
+
+    res.json({
+      success: true,
+      items: courses
+    });
+  });
+
+  router.get('/tags', (req, res) => {
+    let tags = readCollection('tags')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      tags = tags.filter(item => item.courseId === req.query.courseId);
+    }
+
+    tags.sort((a, b) => Number(a.order || a.number || 0) - Number(b.order || b.number || 0));
+
+    res.json({
+      success: true,
+      items: tags
+    });
+  });
+
+  router.get('/topics', (req, res) => {
+    let topics = readCollection('topics')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      topics = topics.filter(item => item.courseId === req.query.courseId);
+    }
+
+    if (req.query.tagId) {
+      topics = topics.filter(item => item.tagId === req.query.tagId);
+    }
+
+    topics.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+
+    res.json({
+      success: true,
+      items: topics
+    });
+  });
+
+  router.get('/lessons', (req, res) => {
+    let lessons = readCollection('lessons')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      lessons = lessons.filter(item => item.courseId === req.query.courseId);
+    }
+
+    if (req.query.tagId) {
+      lessons = lessons.filter(item => item.tagId === req.query.tagId);
+    }
+
+    if (req.query.topicId) {
+      lessons = lessons.filter(item => item.topicId === req.query.topicId);
+    }
+
+    lessons.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
+
+    res.json({
+      success: true,
+      items: lessons
+    });
+  });
+
+  router.get('/questions', (req, res) => {
+    let questions = readCollection('questions')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      questions = questions.filter(item => item.courseId === req.query.courseId);
+    }
+
+    if (req.query.tagId) {
+      questions = questions.filter(item => item.tagId === req.query.tagId);
+    }
+
+    if (req.query.topicId) {
+      questions = questions.filter(item => item.topicId === req.query.topicId);
+    }
+
+    res.json({
+      success: true,
+      items: questions
+    });
+  });
+
+  router.get('/games', (req, res) => {
+    let games = readCollection('games')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      games = games.filter(item => item.courseId === req.query.courseId);
+    }
+
+    res.json({
+      success: true,
+      items: games
+    });
+  });
+
+  router.get('/quizzes', (req, res) => {
+    let quizzes = readCollection('quizzes')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      quizzes = quizzes.filter(item => item.courseId === req.query.courseId);
+    }
+
+    res.json({
+      success: true,
+      items: quizzes
+    });
+  });
+
+  router.get('/pages', (req, res) => {
+    let pages = readCollection('pages')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      pages = pages.filter(item => item.courseId === req.query.courseId);
+    }
+
+    res.json({
+      success: true,
+      items: pages
+    });
+  });
+
+  router.get('/settings', (req, res) => {
+    const settings = readCollection('settings');
+
+    res.json({
+      success: true,
+      items: settings
+    });
+  });
+
+  router.get('/:collection', (req, res) => {
+    const collection = req.params.collection;
+
+    if (!isAllowed(collection)) {
+      return res.status(404).json({
+        success: false,
+        message: 'Collection nicht gefunden.'
+      });
+    }
+
+    const items = readCollection(collection)
+      .filter(item => item.status !== 'inactive');
+
+    res.json({
+      success: true,
+      items
+    });
+  });
+
+  return router;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+n";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
