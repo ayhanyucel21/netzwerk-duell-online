@@ -9,7 +9,6 @@ const PUBLIC_COLLECTIONS = [
   'tags',
   'topics',
   'lessons',
-  'questions',
   'games',
   'quizzes',
   'pages',
@@ -19,154 +18,264 @@ const PUBLIC_COLLECTIONS = [
 module.exports = function createContentApi({
   dataDir = path.join(__dirname, 'data')
 } = {}) {
+
   const router = express.Router();
 
-  function collectionFile(name) {
-    return path.join(dataDir, `${name}.json`);
+  function getFile(collection) {
+    return path.join(dataDir, `${collection}.json`);
   }
 
-  function isAllowedCollection(name) {
-    return PUBLIC_COLLECTIONS.includes(name);
-  }
-
-  function readCollection(name) {
-    const file = collectionFile(name);
+  function readCollection(collection) {
+    const file = getFile(collection);
 
     if (!fs.existsSync(file)) {
       return [];
     }
 
-    const raw = fs.readFileSync(file, 'utf8').trim();
-    if (!raw) return [];
+    try {
+      const content = fs.readFileSync(file, 'utf8');
 
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? parsed : [];
+      if (!content.trim()) {
+        return [];
+      }
+
+      return JSON.parse(content);
+
+    } catch (error) {
+      console.error(
+        `Fehler beim Lesen von ${collection}:`,
+        error
+      );
+
+      return [];
+    }
   }
 
-  function onlyPublished(items) {
-    return items.filter(item => {
-      // Eski kayıtlarda status yoksa geriye dönük uyumluluk için görünür bırak.
-      return !item.status || item.status === 'published';
+  function isAllowed(collection) {
+    return PUBLIC_COLLECTIONS.includes(collection);
+  }
+
+  // =====================================================
+  // ALLE LERNFELDER
+  // =====================================================
+
+  router.get('/courses', (req, res) => {
+
+    const courses = readCollection('courses')
+      .filter(item => item.status !== 'inactive');
+
+    res.json({
+      success: true,
+      items: courses
     });
-  }
 
-  function filterItems(items, query) {
-    const filters = {
-      id: query.id,
-      courseId: query.courseId,
-      tagId: query.tagId,
-      topicId: query.topicId,
-      type: query.type,
-      difficulty: query.difficulty,
-      slug: query.slug
-    };
+  });
 
-    let result = items.filter(item =>
-      Object.entries(filters).every(([key, value]) => {
-        if (value === undefined || value === '') return true;
-        return String(item[key] ?? '') === String(value);
-      })
-    );
+  // =====================================================
+  // TAGS
+  // =====================================================
 
-    if (query.q) {
-      const needle = String(query.q).toLowerCase().trim();
-      result = result.filter(item =>
-        JSON.stringify(item).toLowerCase().includes(needle)
+  router.get('/tags', (req, res) => {
+
+    let tags = readCollection('tags')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      tags = tags.filter(
+        item => item.courseId === req.query.courseId
       );
     }
 
-    return result;
-  }
-
-  function sortItems(items) {
-    return [...items].sort((a, b) => {
-      const orderA = Number.isFinite(Number(a.order)) ? Number(a.order) : 999999;
-      const orderB = Number.isFinite(Number(b.order)) ? Number(b.order) : 999999;
-
-      if (orderA !== orderB) return orderA - orderB;
-
-      const titleA = String(a.title || a.code || '').toLocaleLowerCase('de');
-      const titleB = String(b.title || b.code || '').toLocaleLowerCase('de');
-      return titleA.localeCompare(titleB, 'de');
+    tags.sort((a, b) => {
+      return Number(a.order || a.number || 0) -
+             Number(b.order || b.number || 0);
     });
-  }
 
-  // Basit durum kontrolü
-  router.get('/health', (_req, res) => {
     res.json({
-      ok: true,
-      service: 'fisi-lernen-content-api'
+      success: true,
+      items: tags
     });
+
   });
 
-  // Tüm izin verilen koleksiyonlar için read-only endpoint.
-  // Örnekler:
-  // GET /api/content/courses
-  // GET /api/content/lessons?courseId=lf05&tagId=tag7
-  // GET /api/content/questions?courseId=lf05&type=multiple-choice
-  router.get('/:collection', (req, res, next) => {
-    try {
-      const { collection } = req.params;
+  // =====================================================
+  // THEMEN
+  // =====================================================
 
-      if (!isAllowedCollection(collection)) {
-        return res.status(404).json({
-          message: 'Unbekannte öffentliche Sammlung.'
-        });
-      }
+  router.get('/topics', (req, res) => {
 
-      let items = readCollection(collection);
-      items = onlyPublished(items);
-      items = filterItems(items, req.query);
-      items = sortItems(items);
+    let topics = readCollection('topics')
+      .filter(item => item.status !== 'inactive');
 
-      return res.json({
-        collection,
-        count: items.length,
-        items
+    if (req.query.courseId) {
+      topics = topics.filter(
+        item => item.courseId === req.query.courseId
+      );
+    }
+
+    if (req.query.tagId) {
+      topics = topics.filter(
+        item => item.tagId === req.query.tagId
+      );
+    }
+
+    topics.sort(
+      (a, b) =>
+        Number(a.order || 0) -
+        Number(b.order || 0)
+    );
+
+    res.json({
+      success: true,
+      items: topics
+    });
+
+  });
+
+  // =====================================================
+  // LERNINHALTE
+  // =====================================================
+
+  router.get('/lessons', (req, res) => {
+
+    let lessons = readCollection('lessons')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      lessons = lessons.filter(
+        item => item.courseId === req.query.courseId
+      );
+    }
+
+    if (req.query.tagId) {
+      lessons = lessons.filter(
+        item => item.tagId === req.query.tagId
+      );
+    }
+
+    if (req.query.topicId) {
+      lessons = lessons.filter(
+        item => item.topicId === req.query.topicId
+      );
+    }
+
+    lessons.sort(
+      (a, b) =>
+        Number(a.order || 0) -
+        Number(b.order || 0)
+    );
+
+    res.json({
+      success: true,
+      items: lessons
+    });
+
+  });
+
+  // =====================================================
+  // GAMES
+  // =====================================================
+
+  router.get('/games', (req, res) => {
+
+    let games = readCollection('games')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      games = games.filter(
+        item => item.courseId === req.query.courseId
+      );
+    }
+
+    res.json({
+      success: true,
+      items: games
+    });
+
+  });
+
+  // =====================================================
+  // QUIZZES
+  // =====================================================
+
+  router.get('/quizzes', (req, res) => {
+
+    let quizzes = readCollection('quizzes')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      quizzes = quizzes.filter(
+        item => item.courseId === req.query.courseId
+      );
+    }
+
+    res.json({
+      success: true,
+      items: quizzes
+    });
+
+  });
+
+  // =====================================================
+  // PAGES
+  // =====================================================
+
+  router.get('/pages', (req, res) => {
+
+    let pages = readCollection('pages')
+      .filter(item => item.status !== 'inactive');
+
+    if (req.query.courseId) {
+      pages = pages.filter(
+        item => item.courseId === req.query.courseId
+      );
+    }
+
+    res.json({
+      success: true,
+      items: pages
+    });
+
+  });
+
+  // =====================================================
+  // SETTINGS
+  // =====================================================
+
+  router.get('/settings', (req, res) => {
+
+    const settings = readCollection('settings');
+
+    res.json({
+      success: true,
+      items: settings
+    });
+
+  });
+
+  // =====================================================
+  // GENERIC READ
+  // =====================================================
+
+  router.get('/:collection', (req, res) => {
+
+    const collection = req.params.collection;
+
+    if (!isAllowed(collection)) {
+      return res.status(404).json({
+        success: false,
+        message: 'Collection nicht gefunden.'
       });
-    } catch (error) {
-      next(error);
     }
-  });
 
-  // Tek kayıt getirir.
-  router.get('/:collection/:id', (req, res, next) => {
-    try {
-      const { collection, id } = req.params;
+    const items = readCollection(collection)
+      .filter(item => item.status !== 'inactive');
 
-      if (!isAllowedCollection(collection)) {
-        return res.status(404).json({
-          message: 'Unbekannte öffentliche Sammlung.'
-        });
-      }
-
-      const item = onlyPublished(readCollection(collection))
-        .find(entry => String(entry.id) === String(id));
-
-      if (!item) {
-        return res.status(404).json({
-          message: 'Eintrag nicht gefunden.'
-        });
-      }
-
-      return res.json(item);
-    } catch (error) {
-      next(error);
-    }
-  });
-
-  // Content API kesinlikle salt okunurdur.
-  router.use((_req, res) => {
-    res.status(405).json({
-      message: 'Content API ist schreibgeschützt.'
+    res.json({
+      success: true,
+      items
     });
-  });
 
-  router.use((error, _req, res, _next) => {
-    console.error('Content API:', error);
-    res.status(500).json({
-      message: 'Öffentliche Inhalte konnten nicht geladen werden.'
-    });
   });
 
   return router;
