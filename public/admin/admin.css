@@ -1,1117 +1,646 @@
-'use strict';
+:root {
+  --bg: #f4f7fb;
+  --bg-strong: #edf2f8;
+  --surface: #ffffff;
+  --surface-soft: #f7f9fc;
+  --surface-muted: #eef3ff;
+  --sidebar: #101828;
+  --sidebar-soft: #1f2937;
+  --primary: #2b6cf6;
+  --primary-soft: rgba(43,108,246,0.12);
+  --secondary: #7c5cff;
+  --success: #18a957;
+  --warning: #f59e0b;
+  --danger: #e24848;
+  --text: #1d2433;
+  --muted: #667085;
+  --line: #e5eaf2;
+  --shadow: 0 16px 34px rgba(16, 24, 40, 0.08);
+  --radius: 18px;
+}
 
-const fs = require('fs');
-const path = require('path');
-const express = require('express');
+* { box-sizing: border-box; }
 
-const PUBLIC_COLLECTIONS = [
-  'courses',
-  'tags',
-  'topics',
-  'lessons',
-  'questions',
-  'games',
-  'quizzes',
-  'pages',
-  'settings'
-];
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+}
 
-module.exports = function createContentApi({
-  dataDir = path.join(__dirname, 'data')
-} = {}) {
+body {
+  min-height: 100vh;
+}
 
-  const router = express.Router();
+button, input, textarea, select {
+  font: inherit;
+}
 
-  function getFile(collection) {
-    return path.join(dataDir, `${collection}.json`);
+button {
+  cursor: pointer;
+}
+
+#toast {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  background: rgba(17,24,39,0.96);
+  color: white;
+  padding: 12px 16px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: 0.2s ease;
+  z-index: 9999;
+}
+
+#toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: 260px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, var(--sidebar) 0%, var(--sidebar-soft) 100%);
+  color: white;
+  padding: 18px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.brand strong {
+  display: block;
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+}
+
+.brand small {
+  display: block;
+  opacity: 0.72;
+  font-size: 0.72rem;
+  margin-top: 2px;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 800;
+  font-size: 0.8rem;
+  box-shadow: 0 10px 18px rgba(43,108,246,0.35);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: rgba(255,255,255,0.8);
+  border-radius: 12px;
+  padding: 11px 12px;
+  text-align: left;
+  transition: 0.2s ease;
+  font-weight: 600;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.main {
+  padding: 22px 20px 24px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: rgba(255,255,255,0.7);
+  border: 1px solid rgba(14, 22, 34, 0.05);
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.35);
+  backdrop-filter: blur(10px);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: clamp(2rem, 2vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.topbar p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 200px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--muted);
+}
+
+.search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  color: var(--text);
+}
+
+.icon-button,
+.avatar {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--text);
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  border: none;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  box-shadow: 0 12px 18px rgba(43,108,246,0.22);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.view {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.stat-card {
+  padding: 18px 18px 16px;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.stat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 14px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: clamp(1.9rem, 2vw, 2.6rem);
+  letter-spacing: -0.04em;
+}
+
+.quick-panel {
+  margin-top: 24px;
+  padding: 20px 18px;
+}
+
+.quick-panel h3 {
+  margin: 0 0 14px;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+}
+
+.quick-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.button,
+.mini-btn {
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: white;
+  color: var(--text);
+  padding: 10px 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button:hover,
+.mini-btn:hover {
+  transform: translateY(-1px);
+}
+
+.button.primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 12px 18px rgba(43,108,246,0.18);
+}
+
+.button.secondary {
+  background: var(--surface-soft);
+}
+
+.button.danger {
+  background: rgba(226,72,72,0.08);
+  border-color: rgba(226,72,72,0.15);
+  color: var(--danger);
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 22px 0 16px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filters select {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: var(--text);
+  min-width: 170px;
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.file-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.file-button input {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.table-panel {
+  overflow: hidden;
+}
+
+.table-wrap {
+  overflow: auto;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
+  min-width: 820px;
+  border-collapse: collapse;
+}
+
+thead th {
+  background: #f8faff;
+  color: var(--muted);
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--line);
+}
+
+tbody td {
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+tbody tr:hover td {
+  background: rgba(43,108,246,0.02);
+}
+
+.primary-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.primary-cell strong {
+  font-size: 0.96rem;
+}
+
+.primary-cell small {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.row-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-btn {
+  background: var(--surface-soft);
+  color: var(--primary);
+  padding: 8px 10px;
+  font-size: 0.82rem;
+  border-color: rgba(43,108,246,0.12);
+}
+
+.mini-btn.secondary {
+  color: var(--secondary);
+  background: rgba(124,92,255,0.08);
+  border-color: rgba(124,92,255,0.12);
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
+.status-pill.published {
+  background: rgba(24,169,87,0.12);
+  color: var(--success);
+}
+
+.status-pill.draft {
+  background: rgba(245,158,11,0.12);
+  color: var(--warning);
+}
+
+.status-pill.inactive {
+  background: rgba(226,72,72,0.09);
+  color: var(--danger);
+}
+
+.empty {
+  text-align: center;
+  padding: 56px 18px;
+  color: var(--muted);
+}
+
+.empty h3 {
+  margin: 10px 0 4px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.empty > div {
+  font-size: 3rem;
+}
+
+.dialog {
+  width: min(780px, calc(100vw - 32px));
+  border: none;
+  border-radius: 24px;
+  padding: 0;
+  box-shadow: 0 30px 60px rgba(15,23,42,0.24);
+}
+
+.dialog::backdrop {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+.dialog form {
+  padding: 22px 20px 18px;
+}
+
+.dialog-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.dialog-head h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  letter-spacing: -0.03em;
+}
+
+.dialog-head p {
+  margin: 6px 0 0;
+  color: var(--muted);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.field-full {
+  grid-column: 1 / -1;
+}
+
+input, textarea, select {
+  width: 100%;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  color: var(--text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(43,108,246,0.52);
+  box-shadow: 0 0 0 4px rgba(43,108,246,0.08);
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.color-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.color-row input[type="color"] {
+  width: 100%;
+  min-height: 42px;
+  padding: 0;
+}
+
+.checkbox-field {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-field input {
+  width: 18px;
+  height: 18px;
+}
+
+.dialog-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.small {
+  width: min(420px, calc(100vw - 32px));
+}
+
+.error-text {
+  margin: 0;
+  color: var(--danger);
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
   }
 
-  function readCollection(collection) {
-    const file = getFile(collection);
-
-    if (!fs.existsSync(file)) {
-      return [];
-    }
-
-    try {
-      const content = fs.readFileSync(file, 'utf8');
-
-      if (!content.trim()) {
-        return [];
-      }
-
-      return JSON.parse(content);
-    } catch (error) {
-      console.error(`Fehler beim Lesen von ${collection}:`, error);
-      return [];
-    }
+  .sidebar {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
-  function isAllowed(collection) {
-    return PUBLIC_COLLECTIONS.includes(collection);
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    padding: 16px 14px 22px;
   }
 
-  router.get('/courses', (req, res) => {
-    const courses = readCollection('courses')
-      .filter(item => item.status !== 'inactive');
-
-    res.json({
-      success: true,
-      items: courses
-    });
-  });
-
-  router.get('/tags', (req, res) => {
-    let tags = readCollection('tags')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      tags = tags.filter(item => item.courseId === req.query.courseId);
-    }
-
-    tags.sort((a, b) => Number(a.order || a.number || 0) - Number(b.order || b.number || 0));
-
-    res.json({
-      success: true,
-      items: tags
-    });
-  });
-
-  router.get('/topics', (req, res) => {
-    let topics = readCollection('topics')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      topics = topics.filter(item => item.courseId === req.query.courseId);
-    }
-
-    if (req.query.tagId) {
-      topics = topics.filter(item => item.tagId === req.query.tagId);
-    }
-
-    topics.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
-
-    res.json({
-      success: true,
-      items: topics
-    });
-  });
-
-  router.get('/lessons', (req, res) => {
-    let lessons = readCollection('lessons')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      lessons = lessons.filter(item => item.courseId === req.query.courseId);
-    }
-
-    if (req.query.tagId) {
-      lessons = lessons.filter(item => item.tagId === req.query.tagId);
-    }
-
-    if (req.query.topicId) {
-      lessons = lessons.filter(item => item.topicId === req.query.topicId);
-    }
-
-    lessons.sort((a, b) => Number(a.order || 0) - Number(b.order || 0));
-
-    res.json({
-      success: true,
-      items: lessons
-    });
-  });
-
-  router.get('/questions', (req, res) => {
-    let questions = readCollection('questions')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      questions = questions.filter(item => item.courseId === req.query.courseId);
-    }
-
-    if (req.query.tagId) {
-      questions = questions.filter(item => item.tagId === req.query.tagId);
-    }
-
-    if (req.query.topicId) {
-      questions = questions.filter(item => item.topicId === req.query.topicId);
-    }
-
-    res.json({
-      success: true,
-      items: questions
-    });
-  });
-
-  router.get('/games', (req, res) => {
-    let games = readCollection('games')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      games = games.filter(item => item.courseId === req.query.courseId);
-    }
-
-    res.json({
-      success: true,
-      items: games
-    });
-  });
-
-  router.get('/quizzes', (req, res) => {
-    let quizzes = readCollection('quizzes')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      quizzes = quizzes.filter(item => item.courseId === req.query.courseId);
-    }
-
-    res.json({
-      success: true,
-      items: quizzes
-    });
-  });
-
-  router.get('/pages', (req, res) => {
-    let pages = readCollection('pages')
-      .filter(item => item.status !== 'inactive');
-
-    if (req.query.courseId) {
-      pages = pages.filter(item => item.courseId === req.query.courseId);
-    }
-
-    res.json({
-      success: true,
-      items: pages
-    });
-  });
-
-  router.get('/settings', (req, res) => {
-    const settings = readCollection('settings');
-
-    res.json({
-      success: true,
-      items: settings
-    });
-  });
-
-  router.get('/:collection', (req, res) => {
-    const collection = req.params.collection;
-
-    if (!isAllowed(collection)) {
-      return res.status(404).json({
-        success: false,
-        message: 'Collection nicht gefunden.'
-      });
-    }
-
-    const items = readCollection(collection)
-      .filter(item => item.status !== 'inactive');
-
-    res.json({
-      success: true,
-      items
-    });
-  });
-
-  return router;
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-n";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .top-actions {
+    justify-content: space-between;
+  }
+
+  .search {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .toolbar {
+    align-items: stretch;
+  }
+}
