@@ -1,0 +1,47 @@
+[
+  {
+    "id": "lf05-home",
+    "courseId": "lf05",
+    "title": "LF05",
+    "path": "/lf05/",
+    "type": "home",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-lernen",
+    "courseId": "lf05",
+    "title": "Lernen",
+    "path": "/lf05/lernen/",
+    "type": "learning",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-quiz-page",
+    "courseId": "lf05",
+    "title": "Lernkontrollen",
+    "path": "/lf05/quiz/",
+    "type": "quiz",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-games-page",
+    "courseId": "lf05",
+    "title": "Lernspiele",
+    "path": "/lf05/games/",
+    "type": "games",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-duell-page",
+    "courseId": "lf05",
+    "title": "Python-Duell",
+    "path": "/lf05/duell/",
+    "type": "multiplayer",
+    "status": "published",
+    "order": 5
+  }
+]

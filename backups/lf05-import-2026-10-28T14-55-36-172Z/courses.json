@@ -1,0 +1,11 @@
+[
+  {
+    "id": "lf05",
+    "code": "LF05",
+    "title": "Software zur Verwaltung von Daten anpassen",
+    "description": "Programmierung und Softwareentwicklung mit Python",
+    "color": "#2563eb",
+    "status": "published",
+    "order": 5
+  }
+]

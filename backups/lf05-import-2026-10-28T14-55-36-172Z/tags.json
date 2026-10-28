@@ -1,0 +1,42 @@
+[
+  {
+    "id": "lf05-tag1",
+    "courseId": "lf05",
+    "number": 1,
+    "title": "Softwaregrundlagen",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag2",
+    "courseId": "lf05",
+    "number": 2,
+    "title": "Algorithmen und Modellierung",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag3",
+    "courseId": "lf05",
+    "number": 3,
+    "title": "Variablen und Datentypen",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag4",
+    "courseId": "lf05",
+    "number": 4,
+    "title": "Strings",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag5",
+    "courseId": "lf05",
+    "number": 5,
+    "title": "Kontrollstrukturen, Schleifen und Debugging",
+    "status": "published",
+    "order": 5
+  }
+]

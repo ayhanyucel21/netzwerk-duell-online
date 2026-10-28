@@ -1,0 +1,11 @@
+[
+  {
+    "id": "global-design",
+    "siteTitle": "FISI Lernen",
+    "primaryColor": "#2563eb",
+    "secondaryColor": "#7c3aed",
+    "fontFamily": "Inter",
+    "radius": 16,
+    "status": "published"
+  }
+]

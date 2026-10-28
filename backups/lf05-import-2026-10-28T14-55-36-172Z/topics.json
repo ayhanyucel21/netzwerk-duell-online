@@ -1,0 +1,596 @@
+[
+  {
+    "id": "lf05-t1-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Systemsoftware",
+    "shortDefinition": "Verwaltet Hardware und Systemressourcen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-t1-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Anwendungssoftware",
+    "shortDefinition": "Unterstützt konkrete Aufgaben der Benutzer.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-t1-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Standardsoftware",
+    "shortDefinition": "Für viele Kunden und typische Anforderungen entwickelt.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-t1-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Individualsoftware",
+    "shortDefinition": "Für einen bestimmten Kunden oder Prozess entwickelt.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-t1-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Betriebssystem",
+    "shortDefinition": "Verwaltet Hardware, Prozesse, Speicher und Dateisystem.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-t1-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Treiber",
+    "shortDefinition": "Ermöglicht die Kommunikation zwischen Betriebssystem und Hardware.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-t1-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Firmware",
+    "shortDefinition": "Gerätenahe Software, die Funktionen eines Geräts steuert.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-t1-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Embedded System",
+    "shortDefinition": "Computersystem, das in ein Gerät eingebettet ist.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-t1-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Quellcode",
+    "shortDefinition": "Vom Menschen geschriebener Programmtext.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-t1-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Compiler",
+    "shortDefinition": "Übersetzt Quellcode vor der Ausführung in ein Zielprogramm.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-t1-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Interpreter",
+    "shortDefinition": "Führt Quellcode schrittweise aus.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-t1-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Debugging",
+    "shortDefinition": "Systematische Suche und Behebung von Programmfehlern.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-t1-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Jupyter Notebook",
+    "shortDefinition": "Interaktive Umgebung für Code, Ausgabe und Dokumentation.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-t2-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Algorithmus",
+    "shortDefinition": "Eindeutige und endliche Folge von Schritten zur Lösung eines Problems.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-t2-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Sequenz",
+    "shortDefinition": "Anweisungen werden nacheinander ausgeführt.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-t2-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Auswahl",
+    "shortDefinition": "Eine Bedingung entscheidet zwischen Alternativen.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-t2-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Wiederholung",
+    "shortDefinition": "Anweisungen werden mehrfach ausgeführt.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-t2-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "PAP",
+    "shortDefinition": "Programmablaufplan stellt Abläufe mit standardisierten Symbolen dar.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-t2-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Struktogramm",
+    "shortDefinition": "Stellt Kontrollstrukturen blockartig dar.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-t2-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Pseudocode",
+    "shortDefinition": "Sprachunabhängige, verständliche Beschreibung eines Algorithmus.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-t2-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Use Case",
+    "shortDefinition": "Beschreibt eine Funktion eines Systems aus Sicht eines Akteurs.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-t2-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Akteur",
+    "shortDefinition": "Externe Rolle, die mit einem System interagiert.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-t2-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Systemgrenze",
+    "shortDefinition": "Trennt das betrachtete System von seiner Umgebung.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-t2-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "include",
+    "shortDefinition": "Kennzeichnet einen verpflichtend eingebundenen Anwendungsfall.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-t2-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "extend",
+    "shortDefinition": "Kennzeichnet eine optionale Erweiterung eines Anwendungsfalls.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-t3-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "Variable",
+    "shortDefinition": "Benannter Speicherplatz für einen veränderlichen Wert.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-t3-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "int",
+    "shortDefinition": "Datentyp für ganze Zahlen.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-t3-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "float",
+    "shortDefinition": "Datentyp für Gleitkommazahlen.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-t3-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "str",
+    "shortDefinition": "Datentyp für Zeichenketten.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-t3-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "bool",
+    "shortDefinition": "Datentyp mit den Wahrheitswerten True und False.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-t3-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "Type Casting",
+    "shortDefinition": "Gezielte Umwandlung eines Wertes in einen anderen Datentyp.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-t3-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "EVA-Prinzip",
+    "shortDefinition": "Eingabe, Verarbeitung und Ausgabe als Grundmodell der Datenverarbeitung.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-t3-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "Operatoren",
+    "shortDefinition": "Zeichen für Berechnungen und Vergleiche.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-t3-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "TypeError",
+    "shortDefinition": "Fehler durch eine unpassende Operation für einen Datentyp.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-t3-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "ValueError",
+    "shortDefinition": "Fehler durch einen unpassenden Wert bei grundsätzlich passendem Typ.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-t4-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "String",
+    "shortDefinition": "Zeichenkette, in Python vom Typ str.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-t4-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Index",
+    "shortDefinition": "Position eines Zeichens; der erste Index ist 0.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-t4-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Negativer Index",
+    "shortDefinition": "Zugriff vom Ende einer Zeichenkette, zum Beispiel -1.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-t4-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Slicing",
+    "shortDefinition": "Auswahl eines Teilbereichs mit start:stop:step.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-t4-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Escape-Zeichen",
+    "shortDefinition": "Sonderdarstellung wie \\n für einen Zeilenumbruch.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-t4-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Immutable",
+    "shortDefinition": "Strings werden nicht direkt verändert; Operationen erzeugen neue Strings.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-t4-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "f-String",
+    "shortDefinition": "Formatiert Werte direkt innerhalb einer Zeichenkette.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-t4-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "strip()",
+    "shortDefinition": "Entfernt Leerzeichen am Anfang und Ende.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-t4-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "lower()/upper()",
+    "shortDefinition": "Wandelt Buchstaben in Klein- oder Großschreibung um.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-t4-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "replace()",
+    "shortDefinition": "Ersetzt Zeichen oder Teilstrings.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-t4-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "count()",
+    "shortDefinition": "Zählt Vorkommen eines Teilstrings.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-t4-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "isdigit()/isalpha()/isalnum()",
+    "shortDefinition": "Prüft Zeichenklassen eines Strings.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-t5-1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "if / elif / else",
+    "shortDefinition": "Steuert Entscheidungen abhängig von Bedingungen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-t5-2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "and / or / not",
+    "shortDefinition": "Verknüpft oder negiert boolesche Bedingungen.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-t5-3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "for-Schleife",
+    "shortDefinition": "Wiederholt Anweisungen über eine Folge von Elementen.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-t5-4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "while-Schleife",
+    "shortDefinition": "Wiederholt Anweisungen, solange eine Bedingung wahr ist.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-t5-5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "range()",
+    "shortDefinition": "Erzeugt eine Zahlenfolge für Iterationen.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-t5-6",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "break",
+    "shortDefinition": "Beendet eine Schleife sofort.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-t5-7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "continue",
+    "shortDefinition": "Überspringt den Rest des aktuellen Schleifendurchlaufs.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-t5-8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Endlosschleife",
+    "shortDefinition": "Schleife, deren Abbruchbedingung nie erreicht wird.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-t5-9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Iteration",
+    "shortDefinition": "Ein einzelner Durchlauf einer Schleife.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-t5-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Verschachtelte Schleife",
+    "shortDefinition": "Eine Schleife befindet sich innerhalb einer anderen Schleife.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-t5-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "SyntaxError",
+    "shortDefinition": "Der Code verletzt die Syntaxregeln.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-t5-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "IndentationError",
+    "shortDefinition": "Die Einrückung ist syntaktisch falsch.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-t5-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "TypeError",
+    "shortDefinition": "Eine Operation wird mit ungeeigneten Datentypen ausgeführt.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-t5-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "ValueError",
+    "shortDefinition": "Ein Wert kann nicht wie gefordert verarbeitet werden.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-t5-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "NameError",
+    "shortDefinition": "Ein verwendeter Name ist nicht definiert.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-t5-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Logikfehler",
+    "shortDefinition": "Code läuft, liefert aber ein fachlich falsches Ergebnis.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-t5-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "FizzBuzz",
+    "shortDefinition": "Klassische Übung zu Schleifen, Modulo und Bedingungen.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf05-t5-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Passwortprüfung",
+    "shortDefinition": "Praxisbeispiel für begrenzte Versuche mit while und Abbruch.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf05-t5-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Grenzwerttest",
+    "shortDefinition": "Prüft Verhalten an und um Entscheidungsgrenzen.",
+    "status": "published",
+    "order": 19
+  }
+]
