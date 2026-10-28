@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": "lf05-quiz",
+    "courseId": "lf05",
+    "title": "LF05 Lernkontrollen",
+    "description": "Fragen zu den Inhalten von Tag 1–5.",
+    "path": "/lf05/quiz/",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "entscheidungstabellen",
+    "courseId": "lf05",
+    "title": "Entscheidungstabellen",
+    "description": "Aufgaben zu Entscheidungen und Regeln.",
+    "source": "questions/entscheidungstabellen.js",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "aktivitaetsdiagramme",
+    "courseId": "lf05",
+    "title": "Aktivitätsdiagramme",
+    "description": "Aufgaben zur Modellierung von Abläufen.",
+    "source": "questions/aktivitaetsdiagramme.js",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "schleifenmodellierung",
+    "courseId": "lf05",
+    "title": "Schleifenmodellierung",
+    "description": "Aufgaben zur Modellierung von Wiederholungen.",
+    "source": "questions/schleifenmodellierung.js",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "codeanalyse",
+    "courseId": "lf05",
+    "title": "Codeanalyse",
+    "description": "Python-Code lesen, verstehen und Ergebnisse bestimmen.",
+    "source": "questions/codeanalyse.js",
+    "status": "published",
+    "order": 5
+  }
+]

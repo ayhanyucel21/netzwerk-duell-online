@@ -1,1 +1,336 @@
-[]
+[
+  {
+    "id": "lf05-lesson-tag1",
+    "courseId": "lf05",
+    "tagId": "lf05-tag1",
+    "title": "Softwaregrundlagen",
+    "summary": "Verwaltet Hardware und Systemressourcen. Unterstützt konkrete Aufgaben der Benutzer. Für viele Kunden und typische Anforderungen entwickelt. Für einen bestimmten Kunden oder Prozess entwickelt.",
+    "content": [
+      {
+        "term": "Systemsoftware",
+        "definition": "Verwaltet Hardware und Systemressourcen."
+      },
+      {
+        "term": "Anwendungssoftware",
+        "definition": "Unterstützt konkrete Aufgaben der Benutzer."
+      },
+      {
+        "term": "Standardsoftware",
+        "definition": "Für viele Kunden und typische Anforderungen entwickelt."
+      },
+      {
+        "term": "Individualsoftware",
+        "definition": "Für einen bestimmten Kunden oder Prozess entwickelt."
+      },
+      {
+        "term": "Betriebssystem",
+        "definition": "Verwaltet Hardware, Prozesse, Speicher und Dateisystem."
+      },
+      {
+        "term": "Treiber",
+        "definition": "Ermöglicht die Kommunikation zwischen Betriebssystem und Hardware."
+      },
+      {
+        "term": "Firmware",
+        "definition": "Gerätenahe Software, die Funktionen eines Geräts steuert."
+      },
+      {
+        "term": "Embedded System",
+        "definition": "Computersystem, das in ein Gerät eingebettet ist."
+      },
+      {
+        "term": "Quellcode",
+        "definition": "Vom Menschen geschriebener Programmtext."
+      },
+      {
+        "term": "Compiler",
+        "definition": "Übersetzt Quellcode vor der Ausführung in ein Zielprogramm."
+      },
+      {
+        "term": "Interpreter",
+        "definition": "Führt Quellcode schrittweise aus."
+      },
+      {
+        "term": "Debugging",
+        "definition": "Systematische Suche und Behebung von Programmfehlern."
+      },
+      {
+        "term": "Jupyter Notebook",
+        "definition": "Interaktive Umgebung für Code, Ausgabe und Dokumentation."
+      }
+    ],
+    "example": "Windows ist Systemsoftware; Microsoft Word ist Anwendungs- und Standardsoftware. Eine kundenspezifische Tourenplanung ist Individualsoftware.",
+    "tip": "Prüfe in Aufgaben zuerst: systemnah oder benutzerbezogen, Standardlösung oder kundenspezifisch.",
+    "examTip": "Begriffe nicht nur auswendig lernen: In LZK/IHK-Aufgaben auf ein konkretes Szenario übertragen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-lesson-tag2",
+    "courseId": "lf05",
+    "tagId": "lf05-tag2",
+    "title": "Algorithmen und Modellierung",
+    "summary": "Eindeutige und endliche Folge von Schritten zur Lösung eines Problems. Anweisungen werden nacheinander ausgeführt. Eine Bedingung entscheidet zwischen Alternativen. Anweisungen werden mehrfach ausgeführt.",
+    "content": [
+      {
+        "term": "Algorithmus",
+        "definition": "Eindeutige und endliche Folge von Schritten zur Lösung eines Problems."
+      },
+      {
+        "term": "Sequenz",
+        "definition": "Anweisungen werden nacheinander ausgeführt."
+      },
+      {
+        "term": "Auswahl",
+        "definition": "Eine Bedingung entscheidet zwischen Alternativen."
+      },
+      {
+        "term": "Wiederholung",
+        "definition": "Anweisungen werden mehrfach ausgeführt."
+      },
+      {
+        "term": "PAP",
+        "definition": "Programmablaufplan stellt Abläufe mit standardisierten Symbolen dar."
+      },
+      {
+        "term": "Struktogramm",
+        "definition": "Stellt Kontrollstrukturen blockartig dar."
+      },
+      {
+        "term": "Pseudocode",
+        "definition": "Sprachunabhängige, verständliche Beschreibung eines Algorithmus."
+      },
+      {
+        "term": "Use Case",
+        "definition": "Beschreibt eine Funktion eines Systems aus Sicht eines Akteurs."
+      },
+      {
+        "term": "Akteur",
+        "definition": "Externe Rolle, die mit einem System interagiert."
+      },
+      {
+        "term": "Systemgrenze",
+        "definition": "Trennt das betrachtete System von seiner Umgebung."
+      },
+      {
+        "term": "include",
+        "definition": "Kennzeichnet einen verpflichtend eingebundenen Anwendungsfall."
+      },
+      {
+        "term": "extend",
+        "definition": "Kennzeichnet eine optionale Erweiterung eines Anwendungsfalls."
+      }
+    ],
+    "example": "Eingabe Alter → WENN Alter >= 18 → Ausgabe „Volljährig“, SONST → Ausgabe „Minderjährig“.",
+    "tip": "Achte in PAP und Pseudocode besonders auf Sequenz, Auswahl und Wiederholung.",
+    "examTip": "Begriffe nicht nur auswendig lernen: In LZK/IHK-Aufgaben auf ein konkretes Szenario übertragen.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-lesson-tag3",
+    "courseId": "lf05",
+    "tagId": "lf05-tag3",
+    "title": "Variablen und Datentypen",
+    "summary": "Benannter Speicherplatz für einen veränderlichen Wert. Datentyp für ganze Zahlen. Datentyp für Gleitkommazahlen. Datentyp für Zeichenketten.",
+    "content": [
+      {
+        "term": "Variable",
+        "definition": "Benannter Speicherplatz für einen veränderlichen Wert."
+      },
+      {
+        "term": "int",
+        "definition": "Datentyp für ganze Zahlen."
+      },
+      {
+        "term": "float",
+        "definition": "Datentyp für Gleitkommazahlen."
+      },
+      {
+        "term": "str",
+        "definition": "Datentyp für Zeichenketten."
+      },
+      {
+        "term": "bool",
+        "definition": "Datentyp mit den Wahrheitswerten True und False."
+      },
+      {
+        "term": "Type Casting",
+        "definition": "Gezielte Umwandlung eines Wertes in einen anderen Datentyp."
+      },
+      {
+        "term": "EVA-Prinzip",
+        "definition": "Eingabe, Verarbeitung und Ausgabe als Grundmodell der Datenverarbeitung."
+      },
+      {
+        "term": "Operatoren",
+        "definition": "Zeichen für Berechnungen und Vergleiche."
+      },
+      {
+        "term": "TypeError",
+        "definition": "Fehler durch eine unpassende Operation für einen Datentyp."
+      },
+      {
+        "term": "ValueError",
+        "definition": "Fehler durch einen unpassenden Wert bei grundsätzlich passendem Typ."
+      }
+    ],
+    "example": "alter = int(input(\"Alter: \"))\nprint(alter + 1)",
+    "tip": "input() liefert zunächst einen String. Für Berechnungen ist häufig eine Typumwandlung nötig.",
+    "examTip": "Begriffe nicht nur auswendig lernen: In LZK/IHK-Aufgaben auf ein konkretes Szenario übertragen.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-lesson-tag4",
+    "courseId": "lf05",
+    "tagId": "lf05-tag4",
+    "title": "Strings",
+    "summary": "Zeichenkette, in Python vom Typ str. Position eines Zeichens; der erste Index ist 0. Zugriff vom Ende einer Zeichenkette, zum Beispiel -1. Auswahl eines Teilbereichs mit start:stop:step.",
+    "content": [
+      {
+        "term": "String",
+        "definition": "Zeichenkette, in Python vom Typ str."
+      },
+      {
+        "term": "Index",
+        "definition": "Position eines Zeichens; der erste Index ist 0."
+      },
+      {
+        "term": "Negativer Index",
+        "definition": "Zugriff vom Ende einer Zeichenkette, zum Beispiel -1."
+      },
+      {
+        "term": "Slicing",
+        "definition": "Auswahl eines Teilbereichs mit start:stop:step."
+      },
+      {
+        "term": "Escape-Zeichen",
+        "definition": "Sonderdarstellung wie \\n für einen Zeilenumbruch."
+      },
+      {
+        "term": "Immutable",
+        "definition": "Strings werden nicht direkt verändert; Operationen erzeugen neue Strings."
+      },
+      {
+        "term": "f-String",
+        "definition": "Formatiert Werte direkt innerhalb einer Zeichenkette."
+      },
+      {
+        "term": "strip()",
+        "definition": "Entfernt Leerzeichen am Anfang und Ende."
+      },
+      {
+        "term": "lower()/upper()",
+        "definition": "Wandelt Buchstaben in Klein- oder Großschreibung um."
+      },
+      {
+        "term": "replace()",
+        "definition": "Ersetzt Zeichen oder Teilstrings."
+      },
+      {
+        "term": "count()",
+        "definition": "Zählt Vorkommen eines Teilstrings."
+      },
+      {
+        "term": "isdigit()/isalpha()/isalnum()",
+        "definition": "Prüft Zeichenklassen eines Strings."
+      }
+    ],
+    "example": "name = \"  Ayhan  \"\nprint(name.strip().upper())",
+    "tip": "Bei Slicing ist die Stop-Position nicht enthalten. Prüfe Indexgrenzen sorgfältig.",
+    "examTip": "Begriffe nicht nur auswendig lernen: In LZK/IHK-Aufgaben auf ein konkretes Szenario übertragen.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-lesson-tag5",
+    "courseId": "lf05",
+    "tagId": "lf05-tag5",
+    "title": "Kontrollstrukturen, Schleifen und Debugging",
+    "summary": "Steuert Entscheidungen abhängig von Bedingungen. Verknüpft oder negiert boolesche Bedingungen. Wiederholt Anweisungen über eine Folge von Elementen. Wiederholt Anweisungen, solange eine Bedingung wahr ist.",
+    "content": [
+      {
+        "term": "if / elif / else",
+        "definition": "Steuert Entscheidungen abhängig von Bedingungen."
+      },
+      {
+        "term": "and / or / not",
+        "definition": "Verknüpft oder negiert boolesche Bedingungen."
+      },
+      {
+        "term": "for-Schleife",
+        "definition": "Wiederholt Anweisungen über eine Folge von Elementen."
+      },
+      {
+        "term": "while-Schleife",
+        "definition": "Wiederholt Anweisungen, solange eine Bedingung wahr ist."
+      },
+      {
+        "term": "range()",
+        "definition": "Erzeugt eine Zahlenfolge für Iterationen."
+      },
+      {
+        "term": "break",
+        "definition": "Beendet eine Schleife sofort."
+      },
+      {
+        "term": "continue",
+        "definition": "Überspringt den Rest des aktuellen Schleifendurchlaufs."
+      },
+      {
+        "term": "Endlosschleife",
+        "definition": "Schleife, deren Abbruchbedingung nie erreicht wird."
+      },
+      {
+        "term": "Iteration",
+        "definition": "Ein einzelner Durchlauf einer Schleife."
+      },
+      {
+        "term": "Verschachtelte Schleife",
+        "definition": "Eine Schleife befindet sich innerhalb einer anderen Schleife."
+      },
+      {
+        "term": "SyntaxError",
+        "definition": "Der Code verletzt die Syntaxregeln."
+      },
+      {
+        "term": "IndentationError",
+        "definition": "Die Einrückung ist syntaktisch falsch."
+      },
+      {
+        "term": "TypeError",
+        "definition": "Eine Operation wird mit ungeeigneten Datentypen ausgeführt."
+      },
+      {
+        "term": "ValueError",
+        "definition": "Ein Wert kann nicht wie gefordert verarbeitet werden."
+      },
+      {
+        "term": "NameError",
+        "definition": "Ein verwendeter Name ist nicht definiert."
+      },
+      {
+        "term": "Logikfehler",
+        "definition": "Code läuft, liefert aber ein fachlich falsches Ergebnis."
+      },
+      {
+        "term": "FizzBuzz",
+        "definition": "Klassische Übung zu Schleifen, Modulo und Bedingungen."
+      },
+      {
+        "term": "Passwortprüfung",
+        "definition": "Praxisbeispiel für begrenzte Versuche mit while und Abbruch."
+      },
+      {
+        "term": "Grenzwerttest",
+        "definition": "Prüft Verhalten an und um Entscheidungsgrenzen."
+      }
+    ],
+    "example": "for i in range(1, 6):\n    if i == 3:\n        continue\n    print(i)",
+    "tip": "Bei while immer prüfen, ob sich die Abbruchbedingung verändert. Sonst droht eine Endlosschleife.",
+    "examTip": "Begriffe nicht nur auswendig lernen: In LZK/IHK-Aufgaben auf ein konkretes Szenario übertragen.",
+    "status": "published",
+    "order": 5
+  }
+]

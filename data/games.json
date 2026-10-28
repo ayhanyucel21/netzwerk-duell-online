@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "id": "datentyp-match",
+    "courseId": "lf05",
+    "title": "Datentyp Match",
+    "description": "Python-Werte den passenden Datentypen zuordnen.",
+    "path": "/lf05/games/datentyp-match/",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "string-builder",
+    "courseId": "lf05",
+    "title": "String Builder",
+    "description": "Strings, Slicing und String-Methoden üben.",
+    "path": "/lf05/games/string-builder/",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "schleifen-sortieren",
+    "courseId": "lf05",
+    "title": "Schleifen Sortieren",
+    "description": "Kontrollstrukturen und Schleifen korrekt zuordnen.",
+    "path": "/lf05/games/schleifen-sortieren/",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "algorithmus-puzzle",
+    "courseId": "lf05",
+    "title": "Algorithmus Puzzle",
+    "description": "Algorithmische Schritte in die richtige Reihenfolge bringen.",
+    "path": "/lf05/games/algorithmus-puzzle/",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "debugging-challenge",
+    "courseId": "lf05",
+    "title": "Debugging Challenge",
+    "description": "Fehler in Python-Code erkennen und beheben.",
+    "path": "/lf05/games/debugging-challenge/",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "code-builder",
+    "courseId": "lf05",
+    "title": "Code Builder",
+    "description": "Python-Code aus passenden Bausteinen zusammensetzen.",
+    "path": "/lf05/games/code-builder/",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "python-duell",
+    "courseId": "lf05",
+    "title": "Python-Duell",
+    "description": "2–4 Spieler, Rangliste, Avatare, Quiz- und Drag-and-Drop-Duelle.",
+    "path": "/lf05/duell/",
+    "status": "published",
+    "order": 7
+  }
+]
