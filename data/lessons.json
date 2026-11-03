@@ -886,5 +886,135 @@
     "textAlign": "left",
     "accentColor": "#ffd166",
     "updatedAt": "2026-11-02T15:22:09.253Z"
+  },
+  {
+    "id": "lf05-lesson-tag12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "SQL praktisch: DDL, DML, Schlüssel & Datenpflege",
+    "summary": "Tag 12 setzt das relationale Datenmodell praktisch in MariaDB um. Im Mittelpunkt stehen SQL als Abfragesprache, SQL-Kategorien sowie DDL und DML. Du erstellst Datenbanken und Tabellen, untersuchst Strukturen, änderst Spalten, definierst Primary und Foreign Keys und pflegst Datensätze mit INSERT, UPDATE und DELETE. Besonders prüfungsrelevant sind sichere WHERE-Bedingungen, der Unterschied zwischen DELETE und TRUNCATE sowie die korrekte Abbildung von Schlüsselbeziehungen.",
+    "content": [
+      {
+        "term": "SQL",
+        "definition": "Structured Query Language; eine Abfragesprache für relationale Datenbanken."
+      },
+      {
+        "term": "SQL-Dialekt",
+        "definition": "DBMS-spezifische Variante der SQL-Syntax und unterstützten Befehle."
+      },
+      {
+        "term": "DDL",
+        "definition": "Data Definition Language: Strukturen erstellen, ändern und löschen."
+      },
+      {
+        "term": "DML",
+        "definition": "Data Manipulation Language: Datensätze einfügen, ändern und löschen."
+      },
+      {
+        "term": "DQL",
+        "definition": "Data Query Language: Daten abfragen und ausgeben."
+      },
+      {
+        "term": "DCL",
+        "definition": "Data Control Language: Rechte und Benutzerzugriffe verwalten."
+      },
+      {
+        "term": "TCL",
+        "definition": "Transaction Control Language: Transaktionen kontrollieren, z. B. COMMIT und ROLLBACK."
+      },
+      {
+        "term": "CREATE",
+        "definition": "Erstellt Datenbanken oder Tabellen."
+      },
+      {
+        "term": "USE",
+        "definition": "Wählt in unterstützten SQL-Dialekten eine aktive Datenbank aus."
+      },
+      {
+        "term": "SHOW",
+        "definition": "Zeigt Datenbanken, Tabellen oder Spalten an; dialektspezifisch."
+      },
+      {
+        "term": "DESCRIBE",
+        "definition": "Zeigt die Struktur einer Tabelle; dialektspezifisch."
+      },
+      {
+        "term": "ALTER TABLE",
+        "definition": "Verändert eine bestehende Tabellenstruktur."
+      },
+      {
+        "term": "DROP",
+        "definition": "Löscht Tabellen oder Datenbanken vollständig."
+      },
+      {
+        "term": "TRUNCATE",
+        "definition": "Löscht alle Datensätze einer Tabelle und setzt bei MariaDB/MySQL typischerweise AUTO_INCREMENT zurück."
+      },
+      {
+        "term": "PRIMARY KEY",
+        "definition": "Identifiziert jeden Datensatz eindeutig und ist nicht NULL."
+      },
+      {
+        "term": "FOREIGN KEY",
+        "definition": "Verknüpft eine Spalte mit einem Schlüssel einer anderen Tabelle."
+      },
+      {
+        "term": "CONSTRAINT",
+        "definition": "Ermöglicht benannte Einschränkungen beziehungsweise Schlüsselbeziehungen."
+      },
+      {
+        "term": "INSERT INTO",
+        "definition": "Fügt einen oder mehrere Datensätze ein."
+      },
+      {
+        "term": "UPDATE",
+        "definition": "Ändert vorhandene Datensätze; WHERE begrenzt die betroffenen Zeilen."
+      },
+      {
+        "term": "DELETE FROM",
+        "definition": "Löscht Datensätze; ohne WHERE können alle Zeilen betroffen sein."
+      },
+      {
+        "term": "WHERE",
+        "definition": "Filtert die von UPDATE, DELETE oder SELECT betroffenen Zeilen."
+      },
+      {
+        "term": "UNIQUE",
+        "definition": "Verhindert doppelte Werte innerhalb einer entsprechend beschränkten Spalte."
+      },
+      {
+        "term": "NOT NULL",
+        "definition": "Verlangt einen Wert in der Spalte."
+      },
+      {
+        "term": "CHECK",
+        "definition": "Beschränkt zulässige Werte anhand einer Bedingung."
+      },
+      {
+        "term": "DEFAULT",
+        "definition": "Legt einen Standardwert fest, wenn kein Wert angegeben wird."
+      },
+      {
+        "term": "INDEX",
+        "definition": "Unterstützt schnellen Zugriff auf Spaltenwerte."
+      },
+      {
+        "term": "AVG / SUM / COUNT / MIN / MAX",
+        "definition": "Häufige Aggregatfunktionen für zusammenfassende Auswertungen."
+      },
+      {
+        "term": "LIKE / IN / BETWEEN / EXISTS",
+        "definition": "Operatoren für Muster, Listen, Wertebereiche und Existenzprüfungen."
+      }
+    ],
+    "example": "CREATE DATABASE shop_uebung;\nUSE shop_uebung;\n\nCREATE TABLE Kunde (\n  kunde_nr INT NOT NULL AUTO_INCREMENT,\n  vorname VARCHAR(50) NOT NULL,\n  nachname VARCHAR(50) NOT NULL,\n  email VARCHAR(100),\n  PRIMARY KEY (kunde_nr)\n);\n\nUPDATE Kunde\nSET city = \"Dortmund\", zip_code = \"44137\"\nWHERE kunde_nr = 3;",
+    "tip": "Strukturänderung oder Datenänderung? DDL verändert das Schema; DML verändert Datensätze. Bei UPDATE und DELETE die WHERE-Bedingung vor dem Ausführen bewusst prüfen.",
+    "examTip": "IHK/LZK: Achte besonders auf PRIMARY-/FOREIGN-KEY-Beziehungen, passende Datentypen, DDL vs. DML, UPDATE/DELETE mit WHERE und DELETE vs. TRUNCATE.",
+    "accentColor": "#61e6ff",
+    "status": "published",
+    "order": 12,
+    "fontSize": "normal",
+    "fontWeight": "normal",
+    "textAlign": "left"
   }
 ]

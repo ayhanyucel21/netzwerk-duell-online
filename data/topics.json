@@ -1825,5 +1825,257 @@
     "shortDefinition": "Verwirft Änderungen seit Beginn der Transaktion.",
     "status": "published",
     "order": 22
+  },
+  {
+    "id": "lf05-tag12-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "SQL",
+    "shortDefinition": "Structured Query Language; eine Abfragesprache für relationale Datenbanken.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag12-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "SQL-Dialekt",
+    "shortDefinition": "DBMS-spezifische Variante der SQL-Syntax und unterstützten Befehle.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag12-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DDL",
+    "shortDefinition": "Data Definition Language: Strukturen erstellen, ändern und löschen.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag12-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DML",
+    "shortDefinition": "Data Manipulation Language: Datensätze einfügen, ändern und löschen.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag12-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DQL",
+    "shortDefinition": "Data Query Language: Daten abfragen und ausgeben.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag12-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DCL",
+    "shortDefinition": "Data Control Language: Rechte und Benutzerzugriffe verwalten.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag12-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "TCL",
+    "shortDefinition": "Transaction Control Language: Transaktionen kontrollieren, z. B. COMMIT und ROLLBACK.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag12-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "CREATE",
+    "shortDefinition": "Erstellt Datenbanken oder Tabellen.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag12-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "USE",
+    "shortDefinition": "Wählt in unterstützten SQL-Dialekten eine aktive Datenbank aus.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag12-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "SHOW",
+    "shortDefinition": "Zeigt Datenbanken, Tabellen oder Spalten an; dialektspezifisch.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag12-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DESCRIBE",
+    "shortDefinition": "Zeigt die Struktur einer Tabelle; dialektspezifisch.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag12-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "ALTER TABLE",
+    "shortDefinition": "Verändert eine bestehende Tabellenstruktur.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag12-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DROP",
+    "shortDefinition": "Löscht Tabellen oder Datenbanken vollständig.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag12-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "TRUNCATE",
+    "shortDefinition": "Löscht alle Datensätze einer Tabelle und setzt bei MariaDB/MySQL typischerweise AUTO_INCREMENT zurück.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag12-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "PRIMARY KEY",
+    "shortDefinition": "Identifiziert jeden Datensatz eindeutig und ist nicht NULL.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag12-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "FOREIGN KEY",
+    "shortDefinition": "Verknüpft eine Spalte mit einem Schlüssel einer anderen Tabelle.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag12-topic-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "CONSTRAINT",
+    "shortDefinition": "Ermöglicht benannte Einschränkungen beziehungsweise Schlüsselbeziehungen.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf05-tag12-topic-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "INSERT INTO",
+    "shortDefinition": "Fügt einen oder mehrere Datensätze ein.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf05-tag12-topic-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "UPDATE",
+    "shortDefinition": "Ändert vorhandene Datensätze; WHERE begrenzt die betroffenen Zeilen.",
+    "status": "published",
+    "order": 19
+  },
+  {
+    "id": "lf05-tag12-topic-20",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DELETE FROM",
+    "shortDefinition": "Löscht Datensätze; ohne WHERE können alle Zeilen betroffen sein.",
+    "status": "published",
+    "order": 20
+  },
+  {
+    "id": "lf05-tag12-topic-21",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "WHERE",
+    "shortDefinition": "Filtert die von UPDATE, DELETE oder SELECT betroffenen Zeilen.",
+    "status": "published",
+    "order": 21
+  },
+  {
+    "id": "lf05-tag12-topic-22",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "UNIQUE",
+    "shortDefinition": "Verhindert doppelte Werte innerhalb einer entsprechend beschränkten Spalte.",
+    "status": "published",
+    "order": 22
+  },
+  {
+    "id": "lf05-tag12-topic-23",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "NOT NULL",
+    "shortDefinition": "Verlangt einen Wert in der Spalte.",
+    "status": "published",
+    "order": 23
+  },
+  {
+    "id": "lf05-tag12-topic-24",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "CHECK",
+    "shortDefinition": "Beschränkt zulässige Werte anhand einer Bedingung.",
+    "status": "published",
+    "order": 24
+  },
+  {
+    "id": "lf05-tag12-topic-25",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "DEFAULT",
+    "shortDefinition": "Legt einen Standardwert fest, wenn kein Wert angegeben wird.",
+    "status": "published",
+    "order": 25
+  },
+  {
+    "id": "lf05-tag12-topic-26",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "INDEX",
+    "shortDefinition": "Unterstützt schnellen Zugriff auf Spaltenwerte.",
+    "status": "published",
+    "order": 26
+  },
+  {
+    "id": "lf05-tag12-topic-27",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "AVG / SUM / COUNT / MIN / MAX",
+    "shortDefinition": "Häufige Aggregatfunktionen für zusammenfassende Auswertungen.",
+    "status": "published",
+    "order": 27
+  },
+  {
+    "id": "lf05-tag12-topic-28",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "LIKE / IN / BETWEEN / EXISTS",
+    "shortDefinition": "Operatoren für Muster, Listen, Wertebereiche und Existenzprüfungen.",
+    "status": "published",
+    "order": 28
   }
 ]

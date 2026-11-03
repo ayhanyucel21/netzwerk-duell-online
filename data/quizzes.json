@@ -176,5 +176,16 @@
     "questionCount": 20,
     "status": "published",
     "order": 11
+  },
+  {
+    "id": "lf05-tag12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag12",
+    "title": "SQL praktisch · DDL & DML",
+    "description": "CREATE, ALTER, DROP, Schlüssel, INSERT, UPDATE, DELETE und TRUNCATE.",
+    "icon": "🛠️",
+    "questionCount": 25,
+    "status": "published",
+    "order": 12
   }
 ]

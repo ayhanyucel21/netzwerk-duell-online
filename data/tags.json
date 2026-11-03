@@ -92,5 +92,14 @@
     "title": "Relationales Datenmodell, Normalisierung und SQL",
     "status": "published",
     "order": 11
+  },
+  {
+    "id": "lf05-tag12",
+    "courseId": "lf05",
+    "number": 12,
+    "title": "SQL praktisch: DDL, DML, Schlüssel & Datenpflege",
+    "description": "SQL-Strukturen mit MariaDB anlegen, verändern und mit Daten befüllen.",
+    "status": "published",
+    "order": 12
   }
 ]

@@ -1,0 +1,377 @@
+[
+  {
+    "id": "game-lf05-tag12-q01",
+    "question": "Wofür steht SQL?",
+    "scenario": "",
+    "options": [
+      "Structured Query Language",
+      "Simple Question Logic",
+      "System Query Layer",
+      "Structured Queue Language"
+    ],
+    "correctIndex": 0,
+    "answer": "Structured Query Language",
+    "explanation": "SQL steht für Structured Query Language.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q02",
+    "question": "Welche Aussage zu SQL ist laut Unterrichtsmaterial korrekt?",
+    "scenario": "",
+    "options": [
+      "SQL ist per Definition eine Abfragesprache.",
+      "SQL ist ausschließlich eine Programmiersprache.",
+      "SQL ist nur in Python nutzbar.",
+      "Jedes DBMS verwendet exakt dieselbe Syntax."
+    ],
+    "correctIndex": 0,
+    "answer": "SQL ist per Definition eine Abfragesprache.",
+    "explanation": "SQL wird als Abfragesprache beschrieben; DBMS können Dialekte besitzen.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q03",
+    "question": "Welcher Bereich gehört zu DDL?",
+    "scenario": "",
+    "options": [
+      "CREATE, ALTER, DROP, TRUNCATE",
+      "INSERT, UPDATE, DELETE",
+      "GRANT, REVOKE",
+      "COMMIT, ROLLBACK"
+    ],
+    "correctIndex": 0,
+    "answer": "CREATE, ALTER, DROP, TRUNCATE",
+    "explanation": "DDL verändert Datenbankstrukturen.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q04",
+    "question": "Eine bestehende Tabelle Bestellung benötigt die neue Spalte status VARCHAR(30). Welcher Befehl ist passend?",
+    "scenario": "Im laufenden Betrieb kommt eine neue fachliche Anforderung hinzu.",
+    "options": [
+      "ALTER TABLE",
+      "INSERT INTO",
+      "UPDATE ohne ALTER",
+      "SELECT"
+    ],
+    "correctIndex": 0,
+    "answer": "ALTER TABLE",
+    "explanation": "ALTER TABLE verändert die Tabellenstruktur.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q05",
+    "question": "Was bewirkt der Befehl?",
+    "scenario": "",
+    "options": [
+      "Erstellt die Datenbank learning.",
+      "Löscht die Datenbank learning.",
+      "Wählt learning nur lesend aus.",
+      "Fügt einen Datensatz ein."
+    ],
+    "correctIndex": 0,
+    "answer": "Erstellt die Datenbank learning.",
+    "explanation": "CREATE DATABASE erstellt eine Datenbank.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q06",
+    "question": "Wozu dient USE in MariaDB?",
+    "scenario": "",
+    "options": [
+      "Eine Datenbank als aktiv auswählen",
+      "Eine Tabelle löschen",
+      "Datensätze gruppieren",
+      "Einen FK löschen"
+    ],
+    "correctIndex": 0,
+    "answer": "Eine Datenbank als aktiv auswählen",
+    "explanation": "USE legt die aktive Datenbank fest.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q07",
+    "question": "Welcher Befehl zeigt Tabellen der aktiven Datenbank?",
+    "scenario": "",
+    "options": [
+      "SHOW TABLES;",
+      "DESCRIBE DATABASE;",
+      "SELECT DATABASE TABLES;",
+      "PRINT TABLES;"
+    ],
+    "correctIndex": 0,
+    "answer": "SHOW TABLES;",
+    "explanation": "SHOW TABLES listet die Tabellen auf.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q08",
+    "question": "Was liefert DESCRIBE typischerweise?",
+    "scenario": "",
+    "options": [
+      "Die Struktur einer Tabelle",
+      "Alle Datensätze einer Tabelle",
+      "Nur Fremdschlüsselwerte",
+      "Ein Backup"
+    ],
+    "correctIndex": 0,
+    "answer": "Die Struktur einer Tabelle",
+    "explanation": "DESCRIBE zeigt Tabellenstruktur.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q09",
+    "question": "Welche Eigenschaft ist für einen Primary Key zentral?",
+    "scenario": "",
+    "options": [
+      "Eindeutige Identifikation eines Datensatzes",
+      "Mehrfacher NULL-Wert",
+      "Verweis auf eine andere Tabelle",
+      "Nur Zeichenketten erlaubt"
+    ],
+    "correctIndex": 0,
+    "answer": "Eindeutige Identifikation eines Datensatzes",
+    "explanation": "Ein PK identifiziert eindeutig und ist nicht NULL.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q10",
+    "question": "Bestellung.kunde_nr soll auf Kunde.kunde_nr verweisen. Was wird benötigt?",
+    "scenario": "Eine Bestellung gehört genau einem vorhandenen Kunden.",
+    "options": [
+      "FOREIGN KEY",
+      "UNIQUE ohne Beziehung",
+      "TRUNCATE",
+      "DQL"
+    ],
+    "correctIndex": 0,
+    "answer": "FOREIGN KEY",
+    "explanation": "Ein FK bildet die referenzielle Beziehung ab.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q11",
+    "question": "Welche Voraussetzung nennt das Material für eine FK-Beziehung?",
+    "scenario": "",
+    "options": [
+      "Die beteiligten Spalten müssen passende gleiche Datentypen besitzen.",
+      "Beide Spalten müssen AUTO_INCREMENT sein.",
+      "Beide Tabellen müssen denselben Namen tragen.",
+      "Der FK darf nur VARCHAR sein."
+    ],
+    "correctIndex": 0,
+    "answer": "Die beteiligten Spalten müssen passende gleiche Datentypen besitzen.",
+    "explanation": "Die Schlüsselfelder müssen datentypkompatibel sein.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q12",
+    "question": "Was macht diese Anweisung?",
+    "scenario": "",
+    "options": [
+      "Fügt eine neue Spalte hinzu.",
+      "Fügt einen Datensatz hinzu.",
+      "Löscht die Tabelle.",
+      "Ändert einen Datensatz."
+    ],
+    "correctIndex": 0,
+    "answer": "Fügt eine neue Spalte hinzu.",
+    "explanation": "ALTER TABLE ... ADD verändert die Struktur.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q13",
+    "question": "Welcher Befehl fügt Datensätze ein?",
+    "scenario": "",
+    "options": [
+      "INSERT INTO",
+      "ALTER TABLE",
+      "DROP TABLE",
+      "DESCRIBE"
+    ],
+    "correctIndex": 0,
+    "answer": "INSERT INTO",
+    "explanation": "INSERT gehört zur Datenmanipulation.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q14",
+    "question": "Nur Bestellung 1002 soll auf Versendet gesetzt werden. Welcher Zusatz verhindert, dass alle Bestellungen geändert werden?",
+    "scenario": "Der Status einer einzelnen Bestellung ändert sich.",
+    "options": [
+      "WHERE bestellung_nr = 1002",
+      "GROUP BY bestellung_nr",
+      "ORDER BY bestellung_nr",
+      "TRUNCATE"
+    ],
+    "correctIndex": 0,
+    "answer": "WHERE bestellung_nr = 1002",
+    "explanation": "WHERE begrenzt UPDATE auf den gewünschten Datensatz.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q15",
+    "question": "Was ist das Risiko dieses Befehls?",
+    "scenario": "",
+    "options": [
+      "Alle Zeilen erhalten Gruppe 1.",
+      "Nur Gruppe 2 wird geändert.",
+      "Die Tabelle wird gelöscht.",
+      "Es entsteht zwingend ein SyntaxError."
+    ],
+    "correctIndex": 0,
+    "answer": "Alle Zeilen erhalten Gruppe 1.",
+    "explanation": "Ohne WHERE wirkt UPDATE auf alle passenden Zeilen, hier auf alle Zeilen.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q16",
+    "question": "Welche Anweisung löscht einen einzelnen Datensatz gezielt?",
+    "scenario": "",
+    "options": [
+      "DELETE FROM students WHERE id = 3;",
+      "TRUNCATE TABLE students;",
+      "DROP TABLE students;",
+      "DELETE DATABASE students;"
+    ],
+    "correctIndex": 0,
+    "answer": "DELETE FROM students WHERE id = 3;",
+    "explanation": "DELETE mit WHERE löscht gezielt.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q17",
+    "question": "Was unterscheidet TRUNCATE im Material von DELETE FROM ohne WHERE?",
+    "scenario": "",
+    "options": [
+      "TRUNCATE setzt AUTO_INCREMENT zurück.",
+      "TRUNCATE löscht die Tabelle selbst.",
+      "DELETE kann keine Daten löschen.",
+      "TRUNCATE benötigt immer WHERE."
+    ],
+    "correctIndex": 0,
+    "answer": "TRUNCATE setzt AUTO_INCREMENT zurück.",
+    "explanation": "Im Material wird der Reset von AUTO_INCREMENT hervorgehoben.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q18",
+    "question": "Welche Constraint verhindert NULL-Werte?",
+    "scenario": "",
+    "options": [
+      "NOT NULL",
+      "UNIQUE",
+      "CHECK",
+      "DEFAULT"
+    ],
+    "correctIndex": 0,
+    "answer": "NOT NULL",
+    "explanation": "NOT NULL fordert einen Wert.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q19",
+    "question": "Welche Constraint verhindert doppelte Werte in einer Spalte?",
+    "scenario": "",
+    "options": [
+      "UNIQUE",
+      "DEFAULT",
+      "NOT NULL",
+      "CHECK(age >= 18)"
+    ],
+    "correctIndex": 0,
+    "answer": "UNIQUE",
+    "explanation": "UNIQUE sichert Einzigartigkeit.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q20",
+    "question": "Welche Constraint begrenzt zulässige Werte durch eine Bedingung?",
+    "scenario": "",
+    "options": [
+      "CHECK",
+      "INDEX",
+      "DEFAULT",
+      "PRIMARY DATABASE"
+    ],
+    "correctIndex": 0,
+    "answer": "CHECK",
+    "explanation": "CHECK formuliert Wertebedingungen.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q21",
+    "question": "Welcher SQL-Bereich ist für Benutzerrechte vorgesehen?",
+    "scenario": "",
+    "options": [
+      "DCL",
+      "DDL",
+      "DML",
+      "DQL"
+    ],
+    "correctIndex": 0,
+    "answer": "DCL",
+    "explanation": "DCL umfasst z. B. GRANT und REVOKE.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q22",
+    "question": "Welche Kategorie umfasst COMMIT und ROLLBACK?",
+    "scenario": "",
+    "options": [
+      "TCL",
+      "DML",
+      "DQL",
+      "DDL"
+    ],
+    "correctIndex": 0,
+    "answer": "TCL",
+    "explanation": "Transaktionskontrolle gehört zu TCL.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q23",
+    "question": "Eine Bestellung enthält mehrere Produkte und ein Produkt kann in mehreren Bestellungen vorkommen. Welche Struktur aus der Übung löst das auf?",
+    "scenario": "Bestellverwaltung mit Produktmengen.",
+    "options": [
+      "Zwischentabelle Bestellung_Produkt",
+      "Ein einziges Feld produkt_liste",
+      "TRUNCATE",
+      "Nur die Tabelle Kunde"
+    ],
+    "correctIndex": 0,
+    "answer": "Zwischentabelle Bestellung_Produkt",
+    "explanation": "Die Zwischentabelle bildet die n:m-Beziehung ab.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q24",
+    "question": "Clara Neumann zieht um; nur ihre Anschrift soll geändert werden. Welche Anweisungsklasse passt?",
+    "scenario": "Kundennummer 3 erhält eine neue Adresse.",
+    "options": [
+      "UPDATE mit WHERE",
+      "ALTER TABLE ohne WHERE",
+      "TRUNCATE",
+      "DROP DATABASE"
+    ],
+    "correctIndex": 0,
+    "answer": "UPDATE mit WHERE",
+    "explanation": "Die Tabellenstruktur bleibt gleich; vorhandene Daten werden gezielt geändert.",
+    "category": "SQL DDL DML"
+  },
+  {
+    "id": "game-lf05-tag12-q25",
+    "question": "Eine neue Bestellung mit zwei Produkten wird gespeichert. Warum reicht ein INSERT in Bestellung allein nicht?",
+    "scenario": "Bestellung 1005 enthält zwei Produkte.",
+    "options": [
+      "Auch die Bestellpositionen müssen in der Zwischentabelle gespeichert werden.",
+      "Weil INSERT keine Datensätze anlegen kann.",
+      "Weil erst DROP ausgeführt werden muss.",
+      "Weil jede Bestellung nur ein Produkt enthalten darf."
+    ],
+    "correctIndex": 0,
+    "answer": "Auch die Bestellpositionen müssen in der Zwischentabelle gespeichert werden.",
+    "explanation": "Die Bestellung und ihre Positionen liegen in getrennten Tabellen.",
+    "category": "SQL DDL DML"
+  }
+]
