@@ -116,5 +116,65 @@
     "status": "published",
     "order": 8,
     "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag7",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Datenstrukturen & Datenformate",
+    "description": "Listen, Tupel, Sets, Dictionaries sowie CSV, JSON und XML sicher einsetzen.",
+    "icon": "🧺",
+    "accentColor": "#a281ff",
+    "questionCount": 20,
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag8",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Funktionen, Scope & Softwaretests",
+    "description": "Modulare Funktionen entwickeln und mit Grenzwerten, Äquivalenzklassen und Pfaden testen.",
+    "icon": "🧪",
+    "accentColor": "#45dc96",
+    "questionCount": 20,
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag9",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "Dateien, Exceptions & Persistenz",
+    "description": "Dateien sicher verarbeiten, Fehler gezielt behandeln und Zustände dauerhaft speichern.",
+    "icon": "📁",
+    "accentColor": "#ff9858",
+    "questionCount": 20,
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Datenbankgrundlagen & ERD",
+    "description": "Datenbanksysteme planen und Entitäten, Beziehungen sowie Kardinalitäten modellieren.",
+    "icon": "🗃️",
+    "accentColor": "#4bdbff",
+    "questionCount": 20,
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Relationales Modell, Normalisierung & SQL",
+    "description": "Schlüssel, Normalformen, SQL-Abfragen, JOINs und Transaktionen prüfungsnah anwenden.",
+    "icon": "🧱",
+    "accentColor": "#ffd166",
+    "questionCount": 20,
+    "status": "published",
+    "order": 11
   }
 ]

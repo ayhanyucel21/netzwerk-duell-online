@@ -1,0 +1,10 @@
+node_modules/
+backups/
+
+*.backup-*.html
+*.backup-*.js
+*.css.backup-*
+
+data/answer-length-report.json
+data/answer-balance-changes.json
+data/tag7-11-import-report.json

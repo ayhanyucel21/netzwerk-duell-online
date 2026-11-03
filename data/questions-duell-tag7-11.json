@@ -1,0 +1,477 @@
+[
+  {
+    "id": "duel-t7-11-01",
+    "question": "Ein Inventarsystem benötigt eindeutige Gerätenummern ohne feste Reihenfolge. Welche Struktur passt?",
+    "options": [
+      "Liste",
+      "Set",
+      "Tupel",
+      "String"
+    ],
+    "correctIndex": 1,
+    "answer": "Set",
+    "explanation": "Ein Set verhindert doppelte Einträge.",
+    "category": "Datenstrukturen",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag7"
+    ]
+  },
+  {
+    "id": "duel-t7-11-02",
+    "question": "Welche Aussage zu einem Tupel ist richtig?",
+    "options": [
+      "Es ist geordnet und unveränderbar.",
+      "Es speichert nur Zahlen.",
+      "Es besitzt keine Indizes.",
+      "Es entfernt Duplikate automatisch."
+    ],
+    "correctIndex": 0,
+    "answer": "Es ist geordnet und unveränderbar.",
+    "explanation": "Tupel sind geordnet und immutable.",
+    "category": "Datenstrukturen",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag7"
+    ]
+  },
+  {
+    "id": "duel-t7-11-03",
+    "question": "Ein Dictionary soll einen fehlenden Schlüssel ohne Exception lesen. Welche Methode passt?",
+    "options": [
+      "pop()",
+      "get()",
+      "append()",
+      "sort()"
+    ],
+    "correctIndex": 1,
+    "answer": "get()",
+    "explanation": "get() kann einen Defaultwert zurückgeben.",
+    "category": "Datenstrukturen",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag7"
+    ]
+  },
+  {
+    "id": "duel-t7-11-04",
+    "question": "Welche Datenrepräsentation passt zu verschachtelten API-Daten?",
+    "options": [
+      "CSV",
+      "JSON",
+      "Bitmap",
+      "Plaintext ohne Struktur"
+    ],
+    "correctIndex": 1,
+    "answer": "JSON",
+    "explanation": "JSON unterstützt Objekte und Arrays.",
+    "category": "Datenstrukturen",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag7"
+    ]
+  },
+  {
+    "id": "duel-t7-11-05",
+    "question": "Eine Funktion soll gut testbar sein. Welche Gestaltung ist vorzuziehen?",
+    "options": [
+      "Globale Werte verändern",
+      "Parameter verwenden und einen Wert zurückgeben",
+      "Nur print() verwenden",
+      "Alle Exceptions ignorieren"
+    ],
+    "correctIndex": 1,
+    "answer": "Parameter verwenden und einen Wert zurückgeben",
+    "explanation": "Klare Ein- und Ausgaben vereinfachen Tests.",
+    "category": "Funktionen & Tests",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag8"
+    ]
+  },
+  {
+    "id": "duel-t7-11-06",
+    "question": "Welche Werte prüfen eine Grenze bei 18 besonders sinnvoll?",
+    "options": [
+      "1, 2, 3",
+      "17, 18, 19",
+      "18, 28, 38",
+      "0, 50, 100"
+    ],
+    "correctIndex": 1,
+    "answer": "17, 18, 19",
+    "explanation": "Direkte Nachbarn decken Grenzfehler auf.",
+    "category": "Funktionen & Tests",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag8"
+    ]
+  },
+  {
+    "id": "duel-t7-11-07",
+    "question": "Welches Verfahren gehört eher zum Whitebox-Test?",
+    "options": [
+      "Äquivalenzklassenbildung",
+      "Grenzwertanalyse",
+      "Pfadabdeckung",
+      "Anforderungsinterview"
+    ],
+    "correctIndex": 2,
+    "answer": "Pfadabdeckung",
+    "explanation": "Pfadabdeckung basiert auf der internen Struktur.",
+    "category": "Funktionen & Tests",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag8"
+    ]
+  },
+  {
+    "id": "duel-t7-11-08",
+    "question": "Was bewirkt return in einer Python-Funktion?",
+    "options": [
+      "Es beendet die Funktion und kann einen Wert liefern.",
+      "Es schreibt immer auf die Konsole.",
+      "Es macht Variablen global.",
+      "Es startet die Funktion neu."
+    ],
+    "correctIndex": 0,
+    "answer": "Es beendet die Funktion und kann einen Wert liefern.",
+    "explanation": "return beendet den aktuellen Funktionsaufruf.",
+    "category": "Funktionen & Tests",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag8"
+    ]
+  },
+  {
+    "id": "duel-t7-11-09",
+    "question": "Welcher Dateimodus hängt Inhalte an eine vorhandene Datei an?",
+    "options": [
+      "r",
+      "w",
+      "a",
+      "x"
+    ],
+    "correctIndex": 2,
+    "answer": "a",
+    "explanation": "a schreibt am Dateiende.",
+    "category": "Dateien & Exceptions",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag9"
+    ]
+  },
+  {
+    "id": "duel-t7-11-10",
+    "question": "Warum ist with open(...) empfehlenswert?",
+    "options": [
+      "Die Datei wird zuverlässig geschlossen.",
+      "Jede Datei wird verschlüsselt.",
+      "Exceptions sind ausgeschlossen.",
+      "JSON wird automatisch erkannt."
+    ],
+    "correctIndex": 0,
+    "answer": "Die Datei wird zuverlässig geschlossen.",
+    "explanation": "Der Kontextmanager schließt die Ressource.",
+    "category": "Dateien & Exceptions",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag9"
+    ]
+  },
+  {
+    "id": "duel-t7-11-11",
+    "question": "Welche Exception entsteht typischerweise bei int(\"abc\")?",
+    "options": [
+      "TypeError",
+      "ValueError",
+      "KeyError",
+      "PermissionError"
+    ],
+    "correctIndex": 1,
+    "answer": "ValueError",
+    "explanation": "Der konkrete Text ist kein gültiger Integerwert.",
+    "category": "Dateien & Exceptions",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag9"
+    ]
+  },
+  {
+    "id": "duel-t7-11-12",
+    "question": "Wozu dient finally?",
+    "options": [
+      "Nur erfolgreiche Verarbeitung",
+      "Ausführung unabhängig vom Fehlerpfad",
+      "Nur Ausgabe von Exceptions",
+      "Ersetzen von raise"
+    ],
+    "correctIndex": 1,
+    "answer": "Ausführung unabhängig vom Fehlerpfad",
+    "explanation": "finally wird unabhängig vom Ausgang ausgeführt.",
+    "category": "Dateien & Exceptions",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag9"
+    ]
+  },
+  {
+    "id": "duel-t7-11-13",
+    "question": "Was beschreibt ein DBMS?",
+    "options": [
+      "Gespeicherte Datensätze",
+      "Software zur Verwaltung einer Datenbank",
+      "Ein einzelnes ER-Diagramm",
+      "Nur einen SQL-Client"
+    ],
+    "correctIndex": 1,
+    "answer": "Software zur Verwaltung einer Datenbank",
+    "explanation": "Ein DBMS verwaltet Daten und Strukturen.",
+    "category": "Datenbank & ERD",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag10"
+    ]
+  },
+  {
+    "id": "duel-t7-11-14",
+    "question": "Ein Kunde kann mehrere Bestellungen besitzen. Welche Kardinalität passt?",
+    "options": [
+      "1:1",
+      "1:n",
+      "n:m",
+      "0:0"
+    ],
+    "correctIndex": 1,
+    "answer": "1:n",
+    "explanation": "Eine Kundeninstanz steht zu mehreren Bestellungen.",
+    "category": "Datenbank & ERD",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag10"
+    ]
+  },
+  {
+    "id": "duel-t7-11-15",
+    "question": "Produkt und Bestellung stehen fachlich n:m zueinander. Welche Zwischentabelle passt?",
+    "options": [
+      "Adresse",
+      "Bestellposition",
+      "Kunde",
+      "Datenbank"
+    ],
+    "correctIndex": 1,
+    "answer": "Bestellposition",
+    "explanation": "Bestellposition löst die n:m-Beziehung auf.",
+    "category": "Datenbank & ERD",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag10"
+    ]
+  },
+  {
+    "id": "duel-t7-11-16",
+    "question": "Welche Eigenschaft besitzt ein Primärschlüssel?",
+    "options": [
+      "Er darf mehrfach NULL sein.",
+      "Er identifiziert Datensätze eindeutig.",
+      "Er ist immer Text.",
+      "Er verweist zwingend auf eine andere Tabelle."
+    ],
+    "correctIndex": 1,
+    "answer": "Er identifiziert Datensätze eindeutig.",
+    "explanation": "Der Primärschlüssel ist eindeutig und nicht NULL.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-17",
+    "question": "Welche Aufgabe hat ein Fremdschlüssel?",
+    "options": [
+      "Er sortiert Ergebnisse.",
+      "Er bildet Beziehungen zwischen Tabellen ab.",
+      "Er ersetzt jede Validierung.",
+      "Er löscht Duplikate."
+    ],
+    "correctIndex": 1,
+    "answer": "Er bildet Beziehungen zwischen Tabellen ab.",
+    "explanation": "Ein FK verweist auf einen Schlüssel einer anderen Tabelle.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-18",
+    "question": "Welche Forderung gehört zur ersten Normalform?",
+    "options": [
+      "Atomare Werte in jeder Zelle",
+      "Keine Fremdschlüssel",
+      "Nur eine Tabelle",
+      "Alle Felder sind Primärschlüssel"
+    ],
+    "correctIndex": 0,
+    "answer": "Atomare Werte in jeder Zelle",
+    "explanation": "1NF verlangt atomare Werte.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-19",
+    "question": "Eine Adresse wird redundant in mehreren Zeilen geführt und nur teilweise geändert. Welche Anomalie liegt vor?",
+    "options": [
+      "Einfüge-Anomalie",
+      "Änderungs-Anomalie",
+      "Lösch-Anomalie",
+      "JOIN-Anomalie"
+    ],
+    "correctIndex": 1,
+    "answer": "Änderungs-Anomalie",
+    "explanation": "Redundanz kann inkonsistente Änderungen verursachen.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-20",
+    "question": "Welcher SQL-Befehl liest Datensätze?",
+    "options": [
+      "ALTER",
+      "SELECT",
+      "DROP",
+      "COMMIT"
+    ],
+    "correctIndex": 1,
+    "answer": "SELECT",
+    "explanation": "SELECT dient zum Lesen.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-21",
+    "question": "Welche Klausel filtert Zeilen vor der Gruppierung?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "ORDER BY",
+      "ROLLBACK"
+    ],
+    "correctIndex": 0,
+    "answer": "WHERE",
+    "explanation": "WHERE filtert einzelne Zeilen.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-22",
+    "question": "Welche Klausel filtert das Ergebnis von COUNT(*) nach GROUP BY?",
+    "options": [
+      "WHERE",
+      "HAVING",
+      "JOIN",
+      "VALUES"
+    ],
+    "correctIndex": 1,
+    "answer": "HAVING",
+    "explanation": "HAVING filtert Gruppen.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-23",
+    "question": "Welcher JOIN liefert nur passende Zeilen beider Tabellen?",
+    "options": [
+      "LEFT JOIN",
+      "INNER JOIN",
+      "CROSS JOIN",
+      "Kein JOIN"
+    ],
+    "correctIndex": 1,
+    "answer": "INNER JOIN",
+    "explanation": "INNER JOIN liefert die Schnittmenge.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-24",
+    "question": "Eine Überweisung ist vollständig erfolgreich. Welcher Befehl bestätigt die Transaktion?",
+    "options": [
+      "ROLLBACK",
+      "COMMIT",
+      "SELECT",
+      "GRANT"
+    ],
+    "correctIndex": 1,
+    "answer": "COMMIT",
+    "explanation": "COMMIT bestätigt die Änderungen.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "medium",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  },
+  {
+    "id": "duel-t7-11-25",
+    "question": "Die Belastung erfolgte, die Gutschrift scheiterte. Welche Aktion schützt die Konsistenz?",
+    "options": [
+      "COMMIT",
+      "ROLLBACK",
+      "ORDER BY",
+      "CREATE TABLE"
+    ],
+    "correctIndex": 1,
+    "answer": "ROLLBACK",
+    "explanation": "ROLLBACK verwirft die unvollständige Transaktion.",
+    "category": "SQL & Normalisierung",
+    "difficulty": "hard",
+    "tags": [
+      "lf05",
+      "tag11"
+    ]
+  }
+]

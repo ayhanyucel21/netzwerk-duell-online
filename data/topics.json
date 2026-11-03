@@ -1015,5 +1015,815 @@
     "status": "published",
     "order": 47,
     "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf05-tag7-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Liste",
+    "shortDefinition": "Geordnete und veränderbare Sammlung mehrerer Werte.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag7-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Slicing",
+    "shortDefinition": "Auswahl eines Teilbereichs einer Sequenz mit start:stop:step.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag7-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Nested List",
+    "shortDefinition": "Liste, die weitere Listen als Elemente enthält.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag7-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "append()",
+    "shortDefinition": "Fügt ein Element am Ende einer Liste hinzu.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag7-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "extend()",
+    "shortDefinition": "Erweitert eine Liste um die Elemente eines iterierbaren Objekts.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag7-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "pop()",
+    "shortDefinition": "Entfernt ein Element und gibt es zurück.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag7-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Tupel",
+    "shortDefinition": "Geordnete, aber unveränderbare Sammlung.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag7-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Unpacking",
+    "shortDefinition": "Verteilt Elemente einer Sequenz auf mehrere Variablen.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag7-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Dictionary",
+    "shortDefinition": "Verknüpft Schlüssel mit Werten und ist veränderbar.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag7-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "keys()/values()/items()",
+    "shortDefinition": "Liefert Schlüssel, Werte beziehungsweise Schlüssel-Wert-Paare eines Dictionaries.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag7-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Set",
+    "shortDefinition": "Ungeordnete Sammlung ohne doppelte Elemente.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag7-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Mutable",
+    "shortDefinition": "Objekt kann nach seiner Erzeugung verändert werden.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag7-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "Immutable",
+    "shortDefinition": "Objekt kann nach seiner Erzeugung nicht direkt verändert werden.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag7-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "CSV",
+    "shortDefinition": "Tabellarisches strukturiertes Textformat.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag7-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "JSON",
+    "shortDefinition": "Semi-strukturiertes Format auf Basis von Schlüssel-Wert-Strukturen.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag7-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag7",
+    "title": "XML",
+    "shortDefinition": "Semi-strukturiertes hierarchisches Format mit Tags.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag8-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Funktion",
+    "shortDefinition": "Benannter, wiederverwendbarer Programmbaustein, definiert mit def.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag8-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Parameter",
+    "shortDefinition": "Platzhalter in der Funktionsdefinition.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag8-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Argument",
+    "shortDefinition": "Konkreter Wert beim Funktionsaufruf.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag8-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "return",
+    "shortDefinition": "Gibt einen Wert zurück und beendet die Funktion.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag8-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Positional Parameter",
+    "shortDefinition": "Zuordnung von Argumenten anhand ihrer Position.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag8-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Keyword Parameter",
+    "shortDefinition": "Zuordnung über den Parameternamen.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag8-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Defaultwert",
+    "shortDefinition": "Vordefinierter Parameterwert, wenn kein Argument übergeben wird.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag8-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Scope",
+    "shortDefinition": "Gültigkeitsbereich eines Namens.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag8-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Local Scope",
+    "shortDefinition": "Innerhalb einer Funktion gültiger Bereich.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag8-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Global Scope",
+    "shortDefinition": "Auf Programmebene gültiger Bereich.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag8-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "global",
+    "shortDefinition": "Schlüsselwort zum Binden eines Namens an den globalen Scope.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag8-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Blackbox-Test",
+    "shortDefinition": "Test auf Basis erwarteten Verhaltens ohne Betrachtung der internen Implementierung.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag8-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Whitebox-Test",
+    "shortDefinition": "Test unter Kenntnis der internen Programmstruktur.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag8-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Grenzwertanalyse",
+    "shortDefinition": "Testet Werte an und um relevante Bereichsgrenzen.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag8-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Äquivalenzklasse",
+    "shortDefinition": "Eingabeklasse, deren Werte dasselbe erwartete Verhalten besitzen.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag8-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag8",
+    "title": "Pfadabdeckung",
+    "shortDefinition": "Bewertet, welche Kontrollflusspfade durch Tests ausgeführt werden.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag9-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "open()",
+    "shortDefinition": "Öffnet eine Datei und liefert ein Dateiobjekt.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag9-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "with open",
+    "shortDefinition": "Kontextmanager, der die Datei nach dem Block zuverlässig schließt.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag9-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "r",
+    "shortDefinition": "Lesemodus; Datei muss existieren.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag9-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "w",
+    "shortDefinition": "Schreibmodus; vorhandener Inhalt wird beim Öffnen verworfen.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag9-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "a",
+    "shortDefinition": "Append-Modus; neue Inhalte werden angehängt.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag9-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "x",
+    "shortDefinition": "Erstellt eine neue Datei und schlägt fehl, wenn sie existiert.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag9-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "+",
+    "shortDefinition": "Erweitert einen Basismodus um Lese- beziehungsweise Schreibmöglichkeit.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag9-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "read()",
+    "shortDefinition": "Liest Dateiinhalt.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag9-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "readline()",
+    "shortDefinition": "Liest eine Zeile.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag9-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "readlines()",
+    "shortDefinition": "Liest Zeilen als Liste.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag9-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "write()",
+    "shortDefinition": "Schreibt Text in eine Datei.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag9-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "writelines()",
+    "shortDefinition": "Schreibt mehrere Strings ohne automatische Zeilenumbrüche.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag9-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "seek()",
+    "shortDefinition": "Positioniert den Dateicursor.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag9-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "try",
+    "shortDefinition": "Kennzeichnet Code, bei dem Exceptions erwartet werden.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag9-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "except",
+    "shortDefinition": "Behandelt passende Exceptions.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag9-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "else",
+    "shortDefinition": "Wird nach try ausgeführt, wenn keine Exception auftrat.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag9-topic-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "finally",
+    "shortDefinition": "Wird unabhängig vom Ergebnis des try-Blocks ausgeführt.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf05-tag9-topic-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "raise",
+    "shortDefinition": "Löst bewusst eine Exception aus.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf05-tag9-topic-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "FileNotFoundError",
+    "shortDefinition": "Datei wurde am angegebenen Pfad nicht gefunden.",
+    "status": "published",
+    "order": 19
+  },
+  {
+    "id": "lf05-tag9-topic-20",
+    "courseId": "lf05",
+    "tagId": "lf05-tag9",
+    "title": "PermissionError",
+    "shortDefinition": "Zugriff auf Datei oder Pfad ist nicht erlaubt.",
+    "status": "published",
+    "order": 20
+  },
+  {
+    "id": "lf05-tag10-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Datenbank",
+    "shortDefinition": "Elektronisch verwalteter Datenbestand zur dauerhaften, effizienten und widerspruchsarmen Speicherung.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag10-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "DBMS",
+    "shortDefinition": "Software zur Verwaltung von Daten und Datenbankstrukturen.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag10-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "DBS",
+    "shortDefinition": "Gesamtheit aus Datenbank, DBMS und beteiligter Systemumgebung.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag10-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Konzeptionelles Schema",
+    "shortDefinition": "Gesamtmodell der Daten und Anforderungen, unabhängig von konkreter Technik.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag10-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Internes Schema",
+    "shortDefinition": "Beschreibt physische Speicherung und technische Umsetzung.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag10-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Externes Schema",
+    "shortDefinition": "Benutzerspezifische Sicht auf relevante Daten.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag10-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Stand-Alone-DB",
+    "shortDefinition": "Datenbank und DBMS befinden sich typischerweise auf demselben Gerät.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag10-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Client-Server-DB",
+    "shortDefinition": "DBMS und Daten liegen serverseitig; Clients greifen darauf zu.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag10-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Entität",
+    "shortDefinition": "Unterscheidbares Objekt oder Konzept der betrachteten Domäne.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag10-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Attribut",
+    "shortDefinition": "Eigenschaft einer Entität.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag10-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Beziehung",
+    "shortDefinition": "Fachliche Verknüpfung zwischen Entitäten.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag10-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Kardinalität 1:1",
+    "shortDefinition": "Je eine Instanz steht mit genau einer Instanz der anderen Entität in Beziehung.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag10-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Kardinalität 1:n",
+    "shortDefinition": "Eine Instanz kann mit mehreren Instanzen der anderen Entität verbunden sein.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag10-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Kardinalität n:m",
+    "shortDefinition": "Mehrere Instanzen beider Entitäten können miteinander verbunden sein.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag10-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "Mengen-Notation",
+    "shortDefinition": "Kurze Textdarstellung von Entitäten und ihren Attributen.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag10-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag10",
+    "title": "ERD",
+    "shortDefinition": "Visuelles Modell von Entitäten, Attributen, Beziehungen und Kardinalitäten.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag11-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Relation",
+    "shortDefinition": "Tabelle im relationalen Datenmodell.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag11-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Tupel",
+    "shortDefinition": "Datensatz beziehungsweise Tabellenzeile.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag11-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Primärschlüssel (PK)",
+    "shortDefinition": "Identifiziert jeden Datensatz einer Tabelle eindeutig und darf nicht NULL sein.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag11-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Alternativschlüssel (AK)",
+    "shortDefinition": "Eindeutiger Schlüsselkandidat, der nicht als Primärschlüssel gewählt wurde.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag11-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Fremdschlüssel (FK)",
+    "shortDefinition": "Attribut, das auf einen Schlüssel einer anderen Tabelle verweist.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag11-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Redundanz",
+    "shortDefinition": "Mehrfache Speicherung derselben Information.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag11-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Einfüge-Anomalie",
+    "shortDefinition": "Information kann wegen ungünstiger Tabellenstruktur nicht unabhängig gespeichert werden.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag11-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Änderungs-Anomalie",
+    "shortDefinition": "Redundante Werte werden nicht überall konsistent geändert.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag11-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Lösch-Anomalie",
+    "shortDefinition": "Beim Löschen gehen unbeabsichtigt weitere Informationen verloren.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag11-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "1. Normalform",
+    "shortDefinition": "Jede Tabellenzelle enthält einen atomaren Wert.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag11-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "2. Normalform",
+    "shortDefinition": "1NF plus volle funktionale Abhängigkeit der Nichtschlüsselattribute vom gesamten Schlüssel.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag11-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "3. Normalform",
+    "shortDefinition": "2NF plus keine transitive Abhängigkeit eines Nichtschlüsselattributs vom Schlüssel.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag11-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "DDL",
+    "shortDefinition": "SQL-Befehle zur Definition von Datenbankstrukturen, z. B. CREATE, ALTER und DROP.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag11-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "DML",
+    "shortDefinition": "SQL-Befehle zum Arbeiten mit Datensätzen, z. B. INSERT, SELECT, UPDATE und DELETE.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag11-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "WHERE",
+    "shortDefinition": "Filtert Datensätze anhand einer Bedingung.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag11-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "ORDER BY",
+    "shortDefinition": "Sortiert eine Ergebnismenge.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag11-topic-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "GROUP BY",
+    "shortDefinition": "Gruppiert Datensätze für gruppenbezogene Auswertungen.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf05-tag11-topic-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "HAVING",
+    "shortDefinition": "Filtert gruppierte Ergebnisse.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf05-tag11-topic-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "JOIN",
+    "shortDefinition": "Verknüpft Daten mehrerer Tabellen anhand einer Bedingung.",
+    "status": "published",
+    "order": 19
+  },
+  {
+    "id": "lf05-tag11-topic-20",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "Transaktion",
+    "shortDefinition": "Bündelt mehrere Operationen zu einer kontrollierbaren Einheit.",
+    "status": "published",
+    "order": 20
+  },
+  {
+    "id": "lf05-tag11-topic-21",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "COMMIT",
+    "shortDefinition": "Bestätigt Änderungen einer Transaktion endgültig.",
+    "status": "published",
+    "order": 21
+  },
+  {
+    "id": "lf05-tag11-topic-22",
+    "courseId": "lf05",
+    "tagId": "lf05-tag11",
+    "title": "ROLLBACK",
+    "shortDefinition": "Verwirft Änderungen seit Beginn der Transaktion.",
+    "status": "published",
+    "order": 22
   }
 ]

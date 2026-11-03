@@ -3,41 +3,94 @@
     "id": "lf05-tag1",
     "courseId": "lf05",
     "number": 1,
-    "title": "6 ausführlich lernen",
+    "title": "Softwaregrundlagen und Entwicklungsumgebungen",
     "status": "published",
     "order": 1,
-    "updatedAt": "2026-10-28T14:55:36.172Z"
+    "updatedAt": "2026-11-02T13:49:45.049Z"
   },
   {
     "id": "lf05-tag2",
     "courseId": "lf05",
     "number": 2,
-    "title": "Algorithmen und Modellierung",
+    "title": "Algorithmen, Pseudocode, PAP, Struktogramm und Use Case",
     "status": "published",
-    "order": 2
+    "order": 2,
+    "updatedAt": "2026-11-02T13:49:45.049Z"
   },
   {
     "id": "lf05-tag3",
     "courseId": "lf05",
     "number": 3,
-    "title": "Variablen und Datentypen",
+    "title": "Variablen, Datentypen, Operatoren, EVA und Debugging",
     "status": "published",
-    "order": 3
+    "order": 3,
+    "updatedAt": "2026-11-02T13:49:45.049Z"
   },
   {
     "id": "lf05-tag4",
     "courseId": "lf05",
     "number": 4,
-    "title": "Strings",
+    "title": "Strings, Indizes, Slicing, Methoden und Formatierung",
     "status": "published",
-    "order": 4
+    "order": 4,
+    "updatedAt": "2026-11-02T13:49:45.049Z"
   },
   {
     "id": "lf05-tag5",
     "courseId": "lf05",
     "number": 5,
-    "title": "Kontrollstrukturen, Schleifen und Debugging",
+    "title": "Bedingungen, Schleifen, range(), break, continue und Debugging",
     "status": "published",
-    "order": 5
+    "order": 5,
+    "updatedAt": "2026-11-02T13:49:45.050Z"
+  },
+  {
+    "id": "lf05-tag6",
+    "courseId": "lf05",
+    "number": 6,
+    "title": "Entscheidungstabellen und UML-Aktivitätsdiagramme",
+    "status": "published",
+    "order": 6,
+    "updatedAt": "2026-11-02T13:49:45.050Z"
+  },
+  {
+    "id": "lf05-tag7",
+    "courseId": "lf05",
+    "number": 7,
+    "title": "Datenstrukturen und Datenformate",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag8",
+    "courseId": "lf05",
+    "number": 8,
+    "title": "Funktionen, Scope und Softwaretests",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag9",
+    "courseId": "lf05",
+    "number": 9,
+    "title": "Dateien, Exceptions und Persistenz",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag10",
+    "courseId": "lf05",
+    "number": 10,
+    "title": "Datenbankgrundlagen und ER-Modellierung",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag11",
+    "courseId": "lf05",
+    "number": 11,
+    "title": "Relationales Datenmodell, Normalisierung und SQL",
+    "status": "published",
+    "order": 11
   }
 ]

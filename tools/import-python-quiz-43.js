@@ -1,0 +1,55 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const R=process.cwd(), D=path.join(R,'data');
+const qf=path.join(D,'questions-lf05.json');
+if(!fs.existsSync(qf)){console.error('HATA: data/questions-lf05.json bulunamadi');process.exit(1)}
+const stamp=new Date().toISOString().replace(/[:.]/g,'-'), b=path.join(R,'backups',`python-quiz43-${stamp}`);fs.mkdirSync(b,{recursive:true});fs.copyFileSync(qf,path.join(b,'questions-lf05.json'));
+const raw=[
+['Wann wird der Körper einer while-Schleife ausgeführt?',['Immer genau einmal','Wenn ihre Bedingung True ergibt','Erst nach dem Ende des Programms','Nur wenn die Bedingung False ist'],[1]],
+['Was beschreibt die Aufgabe von Fachinformatikerinnen und Fachinformatikern für Systemintegration am besten?',['IT-Systeme planen, einrichten und betreuen','Nur Datenbanktabellen befüllen','Ausschließlich Webseiten gestalten','Nur Quellcode übersetzen'],[0]],
+['Welche Wahrheitswerte entstehen der Reihe nach?',['False, True, False, True','False, False, True, True','True, True, False, False','True, False, False, True'],[3],'a = 15\nb = 3\nprint(a > 10 or b < 2)\nprint(a > 10 and b < 2)\nprint(a < b or b < 2)\nprint(a > b and b % 2 == 1)'],
+['Welches Ergebnis hat der Ausdruck?',['Ein Syntaxfehler','False','True','15'],[2],'(7 > 3) and (10 % 2 == 0)'],
+['Wozu dient eine Variable in einem Programm?',['Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann','Einen Wert dauerhaft auf der Festplatte sichern, bis das Programm erneut gestartet wird','Einen Datentyp festlegen, der sich während der Programmausführung nicht mehr ändern darf','Einen Ausdruck einmalig berechnen, ohne das Ergebnis für spätere Anweisungen verfügbar zu machen'],[0]],
+['Welcher Operator ermittelt in Python den Rest einer ganzzahligen Division?',['%','**','//','/'],[0]],
+['Wie prüfst du in Python, ob zwei Werte gleich sind?',['a :=: b','a => b','a = b','a == b'],[3]],
+['Welche Zeichenfolge erzeugt in einem Python-String einen Zeilenumbruch?',['\\r\\t','\\t','\\n','//'],[2]],
+['Welche der folgenden Anweisungen sind gültige Zuweisungen in Python?',['anzahl == 5 =','anzahl = 5','5 = anzahl','x, y = 7, 9.5'],[1,3]],
+['Welche Namen sind als Python-Variablenbezeichner erlaubt?',['gesamt_summe','name2','2wert','for'],[0,1]],
+['Welche Ergebnisse liefern die Ausdrücke in dieser Reihenfolge?',['0, 3, 67, 4, 5','0, 2, 67, 4, 4','7, 3, 0, 4.2, 5','0, 3, 67, 4.2, 4'],[3],'21 % 7\n13 % 5\n67 % 100\n21 / 5\n21 // 5'],
+['Wofür steht der Modus "r" beim Öffnen einer Datei?',['Datei zum Lesen öffnen und neu anlegen, wenn nicht vorhanden','Datei zum Lesen neu anlegen','Datei zum Lesen öffnen','Inhalt der Datei in die Variable auslesen'],[2],'datei = open("notiz.txt", "r")'],
+['Welche Schreibweise erstellt in Python eine Liste mit drei Zahlen?',['zahlen = <2,4,6>','zahlen = [2, 4, 6]','zahlen = (2; 4; 6)','zahlen = {2:4:6}'],[1]],
+['Welche Ausgabe entsteht?',['[3, 5]','3 5 7','[3, 5, 7]','[5, 7]'],[0],'zahlen = [3, 5, 7]\nprint(zahlen[:2])'],
+['Welche Python-Anweisung gibt einen Text auf der Konsole aus?',['console.write("Hallo")','System.out.println("Hallo")','echo("Hallo")','print("Hallo")'],[3]],
+['Welche Variante ist eine korrekte einfache if-Verzweigung?',['if x > 0 print("positiv")','if x>0: print(positiv)','if x > 0: print("positiv")','if (x > 0) then print("positiv")'],[2]],
+['Welche Aussage zur Einrückung in Python stimmt?',['Nach if muss immer ein Semikolon folgen','Anweisungen desselben Blocks müssen passend eingerückt sein','Jede Anweisung muss in einer Zeile stehen','Einrückungen sind nur optische Dekoration'],[1]],
+['Welche Operatoren dienen in Python zum Vergleichen?',['=','==','!=','>='],[1,2,3]],
+['Welche Schlüsselwörter bilden in Python Verzweigungen?',['switch','else','elif','if'],[1,2,3]],
+['Welche Schlüsselwörter können bei Python-Schleifen vorkommen?',['while','repeat','break','for'],[0,2,3]],
+['Welche Ausgabe erzeugt diese Python-Schleife?',['1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10','1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9','1 2 3 4 5 6 7 8 9 10','0 1 2 3 4 5 6 7 8 9','0123456789'],[1],"x = 1\nfor z in range(0, 10):\n    print(x, z, end=' ')"],
+['Was bewirkt break innerhalb einer Schleife?',['Die aktuelle Schleife wird sofort verlassen','Die Schleife beginnt erneut bei null','Nur der aktuelle Durchlauf wird übersprungen','Programm wird sofort beendet'],[0]],
+['Was macht continue in einer Schleife?',['Es setzt alle Variablen auf null','Es beendet grundsätzlich das gesamte Programm','Es beendet immer die komplette Schleife','Es überspringt den Rest des aktuellen Durchlaufs'],[3]],
+['Welches Werkzeug hilft dabei, Variablenwerte während der Programmausführung zu untersuchen?',['Dateikomprimierer','Interpreter','Debugger','Texteditor ohne Ausführung'],[2]],
+['Welche Aussage über Determinismus und Terminierung eines Algorithmus trifft zu?',['Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.','Ein deterministischer Algorithmus liefert bei gleicher Eingabe zwangsläufig in jeder Ausführung eine andere Ausgabe.','Ein Algorithmus ist deterministisch, sobald er keine Schleifen enthält.','Ein Algorithmus terminiert nur dann, wenn alle Zwischenergebnisse verschieden sind.'],[0]],
+['Ein Algorithmus erhält immer dieselbe Eingabe. Welche Beobachtung spricht gegen Determinismus?',['Er benötigt bei verschiedenen Ausführungen unterschiedlich viel Rechenzeit.','Er besteht aus mehreren aufeinanderfolgenden Entscheidungen.','Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.','Er verarbeitet eine Liste mit mehreren Elementen.'],[2]],
+['Welche Aussagen zur Terminierbarkeit sind korrekt?',['Eine while-Schleife terminiert immer, wenn ihre Bedingung zu Beginn True ist.','Ein Algorithmus ist terminierend, sobald er nach jedem Durchlauf eine Ausgabe erzeugt.','Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet.','Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten.'],[2,3]],
+['Wofür steht das EVA-Prinzip?',['Einlesen – Verbinden – Archivieren','Erstellen – Vergleichen – Ausführen','Eingabe – Verarbeitung – Ausgabe','Entwickeln – Verzweigen – Anhalten'],[2]],
+['Was ist eine IDE?',['Eine spezielle Python-Datentypklasse','Eine integrierte Entwicklungsumgebung','Ein Datenbank-Fremdschlüssel','Ein mathematischer Vergleichsoperator'],[1]],
+['Was beschreibt die Syntax einer Programmiersprache im Unterschied zur Semantik?',['Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden','Die Bedeutung und Wirkung einer sprachlich gültigen Anweisung','Die Menge der reservierten Wörter einer Sprache und ihre Schreibweise allein','Die Regeln, nach denen ein Interpreter die Anweisungen zeitlich optimiert'],[0]],
+['Müssen eingebaute Funktionen wie len() vor ihrer Verwendung importiert werden?',['Ja, erst nach dem ersten print()','Ja, nur innerhalb einer Schleife','Ja, immer mit import builtins','Nein, sie stehen unmittelbar zur Verfügung'],[3]],
+['Kann eine while-Schleife auch kein einziges Mal ausgeführt werden?',['Nein, sie läuft immer mindestens einmal','Nein, nur for-Schleifen können das','Ja, wenn die Bedingung schon anfangs False ist','Ja, aber nur bei einem Syntaxfehler'],[2]],
+['Welche Ausgabe entsteht?',['Fehler','3','4','5'],[1],'x = 1\nwhile x < 3:\n    x += 1\nprint(x)'],
+['Was wird ausgegeben?',['Ein TypeError','Hallo 5','5','Hallo5'],[0],'print("Hallo" + 5)'],
+['Was ist das Ergebnis?',['3','False','Fehler','True'],[3],'print(3 == 3.0)'],
+['Was gibt der folgende Code aus?',['5','Keine Ausgabe','6','0'],[2],'werte = [1, 2, 3]\nsumme = 0\nfor wert in werte:\n    summe += wert\nprint(summe)'],
+['Worin liegt der Unterschied zwischen einem Algorithmus und einem Programm?',['Ein Programm benötigt keine Anweisungen','Ein Programm setzt einen Algorithmus in ausführbarem Code um','Ein Algorithmus ist immer ausführbarer Maschinencode','Ein Algorithmus kann keine Eingaben verarbeiten'],[1]],
+['Welche Zahlen gibt das Programm in welcher Reihenfolge aus?',['1 2 3 4 3 2','1 2 3 2 1 2','1 2 3 2 1 0','1 2 3 4 5 6'],[1],'grenze = 6\nschritt = 0\nwert = 1\nrichtung = 1\nwhile schritt < grenze:\n    print(wert, end=" ")\n    wert = wert + richtung\n    if wert == 4: richtung = -1\n    if wert == 1: richtung = 1\n    schritt = schritt + 1'],
+['Was gibt das Programm aus, wenn die Zahl 4 eingegeben wird?',['Ergebnis: 4','Ergebnis: 7','Ergebnis: 8','Das Programm endet nicht'],[2],'zahl = int(input("Zahl: "))\nergebnis = zahl\nzaehler = zahl\nwhile zaehler != 0:\n    ergebnis = ergebnis + 1\n    zaehler = zaehler - 1\nprint("Ergebnis:", ergebnis)'],
+['Was passiert beim Ausführen dieses Python-Codes?',['Es wird drei2 ausgegeben.','Es wird 5 ausgegeben.','Es entsteht ein SyntaxError, weil die Anführungszeichen falsch sind.','Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können.'],[3],'text = "drei"\nwert = text + 2\nprint(wert)'],
+['Welche Ausgabe erzeugt der folgende Code?',['A','B','C','A, B und C'],[0],'punkte = 75\nif punkte > 20:\n    print("A")\nelif punkte > 50:\n    print("B")\nelif punkte >= 75:\n    print("C")'],
+['Welchen Wert erhält rest und was wird ausgegeben?',['Rest: 1','Rest: 5','Rest: 4','Rest: 9'],[0],'rest = 46 % 9\nprint("Rest:", rest)'],
+['Erzeugen beide Schleifen dieselbe Ausgabe in derselben Reihenfolge?',['Ja, beide geben 18, 14, 10, 6 aus.','Nein, die for-Schleife gibt zusätzlich 2 aus.','Nein, die while-Schleife gibt zusätzlich -2 aus.','Nein, die for-Schleife beginnt bei 14.'],[0],'# Schleife 1\nzahl = 18\nwhile zahl > 2:\n    print(zahl)\n    zahl -= 4\n\n# Schleife 2\nfor wert in range(18, 2, -4):\n    print(wert)']
+];
+function category(i){if([11].includes(i))return'Dateien & Exceptions';if([12,13].includes(i))return'Datenstrukturen';if([0,19,20,21,22,31,32,37,38,40,42].includes(i))return'Schleifen & Codeanalyse';if([24,25,26,27,36].includes(i))return'Algorithmen';return'Python Grundlagen'}
+const imported=raw.map((x,i)=>{const multi=x[2].length>1;return{id:`python-full-${String(i+1).padStart(2,'0')}`,courseId:'lf05',quizId:'lf05-python-full',tagId:'',type:multi?'multiple-select':(x[3]?'code-analysis':'multiple-choice'),question:x[0],code:x[3]||null,options:x[1],correct:multi?x[2]:x[2][0],correctAnswers:multi?x[2]:undefined,explanation:'Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.',difficulty:'ihk',exam:'IHK/LZK Training',category:category(i),status:'published'}});
+let all=JSON.parse(fs.readFileSync(qf,'utf8'));const map=new Map(all.map(x=>[x.id,x]));imported.forEach(x=>map.set(x.id,{...(map.get(x.id)||{}),...x}));all=[...map.values()];fs.writeFileSync(qf,JSON.stringify(all,null,2)+'\n');fs.writeFileSync(path.join(D,'questions-python-full-43.json'),JSON.stringify(imported,null,2)+'\n');
+console.log('SUCCESS: 43 questions imported into central LF05 pool.');console.log('Quiz pool: lf05-python-full');console.log('Multiple-select:',imported.filter(x=>x.type==='multiple-select').length);console.log('Backup:',b);

@@ -1,0 +1,954 @@
+[
+  {
+    "id": "python-full-01",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Wann wird der Körper einer while-Schleife ausgeführt?",
+    "code": null,
+    "options": [
+      "Immer genau einmal",
+      "Wenn ihre Bedingung True ergibt",
+      "Erst nach dem Ende des Programms",
+      "Nur wenn die Bedingung False ist"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-02",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Was beschreibt die Aufgabe von Fachinformatikerinnen und Fachinformatikern für Systemintegration am besten?",
+    "code": null,
+    "options": [
+      "IT-Systeme planen, einrichten und betreuen",
+      "Nur Datenbanktabellen befüllen",
+      "Ausschließlich Webseiten gestalten",
+      "Nur Quellcode übersetzen"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-03",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Wahrheitswerte entstehen der Reihe nach?",
+    "code": "a = 15\nb = 3\nprint(a > 10 or b < 2)\nprint(a > 10 and b < 2)\nprint(a < b or b < 2)\nprint(a > b and b % 2 == 1)",
+    "options": [
+      "False, True, False, True",
+      "False, False, True, True",
+      "True, True, False, False",
+      "True, False, False, True"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-04",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welches Ergebnis hat der Ausdruck?",
+    "code": "(7 > 3) and (10 % 2 == 0)",
+    "options": [
+      "Ein Syntaxfehler",
+      "False",
+      "True",
+      "15"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-05",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Wozu dient eine Variable in einem Programm?",
+    "code": null,
+    "options": [
+      "Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann",
+      "Einen Wert dauerhaft auf der Festplatte sichern, bis das Programm erneut gestartet wird",
+      "Einen Datentyp festlegen, der sich während der Programmausführung nicht mehr ändern darf",
+      "Einen Ausdruck einmalig berechnen, ohne das Ergebnis für spätere Anweisungen verfügbar zu machen"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-06",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welcher Operator ermittelt in Python den Rest einer ganzzahligen Division?",
+    "code": null,
+    "options": [
+      "%",
+      "**",
+      "//",
+      "/"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-07",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Wie prüfst du in Python, ob zwei Werte gleich sind?",
+    "code": null,
+    "options": [
+      "a :=: b",
+      "a => b",
+      "a = b",
+      "a == b"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-08",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Zeichenfolge erzeugt in einem Python-String einen Zeilenumbruch?",
+    "code": null,
+    "options": [
+      "\\r\\t",
+      "\\t",
+      "\\n",
+      "//"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-09",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche der folgenden Anweisungen sind gültige Zuweisungen in Python?",
+    "code": null,
+    "options": [
+      "anzahl == 5 =",
+      "anzahl = 5",
+      "5 = anzahl",
+      "x, y = 7, 9.5"
+    ],
+    "correct": [
+      1,
+      3
+    ],
+    "correctAnswers": [
+      1,
+      3
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-10",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche Namen sind als Python-Variablenbezeichner erlaubt?",
+    "code": null,
+    "options": [
+      "gesamt_summe",
+      "name2",
+      "2wert",
+      "for"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "correctAnswers": [
+      0,
+      1
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-11",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Ergebnisse liefern die Ausdrücke in dieser Reihenfolge?",
+    "code": "21 % 7\n13 % 5\n67 % 100\n21 / 5\n21 // 5",
+    "options": [
+      "0, 3, 67, 4, 5",
+      "0, 2, 67, 4, 4",
+      "7, 3, 0, 4.2, 5",
+      "0, 3, 67, 4.2, 4"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-12",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Wofür steht der Modus \"r\" beim Öffnen einer Datei?",
+    "code": "datei = open(\"notiz.txt\", \"r\")",
+    "options": [
+      "Datei zum Lesen öffnen und neu anlegen, wenn nicht vorhanden",
+      "Datei zum Lesen neu anlegen",
+      "Datei zum Lesen öffnen",
+      "Inhalt der Datei in die Variable auslesen"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Dateien & Exceptions",
+    "status": "published"
+  },
+  {
+    "id": "python-full-13",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Schreibweise erstellt in Python eine Liste mit drei Zahlen?",
+    "code": null,
+    "options": [
+      "zahlen = <2,4,6>",
+      "zahlen = [2, 4, 6]",
+      "zahlen = (2; 4; 6)",
+      "zahlen = {2:4:6}"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Datenstrukturen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-14",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "zahlen = [3, 5, 7]\nprint(zahlen[:2])",
+    "options": [
+      "[3, 5]",
+      "3 5 7",
+      "[3, 5, 7]",
+      "[5, 7]"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Datenstrukturen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-15",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Python-Anweisung gibt einen Text auf der Konsole aus?",
+    "code": null,
+    "options": [
+      "console.write(\"Hallo\")",
+      "System.out.println(\"Hallo\")",
+      "echo(\"Hallo\")",
+      "print(\"Hallo\")"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-16",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Variante ist eine korrekte einfache if-Verzweigung?",
+    "code": null,
+    "options": [
+      "if x > 0 print(\"positiv\")",
+      "if x>0: print(positiv)",
+      "if x > 0: print(\"positiv\")",
+      "if (x > 0) then print(\"positiv\")"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-17",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zur Einrückung in Python stimmt?",
+    "code": null,
+    "options": [
+      "Nach if muss immer ein Semikolon folgen",
+      "Anweisungen desselben Blocks müssen passend eingerückt sein",
+      "Jede Anweisung muss in einer Zeile stehen",
+      "Einrückungen sind nur optische Dekoration"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-18",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche Operatoren dienen in Python zum Vergleichen?",
+    "code": null,
+    "options": [
+      "=",
+      "==",
+      "!=",
+      ">="
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "correctAnswers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-19",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche Schlüsselwörter bilden in Python Verzweigungen?",
+    "code": null,
+    "options": [
+      "switch",
+      "else",
+      "elif",
+      "if"
+    ],
+    "correct": [
+      1,
+      2,
+      3
+    ],
+    "correctAnswers": [
+      1,
+      2,
+      3
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-20",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche Schlüsselwörter können bei Python-Schleifen vorkommen?",
+    "code": null,
+    "options": [
+      "while",
+      "repeat",
+      "break",
+      "for"
+    ],
+    "correct": [
+      0,
+      2,
+      3
+    ],
+    "correctAnswers": [
+      0,
+      2,
+      3
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-21",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Ausgabe erzeugt diese Python-Schleife?",
+    "code": "x = 1\nfor z in range(0, 10):\n    print(x, z, end=' ')",
+    "options": [
+      "1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10",
+      "1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9",
+      "1 2 3 4 5 6 7 8 9 10",
+      "0 1 2 3 4 5 6 7 8 9",
+      "0123456789"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-22",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Was bewirkt break innerhalb einer Schleife?",
+    "code": null,
+    "options": [
+      "Die aktuelle Schleife wird sofort verlassen",
+      "Die Schleife beginnt erneut bei null",
+      "Nur der aktuelle Durchlauf wird übersprungen",
+      "Programm wird sofort beendet"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-23",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Was macht continue in einer Schleife?",
+    "code": null,
+    "options": [
+      "Es setzt alle Variablen auf null",
+      "Es beendet grundsätzlich das gesamte Programm",
+      "Es beendet immer die komplette Schleife",
+      "Es überspringt den Rest des aktuellen Durchlaufs"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-24",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welches Werkzeug hilft dabei, Variablenwerte während der Programmausführung zu untersuchen?",
+    "code": null,
+    "options": [
+      "Dateikomprimierer",
+      "Interpreter",
+      "Debugger",
+      "Texteditor ohne Ausführung"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-25",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Welche Aussage über Determinismus und Terminierung eines Algorithmus trifft zu?",
+    "code": null,
+    "options": [
+      "Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.",
+      "Ein deterministischer Algorithmus liefert bei gleicher Eingabe zwangsläufig in jeder Ausführung eine andere Ausgabe.",
+      "Ein Algorithmus ist deterministisch, sobald er keine Schleifen enthält.",
+      "Ein Algorithmus terminiert nur dann, wenn alle Zwischenergebnisse verschieden sind."
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Algorithmen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-26",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Ein Algorithmus erhält immer dieselbe Eingabe. Welche Beobachtung spricht gegen Determinismus?",
+    "code": null,
+    "options": [
+      "Er benötigt bei verschiedenen Ausführungen unterschiedlich viel Rechenzeit.",
+      "Er besteht aus mehreren aufeinanderfolgenden Entscheidungen.",
+      "Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.",
+      "Er verarbeitet eine Liste mit mehreren Elementen."
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Algorithmen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-27",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-select",
+    "question": "Welche Aussagen zur Terminierbarkeit sind korrekt?",
+    "code": null,
+    "options": [
+      "Eine while-Schleife terminiert immer, wenn ihre Bedingung zu Beginn True ist.",
+      "Ein Algorithmus ist terminierend, sobald er nach jedem Durchlauf eine Ausgabe erzeugt.",
+      "Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet.",
+      "Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten."
+    ],
+    "correct": [
+      2,
+      3
+    ],
+    "correctAnswers": [
+      2,
+      3
+    ],
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Algorithmen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-28",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Wofür steht das EVA-Prinzip?",
+    "code": null,
+    "options": [
+      "Einlesen – Verbinden – Archivieren",
+      "Erstellen – Vergleichen – Ausführen",
+      "Eingabe – Verarbeitung – Ausgabe",
+      "Entwickeln – Verzweigen – Anhalten"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Algorithmen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-29",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Was ist eine IDE?",
+    "code": null,
+    "options": [
+      "Eine spezielle Python-Datentypklasse",
+      "Eine integrierte Entwicklungsumgebung",
+      "Ein Datenbank-Fremdschlüssel",
+      "Ein mathematischer Vergleichsoperator"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-30",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Was beschreibt die Syntax einer Programmiersprache im Unterschied zur Semantik?",
+    "code": null,
+    "options": [
+      "Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden",
+      "Die Bedeutung und Wirkung einer sprachlich gültigen Anweisung",
+      "Die Menge der reservierten Wörter einer Sprache und ihre Schreibweise allein",
+      "Die Regeln, nach denen ein Interpreter die Anweisungen zeitlich optimiert"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-31",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Müssen eingebaute Funktionen wie len() vor ihrer Verwendung importiert werden?",
+    "code": null,
+    "options": [
+      "Ja, erst nach dem ersten print()",
+      "Ja, nur innerhalb einer Schleife",
+      "Ja, immer mit import builtins",
+      "Nein, sie stehen unmittelbar zur Verfügung"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-32",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Kann eine while-Schleife auch kein einziges Mal ausgeführt werden?",
+    "code": null,
+    "options": [
+      "Nein, sie läuft immer mindestens einmal",
+      "Nein, nur for-Schleifen können das",
+      "Ja, wenn die Bedingung schon anfangs False ist",
+      "Ja, aber nur bei einem Syntaxfehler"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-33",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Ausgabe entsteht?",
+    "code": "x = 1\nwhile x < 3:\n    x += 1\nprint(x)",
+    "options": [
+      "Fehler",
+      "3",
+      "4",
+      "5"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-34",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Was wird ausgegeben?",
+    "code": "print(\"Hallo\" + 5)",
+    "options": [
+      "Ein TypeError",
+      "Hallo 5",
+      "5",
+      "Hallo5"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-35",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Was ist das Ergebnis?",
+    "code": "print(3 == 3.0)",
+    "options": [
+      "3",
+      "False",
+      "Fehler",
+      "True"
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-36",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Was gibt der folgende Code aus?",
+    "code": "werte = [1, 2, 3]\nsumme = 0\nfor wert in werte:\n    summe += wert\nprint(summe)",
+    "options": [
+      "5",
+      "Keine Ausgabe",
+      "6",
+      "0"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-37",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "multiple-choice",
+    "question": "Worin liegt der Unterschied zwischen einem Algorithmus und einem Programm?",
+    "code": null,
+    "options": [
+      "Ein Programm benötigt keine Anweisungen",
+      "Ein Programm setzt einen Algorithmus in ausführbarem Code um",
+      "Ein Algorithmus ist immer ausführbarer Maschinencode",
+      "Ein Algorithmus kann keine Eingaben verarbeiten"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Algorithmen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-38",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Zahlen gibt das Programm in welcher Reihenfolge aus?",
+    "code": "grenze = 6\nschritt = 0\nwert = 1\nrichtung = 1\nwhile schritt < grenze:\n    print(wert, end=\" \")\n    wert = wert + richtung\n    if wert == 4: richtung = -1\n    if wert == 1: richtung = 1\n    schritt = schritt + 1",
+    "options": [
+      "1 2 3 4 3 2",
+      "1 2 3 2 1 2",
+      "1 2 3 2 1 0",
+      "1 2 3 4 5 6"
+    ],
+    "correct": 1,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-39",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Was gibt das Programm aus, wenn die Zahl 4 eingegeben wird?",
+    "code": "zahl = int(input(\"Zahl: \"))\nergebnis = zahl\nzaehler = zahl\nwhile zaehler != 0:\n    ergebnis = ergebnis + 1\n    zaehler = zaehler - 1\nprint(\"Ergebnis:\", ergebnis)",
+    "options": [
+      "Ergebnis: 4",
+      "Ergebnis: 7",
+      "Ergebnis: 8",
+      "Das Programm endet nicht"
+    ],
+    "correct": 2,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-40",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Was passiert beim Ausführen dieses Python-Codes?",
+    "code": "text = \"drei\"\nwert = text + 2\nprint(wert)",
+    "options": [
+      "Es wird drei2 ausgegeben.",
+      "Es wird 5 ausgegeben.",
+      "Es entsteht ein SyntaxError, weil die Anführungszeichen falsch sind.",
+      "Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können."
+    ],
+    "correct": 3,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-41",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welche Ausgabe erzeugt der folgende Code?",
+    "code": "punkte = 75\nif punkte > 20:\n    print(\"A\")\nelif punkte > 50:\n    print(\"B\")\nelif punkte >= 75:\n    print(\"C\")",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "A, B und C"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  },
+  {
+    "id": "python-full-42",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Welchen Wert erhält rest und was wird ausgegeben?",
+    "code": "rest = 46 % 9\nprint(\"Rest:\", rest)",
+    "options": [
+      "Rest: 1",
+      "Rest: 5",
+      "Rest: 4",
+      "Rest: 9"
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Python Grundlagen",
+    "status": "published"
+  },
+  {
+    "id": "python-full-43",
+    "courseId": "lf05",
+    "quizId": "lf05-python-full",
+    "tagId": "",
+    "type": "code-analysis",
+    "question": "Erzeugen beide Schleifen dieselbe Ausgabe in derselben Reihenfolge?",
+    "code": "# Schleife 1\nzahl = 18\nwhile zahl > 2:\n    print(zahl)\n    zahl -= 4\n\n# Schleife 2\nfor wert in range(18, 2, -4):\n    print(wert)",
+    "options": [
+      "Ja, beide geben 18, 14, 10, 6 aus.",
+      "Nein, die for-Schleife gibt zusätzlich 2 aus.",
+      "Nein, die while-Schleife gibt zusätzlich -2 aus.",
+      "Nein, die for-Schleife beginnt bei 14."
+    ],
+    "correct": 0,
+    "explanation": "Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.",
+    "difficulty": "ihk",
+    "exam": "IHK/LZK Training",
+    "category": "Schleifen & Codeanalyse",
+    "status": "published"
+  }
+]

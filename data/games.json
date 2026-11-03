@@ -74,5 +74,15 @@
     "status": "published",
     "order": 7,
     "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "datenbank-sql-challenge",
+    "courseId": "lf05",
+    "title": "Datenbank & SQL Challenge",
+    "description": "ER-Modell, Schlüssel, Normalisierung, SQL, JOINs und Transaktionen spielerisch trainieren.",
+    "path": "/lf05/games/datenbank-sql-challenge/",
+    "status": "published",
+    "order": 8,
+    "updatedAt": "2026-11-02T16:06:02.820Z"
   }
 ]
