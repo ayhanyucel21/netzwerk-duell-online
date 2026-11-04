@@ -2077,5 +2077,203 @@
     "shortDefinition": "Operatoren für Muster, Listen, Wertebereiche und Existenzprüfungen.",
     "status": "published",
     "order": 28
+  },
+  {
+    "id": "lf05-tag13-topic-01",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "DQL",
+    "shortDefinition": "Data Query Language: Daten gezielt mit SELECT abrufen und auswerten.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf05-tag13-topic-02",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "SELECT",
+    "shortDefinition": "Startet eine Datenabfrage und bestimmt die auszugebenden Spalten.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf05-tag13-topic-03",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "FROM",
+    "shortDefinition": "Bestimmt die Datenquelle beziehungsweise Tabelle.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf05-tag13-topic-04",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "WHERE",
+    "shortDefinition": "Filtert einzelne Zeilen vor Gruppierung und Aggregation.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf05-tag13-topic-05",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "IS NULL",
+    "shortDefinition": "Prüft explizit, ob ein Attribut keinen Wert enthält.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf05-tag13-topic-06",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "DISTINCT",
+    "shortDefinition": "Entfernt doppelte Kombinationen aus den ausgewählten Spalten.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf05-tag13-topic-07",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "ORDER BY",
+    "shortDefinition": "Sortiert das Ergebnis nach einer oder mehreren Spalten.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf05-tag13-topic-08",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "ASC / DESC",
+    "shortDefinition": "Legt aufsteigende beziehungsweise absteigende Sortierung fest.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf05-tag13-topic-09",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "LIMIT",
+    "shortDefinition": "Begrenzt die Anzahl der Ergebniszeilen.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf05-tag13-topic-10",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "GROUP BY",
+    "shortDefinition": "Fasst gleiche Werte zu Gruppen für Auswertungen zusammen.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf05-tag13-topic-11",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "HAVING",
+    "shortDefinition": "Filtert Gruppen nach GROUP BY, häufig anhand von Aggregatwerten.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf05-tag13-topic-12",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "COUNT()",
+    "shortDefinition": "Zählt Zeilen beziehungsweise nicht-NULL-Werte.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf05-tag13-topic-13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "AVG()",
+    "shortDefinition": "Berechnet einen Durchschnittswert.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf05-tag13-topic-14",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "SUM()",
+    "shortDefinition": "Addiert numerische Werte.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf05-tag13-topic-15",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "MIN() / MAX()",
+    "shortDefinition": "Bestimmt kleinsten beziehungsweise größten Wert.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf05-tag13-topic-16",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "LIKE",
+    "shortDefinition": "Filtert Text anhand eines Musters.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf05-tag13-topic-17",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "IN",
+    "shortDefinition": "Prüft, ob ein Wert in einer vorgegebenen Werteliste liegt.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf05-tag13-topic-18",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "BETWEEN",
+    "shortDefinition": "Prüft einen inklusiven Wertebereich.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf05-tag13-topic-19",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "Subquery",
+    "shortDefinition": "Unterabfrage, deren Ergebnis von einer äußeren Abfrage genutzt wird.",
+    "status": "published",
+    "order": 19
+  },
+  {
+    "id": "lf05-tag13-topic-20",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "ALL",
+    "shortDefinition": "Vergleicht einen Wert mit allen Ergebnissen einer Subquery.",
+    "status": "published",
+    "order": 20
+  },
+  {
+    "id": "lf05-tag13-topic-21",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "Korrelierte Subquery",
+    "shortDefinition": "Unterabfrage, die auf Werte der aktuellen Zeile der äußeren Query zugreift.",
+    "status": "published",
+    "order": 21
+  },
+  {
+    "id": "lf05-tag13-topic-22",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "Alias",
+    "shortDefinition": "Kurzname für Tabellen oder Spalten, z. B. students AS studs.",
+    "status": "published",
+    "order": 22
   }
 ]

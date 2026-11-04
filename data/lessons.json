@@ -1016,5 +1016,111 @@
     "fontSize": "normal",
     "fontWeight": "normal",
     "textAlign": "left"
+  },
+  {
+    "id": "lf05-lesson-tag13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "DQL: Daten mit SELECT gezielt abfragen",
+    "summary": "Tag 13 konzentriert sich auf DQL und die gezielte Auswertung relationaler Daten. SELECT bestimmt die Ausgabe, FROM die Quelle und WHERE filtert einzelne Datensätze. DISTINCT reduziert doppelte Werte, ORDER BY und LIMIT steuern Reihenfolge und Ergebnismenge. GROUP BY verbindet gleichartige Werte mit Aggregatfunktionen wie COUNT, AVG, SUM, MIN und MAX; HAVING filtert anschließend Gruppen. Für komplexe Anforderungen werden Subqueries, ALL und korrelierte Unterabfragen eingesetzt. Die Übungen reichen von einfachen Studentenabfragen bis zu Buchungs-, Login- und Verfügbarkeitsabfragen.",
+    "content": [
+      {
+        "term": "DQL",
+        "definition": "Data Query Language: Daten gezielt mit SELECT abrufen und auswerten."
+      },
+      {
+        "term": "SELECT",
+        "definition": "Startet eine Datenabfrage und bestimmt die auszugebenden Spalten."
+      },
+      {
+        "term": "FROM",
+        "definition": "Bestimmt die Datenquelle beziehungsweise Tabelle."
+      },
+      {
+        "term": "WHERE",
+        "definition": "Filtert einzelne Zeilen vor Gruppierung und Aggregation."
+      },
+      {
+        "term": "IS NULL",
+        "definition": "Prüft explizit, ob ein Attribut keinen Wert enthält."
+      },
+      {
+        "term": "DISTINCT",
+        "definition": "Entfernt doppelte Kombinationen aus den ausgewählten Spalten."
+      },
+      {
+        "term": "ORDER BY",
+        "definition": "Sortiert das Ergebnis nach einer oder mehreren Spalten."
+      },
+      {
+        "term": "ASC / DESC",
+        "definition": "Legt aufsteigende beziehungsweise absteigende Sortierung fest."
+      },
+      {
+        "term": "LIMIT",
+        "definition": "Begrenzt die Anzahl der Ergebniszeilen."
+      },
+      {
+        "term": "GROUP BY",
+        "definition": "Fasst gleiche Werte zu Gruppen für Auswertungen zusammen."
+      },
+      {
+        "term": "HAVING",
+        "definition": "Filtert Gruppen nach GROUP BY, häufig anhand von Aggregatwerten."
+      },
+      {
+        "term": "COUNT()",
+        "definition": "Zählt Zeilen beziehungsweise nicht-NULL-Werte."
+      },
+      {
+        "term": "AVG()",
+        "definition": "Berechnet einen Durchschnittswert."
+      },
+      {
+        "term": "SUM()",
+        "definition": "Addiert numerische Werte."
+      },
+      {
+        "term": "MIN() / MAX()",
+        "definition": "Bestimmt kleinsten beziehungsweise größten Wert."
+      },
+      {
+        "term": "LIKE",
+        "definition": "Filtert Text anhand eines Musters."
+      },
+      {
+        "term": "IN",
+        "definition": "Prüft, ob ein Wert in einer vorgegebenen Werteliste liegt."
+      },
+      {
+        "term": "BETWEEN",
+        "definition": "Prüft einen inklusiven Wertebereich."
+      },
+      {
+        "term": "Subquery",
+        "definition": "Unterabfrage, deren Ergebnis von einer äußeren Abfrage genutzt wird."
+      },
+      {
+        "term": "ALL",
+        "definition": "Vergleicht einen Wert mit allen Ergebnissen einer Subquery."
+      },
+      {
+        "term": "Korrelierte Subquery",
+        "definition": "Unterabfrage, die auf Werte der aktuellen Zeile der äußeren Query zugreift."
+      },
+      {
+        "term": "Alias",
+        "definition": "Kurzname für Tabellen oder Spalten, z. B. students AS studs."
+      }
+    ],
+    "example": "SELECT city, COUNT(id) AS anzahl\nFROM learning.students\nWHERE status = \"active\"\nGROUP BY city\nHAVING COUNT(id) >= 5\nORDER BY anzahl DESC\nLIMIT 3;\n\n-- Korrelierte Subquery\nSELECT *\nFROM learning.students AS studs\nWHERE grade_average > (\n  SELECT AVG(grade_average)\n  FROM learning.students\n  WHERE city = studs.city\n);",
+    "tip": "WHERE filtert Zeilen vor GROUP BY; HAVING filtert Gruppen danach. DISTINCT entfernt Duplikate der gesamten ausgewählten Spaltenkombination.",
+    "examTip": "IHK/LZK: Übersetze eine Anforderung schrittweise: benötigte Spalten → FROM → Zeilenfilter → Gruppierung/Aggregat → HAVING → Sortierung → LIMIT. Bei Subqueries zuerst klären, ob ein Einzelwert, eine Liste oder ein Vergleich mit ALL/EXISTS benötigt wird.",
+    "accentColor": "#9f7cff",
+    "status": "published",
+    "order": 13,
+    "fontSize": "normal",
+    "fontWeight": "normal",
+    "textAlign": "left"
   }
 ]

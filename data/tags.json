@@ -101,5 +101,14 @@
     "description": "SQL-Strukturen mit MariaDB anlegen, verändern und mit Daten befüllen.",
     "status": "published",
     "order": 12
+  },
+  {
+    "id": "lf05-tag13",
+    "courseId": "lf05",
+    "number": 13,
+    "title": "DQL: Daten mit SELECT gezielt abfragen",
+    "description": "SELECT, WHERE, DISTINCT, ORDER BY, GROUP BY, HAVING, Aggregatfunktionen und Subqueries.",
+    "status": "published",
+    "order": 13
   }
 ]

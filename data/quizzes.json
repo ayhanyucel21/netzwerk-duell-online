@@ -187,5 +187,16 @@
     "questionCount": 25,
     "status": "published",
     "order": 12
+  },
+  {
+    "id": "lf05-tag13",
+    "courseId": "lf05",
+    "tagId": "lf05-tag13",
+    "title": "DQL · SELECT & Datenanalyse",
+    "description": "WHERE, DISTINCT, ORDER BY, GROUP BY, HAVING, Aggregatfunktionen und Subqueries.",
+    "icon": "🔎",
+    "questionCount": 25,
+    "status": "published",
+    "order": 13
   }
 ]
