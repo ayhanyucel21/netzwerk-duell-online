@@ -7582,7 +7582,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Wenn ihre Bedingung True ergibt<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Immer genau einmal</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>✅ <b>Wenn ihre Bedingung True ergibt</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Erst nach dem Ende des Programms</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nur wenn die Bedingung False ist</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Wenn ihre Bedingung True ergibt<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Immer genau einmal</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Wenn ihre Bedingung True ergibt</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Erst nach dem Ende des Programms</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nur wenn die Bedingung False ist</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-02",
@@ -7604,7 +7604,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> IT-Systeme planen, einrichten und betreuen<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>IT-Systeme planen, einrichten und betreuen</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nur Datenbanktabellen befüllen</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Ausschließlich Webseiten gestalten</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nur Quellcode übersetzen</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> IT-Systeme planen, einrichten und betreuen<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>IT-Systeme planen, einrichten und betreuen</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Nur Datenbanktabellen befüllen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ausschließlich Webseiten gestalten</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nur Quellcode übersetzen</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-03",
@@ -7626,7 +7626,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> True, False, False, True<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>False, True, False, True</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>False, False, True, True</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>True, True, False, False</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>True, False, False, True</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> True, False, False, True<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>False, True, False, True</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>False, False, True, True</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>True, True, False, False</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>True, False, False, True</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-04",
@@ -7648,7 +7648,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> True<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Ein Syntaxfehler</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>False</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>True</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>15</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> True<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Ein Syntaxfehler</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>False</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>True</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>15</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-05",
@@ -7670,7 +7670,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Einen Wert dauerhaft auf der Festplatte sichern, bis das Programm erneut gestartet wird</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Einen Datentyp festlegen, der sich während der Programmausführung nicht mehr ändern darf</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Einen Ausdruck einmalig berechnen, ohne das Ergebnis für spätere Anweisungen verfügbar zu machen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Einen Wert über einen Bezeichner zugänglich machen, damit er später verwendet oder geändert werden kann</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Einen Wert dauerhaft auf der Festplatte sichern, bis das Programm erneut gestartet wird</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Einen Datentyp festlegen, der sich während der Programmausführung nicht mehr ändern darf</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Einen Ausdruck einmalig berechnen, ohne das Ergebnis für spätere Anweisungen verfügbar zu machen</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-06",
@@ -7692,7 +7692,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> %<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>%</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>**</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>//</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>/</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> %<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>%</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>**</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>//</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>/</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-07",
@@ -7714,7 +7714,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> a == b<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>a :=: b</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>a =&gt; b</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>a = b</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>a == b</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> a == b<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>a :=: b</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>a =&gt; b</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>a = b</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>a == b</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-08",
@@ -7736,7 +7736,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> \\n<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>\\r\\t</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>\\t</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>\\n</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>//</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> \\n<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>\\r\\t</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>\\t</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>\\n</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>//</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-09",
@@ -7765,7 +7765,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> anzahl = 5, x, y = 7, 9.5<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>anzahl == 5 =</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>anzahl = 5</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>5 = anzahl</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>x, y = 7, 9.5</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antworten:</b> anzahl = 5, x, y = 7, 9.5<br><br><b>Begründung:</b><br>Python’da atama operatörü = işaretidir. anzahl = 5 tek bir değişkene değer atar. x, y = 7, 9.5 ise Python’ın çoklu atama özelliğini kullanır ve iki değişkene aynı anda iki değer atar.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>anzahl == 5 =</b>: Geçersizdir. == karşılaştırma operatörüdür; ayrıca ifadenin sonunda tek başına = ile atama yapılamaz.<br>✅ <b>anzahl = 5</b>: Geçerlidir. Sağdaki 5 değeri soldaki anzahl değişkenine atanır.<br>❌ <b>5 = anzahl</b>: Geçersizdir. Atamanın sol tarafında atanabilir bir hedef, örneğin bir değişken adı bulunmalıdır; sayı sabiti hedef olamaz.<br>✅ <b>x, y = 7, 9.5</b>: Geçerlidir. Python çoklu atamayı destekler; x değeri 7, y değeri 9.5 olur."
   },
   {
     "id": "python-full-10",
@@ -7794,7 +7794,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> gesamt_summe, name2<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>gesamt_summe</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>✅ <b>name2</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>2wert</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>for</b>: for iteriert über eine Folge oder einen Iterator."
+    "explanationDetailed": "<b>Richtige Antworten:</b> gesamt_summe, name2<br><br><b>Begründung:</b><br>Python değişken adları harf veya alt çizgiyle başlayabilir, sonrasında harf, rakam ve alt çizgi içerebilir. Ayrılmış anahtar sözcükler değişken adı olarak kullanılamaz.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>gesamt_summe</b>: Geçerlidir. Harfle başlar ve yalnızca harf ile alt çizgi içerir.<br>✅ <b>name2</b>: Geçerlidir. Harfle başlar; rakam ilk karakter olmadığı için kullanılabilir.<br>❌ <b>2wert</b>: Geçersizdir. Python değişken adları rakamla başlayamaz.<br>❌ <b>for</b>: Geçersizdir. for Python’ın ayrılmış anahtar sözcüklerinden biridir."
   },
   {
     "id": "python-full-11",
@@ -7816,7 +7816,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> 0, 3, 67, 4.2, 4<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>0, 3, 67, 4, 5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>0, 2, 67, 4, 4</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>7, 3, 0, 4.2, 5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>0, 3, 67, 4.2, 4</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> 0, 3, 67, 4.2, 4<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>0, 3, 67, 4, 5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>0, 2, 67, 4, 4</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>7, 3, 0, 4.2, 5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>0, 3, 67, 4.2, 4</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-12",
@@ -7838,7 +7838,7 @@
     "exam": "IHK/LZK Training",
     "category": "Dateien & Exceptions",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Datei zum Lesen öffnen<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Datei zum Lesen öffnen und neu anlegen, wenn nicht vorhanden</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Datei zum Lesen neu anlegen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Datei zum Lesen öffnen</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Inhalt der Datei in die Variable auslesen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Datei zum Lesen öffnen<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Datei zum Lesen öffnen und neu anlegen, wenn nicht vorhanden</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Datei zum Lesen neu anlegen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Datei zum Lesen öffnen</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Inhalt der Datei in die Variable auslesen</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-13",
@@ -7860,7 +7860,7 @@
     "exam": "IHK/LZK Training",
     "category": "Datenstrukturen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> zahlen = [2, 4, 6]<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>zahlen = &lt;2,4,6&gt;</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>zahlen = [2, 4, 6]</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>zahlen = (2; 4; 6)</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>zahlen = {2:4:6}</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> zahlen = [2, 4, 6]<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>zahlen = &lt;2,4,6&gt;</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>zahlen = [2, 4, 6]</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>zahlen = (2; 4; 6)</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>zahlen = {2:4:6}</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-14",
@@ -7882,7 +7882,7 @@
     "exam": "IHK/LZK Training",
     "category": "Datenstrukturen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> [3, 5]<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>[3, 5]</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>3 5 7</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>[3, 5, 7]</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>[5, 7]</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> [3, 5]<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>[3, 5]</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>3 5 7</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>[3, 5, 7]</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>[5, 7]</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-15",
@@ -7904,7 +7904,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> print(\"Hallo\")<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>console.write(\"Hallo\")</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>System.out.println(\"Hallo\")</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>echo(\"Hallo\")</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>print(\"Hallo\")</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> print(\"Hallo\")<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>console.write(\"Hallo\")</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>System.out.println(\"Hallo\")</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>echo(\"Hallo\")</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>print(\"Hallo\")</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-16",
@@ -7926,7 +7926,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> if x &gt; 0: print(\"positiv\")<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>if x &gt; 0 print(\"positiv\")</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>if x&gt;0: print(positiv)</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>if x &gt; 0: print(\"positiv\")</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>if (x &gt; 0) then print(\"positiv\")</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> if x &gt; 0: print(\"positiv\")<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>if x &gt; 0 print(\"positiv\")</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>if x&gt;0: print(positiv)</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>if x &gt; 0: print(\"positiv\")</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>if (x &gt; 0) then print(\"positiv\")</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-17",
@@ -7948,7 +7948,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Anweisungen desselben Blocks müssen passend eingerückt sein<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Nach if muss immer ein Semikolon folgen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Anweisungen desselben Blocks müssen passend eingerückt sein</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Jede Anweisung muss in einer Zeile stehen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Einrückungen sind nur optische Dekoration</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Anweisungen desselben Blocks müssen passend eingerückt sein<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Nach if muss immer ein Semikolon folgen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Anweisungen desselben Blocks müssen passend eingerückt sein</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Jede Anweisung muss in einer Zeile stehen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Einrückungen sind nur optische Dekoration</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-18",
@@ -7979,7 +7979,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> ==, !=, &gt;=<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>=</b>: = ist der Zuweisungsoperator und kein Vergleichsoperator.<br>✅ <b>==</b>: == ist ein gültiger Python-Vergleichsoperator.<br>✅ <b>!=</b>: != ist ein gültiger Python-Vergleichsoperator.<br>✅ <b>&gt;=</b>: &gt;= ist ein gültiger Python-Vergleichsoperator."
+    "explanationDetailed": "<b>Richtige Antworten:</b> ==, !=, &gt;=<br><br><b>Begründung:</b><br>Python karşılaştırma operatörleri iki değeri karşılaştırır ve bool sonuç üretir. == eşitlik, != eşitsizlik, &gt;= büyük-eşit karşılaştırmasıdır.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>=</b>: Karşılaştırma değildir. = atama operatörüdür.<br>✅ <b>==</b>: Karşılaştırma operatörüdür ve eşitliği sınar.<br>✅ <b>!=</b>: Karşılaştırma operatörüdür ve eşitsizliği sınar.<br>✅ <b>&gt;=</b>: Karşılaştırma operatörüdür ve sol değerin sağdan büyük veya eşit olup olmadığını sınar."
   },
   {
     "id": "python-full-19",
@@ -8010,7 +8010,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> else, elif, if<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>switch</b>: switch ist kein klassisches Python-Schlüsselwort für if-Verzweigungen.<br>✅ <b>else</b>: else behandelt den Auffangfall ohne weitere Bedingung.<br>✅ <b>elif</b>: elif ergänzt eine weitere Bedingung innerhalb einer Verzweigung.<br>✅ <b>if</b>: if eröffnet die erste bedingte Verzweigung."
+    "explanationDetailed": "<b>Richtige Antworten:</b> else, elif, if<br><br><b>Begründung:</b><br>Python’daki klasik koşullu dallanma yapısı if, isteğe bağlı elif blokları ve isteğe bağlı else bloğundan oluşur.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>switch</b>: Bu if/elif/else dallanma yapısının anahtar sözcüğü değildir.<br>✅ <b>else</b>: Doğrudur. Önceki koşullar sağlanmadığında çalışan varsayılan dalı oluşturur.<br>✅ <b>elif</b>: Doğrudur. İlk if koşulundan sonra ek koşullar tanımlamak için kullanılır.<br>✅ <b>if</b>: Doğrudur. Koşullu dallanmayı başlatır."
   },
   {
     "id": "python-full-20",
@@ -8041,7 +8041,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> while, break, for<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>while</b>: while wiederholt einen Block, solange seine Bedingung True ist.<br>❌ <b>repeat</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>✅ <b>break</b>: break beendet die aktuelle Schleife vollständig.<br>✅ <b>for</b>: for iteriert über eine Folge oder einen Iterator."
+    "explanationDetailed": "<b>Richtige Antworten:</b> while, break, for<br><br><b>Begründung:</b><br>Python’da for ve while doğrudan döngü anahtar sözcükleridir. break ise bir döngünün içinden çıkmak için kullanılan döngü kontrol anahtar sözcüğüdür.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>while</b>: Doğrudur. Koşul True olduğu sürece döngü gövdesini tekrarlar.<br>❌ <b>repeat</b>: Yanlıştır. Python’da repeat adlı yerleşik bir döngü anahtar sözcüğü yoktur.<br>✅ <b>break</b>: Doğrudur. İçinde bulunduğu en yakın döngüyü hemen sonlandırır.<br>✅ <b>for</b>: Doğrudur. Bir iterable üzerindeki elemanları sırayla dolaşır."
   },
   {
     "id": "python-full-21",
@@ -8064,7 +8064,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> 1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>✅ <b>1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>1 2 3 4 5 6 7 8 9 10</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>0 1 2 3 4 5 6 7 8 9</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>0123456789</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> 1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9 1 10</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>1 0 1 1 1 2 1 3 1 4 1 5 1 6 1 7 1 8 1 9</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>1 2 3 4 5 6 7 8 9 10</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>0 1 2 3 4 5 6 7 8 9</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>0123456789</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-22",
@@ -8086,7 +8086,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Die aktuelle Schleife wird sofort verlassen<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Die aktuelle Schleife wird sofort verlassen</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Die Schleife beginnt erneut bei null</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nur der aktuelle Durchlauf wird übersprungen</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Programm wird sofort beendet</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Die aktuelle Schleife wird sofort verlassen<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Die aktuelle Schleife wird sofort verlassen</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Die Schleife beginnt erneut bei null</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nur der aktuelle Durchlauf wird übersprungen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Programm wird sofort beendet</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-23",
@@ -8108,7 +8108,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Es überspringt den Rest des aktuellen Durchlaufs<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Es setzt alle Variablen auf null</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Es beendet grundsätzlich das gesamte Programm</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Es beendet immer die komplette Schleife</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>✅ <b>Es überspringt den Rest des aktuellen Durchlaufs</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Es überspringt den Rest des aktuellen Durchlaufs<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Es setzt alle Variablen auf null</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Es beendet grundsätzlich das gesamte Programm</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Es beendet immer die komplette Schleife</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Es überspringt den Rest des aktuellen Durchlaufs</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-24",
@@ -8130,7 +8130,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Debugger<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Dateikomprimierer</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Interpreter</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Debugger</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Texteditor ohne Ausführung</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Debugger<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Dateikomprimierer</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Interpreter</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Debugger</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Texteditor ohne Ausführung</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-25",
@@ -8152,7 +8152,7 @@
     "exam": "IHK/LZK Training",
     "category": "Algorithmen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Ein deterministischer Algorithmus liefert bei gleicher Eingabe zwangsläufig in jeder Ausführung eine andere Ausgabe.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ein Algorithmus ist deterministisch, sobald er keine Schleifen enthält.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ein Algorithmus terminiert nur dann, wenn alle Zwischenergebnisse verschieden sind.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Ein terminierender Algorithmus muss für jede zulässige Eingabe nach endlich vielen Schritten enden.</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Ein deterministischer Algorithmus liefert bei gleicher Eingabe zwangsläufig in jeder Ausführung eine andere Ausgabe.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ein Algorithmus ist deterministisch, sobald er keine Schleifen enthält.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ein Algorithmus terminiert nur dann, wenn alle Zwischenergebnisse verschieden sind.</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-26",
@@ -8174,7 +8174,7 @@
     "exam": "IHK/LZK Training",
     "category": "Algorithmen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Er benötigt bei verschiedenen Ausführungen unterschiedlich viel Rechenzeit.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Er besteht aus mehreren aufeinanderfolgenden Entscheidungen.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Er verarbeitet eine Liste mit mehreren Elementen.</b>: Eine Liste ist geordnet und veränderbar und erlaubt doppelte Werte."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Er benötigt bei verschiedenen Ausführungen unterschiedlich viel Rechenzeit.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Er besteht aus mehreren aufeinanderfolgenden Entscheidungen.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Er wählt ohne festgelegte Regel zufällig zwischen zwei möglichen nächsten Schritten.</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Er verarbeitet eine Liste mit mehreren Elementen.</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-27",
@@ -8203,7 +8203,7 @@
     "exam": "IHK/LZK Training",
     "category": "Algorithmen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antworten:</b> Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet., Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten.<br><br><b>Warum sind diese Antworten richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Eine while-Schleife terminiert immer, wenn ihre Bedingung zu Beginn True ist.</b>: while wiederholt einen Block, solange seine Bedingung True ist.<br>❌ <b>Ein Algorithmus ist terminierend, sobald er nach jedem Durchlauf eine Ausgabe erzeugt.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet.</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>✅ <b>Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten.</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antworten:</b> Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet., Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten.<br><br><b>Begründung:</b><br>Terminasyon, algoritmanın her geçerli girdi için sonlu sayıda adımdan sonra bitmesidir. Determinizm ise aynı durumda sonraki adımın belirli olmasıdır; determinizm terminasyonu garanti etmez.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Eine while-Schleife terminiert immer, wenn ihre Bedingung zu Beginn True ist.</b>: Yanlıştır. Başlangıçta True olması döngünün biteceğini garanti etmez; koşul sonsuza kadar True kalabilir.<br>❌ <b>Ein Algorithmus ist terminierend, sobald er nach jedem Durchlauf eine Ausgabe erzeugt.</b>: Yanlıştır. Her turda çıktı üretmek döngünün sonlu zamanda biteceğini göstermez.<br>✅ <b>Ein Algorithmus terminiert, wenn er für jede zulässige Eingabe nach endlich vielen Schritten endet.</b>: Doğrudur. Bu, terminasyonun doğrudan tanımıdır.<br>✅ <b>Ein deterministischer Algorithmus kann trotzdem eine Endlosschleife enthalten.</b>: Doğrudur. Deterministik bir algoritmanın adımları belirli olabilir fakat sonlandırıcı olmak zorunda değildir."
   },
   {
     "id": "python-full-28",
@@ -8225,7 +8225,7 @@
     "exam": "IHK/LZK Training",
     "category": "Algorithmen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Eingabe – Verarbeitung – Ausgabe<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Einlesen – Verbinden – Archivieren</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Erstellen – Vergleichen – Ausführen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Eingabe – Verarbeitung – Ausgabe</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Entwickeln – Verzweigen – Anhalten</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Eingabe – Verarbeitung – Ausgabe<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Einlesen – Verbinden – Archivieren</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Erstellen – Vergleichen – Ausführen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Eingabe – Verarbeitung – Ausgabe</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Entwickeln – Verzweigen – Anhalten</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-29",
@@ -8247,7 +8247,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Eine integrierte Entwicklungsumgebung<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Eine spezielle Python-Datentypklasse</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Eine integrierte Entwicklungsumgebung</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Ein Datenbank-Fremdschlüssel</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ein mathematischer Vergleichsoperator</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Eine integrierte Entwicklungsumgebung<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Eine spezielle Python-Datentypklasse</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Eine integrierte Entwicklungsumgebung</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Ein Datenbank-Fremdschlüssel</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ein mathematischer Vergleichsoperator</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-30",
@@ -8269,7 +8269,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Die Bedeutung und Wirkung einer sprachlich gültigen Anweisung</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Die Menge der reservierten Wörter einer Sprache und ihre Schreibweise allein</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Die Regeln, nach denen ein Interpreter die Anweisungen zeitlich optimiert</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Die formalen Regeln, nach denen gültige Anweisungen aufgebaut werden</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Die Bedeutung und Wirkung einer sprachlich gültigen Anweisung</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Die Menge der reservierten Wörter einer Sprache und ihre Schreibweise allein</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Die Regeln, nach denen ein Interpreter die Anweisungen zeitlich optimiert</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-31",
@@ -8291,7 +8291,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Nein, sie stehen unmittelbar zur Verfügung<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Ja, erst nach dem ersten print()</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ja, nur innerhalb einer Schleife</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ja, immer mit import builtins</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Nein, sie stehen unmittelbar zur Verfügung</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Nein, sie stehen unmittelbar zur Verfügung<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Ja, erst nach dem ersten print()</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ja, nur innerhalb einer Schleife</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ja, immer mit import builtins</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Nein, sie stehen unmittelbar zur Verfügung</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-32",
@@ -8313,7 +8313,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ja, wenn die Bedingung schon anfangs False ist<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Nein, sie läuft immer mindestens einmal</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nein, nur for-Schleifen können das</b>: for iteriert über eine Folge oder einen Iterator.<br>✅ <b>Ja, wenn die Bedingung schon anfangs False ist</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Ja, aber nur bei einem Syntaxfehler</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ja, wenn die Bedingung schon anfangs False ist<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Nein, sie läuft immer mindestens einmal</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nein, nur for-Schleifen können das</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Ja, wenn die Bedingung schon anfangs False ist</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Ja, aber nur bei einem Syntaxfehler</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-33",
@@ -8335,7 +8335,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> 3<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Fehler</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>3</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>4</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> 3<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Fehler</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>3</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>4</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>5</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-34",
@@ -8357,7 +8357,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ein TypeError<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Ein TypeError</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Hallo 5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Hallo5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ein TypeError<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Ein TypeError</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Hallo 5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Hallo5</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-35",
@@ -8379,7 +8379,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> True<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>3</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>False</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Fehler</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>True</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> True<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>3</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>False</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Fehler</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>True</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-36",
@@ -8401,7 +8401,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> 6<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Keine Ausgabe</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>6</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>0</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> 6<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Keine Ausgabe</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>6</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>0</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-37",
@@ -8423,7 +8423,7 @@
     "exam": "IHK/LZK Training",
     "category": "Algorithmen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ein Programm setzt einen Algorithmus in ausführbarem Code um<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Ein Programm benötigt keine Anweisungen</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Ein Programm setzt einen Algorithmus in ausführbarem Code um</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Ein Algorithmus ist immer ausführbarer Maschinencode</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ein Algorithmus kann keine Eingaben verarbeiten</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ein Programm setzt einen Algorithmus in ausführbarem Code um<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Ein Programm benötigt keine Anweisungen</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Ein Programm setzt einen Algorithmus in ausführbarem Code um</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Ein Algorithmus ist immer ausführbarer Maschinencode</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ein Algorithmus kann keine Eingaben verarbeiten</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-38",
@@ -8445,7 +8445,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> 1 2 3 2 1 2<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>1 2 3 4 3 2</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>1 2 3 2 1 2</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>1 2 3 2 1 0</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>1 2 3 4 5 6</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> 1 2 3 2 1 2<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>1 2 3 4 3 2</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>1 2 3 2 1 2</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>1 2 3 2 1 0</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>1 2 3 4 5 6</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-39",
@@ -8467,7 +8467,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ergebnis: 8<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Ergebnis: 4</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Ergebnis: 7</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Ergebnis: 8</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Das Programm endet nicht</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ergebnis: 8<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Ergebnis: 4</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Ergebnis: 7</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Ergebnis: 8</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Das Programm endet nicht</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-40",
@@ -8489,7 +8489,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können.<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>❌ <b>Es wird drei2 ausgegeben.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Es wird 5 ausgegeben.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Es entsteht ein SyntaxError, weil die Anführungszeichen falsch sind.</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>✅ <b>Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können.</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können.<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>❌ <b>Es wird drei2 ausgegeben.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Es wird 5 ausgegeben.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Es entsteht ein SyntaxError, weil die Anführungszeichen falsch sind.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>✅ <b>Es entsteht ein TypeError, weil str und int nicht mit + addiert werden können.</b>: Diese Option erfüllt die geforderte Bedingung."
   },
   {
     "id": "python-full-41",
@@ -8511,7 +8511,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> A<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>A</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>B</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>C</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>A, B und C</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> A<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>A</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>B</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>C</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>A, B und C</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-42",
@@ -8533,7 +8533,7 @@
     "exam": "IHK/LZK Training",
     "category": "Python Grundlagen",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Rest: 1<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Rest: 1</b>: Diese Option erfüllt die fachliche oder syntaktische Anforderung der Aufgabe.<br>❌ <b>Rest: 5</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Rest: 4</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>Rest: 9</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Rest: 1<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Rest: 1</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Rest: 5</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Rest: 4</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Rest: 9</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "python-full-43",
@@ -8555,7 +8555,7 @@
     "exam": "IHK/LZK Training",
     "category": "Schleifen & Codeanalyse",
     "status": "published",
-    "explanationDetailed": "<b>Richtige Antwort:</b> Ja, beide geben 18, 14, 10, 6 aus.<br><br><b>Warum ist diese Antwort richtig?</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>Ja, beide geben 18, 14, 10, 6 aus.</b>: Diese Option erzeugt ein anderes Kontrollfluss- oder Schleifenverhalten als verlangt.<br>❌ <b>Nein, die for-Schleife gibt zusätzlich 2 aus.</b>: for iteriert über eine Folge oder einen Iterator.<br>❌ <b>Nein, die while-Schleife gibt zusätzlich -2 aus.</b>: while wiederholt einen Block, solange seine Bedingung True ist.<br>❌ <b>Nein, die for-Schleife beginnt bei 14.</b>: for iteriert über eine Folge oder einen Iterator."
+    "explanationDetailed": "<b>Richtige Antwort:</b> Ja, beide geben 18, 14, 10, 6 aus.<br><br><b>Begründung:</b><br>Aus dem bereitgestellten Python-und-Programmiergrundlagen-Quiz übernommen.<br><br><b>Bewertung der Optionen:</b><br>✅ <b>Ja, beide geben 18, 14, 10, 6 aus.</b>: Diese Option erfüllt die geforderte Bedingung.<br>❌ <b>Nein, die for-Schleife gibt zusätzlich 2 aus.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nein, die while-Schleife gibt zusätzlich -2 aus.</b>: Diese Option erfüllt die geforderte Bedingung nicht.<br>❌ <b>Nein, die for-Schleife beginnt bei 14.</b>: Diese Option erfüllt die geforderte Bedingung nicht."
   },
   {
     "id": "lf05-tag12-q01",
