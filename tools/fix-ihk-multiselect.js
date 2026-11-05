@@ -1,0 +1,25 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const file=path.join(process.cwd(),'public','lf05','ihk','index.html');
+if(!fs.existsSync(file)){console.error('HATA: public/lf05/ihk/index.html bulunamadi');process.exit(1)}
+let s=fs.readFileSync(file,'utf8');const backup=file.replace(/\.html$/,`.backup-${Date.now()}.html`);fs.copyFileSync(file,backup);
+let changed=0;
+// add multi action UI after options
+if(!s.includes('id="ihkMultiActions"')){s=s.replace('<div id="options" class="options"></div>','<div id="options" class="options"></div><div id="ihkMultiActions" class="ihk-multi-actions"><span>☑ Mehrfachauswahl: Wähle alle richtigen Antworten.</span><button id="ihkCheckMultiple" class="control" type="button">Antworten prüfen</button></div>');changed++}
+if(!s.includes('.ihk-multi-actions{')){s=s.replace('</style>','.ihk-multi-actions{display:none;justify-content:space-between;align-items:center;gap:10px;margin-top:12px;padding:11px;border:1px solid #ffd16655;border-radius:12px;background:#302b3d}.ihk-multi-actions.active{display:flex}.ihk-multi-actions span{color:#f6dc9a}.option.selected{border-color:var(--yellow)!important;background:#3d3658!important}.control:disabled{opacity:.45;cursor:not-allowed}@media(max-width:600px){.ihk-multi-actions{flex-direction:column;align-items:stretch}}</style>');changed++}
+// API loader: preserve multiple correct options as answer array instead of joined string.
+s=s.replace("answer:multi?x.correct.map(i=>(x.options||[])[i]).join(' | '):(typeof x.correct==='number'?(x.options||[])[x.correct]:x.correct),multiAnswers:multi?x.correct:null", "answer:multi?x.correct.map(i=>(x.options||[])[i]):(typeof x.correct==='number'?(x.options||[])[x.correct]:x.correct),multiAnswers:multi?x.correct.map(i=>(x.options||[])[i]):null");
+// Existing embedded QUESTIONS may have future multi arrays; helper normalizes both indexes/text.
+const marker="function render(){if(idx>=exam.length)return finish();";
+if(!s.includes(marker)){console.error('HATA: IHK render fonksiyonu bulunamadi');process.exit(1)}
+const replacement=`function render(){if(idx>=exam.length)return finish();locked=false;const q=exam[idx];const multi=Array.isArray(q.answer)||Array.isArray(q.multiAnswers);const correctValues=(Array.isArray(q.answer)?q.answer:(q.multiAnswers||[])).map(String);$('round').textContent=\`${'${idx+1}'}/${'${exam.length}'}\`;$('score').textContent=points;$('correct').textContent=right;$('bar').style.width=\`${'${idx/exam.length*100}'}%\`;$('catLabel').textContent=\`${'${q.cat.toUpperCase()}'} · ${'${q.diff.toUpperCase()}'}\`;$('scenario').textContent=q.scenario;$('question').textContent=q.question;$('code').style.display=q.code?'block':'none';$('code').textContent=q.code;$('explain').style.display='none';const optionData=shuffle(q.options.map((value,originalIndex)=>({value,originalIndex})));$('options').innerHTML=optionData.map((entry,i)=>\`<button class="option" data-value="${'${esc(entry.value)}'}" data-original="${'${entry.originalIndex}'}">${'${String.fromCharCode(65+i)}'}) ${'${esc(entry.value)}'}</button>\`).join('');$('ihkMultiActions').classList.toggle('active',multi);$('ihkCheckMultiple').disabled=true;if(multi){const selected=new Set();document.querySelectorAll('.option').forEach(b=>b.onclick=()=>{if(locked)return;const value=b.dataset.value;selected.has(value)?selected.delete(value):selected.add(value);b.classList.toggle('selected',selected.has(value));$('ihkCheckMultiple').disabled=selected.size===0});$('ihkCheckMultiple').onclick=()=>chooseMultiple([...selected],correctValues)}else{document.querySelectorAll('.option').forEach(b=>b.onclick=()=>choose(b.dataset.value))}$('next').disabled=true}`;
+// replace entire old render function until choose
+const re=/function render\(\)\{if\(idx>=exam\.length\)return finish\(\);[\s\S]*?\$\('next'\)\.disabled=true\}/;
+if(!re.test(s)){console.error('HATA: mevcut render blogu eslesmedi');process.exit(1)}
+s=s.replace(re,replacement);changed++;
+// Add chooseMultiple before choose
+const chooseMarker='function choose(value){';
+if(!s.includes(chooseMarker)){console.error('HATA: choose fonksiyonu bulunamadi');process.exit(1)}
+const multiFn=`function chooseMultiple(values,correctValues){if(locked)return;locked=true;const q=exam[idx],expected=[...correctValues].sort(),got=[...values].sort(),ok=expected.length===got.length&&expected.every((v,i)=>v===got[i]);if(ok){points+=10;right++}answers.push({q,chosen:got.join(', '),ok});document.querySelectorAll('.option').forEach(b=>{b.disabled=true;const v=b.dataset.value;b.classList.toggle('correct',expected.includes(v));b.classList.toggle('wrong',got.includes(v)&&!expected.includes(v))});$('ihkMultiActions').classList.remove('active');$('explain').style.display='block';$('explain').innerHTML=q.explanationDetailed||q.explanation||'';$('next').disabled=false;$('score').textContent=points;$('correct').textContent=right}\n`;
+s=s.replace(chooseMarker,multiFn+chooseMarker);changed++;
+fs.writeFileSync(file,s,'utf8');console.log('BASARILI: IHK multiple-select destegi eklendi.');console.log('Degisiklik:',changed);console.log('Yedek:',backup);

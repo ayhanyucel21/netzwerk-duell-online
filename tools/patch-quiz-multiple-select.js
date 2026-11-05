@@ -1,0 +1,16 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const R=process.cwd(),F=path.join(R,'public','lf05','quiz','index.html');
+if(!fs.existsSync(F)){console.error('HATA quiz index yok');process.exit(1)}let s=fs.readFileSync(F,'utf8');const b=F.replace(/\.html$/,`.backup-${Date.now()}.html`);fs.copyFileSync(F,b);
+// Preserve arrays through normalization.
+s=s.replace("answer:resolveAnswer(raw,options)","answer:Array.isArray(raw.correct)?raw.correct.map(Number):resolveAnswer(raw,options)");
+// Add controls container.
+if(!s.includes('id="multiActions"'))s=s.replace('<div id="options" class="options"></div>','<div id="options" class="options"></div><div id="multiActions" class="multi-actions"><button id="checkMultiple" class="action" type="button">Antwort prüfen</button><span>Mehrere Antworten können richtig sein.</span></div>');
+if(!s.includes('.multi-actions{'))s=s.replace('</style>','.multi-actions{display:none;align-items:center;gap:10px;margin-top:12px}.multi-actions.active{display:flex}.multi-actions span{color:var(--muted);font-size:.82rem}.option.selected{border-color:var(--yellow);background:#3b3652}</style>');
+// Replace normal option interaction segment with multi-aware version.
+const old="document.querySelectorAll('.option').forEach(b=>{const value=opts[Number(b.dataset.index)];if(saved){b.disabled=true;b.classList.toggle('correct',value===item.answer);b.classList.toggle('wrong',value===saved.value&&saved.value!==item.answer)}else b.onclick=()=>answer(value)})";
+const neu="const multi=item.type==='multiple-select'||Array.isArray(item.answer);$('multiActions').classList.toggle('active',multi&&!saved);if(multi){const correctIdx=Array.isArray(item.answer)?item.answer:[];const selected=new Set(saved?.indexes||[]);document.querySelectorAll('.option').forEach(b=>{const original=item.options.indexOf(opts[Number(b.dataset.index)]);b.dataset.original=original;if(saved){b.disabled=true;b.classList.toggle('correct',correctIdx.includes(original));b.classList.toggle('wrong',selected.has(original)&&!correctIdx.includes(original))}else b.onclick=()=>{selected.has(original)?selected.delete(original):selected.add(original);b.classList.toggle('selected',selected.has(original))}});$('checkMultiple').onclick=()=>answerMultiple([...selected])}else{$('multiActions').classList.remove('active');document.querySelectorAll('.option').forEach(b=>{const value=opts[Number(b.dataset.index)];if(saved){b.disabled=true;b.classList.toggle('correct',value===item.answer);b.classList.toggle('wrong',value===saved.value&&saved.value!==item.answer)}else b.onclick=()=>answer(value)})}";
+if(!s.includes(old)){console.error('HATA option interaction marker bulunamadi');process.exit(1)}s=s.replace(old,neu);
+// Add multiple checker before answer().
+s=s.replace('function answer(value){',"function answerMultiple(indexes){const st=state(active.id),item=active.questions[index];if(st.answers[index])return;if(!indexes.length)return;const expected=[...(item.answer||[])].map(Number).sort((a,b)=>a-b),got=[...indexes].map(Number).sort((a,b)=>a-b);const ok=expected.length===got.length&&expected.every((v,i)=>v===got[i]);st.answers[index]={indexes:got,ok};if(ok)st.score+=10;save();renderQuestion()}\nfunction answer(value){");
+fs.writeFileSync(F,s,'utf8');console.log('SUCCESS quiz multiple-select UI patched');console.log('Backup:',b);

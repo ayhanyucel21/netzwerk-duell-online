@@ -1,0 +1,56 @@
+{
+  "changed": 6,
+  "items": [
+    {
+      "id": "python-full-09",
+      "question": "Welche der folgenden Anweisungen sind gültige Zuweisungen in Python?",
+      "correct": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "python-full-10",
+      "question": "Welche Namen sind als Python-Variablenbezeichner erlaubt?",
+      "correct": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "python-full-18",
+      "question": "Welche Operatoren dienen in Python zum Vergleichen?",
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "python-full-19",
+      "question": "Welche Schlüsselwörter bilden in Python Verzweigungen?",
+      "correct": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "python-full-20",
+      "question": "Welche Schlüsselwörter können bei Python-Schleifen vorkommen?",
+      "correct": [
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "id": "python-full-27",
+      "question": "Welche Aussagen zur Terminierbarkeit sind korrekt?",
+      "correct": [
+        2,
+        3
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('fs'),path=require('path');
+const f=path.join(process.cwd(),'public','lf05','quiz','index.html');
+if(!fs.existsSync(f)){console.error('HATA: quiz index bulunamadi');process.exit(1)}
+let s=fs.readFileSync(f,'utf8');const b=f.replace(/\.html$/,`.backup-${Date.now()}.html`);fs.copyFileSync(f,b);
+// Replace shuffledOptions so it keeps original option indices.
+const old=/function shuffledOptions\(item\)\{[^}]*const k=active\.id\+'_'+index;[\s\S]*?return ORDER\[k\]\}/;
+const neu=`function shuffledOptions(item){const k=active.id+'_'+index;if(!ORDER[k]){const a=item.options.map((value,originalIndex)=>({value,originalIndex}));for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}ORDER[k]=a}return ORDER[k]}`;
+if(!old.test(s)){console.error('HATA: shuffledOptions bulunamadi');process.exit(1)}s=s.replace(old,neu);
+// Update rendering/selection block to consume {value, originalIndex}.
+const marker=/const opts=shuffledOptions\(item\);\$\('options'\)\.innerHTML=[\s\S]*?\$\('checkMultiple'\)\.onclick=\(\)=>answerMultiple\(\[\.\.\.chosen\]\)\}else\{\$\('multiActions'\)\.classList\.remove\('active'\);[\s\S]*?\}\)\}/;
+const repl=`const opts=shuffledOptions(item);$('options').innerHTML=opts.map((entry,i)=>\`<button class="option" type="button" data-index="\${i}" data-original="\${entry.originalIndex}">\${String.fromCharCode(65+i)}) \${escapeHtml(entry.value)}</button>\`).join('');const multi=item.type==='multiple-select'||Array.isArray(item.answer);$('multiActions').classList.toggle('active',multi&&!saved);if(multi){const expected=(Array.isArray(item.answer)?item.answer:[]).map(Number);const chosen=new Set(saved?.indexes||[]);document.querySelectorAll('.option').forEach(b=>{const original=Number(b.dataset.original);if(saved){b.disabled=true;b.classList.toggle('correct',expected.includes(original));b.classList.toggle('wrong',chosen.has(original)&&!expected.includes(original));b.classList.toggle('selected',chosen.has(original))}else b.onclick=()=>{chosen.has(original)?chosen.delete(original):chosen.add(original);b.classList.toggle('selected',chosen.has(original))}});$('checkMultiple').onclick=()=>answerMultiple([...chosen])}else{$('multiActions').classList.remove('active');document.querySelectorAll('.option').forEach(b=>{const entry=opts[Number(b.dataset.index)],value=entry.value;if(saved){b.disabled=true;b.classList.toggle('correct',value===item.answer);b.classList.toggle('wrong',value===saved.value&&saved.value!==item.answer)}else b.onclick=()=>answer(value)})}`;
+if(!marker.test(s)){console.error('HATA: multiple-select render block bulunamadi');process.exit(1)}s=s.replace(marker,repl);
+fs.writeFileSync(f,s,'utf8');console.log('SUCCESS: Multi-select shuffle now preserves original answer indices.');console.log('Backup:',b);
