@@ -84,5 +84,41 @@
     "status": "published",
     "order": 8,
     "updatedAt": "2026-11-02T16:06:02.820Z"
+  },
+  {
+    "id": "lf06-ticket-triage",
+    "courseId": "lf06",
+    "title": "Ticket Triage",
+    "description": "Tickets richtig klassifizieren und priorisieren.",
+    "path": "/lf06/games/ticket-triage/",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-raci-match",
+    "courseId": "lf06",
+    "title": "RACI Match",
+    "description": "RACI-Rollen anhand realer Aufgaben zuordnen.",
+    "path": "/lf06/games/raci-match/",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf06-imac-lifecycle",
+    "courseId": "lf06",
+    "title": "IMAC/RD Puzzle",
+    "description": "Den Arbeitsplatz-Lebenszyklus als Puzzle lösen.",
+    "path": "/lf06/games/imac-lifecycle/",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf06-itsm-challenge",
+    "courseId": "lf06",
+    "title": "ITSM Challenge",
+    "description": "Begriffe in schnellen Missionen mit XP, Combo und Leben trainieren.",
+    "path": "/lf06/games/itsm-challenge/",
+    "status": "published",
+    "order": 4
   }
 ]

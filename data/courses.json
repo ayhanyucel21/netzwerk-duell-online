@@ -8,5 +8,14 @@
     "status": "published",
     "order": 5,
     "updatedAt": "2026-10-28T14:55:36.172Z"
+  },
+  {
+    "id": "lf06",
+    "code": "LF06",
+    "title": "Serviceanfragen bearbeiten",
+    "description": "IT-Service-Management, Ticketbearbeitung, Service-Level, Problemanalyse, Kommunikation, Recht und Arbeitsorganisation.",
+    "color": "#11b8d6",
+    "status": "published",
+    "order": 6
   }
 ]

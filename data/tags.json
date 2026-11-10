@@ -110,5 +110,23 @@
     "description": "SELECT, WHERE, DISTINCT, ORDER BY, GROUP BY, HAVING, Aggregatfunktionen und Subqueries.",
     "status": "published",
     "order": 13
+  },
+  {
+    "id": "lf06-tag1",
+    "courseId": "lf06",
+    "number": 1,
+    "title": "ITSM, ITIL, RACI, IMAC/RD & Serviceprozesse",
+    "description": "Grundlagen des IT-Service-Managements und strukturierte Bearbeitung von Serviceanfragen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-tag2",
+    "courseId": "lf06",
+    "number": 2,
+    "title": "Servicefälle, Kennzahlen, Verträge & Verbesserungsmethoden",
+    "description": "Serviceanfragen bearbeiten, Support-Level, MTTR/MTBF/Verfügbarkeit, SMART, DMAIC, AVV, UC und OLA.",
+    "status": "published",
+    "order": 2
   }
 ]

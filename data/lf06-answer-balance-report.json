@@ -1,0 +1,1507 @@
+{
+  "generatedAt": "2026-11-09T15:24:05.508Z",
+  "questions": 60,
+  "longestCorrect": 44,
+  "items": [
+    {
+      "id": "lf06-tag1-q01",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        64,
+        23,
+        36,
+        32
+      ],
+      "before": [
+        "IT-Services kundenorientiert, standardisiert und messbar steuern",
+        "Nur Hardware reparieren",
+        "Programmiersprachen vereinheitlichen",
+        "Ausschließlich Kosten reduzieren"
+      ],
+      "after": [
+        "IT-Services kundenorientiert, standardisiert und messbar steuern",
+        "Nur Hardware reparieren",
+        "Programmiersprachen vereinheitlichen",
+        "Ausschließlich Kosten reduzieren"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q02",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        33,
+        29,
+        64,
+        36
+      ],
+      "before": [
+        "Wert entsteht durch aktive Zusammenarbeit von Anbieter und Kunde",
+        "Nur der Provider erzeugt Wert",
+        "Nur niedrige Kosten erzeugen Wert",
+        "Wert ist identisch mit Hardwarepreis"
+      ],
+      "after": [
+        "Nur niedrige Kosten erzeugen Wert",
+        "Nur der Provider erzeugt Wert",
+        "Wert entsteht durch aktive Zusammenarbeit von Anbieter und Kunde",
+        "Wert ist identisch mit Hardwarepreis"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q03",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        10,
+        7,
+        6,
+        7
+      ],
+      "before": [
+        "Engage",
+        "Audit Only",
+        "Dispose",
+        "Compile"
+      ],
+      "after": [
+        "Audit Only",
+        "Dispose",
+        "Engage",
+        "Compile"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q04",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        20,
+        32,
+        96,
+        34
+      ],
+      "before": [
+        "Organisation & Menschen; Information & Technologie; Partner & Lieferanten; Wertströme & Prozesse",
+        "Hardware; Software; WLAN; Backup",
+        "Plan; Do; Check; Act",
+        "Incident; Problem; Change; Request"
+      ],
+      "after": [
+        "Plan; Do; Check; Act",
+        "Hardware; Software; WLAN; Backup",
+        "Organisation & Menschen; Information & Technologie; Partner & Lieferanten; Wertströme & Prozesse",
+        "Incident; Problem; Change; Request"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q05",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        8,
+        9,
+        11,
+        8
+      ],
+      "before": [
+        "Accountable",
+        "Available",
+        "Assigned",
+        "Approved"
+      ],
+      "after": [
+        "Assigned",
+        "Available",
+        "Accountable",
+        "Approved"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q06",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        44,
+        52,
+        28,
+        24
+      ],
+      "before": [
+        "Pro Aufgabe sollte genau eine Rolle Accountable sein",
+        "Responsible darf nie handeln",
+        "Consulted wird nur nach Abschluss informiert",
+        "Informed genehmigt immer"
+      ],
+      "after": [
+        "Consulted wird nur nach Abschluss informiert",
+        "Pro Aufgabe sollte genau eine Rolle Accountable sein",
+        "Responsible darf nie handeln",
+        "Informed genehmigt immer"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q07",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        13,
+        37,
+        16,
+        21
+      ],
+      "before": [
+        "Erweiterung eines bestehenden Systems",
+        "Erstinstallation",
+        "Standortumzug",
+        "Endgültige Entsorgung"
+      ],
+      "after": [
+        "Standortumzug",
+        "Erweiterung eines bestehenden Systems",
+        "Erstinstallation",
+        "Endgültige Entsorgung"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q08",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        7,
+        3,
+        4,
+        7
+      ],
+      "before": [
+        "Dispose",
+        "Move",
+        "Add",
+        "Install"
+      ],
+      "after": [
+        "Dispose",
+        "Add",
+        "Move",
+        "Install"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q09",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        53,
+        53,
+        40,
+        42
+      ],
+      "before": [
+        "Ein bisher funktionierender Drucker druckt nicht mehr",
+        "Ein neuer Mitarbeiter benötigt einen Standard-Account",
+        "Eine Cloud-Migration soll geplant werden",
+        "Ein Nutzer bestellt eine Standard-Tastatur"
+      ],
+      "after": [
+        "Ein neuer Mitarbeiter benötigt einen Standard-Account",
+        "Ein bisher funktionierender Drucker druckt nicht mehr",
+        "Eine Cloud-Migration soll geplant werden",
+        "Ein Nutzer bestellt eine Standard-Tastatur"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q10",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        35,
+        63,
+        51,
+        41
+      ],
+      "before": [
+        "Ein Praktikanten-Account soll für nächste Woche angelegt werden",
+        "Der zentrale Server ist ausgefallen",
+        "Ein wiederkehrender Firmwarefehler legt Geräte lahm",
+        "Die komplette Infrastruktur wird migriert"
+      ],
+      "after": [
+        "Der zentrale Server ist ausgefallen",
+        "Ein Praktikanten-Account soll für nächste Woche angelegt werden",
+        "Ein wiederkehrender Firmwarefehler legt Geräte lahm",
+        "Die komplette Infrastruktur wird migriert"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q11",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        19,
+        76,
+        22,
+        11
+      ],
+      "before": [
+        "Geplante Änderung an Service oder Infrastruktur mit kontrollierter Bewertung",
+        "Ungeplanter Ausfall",
+        "Standard-Passwortreset",
+        "FAQ-Anfrage"
+      ],
+      "after": [
+        "Ungeplanter Ausfall",
+        "Geplante Änderung an Service oder Infrastruktur mit kontrollierter Bewertung",
+        "Standard-Passwortreset",
+        "FAQ-Anfrage"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q12",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        18,
+        30,
+        23,
+        18
+      ],
+      "before": [
+        "Impact und Urgency",
+        "Name des Melders und Abteilung",
+        "Alter des Geräts allein",
+        "Anzahl der E-Mails"
+      ],
+      "after": [
+        "Impact und Urgency",
+        "Name des Melders und Abteilung",
+        "Alter des Geräts allein",
+        "Anzahl der E-Mails"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q13",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        37,
+        29,
+        48,
+        26
+      ],
+      "before": [
+        "Hoher Impact und hohe Urgency",
+        "Niedriger Impact und niedrige Urgency",
+        "Niedriger Impact und hohe Lautstärke des Melders",
+        "Geplanter Standard-Request"
+      ],
+      "after": [
+        "Niedriger Impact und niedrige Urgency",
+        "Hoher Impact und hohe Urgency",
+        "Niedriger Impact und hohe Lautstärke des Melders",
+        "Geplanter Standard-Request"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q14",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        46,
+        32,
+        72,
+        20
+      ],
+      "before": [
+        "Wenn spezielles Fachwissen oder höhere technische Rechte benötigt werden",
+        "Wenn nur das Management informiert werden soll",
+        "Wenn der Nutzer wichtiger klingt",
+        "Bei jeder P4-Anfrage"
+      ],
+      "after": [
+        "Wenn nur das Management informiert werden soll",
+        "Wenn der Nutzer wichtiger klingt",
+        "Wenn spezielles Fachwissen oder höhere technische Rechte benötigt werden",
+        "Bei jeder P4-Anfrage"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q15",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        40,
+        23,
+        68,
+        24
+      ],
+      "before": [
+        "Bei drohender SLA-Verletzung oder notwendiger Managemententscheidung",
+        "Bei jedem Passwortreset",
+        "Wenn ein Treiber installiert werden muss",
+        "Nur bei Hardwaredefekten"
+      ],
+      "after": [
+        "Wenn ein Treiber installiert werden muss",
+        "Bei jedem Passwortreset",
+        "Bei drohender SLA-Verletzung oder notwendiger Managemententscheidung",
+        "Nur bei Hardwaredefekten"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q16",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        22,
+        30,
+        59,
+        20
+      ],
+      "before": [
+        "Temporäre Umgehungsmaßnahme ohne Beseitigung der Root Cause",
+        "Dauerhafte Ursachenbeseitigung",
+        "Ein genehmigter Change",
+        "Eine Prioritätsstufe"
+      ],
+      "after": [
+        "Ein genehmigter Change",
+        "Dauerhafte Ursachenbeseitigung",
+        "Temporäre Umgehungsmaßnahme ohne Beseitigung der Root Cause",
+        "Eine Prioritätsstufe"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q17",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        20,
+        39,
+        98,
+        50
+      ],
+      "before": [
+        "Problem Management sucht die Root Cause; Incident Management stellt den Service schnell wieder her",
+        "Beide sind identisch",
+        "Incident Management ist immer präventiv",
+        "Problem Management bearbeitet nur Service Requests"
+      ],
+      "after": [
+        "Beide sind identisch",
+        "Incident Management ist immer präventiv",
+        "Problem Management sucht die Root Cause; Incident Management stellt den Service schnell wieder her",
+        "Problem Management bearbeitet nur Service Requests"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q18",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        56,
+        24,
+        22,
+        18
+      ],
+      "before": [
+        "Früh nach eindeutiger Fehler- oder Symptomidentifikation",
+        "Erst nach Gerätetausch",
+        "Nur nach Ticketabschluss",
+        "Nie im First Level"
+      ],
+      "after": [
+        "Früh nach eindeutiger Fehler- oder Symptomidentifikation",
+        "Nur nach Ticketabschluss",
+        "Erst nach Gerätetausch",
+        "Nie im First Level"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q19",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        67,
+        38,
+        29,
+        25
+      ],
+      "before": [
+        "Störungen können erkannt werden, bevor der Kunde den Ausfall meldet",
+        "Es ersetzt jedes Ticketsystem",
+        "Es verhindert jede Störung vollständig",
+        "Es macht SLAs überflüssig"
+      ],
+      "after": [
+        "Störungen können erkannt werden, bevor der Kunde den Ausfall meldet",
+        "Es verhindert jede Störung vollständig",
+        "Es ersetzt jedes Ticketsystem",
+        "Es macht SLAs überflüssig"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q20",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        4,
+        4,
+        19,
+        4
+      ],
+      "before": [
+        "SNMP",
+        "SMTP ausschließlich",
+        "HTML",
+        "RACI"
+      ],
+      "after": [
+        "SNMP",
+        "HTML",
+        "SMTP ausschließlich",
+        "RACI"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q21",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        43,
+        86,
+        44,
+        35
+      ],
+      "before": [
+        "RfC/Risikoanalyse → Test → Freigabe → Wartungsfenster → Rollback-Bereitschaft → Review",
+        "Umsetzen → Risiko ignorieren → dokumentieren",
+        "Kunde informieren → direkt produktiv ändern",
+        "Incident schließen → Change starten"
+      ],
+      "after": [
+        "Kunde informieren → direkt produktiv ändern",
+        "RfC/Risikoanalyse → Test → Freigabe → Wartungsfenster → Rollback-Bereitschaft → Review",
+        "Umsetzen → Risiko ignorieren → dokumentieren",
+        "Incident schließen → Change starten"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q22",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        23,
+        13,
+        28,
+        10
+      ],
+      "before": [
+        "ISO/IEC 20000",
+        "ISO 9001 ausschließlich",
+        "ISO/IEC 27001 ausschließlich",
+        "IEEE 802.3"
+      ],
+      "after": [
+        "ISO 9001 ausschließlich",
+        "ISO/IEC 20000",
+        "ISO/IEC 27001 ausschließlich",
+        "IEEE 802.3"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q23",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        13,
+        13,
+        8,
+        6
+      ],
+      "before": [
+        "ISO/IEC 27001",
+        "ISO/IEC 20000",
+        "ISO 9001",
+        "ITIL 4"
+      ],
+      "after": [
+        "ISO/IEC 27001",
+        "ISO/IEC 20000",
+        "ISO 9001",
+        "ITIL 4"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q24",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        22,
+        21,
+        22,
+        21
+      ],
+      "before": [
+        "Major Incident mit P1",
+        "Service Request mit P4",
+        "RfC ohne Dringlichkeit",
+        "Problem ohne Incident"
+      ],
+      "after": [
+        "Service Request mit P4",
+        "Major Incident mit P1",
+        "RfC ohne Dringlichkeit",
+        "Problem ohne Incident"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q25",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        11,
+        10,
+        22,
+        14
+      ],
+      "before": [
+        "P4 niedrig",
+        "P1 kritisch",
+        "P2 hoch wegen Software",
+        "Major Incident"
+      ],
+      "after": [
+        "P1 kritisch",
+        "P4 niedrig",
+        "P2 hoch wegen Software",
+        "Major Incident"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q26",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        16,
+        48,
+        57,
+        26
+      ],
+      "before": [
+        "Funktionale Eskalation an das Storage-/Infrastruktur-Team",
+        "Hierarchische Eskalation an die Geschäftsführung",
+        "Ticket schließen",
+        "Kundenpriorität reduzieren"
+      ],
+      "after": [
+        "Ticket schließen",
+        "Hierarchische Eskalation an die Geschäftsführung",
+        "Funktionale Eskalation an das Storage-/Infrastruktur-Team",
+        "Kundenpriorität reduzieren"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q27",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        42,
+        27,
+        18,
+        21
+      ],
+      "before": [
+        "Problem Management",
+        "Nur erneutes Incident Logging ohne Analyse",
+        "Service Request Fulfillment",
+        "Dispose ohne Diagnose"
+      ],
+      "after": [
+        "Nur erneutes Incident Logging ohne Analyse",
+        "Service Request Fulfillment",
+        "Problem Management",
+        "Dispose ohne Diagnose"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q28",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        22,
+        21,
+        65,
+        37
+      ],
+      "before": [
+        "Heartbeat/Ping, Service-Checks, SMART/SNMP und Schwellwert-Alarme",
+        "Nur jährliche Inventur",
+        "Nur Nutzerbefragungen",
+        "Ausschließlich Ticketabschluss prüfen"
+      ],
+      "after": [
+        "Nur jährliche Inventur",
+        "Nur Nutzerbefragungen",
+        "Heartbeat/Ping, Service-Checks, SMART/SNMP und Schwellwert-Alarme",
+        "Ausschließlich Ticketabschluss prüfen"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q29",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        51,
+        41,
+        95,
+        23
+      ],
+      "before": [
+        "Framework liefert Leitplanken und Best Practices; ein Standard definiert prüfbare Anforderungen",
+        "Beide Begriffe sind vollständig identisch",
+        "Standards sind immer freiwillige Tipps ohne Prüfung",
+        "Frameworks sind Gesetze"
+      ],
+      "after": [
+        "Standards sind immer freiwillige Tipps ohne Prüfung",
+        "Beide Begriffe sind vollständig identisch",
+        "Framework liefert Leitplanken und Best Practices; ein Standard definiert prüfbare Anforderungen",
+        "Frameworks sind Gesetze"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q30",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        66,
+        71,
+        77,
+        30
+      ],
+      "before": [
+        "ITIL → ITSM Best Practices; COBIT → Governance; ISO/IEC 20000 → ITSM-Standard",
+        "COBIT → Druckerprotokoll; ITIL → Gesetz; ISO 20000 → Programmiersprache",
+        "ITIL → Entsorgung; COBIT → Passwort; ISO 20000 → Netzwerkprotokoll",
+        "Alle drei sind Betriebssysteme"
+      ],
+      "after": [
+        "ITIL → Entsorgung; COBIT → Passwort; ISO 20000 → Netzwerkprotokoll",
+        "COBIT → Druckerprotokoll; ITIL → Gesetz; ISO 20000 → Programmiersprache",
+        "ITIL → ITSM Best Practices; COBIT → Governance; ISO/IEC 20000 → ITSM-Standard",
+        "Alle drei sind Betriebssysteme"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-01",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        44,
+        35,
+        86,
+        43
+      ],
+      "before": [
+        "RfC/Risikoanalyse → Test → Freigabe → Wartungsfenster → Rollback-Bereitschaft → Review",
+        "Umsetzen → Risiko ignorieren → dokumentieren",
+        "Kunde informieren → direkt produktiv ändern",
+        "Incident schließen → Change starten"
+      ],
+      "after": [
+        "Umsetzen → Risiko ignorieren → dokumentieren",
+        "Incident schließen → Change starten",
+        "RfC/Risikoanalyse → Test → Freigabe → Wartungsfenster → Rollback-Bereitschaft → Review",
+        "Kunde informieren → direkt produktiv ändern"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-02",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        23,
+        10,
+        13,
+        28
+      ],
+      "before": [
+        "ISO/IEC 20000",
+        "ISO 9001 ausschließlich",
+        "ISO/IEC 27001 ausschließlich",
+        "IEEE 802.3"
+      ],
+      "after": [
+        "ISO 9001 ausschließlich",
+        "IEEE 802.3",
+        "ISO/IEC 20000",
+        "ISO/IEC 27001 ausschließlich"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-03",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        6,
+        13,
+        13,
+        8
+      ],
+      "before": [
+        "ISO/IEC 27001",
+        "ISO/IEC 20000",
+        "ISO 9001",
+        "ITIL 4"
+      ],
+      "after": [
+        "ITIL 4",
+        "ISO/IEC 20000",
+        "ISO/IEC 27001",
+        "ISO 9001"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-04",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        22,
+        21,
+        21,
+        22
+      ],
+      "before": [
+        "Major Incident mit P1",
+        "Service Request mit P4",
+        "RfC ohne Dringlichkeit",
+        "Problem ohne Incident"
+      ],
+      "after": [
+        "Service Request mit P4",
+        "Problem ohne Incident",
+        "Major Incident mit P1",
+        "RfC ohne Dringlichkeit"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-05",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        14,
+        10,
+        11,
+        22
+      ],
+      "before": [
+        "P4 niedrig",
+        "P1 kritisch",
+        "P2 hoch wegen Software",
+        "Major Incident"
+      ],
+      "after": [
+        "Major Incident",
+        "P4 niedrig",
+        "P1 kritisch",
+        "P2 hoch wegen Software"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-06",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        57,
+        26,
+        48,
+        16
+      ],
+      "before": [
+        "Funktionale Eskalation an das Storage-/Infrastruktur-Team",
+        "Hierarchische Eskalation an die Geschäftsführung",
+        "Ticket schließen",
+        "Kundenpriorität reduzieren"
+      ],
+      "after": [
+        "Funktionale Eskalation an das Storage-/Infrastruktur-Team",
+        "Kundenpriorität reduzieren",
+        "Hierarchische Eskalation an die Geschäftsführung",
+        "Ticket schließen"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-07",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        18,
+        21,
+        42,
+        27
+      ],
+      "before": [
+        "Problem Management",
+        "Nur erneutes Incident Logging ohne Analyse",
+        "Service Request Fulfillment",
+        "Dispose ohne Diagnose"
+      ],
+      "after": [
+        "Problem Management",
+        "Dispose ohne Diagnose",
+        "Nur erneutes Incident Logging ohne Analyse",
+        "Service Request Fulfillment"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-08",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        37,
+        65,
+        22,
+        21
+      ],
+      "before": [
+        "Heartbeat/Ping, Service-Checks, SMART/SNMP und Schwellwert-Alarme",
+        "Nur jährliche Inventur",
+        "Nur Nutzerbefragungen",
+        "Ausschließlich Ticketabschluss prüfen"
+      ],
+      "after": [
+        "Ausschließlich Ticketabschluss prüfen",
+        "Heartbeat/Ping, Service-Checks, SMART/SNMP und Schwellwert-Alarme",
+        "Nur jährliche Inventur",
+        "Nur Nutzerbefragungen"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-09",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        95,
+        41,
+        23,
+        51
+      ],
+      "before": [
+        "Framework liefert Leitplanken und Best Practices; ein Standard definiert prüfbare Anforderungen",
+        "Beide Begriffe sind vollständig identisch",
+        "Standards sind immer freiwillige Tipps ohne Prüfung",
+        "Frameworks sind Gesetze"
+      ],
+      "after": [
+        "Framework liefert Leitplanken und Best Practices; ein Standard definiert prüfbare Anforderungen",
+        "Beide Begriffe sind vollständig identisch",
+        "Frameworks sind Gesetze",
+        "Standards sind immer freiwillige Tipps ohne Prüfung"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-10",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        77,
+        71,
+        30,
+        66
+      ],
+      "before": [
+        "ITIL → ITSM Best Practices; COBIT → Governance; ISO/IEC 20000 → ITSM-Standard",
+        "COBIT → Druckerprotokoll; ITIL → Gesetz; ISO 20000 → Programmiersprache",
+        "ITIL → Entsorgung; COBIT → Passwort; ISO 20000 → Netzwerkprotokoll",
+        "Alle drei sind Betriebssysteme"
+      ],
+      "after": [
+        "ITIL → ITSM Best Practices; COBIT → Governance; ISO/IEC 20000 → ITSM-Standard",
+        "COBIT → Druckerprotokoll; ITIL → Gesetz; ISO 20000 → Programmiersprache",
+        "Alle drei sind Betriebssysteme",
+        "ITIL → Entsorgung; COBIT → Passwort; ISO 20000 → Netzwerkprotokoll"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q31",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        6,
+        7,
+        7,
+        7
+      ],
+      "before": [
+        "Define",
+        "Measure",
+        "Improve",
+        "Control"
+      ],
+      "after": [
+        "Define",
+        "Improve",
+        "Measure",
+        "Control"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q32",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "before": [
+        "Measure",
+        "Analyse",
+        "Control",
+        "Dispose"
+      ],
+      "after": [
+        "Control",
+        "Measure",
+        "Analyse",
+        "Dispose"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q33",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        21,
+        30,
+        24,
+        24
+      ],
+      "before": [
+        "5-Why-Ursachenanalyse",
+        "Gerät sofort austauschen",
+        "Ticket ohne Diagnose schließen",
+        "Nur Status-E-Mail senden"
+      ],
+      "after": [
+        "5-Why-Ursachenanalyse",
+        "Ticket ohne Diagnose schließen",
+        "Gerät sofort austauschen",
+        "Nur Status-E-Mail senden"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q34",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        56,
+        23,
+        24,
+        39
+      ],
+      "before": [
+        "Geeignete Verbesserungen entwickeln, testen und umsetzen",
+        "Nur Kennzahlen erfassen",
+        "Problemumfang definieren",
+        "Verbesserung ohne Kontrolle abschließen"
+      ],
+      "after": [
+        "Geeignete Verbesserungen entwickeln, testen und umsetzen",
+        "Nur Kennzahlen erfassen",
+        "Problemumfang definieren",
+        "Verbesserung ohne Kontrolle abschließen"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q35",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        28,
+        43,
+        21,
+        30
+      ],
+      "before": [
+        "Erreichte Verbesserung nachhaltig absichern",
+        "Nur neue Probleme definieren",
+        "Nur Messwerte löschen",
+        "Change ohne Review durchführen"
+      ],
+      "after": [
+        "Nur neue Probleme definieren",
+        "Erreichte Verbesserung nachhaltig absichern",
+        "Nur Messwerte löschen",
+        "Change ohne Review durchführen"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q36",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        40,
+        104,
+        39,
+        32
+      ],
+      "before": [
+        "Governance legt Steuerungs- und Entscheidungsrahmen fest; Compliance bezeichnet regelkonformes Verhalten",
+        "Governance und Compliance sind identisch",
+        "Compliance ersetzt das Risikomanagement",
+        "Governance betrifft nur Hardware"
+      ],
+      "after": [
+        "Governance und Compliance sind identisch",
+        "Governance legt Steuerungs- und Entscheidungsrahmen fest; Compliance bezeichnet regelkonformes Verhalten",
+        "Compliance ersetzt das Risikomanagement",
+        "Governance betrifft nur Hardware"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q37",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        111,
+        33,
+        58,
+        32
+      ],
+      "before": [
+        "Governance steuert den Rahmen, Risikomanagement bewertet Unsicherheiten und Compliance sichert Regelkonformität",
+        "Die drei Bereiche sind unabhängig",
+        "Risiken werden durch Compliance vollständig ausgeschlossen",
+        "Governance ist nur eine ISO-Norm"
+      ],
+      "after": [
+        "Governance steuert den Rahmen, Risikomanagement bewertet Unsicherheiten und Compliance sichert Regelkonformität",
+        "Die drei Bereiche sind unabhängig",
+        "Risiken werden durch Compliance vollständig ausgeschlossen",
+        "Governance ist nur eine ISO-Norm"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q38",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        34,
+        27,
+        55,
+        38
+      ],
+      "before": [
+        "R führt operativ aus; A trägt die Ergebnisverantwortung",
+        "R genehmigt; A wird nur informiert",
+        "Beide Rollen sind identisch",
+        "A führt immer alle Aufgaben selbst aus"
+      ],
+      "after": [
+        "R genehmigt; A wird nur informiert",
+        "Beide Rollen sind identisch",
+        "R führt operativ aus; A trägt die Ergebnisverantwortung",
+        "A führt immer alle Aufgaben selbst aus"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q39",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        31,
+        30,
+        77,
+        27
+      ],
+      "before": [
+        "Zwei verschiedene Personen sind für dieselbe Aufgabe gleichzeitig Accountable",
+        "Mehrere Personen sind Consulted",
+        "Mehrere Personen sind Informed",
+        "Eine Person ist Responsible"
+      ],
+      "after": [
+        "Mehrere Personen sind Consulted",
+        "Mehrere Personen sind Informed",
+        "Zwei verschiedene Personen sind für dieselbe Aufgabe gleichzeitig Accountable",
+        "Eine Person ist Responsible"
+      ]
+    },
+    {
+      "id": "lf06-tag1-q40",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        8,
+        11,
+        55,
+        31
+      ],
+      "before": [
+        "Incident Management + Knowledge Management + Monitoring",
+        "Nur RACI",
+        "Nur Dispose",
+        "Nur Service Request Fulfillment"
+      ],
+      "after": [
+        "Nur RACI",
+        "Nur Dispose",
+        "Incident Management + Knowledge Management + Monitoring",
+        "Nur Service Request Fulfillment"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-11",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        6,
+        7,
+        7,
+        7
+      ],
+      "before": [
+        "Define",
+        "Measure",
+        "Improve",
+        "Control"
+      ],
+      "after": [
+        "Define",
+        "Measure",
+        "Control",
+        "Improve"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-12",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        7,
+        7,
+        7,
+        7
+      ],
+      "before": [
+        "Measure",
+        "Analyse",
+        "Control",
+        "Dispose"
+      ],
+      "after": [
+        "Analyse",
+        "Measure",
+        "Dispose",
+        "Control"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-13",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": false,
+      "lengths": [
+        24,
+        24,
+        21,
+        30
+      ],
+      "before": [
+        "5-Why-Ursachenanalyse",
+        "Gerät sofort austauschen",
+        "Ticket ohne Diagnose schließen",
+        "Nur Status-E-Mail senden"
+      ],
+      "after": [
+        "Nur Status-E-Mail senden",
+        "Gerät sofort austauschen",
+        "5-Why-Ursachenanalyse",
+        "Ticket ohne Diagnose schließen"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-14",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        39,
+        23,
+        56,
+        24
+      ],
+      "before": [
+        "Geeignete Verbesserungen entwickeln, testen und umsetzen",
+        "Nur Kennzahlen erfassen",
+        "Problemumfang definieren",
+        "Verbesserung ohne Kontrolle abschließen"
+      ],
+      "after": [
+        "Verbesserung ohne Kontrolle abschließen",
+        "Nur Kennzahlen erfassen",
+        "Geeignete Verbesserungen entwickeln, testen und umsetzen",
+        "Problemumfang definieren"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-15",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        28,
+        30,
+        43,
+        21
+      ],
+      "before": [
+        "Erreichte Verbesserung nachhaltig absichern",
+        "Nur neue Probleme definieren",
+        "Nur Messwerte löschen",
+        "Change ohne Review durchführen"
+      ],
+      "after": [
+        "Nur neue Probleme definieren",
+        "Change ohne Review durchführen",
+        "Erreichte Verbesserung nachhaltig absichern",
+        "Nur Messwerte löschen"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-16",
+      "correctPositions": [
+        2
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        40,
+        32,
+        104,
+        39
+      ],
+      "before": [
+        "Governance legt Steuerungs- und Entscheidungsrahmen fest; Compliance bezeichnet regelkonformes Verhalten",
+        "Governance und Compliance sind identisch",
+        "Compliance ersetzt das Risikomanagement",
+        "Governance betrifft nur Hardware"
+      ],
+      "after": [
+        "Governance und Compliance sind identisch",
+        "Governance betrifft nur Hardware",
+        "Governance legt Steuerungs- und Entscheidungsrahmen fest; Compliance bezeichnet regelkonformes Verhalten",
+        "Compliance ersetzt das Risikomanagement"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-17",
+      "correctPositions": [
+        0
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        111,
+        32,
+        33,
+        58
+      ],
+      "before": [
+        "Governance steuert den Rahmen, Risikomanagement bewertet Unsicherheiten und Compliance sichert Regelkonformität",
+        "Die drei Bereiche sind unabhängig",
+        "Risiken werden durch Compliance vollständig ausgeschlossen",
+        "Governance ist nur eine ISO-Norm"
+      ],
+      "after": [
+        "Governance steuert den Rahmen, Risikomanagement bewertet Unsicherheiten und Compliance sichert Regelkonformität",
+        "Governance ist nur eine ISO-Norm",
+        "Die drei Bereiche sind unabhängig",
+        "Risiken werden durch Compliance vollständig ausgeschlossen"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-18",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        38,
+        55,
+        34,
+        27
+      ],
+      "before": [
+        "R führt operativ aus; A trägt die Ergebnisverantwortung",
+        "R genehmigt; A wird nur informiert",
+        "Beide Rollen sind identisch",
+        "A führt immer alle Aufgaben selbst aus"
+      ],
+      "after": [
+        "A führt immer alle Aufgaben selbst aus",
+        "R führt operativ aus; A trägt die Ergebnisverantwortung",
+        "R genehmigt; A wird nur informiert",
+        "Beide Rollen sind identisch"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-19",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        27,
+        77,
+        31,
+        30
+      ],
+      "before": [
+        "Zwei verschiedene Personen sind für dieselbe Aufgabe gleichzeitig Accountable",
+        "Mehrere Personen sind Consulted",
+        "Mehrere Personen sind Informed",
+        "Eine Person ist Responsible"
+      ],
+      "after": [
+        "Eine Person ist Responsible",
+        "Zwei verschiedene Personen sind für dieselbe Aufgabe gleichzeitig Accountable",
+        "Mehrere Personen sind Consulted",
+        "Mehrere Personen sind Informed"
+      ]
+    },
+    {
+      "id": "lf06-ihk-01-20",
+      "correctPositions": [
+        1
+      ],
+      "correctIsLongest": true,
+      "lengths": [
+        31,
+        55,
+        8,
+        11
+      ],
+      "before": [
+        "Incident Management + Knowledge Management + Monitoring",
+        "Nur RACI",
+        "Nur Dispose",
+        "Nur Service Request Fulfillment"
+      ],
+      "after": [
+        "Nur Service Request Fulfillment",
+        "Incident Management + Knowledge Management + Monitoring",
+        "Nur RACI",
+        "Nur Dispose"
+      ]
+    }
+  ]
+}

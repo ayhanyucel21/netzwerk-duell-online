@@ -198,5 +198,27 @@
     "questionCount": 25,
     "status": "published",
     "order": 13
+  },
+  {
+    "id": "lf06-tag1",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "ITSM-Begriffe & Serviceprozesse",
+    "description": "30 neue Fragen ausschließlich aus den Begriffen und Beispielen des aktuellen Tag-1-Materials.",
+    "icon": "🎧",
+    "questionCount": 30,
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-tag2",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Servicefälle & Kennzahlen",
+    "description": "Incident/Problem, MTTR/MTBF, Verfügbarkeit, SMART, DMAIC, AVV, UC und OLA.",
+    "icon": "📊",
+    "questionCount": 36,
+    "status": "published",
+    "order": 2
   }
 ]

@@ -2275,5 +2275,401 @@
     "shortDefinition": "Kurzname für Tabellen oder Spalten, z. B. students AS studs.",
     "status": "published",
     "order": 22
+  },
+  {
+    "id": "lf06-tag1-topic-01",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "ITSM (IT-Service-Management)",
+    "shortDefinition": "Die IT wird als Serviceorganisation verstanden. Ziel sind stabile, sichere und messbare IT-Dienstleistungen, die Geschäftsprozesse zuverlässig unterstützen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-tag1-topic-02",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Incident (Störung)",
+    "shortDefinition": "Ein zuvor funktionierender IT-Service fällt ungeplant aus oder arbeitet fehlerhaft. Ziel des Incident Managements ist die schnelle Wiederherstellung des normalen Servicebetriebs.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf06-tag1-topic-03",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Service Request (Serviceanfrage)",
+    "shortDefinition": "Eine standardisierte und planbare Anfrage nach einer vorgesehenen IT-Leistung, ohne dass eine ungeplante Störung vorliegt.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf06-tag1-topic-04",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Request for Change (RfC)",
+    "shortDefinition": "Ein formeller Antrag für eine geplante Änderung an Service oder Infrastruktur. Risiken, Test, Freigabe, Wartungsfenster und Rollback werden kontrolliert.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf06-tag1-topic-05",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "SLA (Service Level Agreement)",
+    "shortDefinition": "Eine vertragliche Vereinbarung über messbare Serviceziele, zum Beispiel Reaktionszeit, Wiederherstellungszeit oder Verfügbarkeit.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf06-tag1-topic-06",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "IMAC/RD",
+    "shortDefinition": "Ein standardisierter Lebenszyklus für Arbeitsplatz-IT: Install, Move, Add, Change, Remove und Dispose.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf06-tag1-topic-07",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "RACI-Matrix",
+    "shortDefinition": "Eine Verantwortungsmatrix: Responsible führt aus, Accountable trägt die Ergebnisverantwortung, Consulted wird fachlich einbezogen und Informed erhält Informationen.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf06-tag1-topic-08",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "CMDB",
+    "shortDefinition": "Eine zentrale Datenbasis für Configuration Items und ihre Beziehungen. Sie unterstützt Transparenz, Impact-Analyse und Service Management.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf06-tag1-topic-09",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Framework vs. Standard",
+    "shortDefinition": "Ein Framework liefert anpassbare Best Practices und Leitplanken. Ein Standard enthält definierte, prüfbare Anforderungen und kann als Zertifizierungsgrundlage dienen.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf06-tag1-topic-10",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Impact & Urgency",
+    "shortDefinition": "Impact beschreibt das Ausmaß der Auswirkungen. Urgency beschreibt, wie schnell gehandelt werden muss. Beide Faktoren werden zur Priorisierung kombiniert.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf06-tag1-topic-11",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Workaround vs. Permanent Fix",
+    "shortDefinition": "Ein Workaround reduziert Auswirkungen vorübergehend. Ein Permanent Fix beseitigt die zugrunde liegende Ursache dauerhaft.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf06-tag1-topic-12",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Funktionale vs. hierarchische Eskalation",
+    "shortDefinition": "Funktionale Eskalation übergibt an Spezialisten wegen Know-how oder Berechtigungen. Hierarchische Eskalation bindet Management bei SLA-, Ressourcen-, Vertrags- oder Kommunikationsrisiken ein.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf06-tag1-topic-13",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Incident vs. Problem Management",
+    "shortDefinition": "Incident Management stellt den Service schnell wieder her. Problem Management untersucht Root Causes und verhindert Wiederholungen.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf06-tag1-topic-14",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "CAB & proaktives Monitoring",
+    "shortDefinition": "Das Change Advisory Board bewertet relevante Changes. Proaktives Monitoring erkennt kritische Zustände möglichst vor einem vollständigen Ausfall.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf06-tag1-topic-15",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "KPI (Key Performance Indicator)",
+    "shortDefinition": "Eine KPI ist eine klar definierte, messbare Kennzahl zur Bewertung der Leistung eines Services oder Prozesses. Eine KPI braucht eine Messgröße, einen Zeitraum und meist einen Ziel- oder Grenzwert.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf06-tag1-topic-16",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Governance",
+    "shortDefinition": "Governance ist das übergeordnete Steuerungs- und Regelsystem einer Organisation. Governance legt Entscheidungsrechte, Verantwortlichkeiten, Ziele und Kontrollmechanismen fest.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf06-tag1-topic-17",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Compliance",
+    "shortDefinition": "Compliance bedeutet regelkonformes Handeln. Dazu gehört die Einhaltung externer Gesetze und Normen sowie interner Richtlinien und vertraglicher Vorgaben.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf06-tag1-topic-18",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "Risiko",
+    "shortDefinition": "Ein Risiko ist die Möglichkeit, dass ein zukünftiges Ereignis negative Auswirkungen auf einen Service, Prozess oder ein Ziel hat. Risiken werden identifiziert, bewertet und behandelt.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf06-tag2-topic-01",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Incident Management",
+    "shortDefinition": "Stellt nach ungeplanten Störungen den normalen Servicebetrieb möglichst schnell wieder her und begrenzt negative Geschäftsauswirkungen.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-tag2-topic-02",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Problem Management",
+    "shortDefinition": "Untersucht die tieferliegende Ursache wiederkehrender oder schwerwiegender Incidents und verhindert zukünftige Störungen.",
+    "status": "published",
+    "order": 2
+  },
+  {
+    "id": "lf06-tag2-topic-03",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Incident",
+    "shortDefinition": "Ungeplante Unterbrechung oder Verschlechterung eines Services bzw. einer Servicekomponente. Zusammengehörige Incidents können zu einem Haupt-Incident gebündelt werden.",
+    "status": "published",
+    "order": 3
+  },
+  {
+    "id": "lf06-tag2-topic-04",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Service Request",
+    "shortDefinition": "Standardisierte Anwenderanfrage nach Information, Beratung, Zugriff, Hardware/Software oder einer vorautorisierten Leistung.",
+    "status": "published",
+    "order": 4
+  },
+  {
+    "id": "lf06-tag2-topic-05",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Request for Change (RfC)",
+    "shortDefinition": "Formeller Antrag auf eine geplante, nicht als Standard-Change vorautorisierte Änderung. Beschreibung, Grund, Risiko, Test und Freigabe müssen professionell behandelt werden.",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf06-tag2-topic-06",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Analyse",
+    "shortDefinition": "Servicefall untersuchen, bewerten und bei Bedarf einer spezialisierten Stelle wie Second- oder Third-Level zuführen.",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf06-tag2-topic-07",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Servicefall-Prozess",
+    "shortDefinition": "Entgegennahme → Analyse/Klassifizierung → Priorisierung → Weiterleitung/Bearbeitung → Dokumentation → Abschluss und Kundeninformation.",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf06-tag2-topic-08",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "SPoC",
+    "shortDefinition": "Single Point of Contact: zentrale Anlaufstelle für Kunden bei Servicefällen.",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf06-tag2-topic-09",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "ACD",
+    "shortDefinition": "Automatic Call Distribution verteilt eingehende Anrufe nach definierten Regeln automatisch an passende Ansprechpartner oder Warteschlangen.",
+    "status": "published",
+    "order": 9
+  },
+  {
+    "id": "lf06-tag2-topic-10",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Case Owner",
+    "shortDefinition": "Fallverantwortliche Rolle, die einen konkreten Servicefall übernimmt und dessen Bearbeitung nachverfolgt.",
+    "status": "published",
+    "order": 10
+  },
+  {
+    "id": "lf06-tag2-topic-11",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Kategorisierung vs. Klassifizierung",
+    "shortDefinition": "Kategorisierung ordnet nach Dienstleistung/Leistungsportfolio; Klassifizierung ordnet nach Serviceklasse bzw. unterstützt Priorisierung anhand Auswirkung und Dringlichkeit.",
+    "status": "published",
+    "order": 11
+  },
+  {
+    "id": "lf06-tag2-topic-12",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Support-Level",
+    "shortDefinition": "First Level nimmt an und löst Standardfälle; Second Level bearbeitet komplexere Fälle; Third Level bietet tiefes Spezialwissen.",
+    "status": "published",
+    "order": 12
+  },
+  {
+    "id": "lf06-tag2-topic-13",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Knowledge Base",
+    "shortDefinition": "Wissensdatenbank mit bekannten Fehlern, Lösungen und Workarounds für schnellere und konsistente Supportbearbeitung.",
+    "status": "published",
+    "order": 13
+  },
+  {
+    "id": "lf06-tag2-topic-14",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Workaround",
+    "shortDefinition": "Temporäre Umgehung, die Auswirkungen reduziert, bis eine dauerhafte Lösung verfügbar ist.",
+    "status": "published",
+    "order": 14
+  },
+  {
+    "id": "lf06-tag2-topic-15",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "KVP",
+    "shortDefinition": "Kontinuierlicher Verbesserungsprozess nutzt Feedback, Kennzahlen und Änderungsvorschläge, um Services fortlaufend zu optimieren.",
+    "status": "published",
+    "order": 15
+  },
+  {
+    "id": "lf06-tag2-topic-16",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "KPI",
+    "shortDefinition": "Messbare Kennzahl zur Bewertung von Service- oder Prozessleistung.",
+    "status": "published",
+    "order": 16
+  },
+  {
+    "id": "lf06-tag2-topic-17",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "MTTR",
+    "shortDefinition": "Mean Time to Repair/Restore: durchschnittliche Wiederherstellungsdauer nach einem Ausfall. MTTR = gesamte Ausfallzeit / Anzahl der Ausfälle. Je niedriger, desto besser.",
+    "status": "published",
+    "order": 17
+  },
+  {
+    "id": "lf06-tag2-topic-18",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "MTBF",
+    "shortDefinition": "Mean Time Between Failures: durchschnittliche störungsfreie Betriebszeit zwischen Ausfällen. MTBF = gesamte Betriebszeit / Anzahl der Ausfälle. Je höher, desto besser.",
+    "status": "published",
+    "order": 18
+  },
+  {
+    "id": "lf06-tag2-topic-19",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Verfügbarkeit",
+    "shortDefinition": "Anteil der vereinbarten Servicezeit, in der der Service verfügbar ist. Verfügbarkeit = (Servicezeit − Downtime) / Servicezeit × 100.",
+    "status": "published",
+    "order": 19
+  },
+  {
+    "id": "lf06-tag2-topic-20",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "SMART-Ziel",
+    "shortDefinition": "Spezifisch, Messbar, Akzeptiert, Realistisch und Terminiert formuliertes Ziel.",
+    "status": "published",
+    "order": 20
+  },
+  {
+    "id": "lf06-tag2-topic-21",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "DMAIC",
+    "shortDefinition": "Verbesserungszyklus für komplexe Probleme: Define, Measure, Analyse, Improve, Control.",
+    "status": "published",
+    "order": 21
+  },
+  {
+    "id": "lf06-tag2-topic-22",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "AVV",
+    "shortDefinition": "Auftragsverarbeitungsvertrag nach DSGVO Art. 28 für Verarbeitung personenbezogener Daten im Auftrag.",
+    "status": "published",
+    "order": 22
+  },
+  {
+    "id": "lf06-tag2-topic-23",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Underpinning Contract (UC)",
+    "shortDefinition": "Vertrag zwischen IT-Dienstleister und externem Lieferanten/Partner, dessen Leistung zur Einhaltung des Kunden-SLA benötigt wird.",
+    "status": "published",
+    "order": 23
+  },
+  {
+    "id": "lf06-tag2-topic-24",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Operational Level Agreement (OLA)",
+    "shortDefinition": "Interne Vereinbarung zwischen Teams einer Organisation zur Unterstützung eines externen SLA.",
+    "status": "published",
+    "order": 24
+  },
+  {
+    "id": "lf06-tag2-topic-25",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "IT-Lifecycle",
+    "shortDefinition": "Ganzheitlicher Lebenszyklus: Beratung, Beschaffung, Bereitstellung, Einweisung/Schulung, Helpdesk sowie Kontrolle/Anpassung/Ersatz.",
+    "status": "published",
+    "order": 25
+  },
+  {
+    "id": "lf06-tag2-topic-26",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "IMAC/R/D",
+    "shortDefinition": "Technischer Asset-Lifecycle: Install, Move, Add, Change, Remove, Dispose.",
+    "status": "published",
+    "order": 26
   }
 ]

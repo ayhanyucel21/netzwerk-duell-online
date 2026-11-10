@@ -1122,5 +1122,253 @@
     "fontSize": "normal",
     "fontWeight": "normal",
     "textAlign": "left"
+  },
+  {
+    "id": "lf06-lesson-tag1",
+    "courseId": "lf06",
+    "tagId": "lf06-tag1",
+    "title": "ITSM-Begriffe und Serviceprozesse",
+    "summary": "Tag 1 vermittelt die zentralen Begriffe für professionelles IT-Service-Management. Jede Definition wird mit einem konkreten Service-Desk- oder Unternehmensbeispiel verknüpft, damit die Begriffe nicht nur auswendig gelernt, sondern in Ticketsituationen korrekt angewendet werden können.",
+    "content": [
+      {
+        "term": "ITSM (IT-Service-Management)",
+        "definition": "Die IT wird als Serviceorganisation verstanden. Ziel sind stabile, sichere und messbare IT-Dienstleistungen, die Geschäftsprozesse zuverlässig unterstützen.",
+        "example": "Ein IT-Systemhaus betreibt für eine Kanzlei Server, Clients und Anwendungen. Störungen, Service Requests und Changes werden über definierte Prozesse bearbeitet."
+      },
+      {
+        "term": "Incident (Störung)",
+        "definition": "Ein zuvor funktionierender IT-Service fällt ungeplant aus oder arbeitet fehlerhaft. Ziel des Incident Managements ist die schnelle Wiederherstellung des normalen Servicebetriebs.",
+        "example": "DATEV-PROD ist plötzlich nicht erreichbar. 50 Beschäftigte können nicht weiterarbeiten. Der Service Desk erfasst einen Incident und priorisiert die Wiederherstellung."
+      },
+      {
+        "term": "Service Request (Serviceanfrage)",
+        "definition": "Eine standardisierte und planbare Anfrage nach einer vorgesehenen IT-Leistung, ohne dass eine ungeplante Störung vorliegt.",
+        "example": "Für eine neue Person werden ein Benutzerkonto, ein Postfach und Standardsoftware zum festgelegten Eintrittstermin benötigt."
+      },
+      {
+        "term": "Request for Change (RfC)",
+        "definition": "Ein formeller Antrag für eine geplante Änderung an Service oder Infrastruktur. Risiken, Test, Freigabe, Wartungsfenster und Rollback werden kontrolliert.",
+        "example": "Ein Fileserver soll in einen Cloud-Service migriert werden. Vor der Umsetzung werden Risiken, Testmigration, Freigabe und Rückfallplan dokumentiert."
+      },
+      {
+        "term": "SLA (Service Level Agreement)",
+        "definition": "Eine vertragliche Vereinbarung über messbare Serviceziele, zum Beispiel Reaktionszeit, Wiederherstellungszeit oder Verfügbarkeit.",
+        "example": "Für P1-Incidents sind 15 Minuten Reaktionszeit und höchstens 2 Stunden Wiederherstellungszeit vereinbart."
+      },
+      {
+        "term": "IMAC/RD",
+        "definition": "Ein standardisierter Lebenszyklus für Arbeitsplatz-IT: Install, Move, Add, Change, Remove und Dispose.",
+        "example": "Ein Notebook wird eingerichtet, beim Büroumzug verlagert, mit RAM erweitert, später neu konfiguriert, außer Betrieb genommen und datenschutzkonform entsorgt."
+      },
+      {
+        "term": "RACI-Matrix",
+        "definition": "Eine Verantwortungsmatrix: Responsible führt aus, Accountable trägt die Ergebnisverantwortung, Consulted wird fachlich einbezogen und Informed erhält Informationen.",
+        "example": "Bei einem Sicherheitsupdate installiert ein Administrator die Änderung (R), der Service Owner verantwortet die Freigabe (A), Informationssicherheit berät (C) und der Fachbereich wird informiert (I)."
+      },
+      {
+        "term": "CMDB",
+        "definition": "Eine zentrale Datenbasis für Configuration Items und ihre Beziehungen. Sie unterstützt Transparenz, Impact-Analyse und Service Management.",
+        "example": "In der CMDB ist dokumentiert, dass Server-01 die DATEV-Anwendung bereitstellt und 50 Arbeitsplätze davon abhängig sind. Bei einem Ausfall wird der Impact schneller erkannt."
+      },
+      {
+        "term": "Framework vs. Standard",
+        "definition": "Ein Framework liefert anpassbare Best Practices und Leitplanken. Ein Standard enthält definierte, prüfbare Anforderungen und kann als Zertifizierungsgrundlage dienen.",
+        "example": "ITIL, FitSM und COBIT sind Frameworks. ISO 9001, ISO/IEC 20000 und ISO/IEC 27001 sind Standards mit prüfbaren Anforderungen."
+      },
+      {
+        "term": "Impact & Urgency",
+        "definition": "Impact beschreibt das Ausmaß der Auswirkungen. Urgency beschreibt, wie schnell gehandelt werden muss. Beide Faktoren werden zur Priorisierung kombiniert.",
+        "example": "Hauptserver für 50 Personen im Monatsabschluss: Impact hoch und Urgency hoch. Defekte Maus an einem einzelnen Arbeitsplatz mit Ersatzgerät: Impact niedrig und Urgency eher niedrig."
+      },
+      {
+        "term": "Workaround vs. Permanent Fix",
+        "definition": "Ein Workaround reduziert Auswirkungen vorübergehend. Ein Permanent Fix beseitigt die zugrunde liegende Ursache dauerhaft.",
+        "example": "Ein temporärer Ersatzserver stellt den Dienst wieder bereit. Die spätere Reparatur des defekten Storage-Controllers ist der Permanent Fix."
+      },
+      {
+        "term": "Funktionale vs. hierarchische Eskalation",
+        "definition": "Funktionale Eskalation übergibt an Spezialisten wegen Know-how oder Berechtigungen. Hierarchische Eskalation bindet Management bei SLA-, Ressourcen-, Vertrags- oder Kommunikationsrisiken ein.",
+        "example": "Der First Level besitzt keine Storage-Adminrechte und eskaliert funktional an das Infrastrukturteam. Droht zusätzlich ein SLA-Bruch, wird der Service Manager hierarchisch eingebunden."
+      },
+      {
+        "term": "Incident vs. Problem Management",
+        "definition": "Incident Management stellt den Service schnell wieder her. Problem Management untersucht Root Causes und verhindert Wiederholungen.",
+        "example": "Ein Drucker wird neu gestartet und funktioniert wieder: Incident gelöst. Da derselbe Firmwarefehler wiederholt auftritt, wird zusätzlich ein Problem zur Ursachenanalyse eröffnet."
+      },
+      {
+        "term": "CAB & proaktives Monitoring",
+        "definition": "Das Change Advisory Board bewertet relevante Changes. Proaktives Monitoring erkennt kritische Zustände möglichst vor einem vollständigen Ausfall.",
+        "example": "Das CAB bewertet eine Cloud-Migration inklusive Risiko und Rollback. Monitoring meldet parallel eine Festplattenbelegung von 95 %, bevor der Server ausfällt."
+      },
+      {
+        "term": "KPI (Key Performance Indicator)",
+        "definition": "Eine KPI ist eine klar definierte, messbare Kennzahl zur Bewertung der Leistung eines Services oder Prozesses. Eine KPI braucht eine Messgröße, einen Zeitraum und meist einen Ziel- oder Grenzwert.",
+        "example": "Von 200 Service-Desk-Tickets werden 150 beim ersten Kontakt vollständig gelöst. First Contact Resolution Rate = 150 / 200 × 100 = 75 %. Bei einem Zielwert von 80 % besteht Verbesserungsbedarf."
+      },
+      {
+        "term": "Governance",
+        "definition": "Governance ist das übergeordnete Steuerungs- und Regelsystem einer Organisation. Governance legt Entscheidungsrechte, Verantwortlichkeiten, Ziele und Kontrollmechanismen fest.",
+        "example": "Die IT-Leitung legt fest, dass produktive Changes nur nach dokumentierter Risikoanalyse und definierter Freigabe umgesetzt werden dürfen. Damit wird ein verbindlicher Entscheidungsrahmen geschaffen."
+      },
+      {
+        "term": "Compliance",
+        "definition": "Compliance bedeutet regelkonformes Handeln. Dazu gehört die Einhaltung externer Gesetze und Normen sowie interner Richtlinien und vertraglicher Vorgaben.",
+        "example": "Ein ausgemusterter Datenträger wird nach der internen Sicherheitsrichtlinie nachweisbar gelöscht und dokumentiert entsorgt. So werden Datenschutz- und Unternehmensvorgaben eingehalten."
+      },
+      {
+        "term": "Risiko",
+        "definition": "Ein Risiko ist die Möglichkeit, dass ein zukünftiges Ereignis negative Auswirkungen auf einen Service, Prozess oder ein Ziel hat. Risiken werden identifiziert, bewertet und behandelt.",
+        "example": "Vor einer Cloud-Migration wird bewertet, wie wahrscheinlich ein Ausfall ist und wie groß die mögliche Auswirkung wäre. Als Gegenmaßnahmen werden Testmigration und Rollback vorbereitet."
+      }
+    ],
+    "example": "Ein zentraler Server fällt im Monatsabschluss aus: Incident, hoher Impact, hohe Urgency, hohe Priorität. Ein Spezialteam übernimmt funktional; bei drohender SLA-Verletzung wird hierarchisch eskaliert. Nach Wiederherstellung wird bei wiederkehrender Ursache Problem Management gestartet.",
+    "tip": "Fachbegriffe immer im Zusammenhang lernen: Anfrageart bestimmen, Verantwortlichkeiten klären, Auswirkung und Dringlichkeit bewerten, Leistung mit KPIs messen und Governance-/Compliance-Vorgaben beachten.",
+    "examTip": "In IHK-/LZK-Aufgaben zuerst den Begriff nennen, dann die fachliche Begründung und anschließend die Konsequenz für den konkreten Fall erläutern.",
+    "status": "published",
+    "order": 1
+  },
+  {
+    "id": "lf06-lesson-tag2",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Servicefälle, Kennzahlen, Verträge & Verbesserungsmethoden",
+    "summary": "Tag 2 verbindet die praktische Servicefallbearbeitung mit messbarer Servicequalität. Neben Incident, Problem, Service Request und Change stehen Support-Level, Ticketsysteme, KPIs sowie MTTR, MTBF und Verfügbarkeit im Mittelpunkt. SMART-Ziele und DMAIC strukturieren Verbesserungen. AVV, UC und OLA zeigen, wie Datenschutz, externe Lieferanten und interne Teams zur SLA-Erfüllung beitragen.",
+    "content": [
+      {
+        "term": "Incident Management",
+        "definition": "Stellt nach ungeplanten Störungen den normalen Servicebetrieb möglichst schnell wieder her und begrenzt negative Geschäftsauswirkungen.",
+        "example": "Der Fileservice fällt aus. Der Service Desk priorisiert die Wiederherstellung, damit die Mitarbeitenden schnell weiterarbeiten können."
+      },
+      {
+        "term": "Problem Management",
+        "definition": "Untersucht die tieferliegende Ursache wiederkehrender oder schwerwiegender Incidents und verhindert zukünftige Störungen.",
+        "example": "Ein Drucker fällt nach demselben Firmwarefehler regelmäßig aus. Nach der akuten Incident-Lösung wird ein Problem zur Root-Cause-Analyse eröffnet."
+      },
+      {
+        "term": "Incident",
+        "definition": "Ungeplante Unterbrechung oder Verschlechterung eines Services bzw. einer Servicekomponente. Zusammengehörige Incidents können zu einem Haupt-Incident gebündelt werden.",
+        "example": "Mehrere Clients verlieren gleichzeitig die Verbindung zum zentralen ERP-Service."
+      },
+      {
+        "term": "Service Request",
+        "definition": "Standardisierte Anwenderanfrage nach Information, Beratung, Zugriff, Hardware/Software oder einer vorautorisierten Leistung.",
+        "example": "Eine Person benötigt eine zusätzliche Softwarelizenz und ein freigegebenes Standardprogramm."
+      },
+      {
+        "term": "Request for Change (RfC)",
+        "definition": "Formeller Antrag auf eine geplante, nicht als Standard-Change vorautorisierte Änderung. Beschreibung, Grund, Risiko, Test und Freigabe müssen professionell behandelt werden.",
+        "example": "Eine geschäftskritische Anwendung soll auf eine neue Serverplattform migriert werden."
+      },
+      {
+        "term": "Analyse",
+        "definition": "Servicefall untersuchen, bewerten und bei Bedarf einer spezialisierten Stelle wie Second- oder Third-Level zuführen.",
+        "example": "Der First Level prüft Logs und Knowledge Base; für eine komplexe Storageanalyse wird an den Second Level eskaliert."
+      },
+      {
+        "term": "Servicefall-Prozess",
+        "definition": "Entgegennahme → Analyse/Klassifizierung → Priorisierung → Weiterleitung/Bearbeitung → Dokumentation → Abschluss und Kundeninformation.",
+        "example": "Eine Störung wird telefonisch gemeldet, als Incident erfasst, priorisiert, gelöst, dokumentiert und nach Bestätigung geschlossen."
+      },
+      {
+        "term": "SPoC",
+        "definition": "Single Point of Contact: zentrale Anlaufstelle für Kunden bei Servicefällen.",
+        "example": "Alle Anfragen laufen beim Service Desk ein, unabhängig davon, welches Fachteam später bearbeitet."
+      },
+      {
+        "term": "ACD",
+        "definition": "Automatic Call Distribution verteilt eingehende Anrufe nach definierten Regeln automatisch an passende Ansprechpartner oder Warteschlangen.",
+        "example": "Anrufe außerhalb des lokalen Teams werden automatisch an die zuständige Supportgruppe weitergeroutet."
+      },
+      {
+        "term": "Case Owner",
+        "definition": "Fallverantwortliche Rolle, die einen konkreten Servicefall übernimmt und dessen Bearbeitung nachverfolgt.",
+        "example": "Nach Annahme eines Tickets wird eine Person als Case Owner zugeordnet und koordiniert den Fall bis zum Abschluss."
+      },
+      {
+        "term": "Kategorisierung vs. Klassifizierung",
+        "definition": "Kategorisierung ordnet nach Dienstleistung/Leistungsportfolio; Klassifizierung ordnet nach Serviceklasse bzw. unterstützt Priorisierung anhand Auswirkung und Dringlichkeit.",
+        "example": "„E-Mail-Service“ ist eine Kategorie; „kritisch/P1“ ist eine Klassifizierung bzw. Priorität."
+      },
+      {
+        "term": "Support-Level",
+        "definition": "First Level nimmt an und löst Standardfälle; Second Level bearbeitet komplexere Fälle; Third Level bietet tiefes Spezialwissen.",
+        "example": "Ein Passwortreset bleibt im First Level, ein komplexer Datenbankfehler kann bis zum Third Level eskaliert werden."
+      },
+      {
+        "term": "Knowledge Base",
+        "definition": "Wissensdatenbank mit bekannten Fehlern, Lösungen und Workarounds für schnellere und konsistente Supportbearbeitung.",
+        "example": "Der First Level findet zur Fehlermeldung einen dokumentierten Workaround und kann den Service ohne Eskalation wieder bereitstellen."
+      },
+      {
+        "term": "Workaround",
+        "definition": "Temporäre Umgehung, die Auswirkungen reduziert, bis eine dauerhafte Lösung verfügbar ist.",
+        "example": "Ein Benutzer arbeitet vorübergehend über einen Ersatzclient, während die Root Cause behoben wird."
+      },
+      {
+        "term": "KVP",
+        "definition": "Kontinuierlicher Verbesserungsprozess nutzt Feedback, Kennzahlen und Änderungsvorschläge, um Services fortlaufend zu optimieren.",
+        "example": "Wiederkehrende Beschwerden über Reaktionszeiten führen zu einer Prozessanalyse und neuen Routingregeln."
+      },
+      {
+        "term": "KPI",
+        "definition": "Messbare Kennzahl zur Bewertung von Service- oder Prozessleistung.",
+        "example": "First Contact Resolution, mittlere Lösungszeit, SLA-Erfüllungsquote und Verfügbarkeit sind typische KPIs."
+      },
+      {
+        "term": "MTTR",
+        "definition": "Mean Time to Repair/Restore: durchschnittliche Wiederherstellungsdauer nach einem Ausfall. MTTR = gesamte Ausfallzeit / Anzahl der Ausfälle. Je niedriger, desto besser.",
+        "example": "30, 60 und 90 Minuten Ausfallzeit ergeben (30+60+90)/3 = 60 Minuten MTTR."
+      },
+      {
+        "term": "MTBF",
+        "definition": "Mean Time Between Failures: durchschnittliche störungsfreie Betriebszeit zwischen Ausfällen. MTBF = gesamte Betriebszeit / Anzahl der Ausfälle. Je höher, desto besser.",
+        "example": "1.000 Betriebsstunden und 5 Ausfälle ergeben 1.000/5 = 200 Stunden MTBF."
+      },
+      {
+        "term": "Verfügbarkeit",
+        "definition": "Anteil der vereinbarten Servicezeit, in der der Service verfügbar ist. Verfügbarkeit = (Servicezeit − Downtime) / Servicezeit × 100.",
+        "example": "Bei 720 vereinbarten Stunden und 2 Stunden Ausfall: 718/720 × 100 ≈ 99,72 %."
+      },
+      {
+        "term": "SMART-Ziel",
+        "definition": "Spezifisch, Messbar, Akzeptiert, Realistisch und Terminiert formuliertes Ziel.",
+        "example": "Die mittlere Ticketbearbeitungszeit wird mit dem neuen Ticketsystem von 3 auf maximal 2 Tage bis zum 31. Dezember gesenkt."
+      },
+      {
+        "term": "DMAIC",
+        "definition": "Verbesserungszyklus für komplexe Probleme: Define, Measure, Analyse, Improve, Control.",
+        "example": "Ticketlaufzeiten sind zu lang: Problem definieren, Zeiten messen, Ursachen analysieren, Prozess verbessern und Wirkung über KPIs kontrollieren."
+      },
+      {
+        "term": "AVV",
+        "definition": "Auftragsverarbeitungsvertrag nach DSGVO Art. 28 für Verarbeitung personenbezogener Daten im Auftrag.",
+        "example": "Ein Cloud-Dienstleister verarbeitet Kundendaten für ein IT-Systemhaus; der AVV regelt Pflichten und Sicherheitsmaßnahmen."
+      },
+      {
+        "term": "Underpinning Contract (UC)",
+        "definition": "Vertrag zwischen IT-Dienstleister und externem Lieferanten/Partner, dessen Leistung zur Einhaltung des Kunden-SLA benötigt wird.",
+        "example": "Ein Rechenzentrum garantiert dem IT-Dienstleister eine Verfügbarkeit, die zur Erfüllung des Kunden-SLA erforderlich ist."
+      },
+      {
+        "term": "Operational Level Agreement (OLA)",
+        "definition": "Interne Vereinbarung zwischen Teams einer Organisation zur Unterstützung eines externen SLA.",
+        "example": "Das Netzwerkteam verpflichtet sich intern, kritische Störungen binnen 30 Minuten zu analysieren, damit der Service Desk das SLA einhalten kann."
+      },
+      {
+        "term": "IT-Lifecycle",
+        "definition": "Ganzheitlicher Lebenszyklus: Beratung, Beschaffung, Bereitstellung, Einweisung/Schulung, Helpdesk sowie Kontrolle/Anpassung/Ersatz.",
+        "example": "Ein Laptop wird bedarfsgerecht ausgewählt, beschafft, eingerichtet, geschult, unterstützt und später aktualisiert oder ersetzt."
+      },
+      {
+        "term": "IMAC/R/D",
+        "definition": "Technischer Asset-Lifecycle: Install, Move, Add, Change, Remove, Dispose.",
+        "example": "Ein PC wird eingerichtet, umgezogen, erweitert, neu konfiguriert, außer Betrieb genommen und sicher entsorgt."
+      }
+    ],
+    "example": "Systemausfall: Servicezeit 720 h, Downtime 2 h → Verfügbarkeit = 718/720 × 100 ≈ 99,72 %. Drei Reparaturen dauern 30, 60 und 90 min → MTTR = 60 min. Ein SMART-Ziel könnte lauten: „Bis 31.12. senken wir die mittlere Ticketbearbeitungszeit von 3 auf maximal 2 Tage.“",
+    "tip": "MTTR soll sinken, MTBF soll steigen. WHERE es um Kundenziele geht, SLA beachten; externe Provider über UC absichern; interne Teams über OLA koordinieren.",
+    "examTip": "Bei Kennzahlen immer Formel, Einheiten und Interpretation nennen. Bei AVV/UC/OLA zuerst Beteiligte und Zweck prüfen. Bei DMAIC nicht nur die fünf Phasen nennen, sondern passende Aktivitäten zuordnen.",
+    "status": "published",
+    "order": 2
   }
 ]

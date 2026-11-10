@@ -10762,5 +10762,1400 @@
     "status": "published",
     "exam": "IHK Fachinformatiker Tag 13",
     "explanationDetailed": "<b>Richtige Antwort:</b> WHERE + GROUP BY + HAVING + AVG + ORDER BY + LIMIT<br><br><b>Warum ist diese Antwort richtig?</b><br>Das ist eine typische mehrstufige DQL-Auswertung.<br><br><b>Bewertung aller Optionen:</b><br>✅ <b>WHERE + GROUP BY + HAVING + AVG + ORDER BY + LIMIT</b>: WHERE filtert einzelne Zeilen vor Gruppierung und Aggregation.<br>❌ <b>Nur DISTINCT</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>DELETE + COUNT</b>: Diese Option erfüllt die konkrete Anforderung der Aufgabe nicht.<br>❌ <b>ALTER + ORDER BY</b>: ORDER BY sortiert Ergebnisse, filtert sie aber nicht."
+  },
+  {
+    "id": "lf06-tag1-v5-q01",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was beschreibt ITSM am treffendsten?",
+    "options": [
+      "IT-Dienstleistungen kundenorientiert, standardisiert und messbar steuern",
+      "Nur defekte Arbeitsplatzgeräte technisch reparieren",
+      "Ausschließlich Hardwareinventar und Lizenzen verwalten",
+      "Nur einzelne Supporttickets ohne Servicebezug schließen"
+    ],
+    "correct": 0,
+    "explanation": "ITSM richtet IT-Arbeit als wiederholbare Services am Kundennutzen und an messbarer Qualität aus.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q02",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welcher Fall ist ein Incident?",
+    "options": [
+      "Ein bisher funktionierender Datenbank-Service fällt ungeplant aus",
+      "Ein neuer Praktikant benötigt nächste Woche ein Standardkonto",
+      "Eine Cloud-Migration soll kontrolliert geplant werden",
+      "Ein Notebook wird nach vier Jahren regulär entsorgt"
+    ],
+    "correct": 0,
+    "explanation": "Ein Incident ist eine ungeplante Unterbrechung oder Qualitätsminderung.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q03",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welcher Fall ist ein Service Request?",
+    "options": [
+      "Ein neuer Benutzer benötigt planmäßig Konto und E-Mail-Adresse",
+      "Der zentrale Mailserver ist plötzlich nicht erreichbar",
+      "Eine riskante Storage-Migration wird beantragt",
+      "Eine wiederkehrende Firmwareursache wird analysiert"
+    ],
+    "correct": 0,
+    "explanation": "Die planbare standardisierte Bereitstellung ist ein Service Request.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q04",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welcher Fall ist ein Request for Change?",
+    "options": [
+      "Eine geplante Cloud-Migration wird formal bewertet und freigegeben",
+      "Ein Drucker fällt während der Arbeit ungeplant aus",
+      "Eine Person bittet um eine Standardtastatur",
+      "Ein bekannter Fehler wird kurzfristig umgangen"
+    ],
+    "correct": 0,
+    "explanation": "RfCs dienen der kontrollierten Durchführung geplanter Änderungen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q05",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was vereinbart ein SLA typischerweise?",
+    "options": [
+      "Messbare Serviceziele wie Reaktions- und Wiederherstellungszeiten",
+      "Nur Einkaufspreise für Arbeitsplatzhardware und Software",
+      "Ausschließlich interne Rollen der RACI-Matrix",
+      "Nur technische Betriebssystemversionen der Clients"
+    ],
+    "correct": 0,
+    "explanation": "SLAs definieren zwischen Provider und Kunde messbare Leistungsziele.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q06",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche Reihenfolge entspricht IMAC/RD?",
+    "options": [
+      "Install → Move → Add → Change → Remove → Dispose",
+      "Move → Install → Dispose → Add → Remove → Change",
+      "Add → Change → Install → Dispose → Move → Remove",
+      "Install → Add → Dispose → Change → Move → Remove"
+    ],
+    "correct": 0,
+    "explanation": "IMAC/RD beschreibt einen standardisierten Arbeitsplatz-Lebenszyklus.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q07",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche RACI-Rolle führt die operative Aufgabe aus?",
+    "options": [
+      "Responsible – führt die konkrete Arbeit aus",
+      "Accountable – trägt nur die technische Ausführung",
+      "Consulted – genehmigt als einzige Instanz das Ergebnis",
+      "Informed – entscheidet vor Beginn über die Umsetzung"
+    ],
+    "correct": 0,
+    "explanation": "Responsible ist für die operative Durchführung zuständig.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q08",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche RACI-Aussage ist korrekt?",
+    "options": [
+      "Accountable trägt die Gesamtverantwortung und sollte pro Aufgabe eindeutig sein",
+      "Responsible darf niemals selbst technische Arbeiten ausführen",
+      "Consulted wird ausschließlich nach Abschluss informiert",
+      "Informed trägt die alleinige Freigabeverantwortung"
+    ],
+    "correct": 0,
+    "explanation": "Accountable trägt die Ergebnisverantwortung; eine eindeutige Zuordnung vermeidet Kompetenzkonflikte.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q09",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welchen Nutzen bietet eine CMDB?",
+    "options": [
+      "Configuration Items und Abhängigkeiten zentral dokumentieren und Impact-Analysen unterstützen",
+      "Ausschließlich Passwörter für Supportkonten verschlüsselt speichern",
+      "Nur abgeschlossene Incidents automatisch aus dem Ticketsystem löschen",
+      "Service Level Agreements ohne technische Daten vollständig ersetzen"
+    ],
+    "correct": 0,
+    "explanation": "Die CMDB schafft Transparenz über CIs und deren Beziehungen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q10",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was unterscheidet Framework und Standard?",
+    "options": [
+      "Frameworks liefern anpassbare Best Practices; Standards formulieren prüfbare Anforderungen",
+      "Frameworks sind verbindliche Gesetze; Standards sind unverbindliche Tipps",
+      "Standards beschreiben nur Hardware; Frameworks nur Softwareentwicklung",
+      "Zwischen Framework und Standard besteht fachlich grundsätzlich kein Unterschied"
+    ],
+    "correct": 0,
+    "explanation": "Frameworks geben Leitplanken, Standards können auditierbare Anforderungen festlegen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q11",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche Kombination ist fachlich korrekt?",
+    "options": [
+      "ITIL = Best Practices; COBIT = Governance; ISO/IEC 20000 = ITSM-Standard",
+      "ITIL = Netzwerkprotokoll; COBIT = Betriebssystem; ISO 20000 = Programmiersprache",
+      "ITIL = Entsorgungsprozess; COBIT = Passwortregel; ISO 20000 = Datenbank",
+      "ITIL = Hardwarestandard; COBIT = Ticketsystem; ISO 20000 = RACI-Modell"
+    ],
+    "correct": 0,
+    "explanation": "Die drei Begriffe haben unterschiedliche Rollen: ITIL Best Practices, COBIT Governance, ISO/IEC 20000 zertifizierbare ITSM-Anforderungen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q12",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was beschreibt Impact?",
+    "options": [
+      "Ausmaß des Schadens und Bedeutung bzw. Anzahl betroffener Nutzer und Prozesse",
+      "Zeit bis zur nächsten geplanten Hardwarebeschaffung des Kunden",
+      "Hierarchiestufe der Person, die das Ticket telefonisch meldet",
+      "Anzahl der bereits geschriebenen Kommentare im Serviceticket"
+    ],
+    "correct": 0,
+    "explanation": "Impact bewertet die fachliche Auswirkung einer Störung.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q13",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was beschreibt Urgency?",
+    "options": [
+      "Zeitkritikalität bis wesentliche Folgen für den Service oder das Geschäft entstehen",
+      "Anzahl der betroffenen Geräte unabhängig von der Zeitkritikalität",
+      "Kosten des eingesetzten Ersatzgerätes im aktuellen Geschäftsjahr",
+      "RACI-Rolle der Person, die den Incident im Service Desk dokumentiert"
+    ],
+    "correct": 0,
+    "explanation": "Urgency bewertet, wie schnell reagiert werden muss.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q14",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Wie wird die Priorität eines Tickets fachlich abgeleitet?",
+    "options": [
+      "Aus der Kombination von Impact und Urgency nach definierter Prioritätsmatrix",
+      "Nur aus dem organisatorischen Rang der meldenden Person",
+      "Nur aus der technischen Komplexität der späteren Lösungsmaßnahme",
+      "Ausschließlich aus der bisherigen Bearbeitungsdauer im Service Desk"
+    ],
+    "correct": 0,
+    "explanation": "Priorität basiert typischerweise auf Impact und Urgency.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q15",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was ist ein Workaround?",
+    "options": [
+      "Temporäre Umgehung, die Auswirkungen reduziert, ohne die Root Cause dauerhaft zu beseitigen",
+      "Dauerhafte Ursachenbeseitigung nach vollständig abgeschlossener Problemanalyse",
+      "Formelle Freigabe eines Changes durch das Change Advisory Board",
+      "Vertraglich zugesicherte maximale Wiederherstellungszeit eines Services"
+    ],
+    "correct": 0,
+    "explanation": "Ein Workaround hält den Betrieb aufrecht, ist aber nicht zwingend der Permanent Fix.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q16",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Wann ist eine funktionale Eskalation sinnvoll?",
+    "options": [
+      "Wenn Spezialwissen oder technische Berechtigungen eines anderen Fachteams benötigt werden",
+      "Wenn ausschließlich die Geschäftsführung über ein abgeschlossenes Ticket informiert werden soll",
+      "Wenn die Priorität eines Tickets ohne neue fachliche Informationen reduziert werden soll",
+      "Wenn ein Standard-Service-Request vollständig automatisiert ausgeführt werden kann"
+    ],
+    "correct": 0,
+    "explanation": "Funktionale Eskalation übergibt an Spezialisten oder höhere Support-Level.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q17",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Wann ist eine hierarchische Eskalation sinnvoll?",
+    "options": [
+      "Bei drohender SLA-Verletzung oder notwendiger Management-/Ressourcenentscheidung",
+      "Bei jedem einfachen Passwortreset im regulären First-Level-Support",
+      "Sobald ein Techniker eine dokumentierte Knowledge-Base-Lösung findet",
+      "Immer dann, wenn ein Gerät über einen gültigen Wartungsvertrag verfügt"
+    ],
+    "correct": 0,
+    "explanation": "Hierarchische Eskalation adressiert Management-, Vertrags-, Ressourcen- und Kommunikationsrisiken.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q18",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was ist das Hauptziel von Incident Management?",
+    "options": [
+      "Normalen Servicebetrieb möglichst schnell wiederherstellen und Auswirkungen minimieren",
+      "Bei jedem Incident zwingend zuerst die technische Root Cause vollständig beweisen",
+      "Alle geplanten Infrastrukturänderungen vor ihrer Umsetzung formal genehmigen",
+      "Configuration Items ausschließlich für Inventurzwecke in einer CMDB erfassen"
+    ],
+    "correct": 0,
+    "explanation": "Incident Management priorisiert schnelle Service Restoration.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q19",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was ist das Hauptziel von Problem Management?",
+    "options": [
+      "Root Causes ermitteln und wiederkehrende bzw. zukünftige Incidents nachhaltig vermeiden",
+      "Einen ausgefallenen Service ohne Ursachenanalyse sofort wieder verfügbar machen",
+      "Standardisierte Benutzeranfragen mit definiertem Fulfillment-Prozess abarbeiten",
+      "Alle Service Level Agreements eines Kunden kaufmännisch neu verhandeln"
+    ],
+    "correct": 0,
+    "explanation": "Problem Management untersucht zugrunde liegende Ursachen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q20",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zu CAB ist korrekt?",
+    "options": [
+      "Das CAB bewertet geplante risikoreiche Changes, Auswirkungen, Termine und Rollback-Möglichkeiten",
+      "Das CAB ist ein Monitoring-Agent, der Festplattenfüllstände automatisch überwacht",
+      "Das CAB ersetzt die RACI-Matrix und übernimmt jede operative technische Aufgabe",
+      "Das CAB bearbeitet ausschließlich Standard-Service-Requests ohne Risikobewertung"
+    ],
+    "correct": 0,
+    "explanation": "CAB unterstützt die fundierte Bewertung und Freigabe relevanter Changes.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q21",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was ist ein Beispiel für proaktives Monitoring?",
+    "options": [
+      "Ein Alarm meldet 95 % Festplattenbelegung, bevor der Speicher vollständig erschöpft ist",
+      "Ein Nutzer meldet erst nach dem vollständigen Serverausfall telefonisch eine Störung",
+      "Ein Techniker wartet auf die nächste Kundenbeschwerde, bevor Messwerte geprüft werden",
+      "Ein geschlossenes Ticket wird ohne weitere Messdaten archiviert und nicht beobachtet"
+    ],
+    "correct": 0,
+    "explanation": "Proaktives Monitoring erkennt kritische Zustände möglichst vor einem Ausfall.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q22",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Ein Hauptserver fällt für 50 Beschäftigte im Monatsabschluss aus. Welche Bewertung passt?",
+    "options": [
+      "Hoher Impact und hohe Urgency; dadurch typischerweise kritische Priorität",
+      "Niedriger Impact und niedrige Urgency; daher immer niedrigste Priorität",
+      "Hohe Urgency, aber grundsätzlich kein Impact auf den Geschäftsbetrieb",
+      "Nur die Hardwaremarke entscheidet über die Ticketpriorität"
+    ],
+    "correct": 0,
+    "explanation": "Viele Betroffene und ein zeitkritischer Geschäftsprozess führen zu hoher Auswirkung und Dringlichkeit.",
+    "scenario": "Monatsabschluss kann ohne den Server nicht fortgesetzt werden.",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q23",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Eine einzelne PC-Maus ist defekt, andere Arbeit ist möglich. Welche Bewertung ist plausibel?",
+    "options": [
+      "Niedriger Impact und eher niedrige Priorität bei vorhandener Arbeitsmöglichkeit",
+      "Automatisch P1, weil jedes Hardwareproblem geschäftskritisch ist",
+      "Hoher Impact, weil ein einzelnes Peripheriegerät betroffen ist",
+      "Hierarchische Eskalation zur Geschäftsführung ist immer erforderlich"
+    ],
+    "correct": 0,
+    "explanation": "Nur eine Person ist begrenzt betroffen und der Geschäftsprozess steht nicht vollständig still.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q24",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Der Helpdesk darf die Storage-Konfiguration nicht ändern. Was ist der richtige nächste Schritt?",
+    "options": [
+      "Funktional an das Storage-Team mit den erforderlichen Rechten eskalieren",
+      "Das Ticket wegen fehlender Rechte ohne Lösung vollständig schließen",
+      "Direkt die Geschäftsführung mit einer hierarchischen Eskalation belasten",
+      "Die Priorität unabhängig vom Impact automatisch auf P4 reduzieren"
+    ],
+    "correct": 0,
+    "explanation": "Hier fehlt technische Berechtigung und Spezialwissen, daher funktionale Eskalation.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q25",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Derselbe Drucker stürzt zum dritten Mal mit demselben Firmwarefehler ab. Was ist zusätzlich sinnvoll?",
+    "options": [
+      "Problem Management starten und die wiederkehrende Root Cause analysieren",
+      "Nur den Incident jedes Mal neu starten und keine Zusammenhänge dokumentieren",
+      "Den Vorgang als Standard-Service-Request ohne Fehlerbezug klassifizieren",
+      "Das Gerät ohne Analyse sofort als Dispose-Prozess behandeln"
+    ],
+    "correct": 0,
+    "explanation": "Wiederkehrende Incidents sind ein typischer Trigger für Problem Management.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q26",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Ein neuer Praktikant beginnt nächste Woche und benötigt Konto und E-Mail. Wie klassifizierst du die Anfrage?",
+    "options": [
+      "Service Request mit planbarem Fulfillment-Prozess",
+      "Incident mit ungeplanter Serviceunterbrechung",
+      "Problem wegen unbekannter technischer Root Cause",
+      "Request for Change wegen zwingend hohem Infrastrukturrisiko"
+    ],
+    "correct": 0,
+    "explanation": "Es liegt keine Störung vor, sondern eine standardisierte geplante Leistung.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q27",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Eine Cloud-Migration soll mit Risikoanalyse, Test und Rollback geplant werden. Welche Klassifizierung passt?",
+    "options": [
+      "Request for Change mit kontrollierter Bewertung und Freigabe",
+      "Incident, weil jede Änderung automatisch eine Störung darstellt",
+      "Service Request ohne notwendige Risiko- oder Auswirkungsanalyse",
+      "Problem Management ohne geplante technische Änderung"
+    ],
+    "correct": 0,
+    "explanation": "Die geplante relevante Infrastrukturänderung ist ein Change.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q28",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was ist der Unterschied zwischen Workaround und Permanent Fix?",
+    "options": [
+      "Workaround reduziert Auswirkungen temporär; Permanent Fix beseitigt die Ursache dauerhaft",
+      "Workaround ist immer dauerhaft; Permanent Fix ist nur eine kurzfristige Umgehung",
+      "Beide Begriffe bezeichnen ausschließlich eine organisatorische Eskalation",
+      "Permanent Fix beschreibt nur die vertragliche Reaktionszeit im SLA"
+    ],
+    "correct": 0,
+    "explanation": "Workaround und dauerhafte Lösung verfolgen unterschiedliche Zeithorizonte und Ziele.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q29",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche Aussage verbindet SLA und Eskalation korrekt?",
+    "options": [
+      "Bei drohender SLA-Verletzung kann zusätzlich eine hierarchische Eskalation notwendig werden",
+      "Ein SLA definiert ausschließlich technische Adminrechte für funktionale Eskalationen",
+      "Hierarchische Eskalation darf niemals bei Vertragsrisiken eingesetzt werden",
+      "SLA-Ziele ersetzen vollständig die fachliche Bewertung von Impact und Urgency"
+    ],
+    "correct": 0,
+    "explanation": "Droht ein Vertragsziel verletzt zu werden, muss häufig Management/Service Management eingebunden werden.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-v5-q30",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Welche Maßnahme verbessert die Bearbeitung wiederkehrender Störungen am nachhaltigsten?",
+    "options": [
+      "Incidents verknüpfen, Root Cause analysieren, Known Error dokumentieren und Permanent Fix umsetzen",
+      "Jeden Incident isoliert schließen und vorhandene Wissenseinträge bewusst ignorieren",
+      "Prioritäten grundsätzlich zufällig vergeben, damit Tickets gleichmäßig verteilt werden",
+      "Monitoring abschalten, damit keine zusätzlichen Warnmeldungen im Service Desk erscheinen"
+    ],
+    "correct": 0,
+    "explanation": "Nachhaltige Verbesserung kombiniert Incident-, Problem- und Knowledge-Management sowie geeignete technische Maßnahmen.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-kpi-01",
+    "question": "Was beschreibt eine KPI im IT-Service-Management am besten?",
+    "options": [
+      "Eine messbare Kennzahl zur Bewertung der Leistung eines Services oder Prozesses",
+      "Eine vertragliche Vereinbarung, die ausschließlich Reaktionszeiten festlegt",
+      "Eine technische Konfigurationsdatenbank für Hardware und Software",
+      "Eine Rollenmatrix zur Zuordnung organisatorischer Verantwortlichkeiten"
+    ],
+    "correct": 0,
+    "explanation": "Eine KPI macht Leistung messbar. KPIs können zum Beispiel Lösungszeiten, Erreichbarkeit oder Erstlösungsquoten bewerten.",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-kpi-02",
+    "question": "Welche Größe ist ein sinnvolles Beispiel für eine Service-Desk-KPI?",
+    "options": [
+      "First Contact Resolution Rate als Anteil beim ersten Kontakt vollständig gelöster Tickets",
+      "Name des zuletzt angemeldeten Benutzers ohne definiertes Serviceziel",
+      "Farbe des verwendeten Ticketstatussymbols im Serviceportal",
+      "Herstellerlogo des eingesetzten Arbeitsplatzrechners"
+    ],
+    "correct": 0,
+    "explanation": "Die First Contact Resolution Rate ist quantitativ messbar und bewertet die Wirksamkeit des First-Level-Supports.",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-kpi-03",
+    "question": "200 Tickets wurden bearbeitet, 150 davon beim ersten Kontakt vollständig gelöst. Wie hoch ist die First Contact Resolution Rate?",
+    "options": [
+      "75 % als Verhältnis von 150 vollständig gelösten zu 200 gesamten Tickets",
+      "50 % als Hälfte aller dokumentierten Supportkontakte",
+      "80 % unabhängig von der tatsächlichen Zahl gelöster Tickets",
+      "150 % entsprechend der Anzahl der im First Level gelösten Tickets"
+    ],
+    "correct": 0,
+    "explanation": "150 / 200 × 100 = 75 %. Die KPI liegt damit bei 75 %.",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-kpi-04",
+    "question": "Was ist der wichtigste Unterschied zwischen KPI und SLA?",
+    "options": [
+      "Eine KPI misst Leistung; ein SLA vereinbart konkrete Serviceziele zwischen Provider und Kunde",
+      "Eine KPI ist immer ein Vertrag; ein SLA ist lediglich eine interne Statistik",
+      "Ein SLA misst nur Hardwarewerte; eine KPI enthält ausschließlich Rollen",
+      "Zwischen KPI und SLA besteht im Service Management kein fachlicher Unterschied"
+    ],
+    "correct": 0,
+    "explanation": "KPIs sind Messgrößen. Ein SLA legt vereinbarte Leistungsziele fest; KPIs können zur Überwachung dieser Ziele verwendet werden.",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-kpi-05",
+    "question": "Welche KPI eignet sich am besten, um die Bearbeitungsgeschwindigkeit von Incidents zu beobachten?",
+    "options": [
+      "Mittlere Lösungszeit für Incidents innerhalb eines definierten Messzeitraums",
+      "Anzahl verschiedener Hintergrundfarben im Ticketsystem",
+      "Alter des ältesten Arbeitsplatzmonitors im Unternehmen",
+      "Anzahl aller Rollen in einer RACI-Matrix ohne Ticketbezug"
+    ],
+    "correct": 0,
+    "explanation": "Die mittlere Lösungszeit ist direkt messbar und beschreibt die zeitliche Serviceleistung der Incident-Bearbeitung.",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-governance",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was beschreibt Governance im IT-Service-Management am besten?",
+    "options": [
+      "Ein Steuerungs- und Regelsystem mit klaren Entscheidungsrechten, Verantwortlichkeiten und Kontrollmechanismen",
+      "Eine rein technische Checkliste für die Installation einzelner Arbeitsplatzgeräte",
+      "Eine kurzfristige Umgehungsmaßnahme zur Wiederherstellung eines gestörten Services",
+      "Eine einzelne Kennzahl zur Messung der mittleren Lösungszeit von Incidents"
+    ],
+    "correct": 0,
+    "explanation": "Governance schafft den übergeordneten Rahmen für Entscheidungen, Verantwortung, Kontrolle und Ausrichtung der IT.",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-compliance",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Was bedeutet Compliance im Unternehmens- und IT-Kontext?",
+    "options": [
+      "Die Einhaltung relevanter Gesetze, Normen, Verträge und interner Richtlinien",
+      "Die automatische Priorisierung jedes technischen Incidents als P1",
+      "Die ausschließliche Verwaltung von Configuration Items in einer CMDB",
+      "Die technische Ausführung einer Aufgabe durch die Responsible-Rolle"
+    ],
+    "correct": 0,
+    "explanation": "Compliance bezeichnet regelkonformes Verhalten gegenüber externen und internen Vorgaben.",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag1-grc",
+    "courseId": "lf06",
+    "quizId": "lf06-tag1",
+    "tagId": "lf06-tag1",
+    "type": "multiple-choice",
+    "question": "Wie hängen Governance, Risiko und Compliance sinnvoll zusammen?",
+    "options": [
+      "Governance setzt den Steuerungsrahmen, Risiken werden bewertet und Compliance sichert regelkonformes Handeln",
+      "Governance ersetzt das Risikomanagement vollständig und macht Compliance überflüssig",
+      "Compliance bestimmt allein die technische Priorität jedes Service-Desk-Tickets",
+      "Risiken betreffen ausschließlich Hardware und haben keinen Bezug zur Unternehmenssteuerung"
+    ],
+    "correct": 0,
+    "explanation": "GRC verbindet Steuerung, Risikobehandlung und regelkonformes Handeln zu einem gemeinsamen Managementansatz.",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q01",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist das Hauptziel von Incident Management?",
+    "options": [
+      "Den normalen Servicebetrieb schnell wiederherstellen und Auswirkungen begrenzen",
+      "Bei jeder Störung zuerst die Root Cause vollständig beseitigen",
+      "Nur geplante Changes bewerten und freigeben",
+      "Ausschließlich Service Requests katalogisieren"
+    ],
+    "correct": 0,
+    "explanation": "Incident Management fokussiert schnelle Service Restoration.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q02",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist das Hauptziel von Problem Management?",
+    "options": [
+      "Root Causes wiederkehrender oder schwerwiegender Incidents ermitteln und Wiederholungen vermeiden",
+      "Jede Störung möglichst schnell schließen, ohne Ursachen zu betrachten",
+      "Standardsoftware nach Katalog bereitstellen",
+      "Anrufe automatisch auf Warteschlangen verteilen"
+    ],
+    "correct": 0,
+    "explanation": "Problem Management zielt auf nachhaltige Ursachenbeseitigung.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q03",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Anfrage ist ein Service Request?",
+    "options": [
+      "Eine Person benötigt eine freigegebene Standardsoftware",
+      "Der zentrale Fileservice ist ungeplant ausgefallen",
+      "Eine komplexe Migration soll formal geändert werden",
+      "Ein wiederkehrender Datenbankfehler wird analysiert"
+    ],
+    "correct": 0,
+    "explanation": "Die standardisierte planbare Leistung ist ein Service Request.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q04",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wann ist ein Request for Change passend?",
+    "options": [
+      "Bei einer geplanten relevanten Änderung, die bewertet und freigegeben werden muss",
+      "Bei jedem ungeplanten Incidents ohne Veränderungswunsch",
+      "Bei reiner Informationsanfrage ohne Änderung",
+      "Bei jedem automatischen Monitoringalarm"
+    ],
+    "correct": 0,
+    "explanation": "Nicht standardisierte relevante Changes werden über einen RfC kontrolliert.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q05",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was bedeutet SPoC?",
+    "options": [
+      "Zentrale Anlaufstelle für alle IT-Servicefälle",
+      "Spezialteam ausschließlich für Third-Level-Probleme",
+      "Kennzahl zur mittleren Reparaturzeit",
+      "Vertrag mit externem Lieferanten"
+    ],
+    "correct": 0,
+    "explanation": "Single Point of Contact zentralisiert die Kundenkommunikation.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q06",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wozu dient ACD?",
+    "options": [
+      "Eingehende Anrufe automatisch nach Regeln verteilen",
+      "Root Causes automatisch entfernen",
+      "Assets in einer CMDB klassifizieren",
+      "SLA-Ziele mathematisch berechnen"
+    ],
+    "correct": 0,
+    "explanation": "Automatic Call Distribution routet Anrufe an passende Ansprechpartner/Warteschlangen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q07",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist die Aufgabe eines Case Owners?",
+    "options": [
+      "Einen übernommenen Servicefall nachverfolgen und koordinieren",
+      "Alle Unternehmensrichtlinien als Governance definieren",
+      "Nur Hardware einkaufen",
+      "Ausschließlich Rechnungen prüfen"
+    ],
+    "correct": 0,
+    "explanation": "Der Case Owner übernimmt Verantwortung für einen konkreten Fall.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q08",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was unterscheidet Kategorisierung und Klassifizierung?",
+    "options": [
+      "Kategorisierung ordnet nach Service; Klassifizierung unterstützt Serviceklasse/Priorität",
+      "Beide Begriffe sind vollständig identisch",
+      "Klassifizierung ordnet nur nach Standort",
+      "Kategorisierung berechnet ausschließlich MTTR"
+    ],
+    "correct": 0,
+    "explanation": "Kategorisierung betrifft z. B. den Servicebereich, Klassifizierung z. B. Schwere/Priorität.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q09",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zu Support-Leveln ist korrekt?",
+    "options": [
+      "Second Level übernimmt komplexere Fälle, die First Level nicht lösen kann",
+      "First Level bearbeitet ausschließlich Problems ohne Kundenkontakt",
+      "Third Level ist immer der erste Ansprechpartner",
+      "Second Level dient nur dem Einkauf"
+    ],
+    "correct": 0,
+    "explanation": "Eskalation erfolgt nach Komplexität und benötigtem Spezialwissen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q10",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein Workaround?",
+    "options": [
+      "Temporäre Umgehung bis zur dauerhaften Lösung",
+      "Vertraglich zugesicherte Servicezeit",
+      "Dauerhafte Root-Cause-Beseitigung",
+      "Automatische Anrufverteilung"
+    ],
+    "correct": 0,
+    "explanation": "Workarounds stabilisieren vorübergehend, lösen aber nicht zwingend die Ursache.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q11",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür steht KPI?",
+    "options": [
+      "Key Performance Indicator – messbare Leistungskennzahl",
+      "Key Process Installation – Installationsschritt",
+      "Known Problem Interface – Fehlerschnittstelle",
+      "Knowledge Provider Index – Wissensrolle"
+    ],
+    "correct": 0,
+    "explanation": "KPIs machen Service- und Prozessleistung messbar.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q12",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie wird MTTR berechnet?",
+    "options": [
+      "Gesamte Ausfallzeit / Anzahl der Ausfälle",
+      "Gesamte Betriebszeit / Anzahl der Ausfälle",
+      "Servicezeit / gelöste Tickets",
+      "Anzahl Incidents / SLA-Zeit"
+    ],
+    "correct": 0,
+    "explanation": "MTTR ist die durchschnittliche Wiederherstellungsdauer.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q13",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Drei Incidents dauern 30, 60 und 90 Minuten. Wie hoch ist die MTTR?",
+    "options": [
+      "60 Minuten",
+      "30 Minuten",
+      "90 Minuten",
+      "180 Minuten"
+    ],
+    "correct": 0,
+    "explanation": "(30+60+90)/3 = 60 Minuten.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q14",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie wird MTBF berechnet?",
+    "options": [
+      "Gesamte Betriebszeit / Anzahl der Ausfälle",
+      "Gesamte Ausfallzeit / Anzahl der Repairs",
+      "Anzahl Tickets / Servicezeit",
+      "Downtime / Servicezeit"
+    ],
+    "correct": 0,
+    "explanation": "MTBF misst durchschnittliche störungsfreie Zeit zwischen Ausfällen.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q15",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "1.000 Betriebsstunden und 5 Ausfälle ergeben welche MTBF?",
+    "options": [
+      "200 Stunden",
+      "5 Stunden",
+      "995 Stunden",
+      "5.000 Stunden"
+    ],
+    "correct": 0,
+    "explanation": "1000/5 = 200 Stunden.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q16",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Bewertung ist korrekt?",
+    "options": [
+      "Niedrige MTTR und hohe MTBF sind grundsätzlich günstig",
+      "Hohe MTTR und niedrige MTBF sind grundsätzlich günstig",
+      "MTTR und MTBF sollen beide möglichst niedrig sein",
+      "MTTR und MTBF haben keine Aussagekraft"
+    ],
+    "correct": 0,
+    "explanation": "Schnelle Wiederherstellung bedeutet niedrige MTTR; zuverlässiger Betrieb bedeutet hohe MTBF.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q17",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "720 h Servicezeit und 2 h Downtime: Welche Verfügbarkeit ergibt sich ungefähr?",
+    "options": [
+      "99,72 %",
+      "72,00 %",
+      "97,20 %",
+      "100,28 %"
+    ],
+    "correct": 0,
+    "explanation": "(720−2)/720 ×100 ≈ 99,72 %.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q18",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür steht SMART?",
+    "options": [
+      "Spezifisch, Messbar, Akzeptiert, Realistisch, Terminiert",
+      "Sicher, Modular, Automatisch, Relevant, Technisch",
+      "Service, Management, Analyse, Repair, Ticket",
+      "Standard, Messung, Audit, Risiko, Test"
+    ],
+    "correct": 0,
+    "explanation": "SMART strukturiert klar überprüfbare Ziele.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q19",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welches Ziel ist SMART formuliert?",
+    "options": [
+      "Bis 31.12. senkt das Team die mittlere Ticketbearbeitungszeit von 3 auf maximal 2 Tage",
+      "Wir wollen die Tickets irgendwann schneller bearbeiten",
+      "Der Support soll möglichst gut arbeiten",
+      "Die Kundenzufriedenheit soll besser werden"
+    ],
+    "correct": 0,
+    "explanation": "Das Ziel ist spezifisch, messbar, abgestimmt/akzeptiert, realistisch und terminiert.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q20",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Reihenfolge hat DMAIC?",
+    "options": [
+      "Define → Measure → Analyse → Improve → Control",
+      "Define → Improve → Measure → Control → Analyse",
+      "Measure → Define → Control → Improve → Analyse",
+      "Control → Analyse → Define → Measure → Improve"
+    ],
+    "correct": 0,
+    "explanation": "DMAIC folgt den fünf Phasen Define, Measure, Analyse, Improve, Control.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q21",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aufgabe gehört zur DMAIC-Phase Measure?",
+    "options": [
+      "Messwerte erheben und Ist-Situation quantifizieren",
+      "Root Cause bereits dauerhaft beseitigen",
+      "Verbesserung ausschließlich kommunikativ freigeben",
+      "Kontrollphase ohne Messwerte starten"
+    ],
+    "correct": 0,
+    "explanation": "Measure schafft eine belastbare Datenbasis.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q22",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Methode passt zur DMAIC-Phase Analyse?",
+    "options": [
+      "5-Why oder Ursache-Wirkungs-Diagramm zur Ursachenanalyse",
+      "SLA ohne Messwerte kündigen",
+      "Asset direkt entsorgen",
+      "Anruf automatisch verteilen"
+    ],
+    "correct": 0,
+    "explanation": "Analyse identifiziert Hauptursachen mit strukturierten Methoden.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q23",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein AVV?",
+    "options": [
+      "Vertrag nach DSGVO Art. 28 zur Auftragsverarbeitung personenbezogener Daten",
+      "Interne Vereinbarung zweier Supportteams",
+      "Lieferantenvertrag nur für Verfügbarkeit",
+      "Kennzahl für Reparaturzeit"
+    ],
+    "correct": 0,
+    "explanation": "AVV regelt Auftragsverarbeitung personenbezogener Daten.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q24",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein Underpinning Contract?",
+    "options": [
+      "Vertrag mit externem Lieferanten zur Unterstützung der SLA-Erfüllung",
+      "Interne Vereinbarung zwischen zwei Teams",
+      "Datenschutzvertrag ausschließlich zwischen internen Abteilungen",
+      "Knowledge-Base-Artikel"
+    ],
+    "correct": 0,
+    "explanation": "UC sichert externe Leistungen ab, die zur Erfüllung eines SLA nötig sind.",
+    "scenario": "",
+    "difficulty": "medium",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q25",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein OLA?",
+    "options": [
+      "Interne Vereinbarung zwischen Teams zur Unterstützung eines SLA",
+      "Vertrag mit externem Cloudlieferanten",
+      "DSGVO-Vertrag zur Datenverarbeitung",
+      "KPI für Uptime"
+    ],
+    "correct": 0,
+    "explanation": "OLA koordiniert interne Leistungsbeiträge.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q26",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welcher Fall passt zu einem OLA?",
+    "options": [
+      "Netzwerkteam analysiert kritische Störungen intern binnen 30 Minuten für den Service Desk",
+      "Externer Hoster garantiert 99,9 % Verfügbarkeit",
+      "Cloudanbieter verarbeitet personenbezogene Kundendaten im Auftrag",
+      "Kunde vereinbart zwei Stunden Wiederherstellungszeit"
+    ],
+    "correct": 0,
+    "explanation": "Die interne Teamvereinbarung ist ein OLA.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q27",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welcher Fall passt zu einem UC?",
+    "options": [
+      "Externer Rechenzentrumsanbieter garantiert eine Leistung, die das Kunden-SLA unterstützt",
+      "Helpdesk und Netzwerkteam vereinbaren interne Übergabezeiten",
+      "Auftragsverarbeiter verarbeitet personenbezogene Daten",
+      "First Level nutzt eine Knowledge Base"
+    ],
+    "correct": 0,
+    "explanation": "Der externe Lieferantenvertrag ist ein Underpinning Contract.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q28",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Phase gehört zum IT-Lifecycle, aber nicht als Begriff zum IMAC/RD-Akronym?",
+    "options": [
+      "Beratung",
+      "Install",
+      "Move",
+      "Dispose"
+    ],
+    "correct": 0,
+    "explanation": "Der ganzheitliche IT-Lifecycle enthält Beratung; IMAC/RD fokussiert Asset-Aktivitäten.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q29",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aussage unterscheidet IT-Lifecycle und IMAC/RD richtig?",
+    "options": [
+      "IT-Lifecycle betrachtet ganzheitliche Servicebereitstellung; IMAC/RD fokussiert technische Assetverwaltung",
+      "Beide Modelle sind vollständig identisch",
+      "IMAC/RD enthält nur Schulungsphasen",
+      "IT-Lifecycle hat keinen Helpdesk-Bezug"
+    ],
+    "correct": 0,
+    "explanation": "Der IT-Lifecycle ist breiter und umfasst Nutzerbetreuung; IMAC/RD ist assetorientierter.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q30",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein sinnvolles KVP-Beispiel?",
+    "options": [
+      "KPI- und Kundenfeedback auswerten und den Supportprozess gezielt verbessern",
+      "Alle alten Tickets löschen, ohne sie auszuwerten",
+      "Monitoring abschalten, um weniger Warnungen zu erhalten",
+      "SLA-Ziele ohne Messung erhöhen"
+    ],
+    "correct": 0,
+    "explanation": "KVP nutzt Daten und Feedback für systematische Verbesserungen.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q31",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Reihenfolge beschreibt eine typische Servicefallbearbeitung?",
+    "options": [
+      "Entgegennahme → Analyse/Priorisierung → Bearbeitung/Eskalation → Dokumentation → Abschluss",
+      "Abschluss → Entgegennahme → Dispose → Beratung",
+      "Priorisierung → Ticket löschen → Incident eröffnen → Einkauf",
+      "Change → Rechnung → Helpdesk → Beratung"
+    ],
+    "correct": 0,
+    "explanation": "Servicefälle werden erfasst, analysiert, bearbeitet, dokumentiert und geschlossen.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q32",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist der Nutzen einer Knowledge Base?",
+    "options": [
+      "Bekannte Fehler und Lösungen wiederverwenden und Wissen im Support teilen",
+      "Jedes Ticket automatisch als P1 markieren",
+      "Externe Verträge ersetzen",
+      "Betriebszeit berechnen"
+    ],
+    "correct": 0,
+    "explanation": "Knowledge Management beschleunigt konsistente Lösungen.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q33",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zur SLA-Erfüllung ist korrekt?",
+    "options": [
+      "KPIs können genutzt werden, um die Einhaltung vereinbarter Serviceziele zu überwachen",
+      "Ein SLA ersetzt jede KPI",
+      "SLA und KPI sind genau dasselbe",
+      "OLA hat keinen Bezug zu SLA"
+    ],
+    "correct": 0,
+    "explanation": "KPIs messen Leistung, SLAs definieren vereinbarte Ziele.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q34",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was bedeutet eine sinkende MTTR bei sonst gleichen Bedingungen?",
+    "options": [
+      "Der Service wird nach Ausfällen im Durchschnitt schneller wiederhergestellt",
+      "Das System fällt häufiger aus",
+      "Die Betriebszeit zwischen Ausfällen sinkt zwingend",
+      "Das SLA wird automatisch ungültig"
+    ],
+    "correct": 0,
+    "explanation": "Eine niedrigere MTTR bedeutet kürzere durchschnittliche Wiederherstellungsdauer.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q35",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was bedeutet eine steigende MTBF bei sonst gleichen Bedingungen?",
+    "options": [
+      "Das System läuft im Durchschnitt länger störungsfrei zwischen Ausfällen",
+      "Die Reparatur dauert länger",
+      "Die Downtime steigt automatisch",
+      "Die Anzahl der SLAs nimmt zu"
+    ],
+    "correct": 0,
+    "explanation": "Eine höhere MTBF steht für höhere Zuverlässigkeit.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
+  },
+  {
+    "id": "lf06-tag2-q36",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Vertragskombination ist korrekt?",
+    "options": [
+      "AVV = Datenschutz/Auftragsverarbeitung; UC = externer Lieferant; OLA = interne Teams",
+      "AVV = internes Team; UC = DSGVO; OLA = externer Lieferant",
+      "Alle drei Vereinbarungen haben denselben Zweck",
+      "OLA ist eine ISO-Norm"
+    ],
+    "correct": 0,
+    "explanation": "Die drei Vereinbarungen unterscheiden sich nach Beteiligten und Zweck.",
+    "scenario": "",
+    "difficulty": "ihk",
+    "status": "published"
   }
 ]
