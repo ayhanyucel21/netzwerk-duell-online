@@ -104,15 +104,6 @@
     "order": 2
   },
   {
-    "id": "lf06-imac-lifecycle",
-    "courseId": "lf06",
-    "title": "IMAC/RD Puzzle",
-    "description": "Den Arbeitsplatz-Lebenszyklus als Puzzle lösen.",
-    "path": "/lf06/games/imac-lifecycle/",
-    "status": "published",
-    "order": 3
-  },
-  {
     "id": "lf06-itsm-challenge",
     "courseId": "lf06",
     "title": "ITSM Challenge",
@@ -120,5 +111,50 @@
     "path": "/lf06/games/itsm-challenge/",
     "status": "published",
     "order": 4
+  },
+  {
+    "id": "lf06-gluecksrad",
+    "courseId": "lf06",
+    "title": "Glücksrad · Daily Challenge",
+    "description": "Drehe das Rad, beantworte Tagesfragen und sammle Sterne für die Wochenserie.",
+    "path": "/lf06/games/gluecksrad/",
+    "status": "published",
+    "order": 5
+  },
+  {
+    "id": "lf06-hidden-picture",
+    "courseId": "lf06",
+    "title": "Hidden Service Picture",
+    "description": "Öffne mit richtigen Antworten alle Teile des versteckten ITSM-Bildes.",
+    "path": "/lf06/games/hidden-picture/",
+    "status": "published",
+    "order": 6
+  },
+  {
+    "id": "lf06-service-gipfel",
+    "courseId": "lf06",
+    "title": "Service Gipfel",
+    "description": "Steige mit richtigen Service-Management-Entscheidungen bis zum Gipfel.",
+    "path": "/lf06/games/service-gipfel/",
+    "status": "published",
+    "order": 7
+  },
+  {
+    "id": "lf06-itsm-hangman",
+    "courseId": "lf06",
+    "title": "ITSM Begriff-Retter",
+    "description": "Errate Fachbegriffe anhand von Hinweisen, bevor die Fehlversuche aufgebraucht sind.",
+    "path": "/lf06/games/itsm-hangman/",
+    "status": "published",
+    "order": 8
+  },
+  {
+    "id": "lf06-service-puzzle",
+    "courseId": "lf06",
+    "title": "Service & IMAC/RD Puzzle",
+    "description": "Zwei Prozessketten in einer Mission: Servicefall-Bearbeitung und IMAC/RD-Lebenszyklus korrekt zusammensetzen.",
+    "path": "/lf06/games/service-puzzle/",
+    "status": "published",
+    "order": 6
   }
 ]

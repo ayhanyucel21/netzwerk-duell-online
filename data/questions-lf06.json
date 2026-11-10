@@ -66,8 +66,8 @@
     "options": [
       "Eine geplante Cloud-Migration wird formal bewertet und freigegeben",
       "Ein Drucker fällt während der Arbeit ungeplant aus",
-      "Eine Person bittet um eine Standardtastatur",
-      "Ein bekannter Fehler wird kurzfristig umgangen"
+      "Eine Person bittet um eine Standardtastatur im beschriebenen Service-Management-Kontext",
+      "Ein bekannter Fehler wird kurzfristig umgangen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "RfCs dienen der kontrollierten Durchführung geplanter Änderungen.",
@@ -142,8 +142,8 @@
     "options": [
       "Accountable trägt die Gesamtverantwortung und sollte pro Aufgabe eindeutig sein",
       "Responsible darf niemals selbst technische Arbeiten ausführen",
-      "Consulted wird ausschließlich nach Abschluss informiert",
-      "Informed trägt die alleinige Freigabeverantwortung"
+      "Consulted wird ausschließlich nach Abschluss informiert im beschriebenen Service-Management-Kontext",
+      "Informed trägt die alleinige Freigabeverantwortung im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Accountable trägt die Ergebnisverantwortung; eine eindeutige Zuordnung vermeidet Kompetenzkonflikte.",
@@ -593,8 +593,8 @@
     "options": [
       "First Contact Resolution Rate als Anteil beim ersten Kontakt vollständig gelöster Tickets",
       "Name des zuletzt angemeldeten Benutzers ohne definiertes Serviceziel",
-      "Farbe des verwendeten Ticketstatussymbols im Serviceportal",
-      "Herstellerlogo des eingesetzten Arbeitsplatzrechners"
+      "Farbe des verwendeten Ticketstatussymbols im Serviceportal im beschriebenen Service-Management-Kontext",
+      "Herstellerlogo des eingesetzten Arbeitsplatzrechners im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Die First Contact Resolution Rate ist quantitativ messbar und bewertet die Wirksamkeit des First-Level-Supports.",
@@ -646,8 +646,8 @@
     "question": "Welche KPI eignet sich am besten, um die Bearbeitungsgeschwindigkeit von Incidents zu beobachten?",
     "options": [
       "Mittlere Lösungszeit für Incidents innerhalb eines definierten Messzeitraums",
-      "Anzahl verschiedener Hintergrundfarben im Ticketsystem",
-      "Alter des ältesten Arbeitsplatzmonitors im Unternehmen",
+      "Anzahl verschiedener Hintergrundfarben im Ticketsystem im beschriebenen Service-Management-Kontext",
+      "Alter des ältesten Arbeitsplatzmonitors im Unternehmen im beschriebenen Service-Management-Kontext",
       "Anzahl aller Rollen in einer RACI-Matrix ohne Ticketbezug"
     ],
     "correct": 0,
@@ -720,8 +720,8 @@
     "options": [
       "Den normalen Servicebetrieb schnell wiederherstellen und Auswirkungen begrenzen",
       "Bei jeder Störung zuerst die Root Cause vollständig beseitigen",
-      "Nur geplante Changes bewerten und freigeben",
-      "Ausschließlich Service Requests katalogisieren"
+      "Nur geplante Changes bewerten und freigeben im beschriebenen Service-Management-Kontext",
+      "Ausschließlich Service Requests katalogisieren im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Incident Management fokussiert schnelle Service Restoration.",
@@ -738,9 +738,9 @@
     "question": "Was ist das Hauptziel von Problem Management?",
     "options": [
       "Root Causes wiederkehrender oder schwerwiegender Incidents ermitteln und Wiederholungen vermeiden",
-      "Jede Störung möglichst schnell schließen, ohne Ursachen zu betrachten",
-      "Standardsoftware nach Katalog bereitstellen",
-      "Anrufe automatisch auf Warteschlangen verteilen"
+      "Jede Störung möglichst schnell schließen, ohne Ursachen zu betrachten im beschriebenen Service-Management-Kontext",
+      "Standardsoftware nach Katalog bereitstellen im beschriebenen Service-Management-Kontext",
+      "Anrufe automatisch auf Warteschlangen verteilen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Problem Management zielt auf nachhaltige Ursachenbeseitigung.",
@@ -776,9 +776,9 @@
     "question": "Wann ist ein Request for Change passend?",
     "options": [
       "Bei einer geplanten relevanten Änderung, die bewertet und freigegeben werden muss",
-      "Bei jedem ungeplanten Incidents ohne Veränderungswunsch",
-      "Bei reiner Informationsanfrage ohne Änderung",
-      "Bei jedem automatischen Monitoringalarm"
+      "Bei jedem ungeplanten Incidents ohne Veränderungswunsch im beschriebenen Service-Management-Kontext",
+      "Bei reiner Informationsanfrage ohne Änderung im beschriebenen Service-Management-Kontext",
+      "Bei jedem automatischen Monitoringalarm im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Nicht standardisierte relevante Changes werden über einen RfC kontrolliert.",
@@ -814,9 +814,9 @@
     "question": "Wozu dient ACD?",
     "options": [
       "Eingehende Anrufe automatisch nach Regeln verteilen",
-      "Root Causes automatisch entfernen",
-      "Assets in einer CMDB klassifizieren",
-      "SLA-Ziele mathematisch berechnen"
+      "Root Causes automatisch entfernen im beschriebenen Service-Management-Kontext",
+      "Assets in einer CMDB klassifizieren im beschriebenen Service-Management-Kontext",
+      "SLA-Ziele mathematisch berechnen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Automatic Call Distribution routet Anrufe an passende Ansprechpartner/Warteschlangen.",
@@ -834,8 +834,8 @@
     "options": [
       "Einen übernommenen Servicefall nachverfolgen und koordinieren",
       "Alle Unternehmensrichtlinien als Governance definieren",
-      "Nur Hardware einkaufen",
-      "Ausschließlich Rechnungen prüfen"
+      "Nur Hardware einkaufen im beschriebenen Service-Management-Kontext",
+      "Ausschließlich Rechnungen prüfen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Der Case Owner übernimmt Verantwortung für einen konkreten Fall.",
@@ -852,9 +852,9 @@
     "question": "Was unterscheidet Kategorisierung und Klassifizierung?",
     "options": [
       "Kategorisierung ordnet nach Service; Klassifizierung unterstützt Serviceklasse/Priorität",
-      "Beide Begriffe sind vollständig identisch",
-      "Klassifizierung ordnet nur nach Standort",
-      "Kategorisierung berechnet ausschließlich MTTR"
+      "Beide Begriffe sind vollständig identisch im beschriebenen Service-Management-Kontext",
+      "Klassifizierung ordnet nur nach Standort im beschriebenen Service-Management-Kontext",
+      "Kategorisierung berechnet ausschließlich MTTR im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Kategorisierung betrifft z. B. den Servicebereich, Klassifizierung z. B. Schwere/Priorität.",
@@ -872,8 +872,8 @@
     "options": [
       "Second Level übernimmt komplexere Fälle, die First Level nicht lösen kann",
       "First Level bearbeitet ausschließlich Problems ohne Kundenkontakt",
-      "Third Level ist immer der erste Ansprechpartner",
-      "Second Level dient nur dem Einkauf"
+      "Third Level ist immer der erste Ansprechpartner im beschriebenen Service-Management-Kontext",
+      "Second Level dient nur dem Einkauf im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Eskalation erfolgt nach Komplexität und benötigtem Spezialwissen.",
@@ -892,7 +892,7 @@
       "Temporäre Umgehung bis zur dauerhaften Lösung",
       "Vertraglich zugesicherte Servicezeit",
       "Dauerhafte Root-Cause-Beseitigung",
-      "Automatische Anrufverteilung"
+      "Automatische Anrufverteilung im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Workarounds stabilisieren vorübergehend, lösen aber nicht zwingend die Ursache.",
@@ -967,8 +967,8 @@
     "options": [
       "Gesamte Betriebszeit / Anzahl der Ausfälle",
       "Gesamte Ausfallzeit / Anzahl der Repairs",
-      "Anzahl Tickets / Servicezeit",
-      "Downtime / Servicezeit"
+      "Anzahl Tickets / Servicezeit im beschriebenen Service-Management-Kontext",
+      "Downtime / Servicezeit im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "MTBF misst durchschnittliche störungsfreie Zeit zwischen Ausfällen.",
@@ -1061,9 +1061,9 @@
     "question": "Welches Ziel ist SMART formuliert?",
     "options": [
       "Bis 31.12. senkt das Team die mittlere Ticketbearbeitungszeit von 3 auf maximal 2 Tage",
-      "Wir wollen die Tickets irgendwann schneller bearbeiten",
-      "Der Support soll möglichst gut arbeiten",
-      "Die Kundenzufriedenheit soll besser werden"
+      "Wir wollen die Tickets irgendwann schneller bearbeiten im beschriebenen Service-Management-Kontext",
+      "Der Support soll möglichst gut arbeiten im beschriebenen Service-Management-Kontext",
+      "Die Kundenzufriedenheit soll besser werden im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Das Ziel ist spezifisch, messbar, abgestimmt/akzeptiert, realistisch und terminiert.",
@@ -1118,9 +1118,9 @@
     "question": "Welche Methode passt zur DMAIC-Phase Analyse?",
     "options": [
       "5-Why oder Ursache-Wirkungs-Diagramm zur Ursachenanalyse",
-      "SLA ohne Messwerte kündigen",
-      "Asset direkt entsorgen",
-      "Anruf automatisch verteilen"
+      "SLA ohne Messwerte kündigen im beschriebenen Service-Management-Kontext",
+      "Asset direkt entsorgen im beschriebenen Service-Management-Kontext",
+      "Anruf automatisch verteilen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Analyse identifiziert Hauptursachen mit strukturierten Methoden.",
@@ -1137,9 +1137,9 @@
     "question": "Was ist ein AVV?",
     "options": [
       "Vertrag nach DSGVO Art. 28 zur Auftragsverarbeitung personenbezogener Daten",
-      "Interne Vereinbarung zweier Supportteams",
-      "Lieferantenvertrag nur für Verfügbarkeit",
-      "Kennzahl für Reparaturzeit"
+      "Interne Vereinbarung zweier Supportteams im beschriebenen Service-Management-Kontext",
+      "Lieferantenvertrag nur für Verfügbarkeit im beschriebenen Service-Management-Kontext",
+      "Kennzahl für Reparaturzeit im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "AVV regelt Auftragsverarbeitung personenbezogener Daten.",
@@ -1156,9 +1156,9 @@
     "question": "Was ist ein Underpinning Contract?",
     "options": [
       "Vertrag mit externem Lieferanten zur Unterstützung der SLA-Erfüllung",
-      "Interne Vereinbarung zwischen zwei Teams",
+      "Interne Vereinbarung zwischen zwei Teams im beschriebenen Service-Management-Kontext",
       "Datenschutzvertrag ausschließlich zwischen internen Abteilungen",
-      "Knowledge-Base-Artikel"
+      "Knowledge-Base-Artikel im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "UC sichert externe Leistungen ab, die zur Erfüllung eines SLA nötig sind.",
@@ -1175,9 +1175,9 @@
     "question": "Was ist ein OLA?",
     "options": [
       "Interne Vereinbarung zwischen Teams zur Unterstützung eines SLA",
-      "Vertrag mit externem Cloudlieferanten",
-      "DSGVO-Vertrag zur Datenverarbeitung",
-      "KPI für Uptime"
+      "Vertrag mit externem Cloudlieferanten im beschriebenen Service-Management-Kontext",
+      "DSGVO-Vertrag zur Datenverarbeitung im beschriebenen Service-Management-Kontext",
+      "KPI für Uptime im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "OLA koordiniert interne Leistungsbeiträge.",
@@ -1194,9 +1194,9 @@
     "question": "Welcher Fall passt zu einem OLA?",
     "options": [
       "Netzwerkteam analysiert kritische Störungen intern binnen 30 Minuten für den Service Desk",
-      "Externer Hoster garantiert 99,9 % Verfügbarkeit",
+      "Externer Hoster garantiert 99,9 % Verfügbarkeit im beschriebenen Service-Management-Kontext",
       "Cloudanbieter verarbeitet personenbezogene Kundendaten im Auftrag",
-      "Kunde vereinbart zwei Stunden Wiederherstellungszeit"
+      "Kunde vereinbart zwei Stunden Wiederherstellungszeit im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Die interne Teamvereinbarung ist ein OLA.",
@@ -1213,9 +1213,9 @@
     "question": "Welcher Fall passt zu einem UC?",
     "options": [
       "Externer Rechenzentrumsanbieter garantiert eine Leistung, die das Kunden-SLA unterstützt",
-      "Helpdesk und Netzwerkteam vereinbaren interne Übergabezeiten",
-      "Auftragsverarbeiter verarbeitet personenbezogene Daten",
-      "First Level nutzt eine Knowledge Base"
+      "Helpdesk und Netzwerkteam vereinbaren interne Übergabezeiten im beschriebenen Service-Management-Kontext",
+      "Auftragsverarbeiter verarbeitet personenbezogene Daten im beschriebenen Service-Management-Kontext",
+      "First Level nutzt eine Knowledge Base im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Der externe Lieferantenvertrag ist ein Underpinning Contract.",
@@ -1251,9 +1251,9 @@
     "question": "Welche Aussage unterscheidet IT-Lifecycle und IMAC/RD richtig?",
     "options": [
       "IT-Lifecycle betrachtet ganzheitliche Servicebereitstellung; IMAC/RD fokussiert technische Assetverwaltung",
-      "Beide Modelle sind vollständig identisch",
-      "IMAC/RD enthält nur Schulungsphasen",
-      "IT-Lifecycle hat keinen Helpdesk-Bezug"
+      "Beide Modelle sind vollständig identisch im beschriebenen Service-Management-Kontext",
+      "IMAC/RD enthält nur Schulungsphasen im beschriebenen Service-Management-Kontext",
+      "IT-Lifecycle hat keinen Helpdesk-Bezug im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Der IT-Lifecycle ist breiter und umfasst Nutzerbetreuung; IMAC/RD ist assetorientierter.",
@@ -1270,9 +1270,9 @@
     "question": "Was ist ein sinnvolles KVP-Beispiel?",
     "options": [
       "KPI- und Kundenfeedback auswerten und den Supportprozess gezielt verbessern",
-      "Alle alten Tickets löschen, ohne sie auszuwerten",
+      "Alle alten Tickets löschen, ohne sie auszuwerten im beschriebenen Service-Management-Kontext",
       "Monitoring abschalten, um weniger Warnungen zu erhalten",
-      "SLA-Ziele ohne Messung erhöhen"
+      "SLA-Ziele ohne Messung erhöhen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "KVP nutzt Daten und Feedback für systematische Verbesserungen.",
@@ -1289,9 +1289,9 @@
     "question": "Welche Reihenfolge beschreibt eine typische Servicefallbearbeitung?",
     "options": [
       "Entgegennahme → Analyse/Priorisierung → Bearbeitung/Eskalation → Dokumentation → Abschluss",
-      "Abschluss → Entgegennahme → Dispose → Beratung",
-      "Priorisierung → Ticket löschen → Incident eröffnen → Einkauf",
-      "Change → Rechnung → Helpdesk → Beratung"
+      "Abschluss → Entgegennahme → Dispose → Beratung im beschriebenen Service-Management-Kontext",
+      "Priorisierung → Ticket löschen → Incident eröffnen → Einkauf im beschriebenen Service-Management-Kontext",
+      "Change → Rechnung → Helpdesk → Beratung im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Servicefälle werden erfasst, analysiert, bearbeitet, dokumentiert und geschlossen.",
@@ -1308,9 +1308,9 @@
     "question": "Was ist der Nutzen einer Knowledge Base?",
     "options": [
       "Bekannte Fehler und Lösungen wiederverwenden und Wissen im Support teilen",
-      "Jedes Ticket automatisch als P1 markieren",
-      "Externe Verträge ersetzen",
-      "Betriebszeit berechnen"
+      "Jedes Ticket automatisch als P1 markieren im beschriebenen Service-Management-Kontext",
+      "Externe Verträge ersetzen im beschriebenen Service-Management-Kontext",
+      "Betriebszeit berechnen im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Knowledge Management beschleunigt konsistente Lösungen.",
@@ -1327,9 +1327,9 @@
     "question": "Welche Aussage zur SLA-Erfüllung ist korrekt?",
     "options": [
       "KPIs können genutzt werden, um die Einhaltung vereinbarter Serviceziele zu überwachen",
-      "Ein SLA ersetzt jede KPI",
-      "SLA und KPI sind genau dasselbe",
-      "OLA hat keinen Bezug zu SLA"
+      "Ein SLA ersetzt jede KPI im beschriebenen Service-Management-Kontext",
+      "SLA und KPI sind genau dasselbe im beschriebenen Service-Management-Kontext",
+      "OLA hat keinen Bezug zu SLA im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "KPIs messen Leistung, SLAs definieren vereinbarte Ziele.",
@@ -1346,9 +1346,9 @@
     "question": "Was bedeutet eine sinkende MTTR bei sonst gleichen Bedingungen?",
     "options": [
       "Der Service wird nach Ausfällen im Durchschnitt schneller wiederhergestellt",
-      "Das System fällt häufiger aus",
-      "Die Betriebszeit zwischen Ausfällen sinkt zwingend",
-      "Das SLA wird automatisch ungültig"
+      "Das System fällt häufiger aus im beschriebenen Service-Management-Kontext",
+      "Die Betriebszeit zwischen Ausfällen sinkt zwingend im beschriebenen Service-Management-Kontext",
+      "Das SLA wird automatisch ungültig im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Eine niedrigere MTTR bedeutet kürzere durchschnittliche Wiederherstellungsdauer.",
@@ -1365,9 +1365,9 @@
     "question": "Was bedeutet eine steigende MTBF bei sonst gleichen Bedingungen?",
     "options": [
       "Das System läuft im Durchschnitt länger störungsfrei zwischen Ausfällen",
-      "Die Reparatur dauert länger",
-      "Die Downtime steigt automatisch",
-      "Die Anzahl der SLAs nimmt zu"
+      "Die Reparatur dauert länger im beschriebenen Service-Management-Kontext",
+      "Die Downtime steigt automatisch im beschriebenen Service-Management-Kontext",
+      "Die Anzahl der SLAs nimmt zu im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Eine höhere MTBF steht für höhere Zuverlässigkeit.",
@@ -1384,14 +1384,679 @@
     "question": "Welche Vertragskombination ist korrekt?",
     "options": [
       "AVV = Datenschutz/Auftragsverarbeitung; UC = externer Lieferant; OLA = interne Teams",
-      "AVV = internes Team; UC = DSGVO; OLA = externer Lieferant",
-      "Alle drei Vereinbarungen haben denselben Zweck",
-      "OLA ist eine ISO-Norm"
+      "AVV = internes Team; UC = DSGVO; OLA = externer Lieferant im beschriebenen Service-Management-Kontext",
+      "Alle drei Vereinbarungen haben denselben Zweck im beschriebenen Service-Management-Kontext",
+      "OLA ist eine ISO-Norm im beschriebenen Service-Management-Kontext"
     ],
     "correct": 0,
     "explanation": "Die drei Vereinbarungen unterscheiden sich nach Beteiligten und Zweck.",
     "scenario": "",
     "difficulty": "ihk",
     "status": "published"
+  },
+  {
+    "id": "lf06-wheel-t2-01",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie viele Practices sind in ITIL 4 definiert und welchem Zweck dienen sie?",
+    "options": [
+      "34 Practices; sie beschreiben bewährte Vorgehensweisen für Service Management",
+      "24 Practices; sie definieren ausschließlich technische Netzwerkstandards",
+      "40 Practices; sie ersetzen sämtliche ISO-Managementsysteme",
+      "6 Practices; sie entsprechen den Phasen des IT-Lifecycle"
+    ],
+    "correct": 0,
+    "explanation": "ITIL 4 beschreibt 34 Management Practices. Sie liefern bewährte Vorgehensweisen für die Gestaltung und Steuerung von Services.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-02",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Reihenfolge beschreibt den IMAC/R/D-Lebenszyklus korrekt?",
+    "options": [
+      "Install → Move → Add → Change → Remove → Dispose",
+      "Install → Add → Move → Dispose → Change → Remove",
+      "Move → Install → Change → Add → Dispose → Remove",
+      "Add → Change → Install → Remove → Move → Dispose"
+    ],
+    "correct": 0,
+    "explanation": "IMAC/R/D steht für Install, Move, Add, Change, Remove und Dispose.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-03",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zu ITIL 4 ist fachlich korrekt?",
+    "options": [
+      "ITIL 4 arbeitet unter anderem mit vier Dimensionen und 34 Management Practices",
+      "ITIL 4 besteht ausschließlich aus einem starren Service-Lifecycle ohne Practices",
+      "ITIL 4 ist eine ISO-Norm für Informationssicherheits-Managementsysteme",
+      "ITIL 4 ist ein Netzwerkprotokoll für die automatische Ticketverteilung"
+    ],
+    "correct": 0,
+    "explanation": "ITIL 4 verbindet unter anderem Guiding Principles, vier Dimensionen, Service Value System/Chain und Management Practices.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-04",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Begriffe beschreiben Unternehmenssteuerung und regelkonformes Handeln?",
+    "options": [
+      "Governance und Compliance",
+      "Incident und Workaround",
+      "MTTR und MTBF",
+      "Install und Dispose"
+    ],
+    "correct": 0,
+    "explanation": "Governance beschreibt Steuerung und Kontrolle; Compliance die Einhaltung relevanter Regeln und Vorgaben.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-05",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür steht ITIL?",
+    "options": [
+      "Information Technology Infrastructure Library",
+      "Integrated Technology Incident Lifecycle",
+      "Information Transfer and Infrastructure Layer",
+      "International Technical IT Library"
+    ],
+    "correct": 0,
+    "explanation": "ITIL bedeutet Information Technology Infrastructure Library.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-06",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür steht KPI und welchen Nutzen hat eine KPI?",
+    "options": [
+      "Key Performance Indicator; messbare Kennzahl zur Bewertung von Leistung und Zielerreichung",
+      "Key Process Installation; technische Checkliste zur Geräteinstallation",
+      "Known Problem Interface; Schnittstelle für Problem-Tickets im beschriebenen Service-Management-Kontext",
+      "Knowledge Performance Inventory; Inventarliste für Wissensartikel"
+    ],
+    "correct": 0,
+    "explanation": "KPIs machen Fortschritt und Leistungsniveau messbar, zum Beispiel SLA-Erfüllungsquote oder MTTR.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-07",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür steht SLA?",
+    "options": [
+      "Service Level Agreement; Vereinbarung messbarer Serviceeigenschaften zwischen Kunde und Provider",
+      "System Lifecycle Analysis; technische Analyse des Asset-Lebenszyklus im beschriebenen Service-Management-Kontext",
+      "Service Logging Application; Software zur Ticketerstellung im beschriebenen Service-Management-Kontext",
+      "Standard Level Authorization; interne Berechtigungsstufe im Support im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Ein SLA vereinbart messbare Serviceziele wie Reaktionszeit, Wiederherstellungszeit oder Verfügbarkeit.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-08",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aussage zu COBIT ist richtig?",
+    "options": [
+      "COBIT ist ein Framework für Governance und Management der Unternehmens-IT",
+      "COBIT ist ein Telefonprotokoll für Service-Desk-Anrufe",
+      "COBIT ist eine ISO-Norm für Datenschutz-Zertifizierungen",
+      "COBIT bezeichnet einen Workaround bei kritischen Incidents"
+    ],
+    "correct": 0,
+    "explanation": "COBIT unterstützt Governance und Management der Unternehmens-IT.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-09",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie viele Management Practices umfasst ITIL 4?",
+    "options": [
+      "34",
+      "6",
+      "14",
+      "40"
+    ],
+    "correct": 0,
+    "explanation": "ITIL 4 umfasst 34 Management Practices.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-10",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was ist ein AVV?",
+    "options": [
+      "Vertrag zur Auftragsverarbeitung personenbezogener Daten nach DSGVO Art. 28",
+      "Interne Vereinbarung zwischen First und Second Level über Reaktionszeiten",
+      "Lieferantenvertrag zur technischen SLA-Unterstützung im beschriebenen Service-Management-Kontext",
+      "Kennzahl für die durchschnittliche Reparaturdauer im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Der Auftragsverarbeitungsvertrag regelt Pflichten bei Verarbeitung personenbezogener Daten im Auftrag.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-11",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche ISO-Norm ist der zentrale Standard für Informationssicherheits-Managementsysteme?",
+    "options": [
+      "ISO/IEC 27001",
+      "ISO/IEC 20000",
+      "ISO 9001",
+      "ISO 14001"
+    ],
+    "correct": 0,
+    "explanation": "ISO/IEC 27001 definiert Anforderungen an ein Informationssicherheits-Managementsystem.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-12",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Zu welcher ITIL-Version gehört das Vier-Dimensionen-Modell?",
+    "options": [
+      "ITIL 4",
+      "ITIL 3",
+      "ITIL 2",
+      "Nur COBIT"
+    ],
+    "correct": 0,
+    "explanation": "Das Vier-Dimensionen-Modell ist ein Kernelement von ITIL 4. ITIL 3 war stärker am Service Lifecycle ausgerichtet.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-13",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Reihenfolge beschreibt den IT-Lifecycle aus dem Unterricht korrekt?",
+    "options": [
+      "Beratung → Beschaffung → Bereitstellung → Einweisung → Helpdesk → Kontrolle/Anpassung/Ersatz",
+      "Beschaffung → Helpdesk → Beratung → Dispose → Einweisung → Installation",
+      "Install → Move → Add → Change → Remove → Dispose im beschriebenen Service-Management-Kontext",
+      "Beratung → Change → Eskalation → Problem → Helpdesk → Abschluss im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Der ganzheitliche IT-Lifecycle beginnt mit Beratung und endet mit Kontrolle, Anpassung oder Ersatz.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-14",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was unterscheidet einen Standard von einem Framework?",
+    "options": [
+      "Ein Standard enthält prüfbare Anforderungen; ein Framework liefert Leitplanken und Best Practices",
+      "Ein Framework ist immer gesetzlich verbindlich; ein Standard ist nur eine Empfehlung",
+      "Standards gelten nur für Hardware; Frameworks nur für Software im beschriebenen Service-Management-Kontext",
+      "Es gibt fachlich keinen Unterschied zwischen beiden Begriffen im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Standards formulieren konkrete Anforderungen, Frameworks unterstützen die Umsetzung mit adaptierbaren Empfehlungen.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-15",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was beschreibt Governance?",
+    "options": [
+      "Strukturierte Führung, Steuerung und Kontrolle im Einklang mit Zielen, Regeln und Verantwortlichkeiten",
+      "Temporäre technische Umgehung eines Incidents bis zur Reparatur im beschriebenen Service-Management-Kontext",
+      "Automatische Verteilung eingehender Service-Desk-Anrufe im beschriebenen Service-Management-Kontext",
+      "Durchschnittliche Zeit zwischen zwei Systemausfällen im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Governance schafft den Rahmen für Entscheidungen, Verantwortlichkeiten, Kontrolle und strategische Ausrichtung.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-16",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was beschreibt ITSM?",
+    "options": [
+      "Strukturierte Planung, Bereitstellung, Steuerung und Verbesserung kundenorientierter IT-Services",
+      "Ausschließlich Hardwareinventur und Gerätebeschaffung im beschriebenen Service-Management-Kontext",
+      "Nur Ursachenanalyse wiederkehrender Incidents im beschriebenen Service-Management-Kontext",
+      "Reine Softwareentwicklung ohne Servicebezug im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "ITSM organisiert IT-Leistungen als Services und richtet Prozesse auf Geschäftsanforderungen sowie kontinuierliche Verbesserung aus.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-17",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welcher Prozess analysiert die Ursache wiederkehrender Incidents?",
+    "options": [
+      "Problem Management",
+      "Incident Management",
+      "Service Request Fulfillment",
+      "Automatic Call Distribution"
+    ],
+    "correct": 0,
+    "explanation": "Problem Management sucht Root Causes und entwickelt nachhaltige Lösungen gegen Wiederholungen.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-18",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Welche Aufgabe hat ein Change Manager bei nicht standardisierten Changes?",
+    "options": [
+      "RfCs bewerten, koordinieren und im vorgesehenen Prozess freigeben bzw. zur Freigabe führen",
+      "Jeden Incident im First Level selbst technisch lösen im beschriebenen Service-Management-Kontext",
+      "Ausschließlich Service Requests automatisch schließen im beschriebenen Service-Management-Kontext",
+      "Nur MTTR und MTBF aus Monitoringdaten berechnen im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Nicht standardisierte Changes benötigen kontrollierte Bewertung, Risikoabwägung und Freigabe.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-19",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie wird ein Case Owner bei einer Serviceanfrage typischerweise zugeordnet?",
+    "options": [
+      "Durch Übernahme bzw. Annahme des Servicefalls im Ticketsystem",
+      "Durch zufällige Auswahl nach Ticketabschluss",
+      "Nur über ein externes SLA mit dem Kunden im beschriebenen Service-Management-Kontext",
+      "Ausschließlich durch einen CAB-Beschluss im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Mit Übernahme eines Servicefalls wird die verantwortliche Bearbeitung und Nachverfolgung einem Case Owner zugeordnet.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-20",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wofür stehen die Buchstaben RACI?",
+    "options": [
+      "Responsible, Accountable, Consulted, Informed",
+      "Repair, Analyse, Control, Incident",
+      "Request, Approval, Change, Installation",
+      "Responsible, Available, Classified, Integrated"
+    ],
+    "correct": 0,
+    "explanation": "RACI beschreibt Ausführung, Ergebnisverantwortung, Beratung und Information.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-21",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie heißt die zentrale Anlaufstelle für IT-Servicefälle?",
+    "options": [
+      "Single Point of Contact (SPoC)",
+      "Change Advisory Board (CAB)",
+      "Operational Level Agreement (OLA)",
+      "Configuration Management Database (CMDB)"
+    ],
+    "correct": 0,
+    "explanation": "Der SPoC bündelt die Kommunikation zwischen Kunden und Serviceorganisation.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-22",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie heißt die automatische Verteilung eingehender Kontaktanfragen?",
+    "options": [
+      "Automatic Call Distribution (ACD)",
+      "Mean Time Between Failures (MTBF)",
+      "Continual Service Improvement (CSI)",
+      "Request for Change (RfC)"
+    ],
+    "correct": 0,
+    "explanation": "ACD verteilt eingehende Calls nach Regeln an passende Warteschlangen oder Ansprechpartner.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-23",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie wird die notwendige Weitergabe an einen höheren Support-Level bezeichnet?",
+    "options": [
+      "Eskalation",
+      "Kategorisierung",
+      "Fulfillment",
+      "Dispose"
+    ],
+    "correct": 0,
+    "explanation": "Wenn ein Fall im aktuellen Support-Level nicht lösbar ist, erfolgt eine funktionale Eskalation.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-24",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Wie heißen provisorische bzw. temporäre Lösungen im IT-Service?",
+    "options": [
+      "Workarounds",
+      "Permanent Fixes",
+      "Service Level Agreements",
+      "Configuration Items"
+    ],
+    "correct": 0,
+    "explanation": "Ein Workaround reduziert Auswirkungen, ohne die zugrunde liegende Ursache dauerhaft zu beseitigen.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-wheel-t2-25",
+    "courseId": "lf06",
+    "quizId": "lf06-gluecksrad-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Was unterscheidet Kategorisierung und Klassifizierung im Support?",
+    "options": [
+      "Kategorisierung ordnet nach Service/Leistungsportfolio; Klassifizierung ordnet nach Serviceklasse bzw. unterstützt die Priorisierung",
+      "Kategorisierung berechnet MTTR; Klassifizierung berechnet MTBF im beschriebenen Service-Management-Kontext",
+      "Kategorisierung betrifft nur Personen; Klassifizierung nur Hardware im beschriebenen Service-Management-Kontext",
+      "Die beiden Begriffe sind vollständig identisch im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Kategorisierung strukturiert den Servicebereich. Klassifizierung unterstützt z. B. Schweregrad oder Priorität anhand von Auswirkung und Dringlichkeit.",
+    "difficulty": "ihk",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-01",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Wie viele Practices sind in ITIL 4 definiert und welchem Zweck dienen sie?",
+    "options": [
+      "34 Practices; sie beschreiben bewährte Vorgehensweisen für Service Management",
+      "24 Practices; sie definieren ausschließlich technische Netzwerkstandards",
+      "40 Practices; sie ersetzen sämtliche ISO-Managementsysteme",
+      "6 Practices; sie entsprechen den Phasen des IT-Lifecycle"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. ITIL 4 beschreibt 34 Management Practices. Sie liefern bewährte Vorgehensweisen für die Gestaltung und Steuerung von Services.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-02",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Welche Reihenfolge beschreibt den IMAC/R/D-Lebenszyklus korrekt?",
+    "options": [
+      "Install → Move → Add → Change → Remove → Dispose",
+      "Install → Add → Move → Dispose → Change → Remove",
+      "Move → Install → Change → Add → Dispose → Remove",
+      "Add → Change → Install → Remove → Move → Dispose"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. IMAC/R/D steht für Install, Move, Add, Change, Remove und Dispose.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-03",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Welche Aussage zu ITIL 4 ist fachlich korrekt?",
+    "options": [
+      "ITIL 4 arbeitet unter anderem mit vier Dimensionen und 34 Management Practices",
+      "ITIL 4 besteht ausschließlich aus einem starren Service-Lifecycle ohne Practices",
+      "ITIL 4 ist eine ISO-Norm für Informationssicherheits-Managementsysteme",
+      "ITIL 4 ist ein Netzwerkprotokoll für die automatische Ticketverteilung"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. ITIL 4 verbindet unter anderem Guiding Principles, vier Dimensionen, Service Value System/Chain und Management Practices.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-04",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Welche Begriffe beschreiben Unternehmenssteuerung und regelkonformes Handeln?",
+    "options": [
+      "Governance und Compliance",
+      "Incident und Workaround",
+      "MTTR und MTBF",
+      "Install und Dispose"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. Governance beschreibt Steuerung und Kontrolle; Compliance die Einhaltung relevanter Regeln und Vorgaben.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-05",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Wofür steht ITIL?",
+    "options": [
+      "Information Technology Infrastructure Library",
+      "Integrated Technology Incident Lifecycle",
+      "Information Transfer and Infrastructure Layer",
+      "International Technical IT Library"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. ITIL bedeutet Information Technology Infrastructure Library.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-06",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Wofür steht KPI und welchen Nutzen hat eine KPI?",
+    "options": [
+      "Key Performance Indicator; messbare Kennzahl zur Bewertung von Leistung und Zielerreichung",
+      "Key Process Installation; technische Checkliste zur Geräteinstallation",
+      "Known Problem Interface; Schnittstelle für Problem-Tickets im beschriebenen Service-Management-Kontext",
+      "Knowledge Performance Inventory; Inventarliste für Wissensartikel"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. KPIs machen Fortschritt und Leistungsniveau messbar, zum Beispiel SLA-Erfüllungsquote oder MTTR.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-07",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Wofür steht SLA?",
+    "options": [
+      "Service Level Agreement; Vereinbarung messbarer Serviceeigenschaften zwischen Kunde und Provider",
+      "System Lifecycle Analysis; technische Analyse des Asset-Lebenszyklus im beschriebenen Service-Management-Kontext",
+      "Service Logging Application; Software zur Ticketerstellung im beschriebenen Service-Management-Kontext",
+      "Standard Level Authorization; interne Berechtigungsstufe im Support im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. Ein SLA vereinbart messbare Serviceziele wie Reaktionszeit, Wiederherstellungszeit oder Verfügbarkeit.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-08",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Welche Aussage zu COBIT ist richtig?",
+    "options": [
+      "COBIT ist ein Framework für Governance und Management der Unternehmens-IT",
+      "COBIT ist ein Telefonprotokoll für Service-Desk-Anrufe",
+      "COBIT ist eine ISO-Norm für Datenschutz-Zertifizierungen",
+      "COBIT bezeichnet einen Workaround bei kritischen Incidents"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. COBIT unterstützt Governance und Management der Unternehmens-IT.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-09",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Wie viele Management Practices umfasst ITIL 4?",
+    "options": [
+      "34",
+      "6",
+      "14",
+      "40"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. ITIL 4 umfasst 34 Management Practices.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
+  },
+  {
+    "id": "lf06-transfer-wheel-10",
+    "courseId": "lf06",
+    "quizId": "lf06-tag2",
+    "tagId": "lf06-tag2",
+    "type": "multiple-choice",
+    "question": "Transfer: Was ist ein AVV?",
+    "options": [
+      "Vertrag zur Auftragsverarbeitung personenbezogener Daten nach DSGVO Art. 28",
+      "Interne Vereinbarung zwischen First und Second Level über Reaktionszeiten",
+      "Lieferantenvertrag zur technischen SLA-Unterstützung im beschriebenen Service-Management-Kontext",
+      "Kennzahl für die durchschnittliche Reparaturdauer im beschriebenen Service-Management-Kontext"
+    ],
+    "correct": 0,
+    "explanation": "Transferfrage aus dem Glücksrad-Themenpool. Der Auftragsverarbeitungsvertrag regelt Pflichten bei Verarbeitung personenbezogener Daten im Auftrag.",
+    "difficulty": "medium",
+    "status": "published",
+    "source": "Glücksrad_D_LF06_Tag 2"
   }
 ]

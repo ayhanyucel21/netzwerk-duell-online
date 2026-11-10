@@ -214,11 +214,22 @@
     "id": "lf06-tag2",
     "courseId": "lf06",
     "tagId": "lf06-tag2",
-    "title": "Servicefälle & Kennzahlen",
-    "description": "Incident/Problem, MTTR/MTBF, Verfügbarkeit, SMART, DMAIC, AVV, UC und OLA.",
+    "title": "Servicefälle, Kennzahlen & Verbesserungsmethoden",
+    "description": "Incident- und Problem-Management, Supportprozesse, KPI, MTTR, MTBF, Verfügbarkeit, SMART, DMAIC sowie AVV, UC und OLA.",
     "icon": "📊",
     "questionCount": 36,
     "status": "published",
     "order": 2
+  },
+  {
+    "id": "lf06-gluecksrad-tag2",
+    "courseId": "lf06",
+    "tagId": "lf06-tag2",
+    "title": "Glücksrad",
+    "description": "Täglicher Fragenpool aus den aktuellen LF06-Unterrichtsthemen. Neue Glücksrad-Fragen werden fortlaufend ergänzt.",
+    "icon": "🎡",
+    "questionCount": 25,
+    "status": "published",
+    "order": 3
   }
 ]

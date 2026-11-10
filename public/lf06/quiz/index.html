@@ -19,7 +19,9 @@ html{font-size:14px}/* LF06 option balance */.option{min-height:58px;display:fle
 <script>
 'use strict';
 const API='/api/content/questions?courseId=lf06',KEY='lf06_quiz_progress_v11';
-const META={'lf06-tag1':['ITSM, ITIL, RACI & Serviceprozesse','🎧']};
+const META={
+'lf06-tag2':['Servicefälle, Kennzahlen & Verbesserungsmethoden','📊'],
+'lf06-gluecksrad-tag2':['Glücksrad','🎡'],'lf06-tag1':['ITSM, ITIL, RACI & Serviceprozesse','🎧']};
 let tables=[],active=null,index=0,store=readStore();const order={},$=id=>document.getElementById(id);
 function readStore(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return{}}}function save(){localStorage.setItem(KEY,JSON.stringify(store));renderStats()}function state(id){return store[id]||(store[id]={index:0,answers:{},score:0})}function esc(v=''){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 function singleAnswer(q,o){if(q.expectedCode)return String(q.expectedCode);if(typeof q.correct==='number')return String(o[q.correct]);if(typeof q.correct==='string')return /^\d+$/.test(q.correct)?String(o[Number(q.correct)]):q.correct;if(typeof q.answer==='number')return String(o[q.answer]);return q.answer==null?'':String(q.answer)}
